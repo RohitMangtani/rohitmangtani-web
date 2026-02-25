@@ -77,21 +77,23 @@ export default function ResumePage() {
           </section>
 
           {/* Projects */}
-          <section className="mb-5">
-            <h3 className="text-sm font-bold uppercase tracking-wider border-b border-[var(--fg)] pb-1 mb-3">Projects</h3>
-            {resumeData.projects.map((proj, i) => (
-              <div key={i} className="mb-3">
-                <span className="font-semibold text-sm">{proj.name}</span>
-                <ul className="mt-1 space-y-1">
-                  {proj.bullets.map((bullet, j) => (
-                    <li key={j} className="text-sm text-[var(--fg-muted)] pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--fg-muted)]">
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </section>
+          {resumeData.projects.length > 0 && (
+            <section className="mb-5">
+              <h3 className="text-sm font-bold uppercase tracking-wider border-b border-[var(--fg)] pb-1 mb-3">Projects</h3>
+              {resumeData.projects.map((proj, i) => (
+                <div key={i} className="mb-3">
+                  <span className="font-semibold text-sm">{proj.name}</span>
+                  <ul className="mt-1 space-y-1">
+                    {proj.bullets.map((bullet, j) => (
+                      <li key={j} className="text-sm text-[var(--fg-muted)] pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-[var(--fg-muted)]">
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </section>
+          )}
 
           {/* Leadership */}
           <section className="mb-5">

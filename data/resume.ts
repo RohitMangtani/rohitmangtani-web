@@ -43,7 +43,7 @@ export const resumeData: ResumeData = {
   name: 'Rohit Vijay Mangtani',
   location: 'Nashua, NH',
   phone: '603.305.0320',
-  email: 'rohitmangtani1@gmail.com',
+  email: 'mangtani.rohit20@gmail.com',
   linkedin: 'linkedin.com/in/rohitmangtani',
 
   education: [
@@ -59,6 +59,19 @@ export const resumeData: ResumeData = {
   ],
 
   experience: [
+    {
+      company: 'Royal Bank of Canada (RBC)',
+      location: 'Jersey City, NJ',
+      title: 'Fixed Income Operations Analyst',
+      dates: 'June 2024 – Present',
+      bullets: [
+        'Execute daily cross-system reconciliations across multiple fixed income entities, validating transaction-level data between internal platforms and external counterparties to ensure position accuracy and control integrity',
+        'Isolate and diagnose funding discrepancies by extracting account-level transaction data and performing root-cause analysis across settlement, cash, and journal records to resolve breaks before downstream impact',
+        'Identified structural inefficiencies in daily reconciliation workflows; redesigned Excel-based templating processes to reduce redundant manual steps and improve data consistency across reporting cycles',
+        'Monitor trial balance variances across independent source systems, flagging anomalies that indicate upstream data quality degradation or potential control failures',
+        'Evaluate reconciliation processes for automation potential by categorizing workflows as rules-based vs. judgment-dependent, scoping systematic reduction of manual overhead',
+      ],
+    },
     {
       company: 'Fidelity Investments',
       location: 'Boston, MA',
@@ -96,30 +109,7 @@ export const resumeData: ResumeData = {
     },
   ],
 
-  projects: [
-    {
-      name: 'AI Predictive Analyst',
-      bullets: [
-        'Developing an AI Analyst using Python, integrated with Discord, OpenAI API, and SQL, aiming to interpret real-time financial data, news, and indicators with respect to the current market environment',
-      ],
-    },
-    {
-      name: 'Cryptocurrency Pricing Analysis',
-      bullets: [
-        'Assessed how geopolitical and economic events correlate with cryptocurrency prices for risk reward analysis',
-        'Created visual representations of event impacts on cryptocurrency markets using Matplotlib and Seaborn',
-        'Used Pandas to store and parse through data to conduct statistical correlation analysis using Scipy and Statsmodels',
-      ],
-    },
-    {
-      name: 'Housing Price Prediction Model',
-      bullets: [
-        'Used R to quantify the influence of key variables to create a predictive model for housing prices',
-        'Applied RandomForest and KNN models to predict housing prices based on key regional and economic variables',
-        'Utilized linear, ridge, and lasso regression techniques to refine predictions and assess the impact of various factors',
-      ],
-    },
-  ],
+  projects: [],
 
   leadership: [
     {
