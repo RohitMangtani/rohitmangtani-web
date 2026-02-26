@@ -16,6 +16,15 @@ export const metadata: Metadata = {
   },
 };
 
+const externalProjects = [
+  {
+    title: 'Booksby',
+    href: 'https://booksby-ten.vercel.app',
+    description: 'Personalized book recommendations that learn your reading taste over time.',
+    date: '2026',
+  },
+];
+
 export default function LabPage() {
   return (
     <>
@@ -28,8 +37,28 @@ export default function LabPage() {
           </p>
         </header>
 
-        <div className="py-12 text-center">
-          <p className="text-[var(--fg-muted)] text-sm">Nothing here yet.</p>
+        <div className="space-y-3">
+          {externalProjects.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <div className="p-4 border border-[var(--border)] rounded-lg transition-all duration-200 hover:border-[var(--fg-muted)] hover:bg-[var(--bg-secondary)]">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
+                      {item.title} <span className="text-xs text-[var(--fg-muted)]">&#8599;</span>
+                    </h3>
+                    <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
+                  </div>
+                  <span className="text-xs font-mono text-[var(--fg-muted)] flex-shrink-0">{item.date}</span>
+                </div>
+              </div>
+            </a>
+          ))}
         </div>
       </main>
     </>
