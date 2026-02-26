@@ -26,7 +26,7 @@ export default async function Image() {
           Writing
         </div>
         <div style={{ fontSize: 22, color: '#78716c', marginTop: 16 }}>
-          Ideas, essays, and observations
+          Essays and research across technology, markets, and systems
         </div>
       </div>
     ),
