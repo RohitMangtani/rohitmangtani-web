@@ -23,6 +23,12 @@ const externalProjects = [
     description: 'Personalized book recommendations that learn your reading taste over time.',
     date: '2026',
   },
+  {
+    title: 'The Sleepless Rishi',
+    href: 'https://www.youtube.com/@TheSleeplessRishi',
+    description: 'Fully automated YouTube channel — AI-generated Hindu stories, narration, and visuals end to end.',
+    date: '2026',
+  },
 ];
 
 export default function LabPage() {
