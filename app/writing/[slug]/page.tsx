@@ -2,11 +2,13 @@ import { WritingTemplate } from '@/components/WritingTemplate';
 import { thePositiveLoopData } from '@/data/research/the-positive-loop';
 import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
+import { theHumanYieldData } from '@/data/research/the-human-yield';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['data'] }> = {
   'the-positive-loop': { data: thePositiveLoopData },
+  'the-human-yield': { data: theHumanYieldData },
   'honest-gambling': { data: honestGamblingData },
   'the-gameable-society': { data: theGameableSocietyData },
 };

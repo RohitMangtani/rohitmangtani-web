@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'the-human-yield',
+    title: 'The Human Yield',
+    date: '2026',
+  },
+  {
     slug: 'the-positive-loop',
     title: 'The Positive Loop: How AI Broke the Doom Scroll',
     date: '2026',
