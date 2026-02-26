@@ -26,7 +26,7 @@ export default async function Image() {
           Writing
         </div>
         <div style={{ fontSize: 22, color: '#78716c', marginTop: 16 }}>
-          Essays on game theory, coordination, AI, and cultural systems
+          Ideas, essays, and observations
         </div>
       </div>
     ),

@@ -3,15 +3,15 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'About Rohit Mangtani — writing on game theory, coordination systems, AI, and cultural frameworks.',
+  description: 'About Rohit Mangtani.',
   openGraph: {
     title: 'About - Rohit Mangtani',
-    description: 'Writing on game theory, coordination systems, AI, and cultural frameworks.',
+    description: 'About Rohit Mangtani.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About - Rohit Mangtani',
-    description: 'Writing on game theory, coordination systems, AI, and cultural frameworks.',
+    description: 'About Rohit Mangtani.',
   },
 };
 
@@ -26,22 +26,16 @@ export default function AboutPage() {
 
         <div className="space-y-6 text-[var(--fg-muted)] animate-fade-in-delay-1">
           <p className="text-lg leading-relaxed">
-            I write about game theory, coordination systems, AI, and cultural frameworks.
+            I like to write about things I find interesting and share projects I'm working on.
           </p>
         </div>
 
         <div className="mt-16 pt-8 border-t border-[var(--border)] space-y-4 text-sm text-[var(--fg-muted)] animate-fade-in-delay-1">
           <p className="leading-relaxed">
-            This site contains two sections: <strong className="text-[var(--fg)]">Writing</strong> and <strong className="text-[var(--fg)]">Lab</strong>.
+            <strong className="text-[var(--fg)]">Writing</strong> is where I put essays and ideas — whatever I've been thinking about.
           </p>
           <p className="leading-relaxed">
-            <strong className="text-[var(--fg)]">Writing</strong> includes essays, theses, and frameworks. Some develop a single argument; others are exploratory analyses. They aim to be falsifiable and hold up to scrutiny.
-          </p>
-          <p className="leading-relaxed">
-            <strong className="text-[var(--fg)]">Lab</strong> contains tools, experiments, and independent data analyses — projects that demonstrate applied research and engineering.
-          </p>
-          <p className="leading-relaxed">
-            All content is educational and reflects personal research interests.
+            <strong className="text-[var(--fg)]">Lab</strong> is for projects and experiments.
           </p>
         </div>
       </main>

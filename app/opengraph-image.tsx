@@ -46,7 +46,7 @@ export default async function Image() {
               letterSpacing: '0.05em',
             }}
           >
-            Writing · Research · Projects
+            Writing · Projects
           </div>
         </div>
       </div>
