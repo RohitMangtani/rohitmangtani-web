@@ -16,18 +16,18 @@ export default function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[var(--bg)]/95 backdrop-blur-sm border-b border-[var(--border)]">
-      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="text-sm font-semibold tracking-tight hover:opacity-70">
-          Rohit Mangtani
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center gap-4 sm:gap-0 sm:justify-between overflow-x-auto scrollbar-hide">
+        <Link href="/" className="text-sm font-semibold tracking-tight hover:opacity-70 shrink-0 whitespace-nowrap">
+          RM
         </Link>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 sm:gap-6 shrink-0">
           {navItems.map((item) => {
             const isActive = pathname === item.href || pathname.startsWith(item.href + '/');
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-xs uppercase tracking-wider transition-opacity ${
+                className={`text-xs uppercase tracking-wider transition-opacity whitespace-nowrap shrink-0 ${
                   isActive
                     ? 'text-[var(--fg)] font-medium'
                     : 'text-[var(--fg-muted)] hover:text-[var(--fg)]'

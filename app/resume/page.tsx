@@ -7,27 +7,33 @@ export default function ResumePage() {
   return (
     <>
       <Nav />
-      <main className="max-w-[720px] mx-auto px-6 py-16 print:py-0 print:px-0 print:max-w-none">
+      <main className="max-w-[720px] mx-auto px-4 sm:px-6 py-10 sm:py-16 print:py-0 print:px-0 print:max-w-none">
         {/* Download button — hidden in print */}
-        <div className="mb-8 flex items-center justify-between print:hidden">
-          <h1 className="text-3xl font-bold tracking-tight">Resume</h1>
+        <div className="mb-6 sm:mb-8 flex items-center justify-between print:hidden">
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Resume</h1>
           <a
             href="/resume/Rohit_Mangtani_Resume.pdf"
             download="Rohit_Mangtani_Resume.pdf"
-            className="px-4 py-2 text-sm font-medium border border-[var(--border)] rounded-lg hover:bg-[var(--bg-secondary)] transition-colors"
+            className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium border border-[var(--border)] rounded-lg hover:bg-[var(--bg-secondary)] transition-colors shrink-0"
           >
             Download PDF
           </a>
         </div>
 
         {/* Resume content */}
-        <div className="border border-[var(--border)] rounded-lg p-8 bg-white print:border-none print:rounded-none print:p-0">
+        <div className="border border-[var(--border)] rounded-lg p-4 sm:p-8 bg-white print:border-none print:rounded-none print:p-0">
           {/* Header */}
           <header className="text-center mb-6 pb-4 border-b border-[var(--border)]">
-            <h2 className="text-2xl font-bold tracking-tight mb-1">{resumeData.name}</h2>
-            <p className="text-sm text-[var(--fg-muted)]">
-              {resumeData.location} | {resumeData.phone} | {resumeData.email} | {resumeData.linkedin}
-            </p>
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight mb-2">{resumeData.name}</h2>
+            <div className="text-xs sm:text-sm text-[var(--fg-muted)] flex flex-wrap justify-center gap-x-2 gap-y-0.5">
+              <span>{resumeData.location}</span>
+              <span className="hidden sm:inline">|</span>
+              <span>{resumeData.phone}</span>
+              <span className="hidden sm:inline">|</span>
+              <span>{resumeData.email}</span>
+              <span className="hidden sm:inline">|</span>
+              <span>{resumeData.linkedin}</span>
+            </div>
           </header>
 
           {/* Education */}
@@ -35,12 +41,12 @@ export default function ResumePage() {
             <h3 className="text-sm font-bold uppercase tracking-wider border-b border-[var(--fg)] pb-1 mb-3">Education</h3>
             {resumeData.education.map((edu, i) => (
               <div key={i} className="mb-3">
-                <div className="flex justify-between items-baseline">
+                <div className="flex flex-wrap justify-between items-baseline gap-x-2">
                   <span className="font-semibold text-sm">{edu.school}</span>
                   <span className="text-xs text-[var(--fg-muted)]">{edu.location}</span>
                 </div>
                 {edu.degrees.map((deg, j) => (
-                  <div key={j} className="flex justify-between items-baseline">
+                  <div key={j} className="flex flex-wrap justify-between items-baseline gap-x-2">
                     <span className="text-sm italic">{deg.title}</span>
                     <span className="text-xs text-[var(--fg-muted)]">{deg.date}</span>
                   </div>
@@ -57,11 +63,11 @@ export default function ResumePage() {
             <h3 className="text-sm font-bold uppercase tracking-wider border-b border-[var(--fg)] pb-1 mb-3">Work Experience</h3>
             {resumeData.experience.map((exp, i) => (
               <div key={i} className="mb-4">
-                <div className="flex justify-between items-baseline">
+                <div className="flex flex-wrap justify-between items-baseline gap-x-2">
                   <span className="font-semibold text-sm">{exp.company}</span>
                   <span className="text-xs text-[var(--fg-muted)]">{exp.location}</span>
                 </div>
-                <div className="flex justify-between items-baseline">
+                <div className="flex flex-wrap justify-between items-baseline gap-x-2">
                   <span className="text-sm italic">{exp.title}</span>
                   <span className="text-xs text-[var(--fg-muted)]">{exp.dates}</span>
                 </div>
@@ -100,11 +106,11 @@ export default function ResumePage() {
             <h3 className="text-sm font-bold uppercase tracking-wider border-b border-[var(--fg)] pb-1 mb-3">Leadership Experience</h3>
             {resumeData.leadership.map((lead, i) => (
               <div key={i} className="mb-3">
-                <div className="flex justify-between items-baseline">
+                <div className="flex flex-wrap justify-between items-baseline gap-x-2">
                   <span className="font-semibold text-sm">{lead.org}</span>
                   <span className="text-xs text-[var(--fg-muted)]">{lead.location}</span>
                 </div>
-                <div className="flex justify-between items-baseline">
+                <div className="flex flex-wrap justify-between items-baseline gap-x-2">
                   <span className="text-sm italic">{lead.title}</span>
                   <span className="text-xs text-[var(--fg-muted)]">{lead.dates}</span>
                 </div>
