@@ -34,7 +34,7 @@ interface WritingTemplateProps {
         list?: string[];
       }[];
     }[];
-    // Optional fields — rendered when present
+    // Optional fields, rendered when present
     version?: string;
     keyNumbers?: { value: string; label: string; color?: string }[];
     claim?: string;
@@ -59,7 +59,7 @@ function getColorClass(color?: string): string {
 }
 
 // Note: All HTML content rendered via dangerouslySetInnerHTML comes from
-// trusted, developer-authored data files within the codebase — not from
+// trusted, developer-authored data files within the codebase, not from
 // user input or external sources.
 
 export function WritingTemplate({ data }: WritingTemplateProps) {

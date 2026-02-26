@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'About Rohit Mangtani — writing on game theory, coordination systems, AI, and cultural frameworks.',
+  description: 'About Rohit Mangtani. Writing on game theory, coordination systems, AI, and cultural frameworks.',
   openGraph: {
     title: 'About - Rohit Mangtani',
     description: 'Writing on game theory, coordination systems, AI, and cultural frameworks.',
@@ -38,7 +38,7 @@ export default function AboutPage() {
             <strong className="text-[var(--fg)]">Writing</strong> includes essays, theses, and frameworks. Some develop a single argument; others are exploratory analyses. They aim to be falsifiable and hold up to scrutiny.
           </p>
           <p className="leading-relaxed">
-            <strong className="text-[var(--fg)]">Lab</strong> contains tools, experiments, and independent data analyses — projects that demonstrate applied research and engineering.
+            <strong className="text-[var(--fg)]">Lab</strong> contains tools, experiments, and independent data analyses, projects that demonstrate applied research and engineering.
           </p>
           <p className="leading-relaxed">
             All content is educational and reflects personal research interests.

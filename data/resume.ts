@@ -1,4 +1,4 @@
-// Resume data — edit this file to update the website resume.
+// Resume data. Edit this file to update the website resume.
 // After changes, regenerate the PDF with:
 //   pandoc (source docx) -o public/resume/Rohit_Mangtani_Resume.pdf --pdf-engine=tectonic -V geometry:margin=0.75in -V fontsize=11pt
 // Or ask Claude to regenerate it from this data.

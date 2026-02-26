@@ -8,8 +8,8 @@ export const thePositiveLoopData: ResearchData = {
   subtitle: 'How AI broke the doom scroll and created the first productive dopamine cycle in internet history',
 
   onRamp: {
-    description: 'This piece argues that AI tools — particularly vibe coding and conversational AI — represent the first internet-native dopamine loop that makes users more capable instead of less. It connects this to the broader pattern of late-stage capitalism producing dopamine-driven behavior, and examines why almost nobody has recognized how fast things are changing.',
-    whatItDoes: 'Documents the shift from consumptive to productive dopamine loops, what changed technically, and why we are extremely early.',
+    description: 'This piece argues that AI tools, particularly vibe coding and conversational AI, the first internet-native dopamine loop that makes users more capable instead of less. It connects this to the broader pattern of late-stage capitalism producing dopamine-driven behavior, and examines why almost nobody has recognized how fast things are changing.',
+    whatItDoes: 'Documents the shift from consumptive to productive dopamine loops. what changed technically, and why we are extremely early.',
     whatItDoesNot: 'Claim AI will solve everything, endorse any specific tool or company, or predict timelines.',
   },
 
@@ -20,7 +20,7 @@ export const thePositiveLoopData: ResearchData = {
     { value: '$0', label: 'Cost to Start', color: 'zinc' },
   ],
 
-  claim: 'For the first time in internet history, we have a dopamine loop that makes you more capable instead of less. AI tools have turned the most addictive interface ever built — the phone — into a production engine. And almost nobody has realized it yet.',
+  claim: 'For the first time in internet history, we have a dopamine loop that makes you more capable instead of less. AI tools have turned the most addictive interface ever built, the phone, into a production engine. And almost nobody has realized it yet.',
 
   sections: [
     {
@@ -31,7 +31,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The answer was dopamine. Not drugs. Feeds.</p>
 
-        <p>Social media, short-form video, infinite scroll, algorithmic recommendations — the entire consumer internet was optimized for one metric: time on screen. The more time you spend, the more ads you see, the more data you generate, the more precisely the next hit can be delivered. This is not a conspiracy theory. It is the documented business model of every major platform built since 2010.</p>
+        <p>Social media, short-form video, infinite scroll, algorithmic recommendations. The entire consumer internet was optimized for one metric: time on screen. The more time you spend, the more ads you see, the more data you generate, the more precisely the next hit can be delivered. It is the documented business model of every major platform built since 2010.</p>
 
         <p>The result is what we described in <a href="/writing/the-gameable-society" class="underline hover:opacity-60">The Gameable Society</a>: a population fluent in the language of self-improvement but structurally prevented from acting on it. People who can explain periodization, compound interest, and dopamine regulation. Who know the meta. Who have never played the game.</p>
 
@@ -52,7 +52,7 @@ export const thePositiveLoopData: ResearchData = {
       id: 'what-changed',
       title: 'What Changed',
       content: `
-        <p>In the span of roughly 18 months, a pipeline emerged that nobody fully anticipated — not in its speed, not in its accessibility, and certainly not in its implications for everyday people.</p>
+        <p>In the span of roughly 18 months, a pipeline emerged that nobody fully anticipated, not in its speed, not in its accessibility, and certainly not in its implications for everyday people.</p>
 
         <p>The pipeline is simple:</p>
 
@@ -72,10 +72,10 @@ export const thePositiveLoopData: ResearchData = {
         <p>Now a person with zero technical background can:</p>
 
         <ul>
-          <li><strong class="text-[var(--fg)]">Run deep research studies</strong> — the kind that used to require a team of analysts, Bloomberg terminals, and weeks of work. Fetch real-time data, cross-reference sources, generate charts, publish findings. From a phone.</li>
-          <li><strong class="text-[var(--fg)]">Build functional products</strong> — websites, tools, dashboards, automations. Not mockups. Working software that serves real users.</li>
-          <li><strong class="text-[var(--fg)]">Automate repetitive work</strong> — data entry, report generation, monitoring, alerts. Tasks that used to require hiring someone or doing it manually every day.</li>
-          <li><strong class="text-[var(--fg)]">Translate creative visions into real output</strong> — "I want a portfolio site that looks like this" becomes a real site in an afternoon. "I need a script that does X every morning" becomes a working cron job.</li>
+          <li><strong class="text-[var(--fg)]">Run deep research studies</strong>, the kind that used to require a team of analysts, Bloomberg terminals, and weeks of work. Fetch real-time data, cross-reference sources, generate charts, publish findings. From a phone.</li>
+          <li><strong class="text-[var(--fg)]">Build functional products</strong>, websites, tools, dashboards, automations. Not mockups. Working software that serves real users.</li>
+          <li><strong class="text-[var(--fg)]">Automate repetitive work</strong>, data entry, report generation, monitoring, alerts. Tasks that used to require hiring someone or doing it manually every day.</li>
+          <li><strong class="text-[var(--fg)]">Translate creative visions into real output</strong>. "I want a portfolio site that looks like this" becomes a real site in an afternoon. "I need a script that does X every morning" becomes a working cron job.</li>
         </ul>
 
         <p>The speed at which this became possible is the part nobody has processed. It is not that AI is improving gradually. It is that the gap between "idea" and "deployed product" collapsed from months to hours, and then from hours to minutes, and it happened so fast that the majority of people still think "coding" is something you need a CS degree to do.</p>
@@ -97,7 +97,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">That game is AI. Right now.</p>
-          <p class="text-sm text-[var(--fg-muted)]">This is not a metaphor that requires squinting. It is a literal description of what is happening. The interface is conversational. The learning curve is speaking your native language. The reward loop is seeing your ideas become real. The difficulty scales with your ambition. The content updates daily.</p>
+          <p class="text-sm text-[var(--fg-muted)]">It is a literal description of what is happening. The interface is conversational. The learning curve is speaking your native language. The reward loop is seeing your ideas become real. The difficulty scales with your ambition. The content updates daily.</p>
         </div>
 
         <p>The gaming metaphor matters because it explains the adoption curve. Games spread through word of mouth, through watching other people play, through the feeling of "I could do that." The reason AI adoption will be faster than any technology in history is that the barrier to entry is not learning a new skill. It is typing a sentence.</p>
@@ -181,7 +181,7 @@ export const thePositiveLoopData: ResearchData = {
           <p class="text-sm text-[var(--fg-muted)] mt-3">Every cycle makes the user more capable. The more you use it, the better you get at prompting, at knowing what to ask for, at recognizing quality output. The addiction curves upward instead of inward.</p>
         </div>
 
-        <p>This is unprecedented. Every previous internet dopamine loop was extractive: it took your time and gave you nothing durable in return. Likes, views, streaks — they vanish. You cannot compound a TikTok scroll session into anything.</p>
+        <p>This has never happened before. Every previous internet dopamine loop was extractive: it took your time and gave you nothing durable in return. Likes, views, streaks. They vanish. You cannot compound a TikTok scroll session into anything.</p>
 
         <p>AI loops are compounding. The website you built yesterday is still live today. The automation you set up last week is still running. The research you published is still being read. Each session deposits something real into the world that persists after the dopamine fades.</p>
 
@@ -198,7 +198,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The critical insight: <strong class="text-[var(--fg)]">the productive loop is just as addictive as the extractive one.</strong> The feedback is immediate. The reward is visible. The progress is tangible. The only difference is that when you come up for air, you have something to show for it.</p>
 
-        <p>This is the first time the addictive qualities of the internet are aligned with productive output. The phone — the device that turned us into dopamine addicts — is now the device that can turn us into builders.</p>
+        <p>This is the first time the addictive qualities of the internet are aligned with productive output. The phone, the device that turned us into dopamine addicts, is now the device that can turn us into builders.</p>
       `,
     },
     {
@@ -214,7 +214,7 @@ export const thePositiveLoopData: ResearchData = {
           <div class="space-y-2 text-sm text-[var(--fg-muted)]">
             <p>A person sitting in a different country can text instructions from their phone and have a fully functional product coded, tested, and deployed by morning.</p>
             <p>A 19-year-old with zero coding experience can build and ship a SaaS product in a weekend.</p>
-            <p>A researcher can pull real-time data from multiple APIs, generate charts, write analysis, and publish a study — in a single sitting.</p>
+            <p>A researcher can pull real-time data from multiple APIs, generate charts, write analysis, and publish a study, in a single sitting.</p>
             <p>An entrepreneur can automate 80% of their operational overhead by describing their workflows in natural language.</p>
           </div>
           <p class="text-sm text-[var(--fg)] font-medium mt-3">None of this was possible 18 months ago. And almost nobody is doing it yet.</p>
@@ -222,7 +222,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The analogy is early internet. In 1995, most people thought the internet was for email and maybe some research. The idea that it would restructure commerce, media, communication, and culture was not on the radar for 99% of the population. We are in the equivalent of 1995 right now, except the adoption curve is compressed from decades to years.</p>
 
-        <p>The under-allocation we documented in Observed Multipliers — extreme outcomes clustering in compressed windows — is about to happen in productivity, not just financial markets. The same structural conditions that produced 100x price moves (low barriers, network effects, compressed time) are now producing 100x productivity moves. But because productivity gains are less visible than price gains, the market has not priced this in.</p>
+        <p>The under-allocation we documented in Observed Multipliers (extreme outcomes clustering in compressed windows) is about to happen in productivity, not just financial markets. The same structural conditions that produced 100x price moves (low barriers, network effects, compressed time) are now producing 100x productivity moves. But because productivity gains are less visible than price gains, the market has not priced this in.</p>
       `,
     },
     {
@@ -238,7 +238,7 @@ export const thePositiveLoopData: ResearchData = {
           </div>
           <div class="p-4 border border-[var(--border)] rounded-lg">
             <p class="text-sm font-semibold text-[var(--fg)] mb-1">Idea → Working Product → Deployed</p>
-            <p class="text-xs text-[var(--fg-muted)]">Describe what you want. The AI writes the code. You iterate on the design by describing changes in natural language. It deploys. Users can access it. The entire cycle — from "I had an idea" to "it's live on the internet" — can happen in a single sitting from a phone in any country on earth.</p>
+            <p class="text-xs text-[var(--fg-muted)]">Describe what you want. The AI writes the code. You iterate on the design by describing changes in natural language. It deploys. Users can access it. The entire cycle, from "I had an idea" to "it's live on the internet," can happen in a single sitting from a phone in any country on earth.</p>
           </div>
           <div class="p-4 border border-[var(--border)] rounded-lg">
             <p class="text-sm font-semibold text-[var(--fg)] mb-1">Repetitive Task → Permanent Automation</p>
@@ -259,17 +259,17 @@ export const thePositiveLoopData: ResearchData = {
       content: `
         <p>Here is the part that matters for human wellbeing, not just productivity:</p>
 
-        <p>Doom scrolling persists because it is the path of least resistance to dopamine. You are tired, stressed, bored — you open your phone — infinite content appears — your brain gets what it wants. The activation energy is zero. The reward is immediate. The cost is invisible (time, attention, mental health) and deferred.</p>
+        <p>Doom scrolling persists because it is the path of least resistance to dopamine. You are tired, stressed, bored. You open your phone. Infinite content appears. Your brain gets what it wants. The activation energy is zero. The reward is immediate. The cost is invisible (time, attention, mental health) and deferred.</p>
 
         <p>AI tools have matched that activation energy. Open your phone. Describe what you want. Watch it happen. The reward is equally immediate. But instead of losing 45 minutes to a feed, you spent 45 minutes building something. The dopamine is equivalent. The output is not.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">The Substitution Effect</p>
           <p class="text-sm text-[var(--fg-muted)]">This is not about willpower. This is not about "just stop scrolling." This is about substitution. People do not quit addictive behaviors through discipline alone. They quit when a better reward appears that satisfies the same need.</p>
-          <p class="text-sm text-[var(--fg-muted)] mt-2">AI tools satisfy the same dopamine need that social media does — immediate feedback, visible progress, the feeling of something happening — but they leave you with assets instead of nothing. This is the first time in internet history that the replacement is as effortless and rewarding as the addiction it replaces.</p>
+          <p class="text-sm text-[var(--fg-muted)] mt-2">AI tools satisfy the same dopamine need that social media does, immediate feedback, visible progress, the feeling of something happening, but they leave you with assets instead of nothing. This is the first time in internet history that the replacement is as effortless and rewarding as the addiction it replaces.</p>
         </div>
 
-        <p>The behavioral shift is already visible in early adopters. People who discover vibe coding or AI-assisted building report the same compulsive usage patterns as social media — checking in constantly, thinking about it when away, feeling pulled back to it — except the output is products, research, automations, and skills instead of scroll sessions and parasocial relationships.</p>
+        <p>The behavioral shift is already visible in early adopters. People who discover vibe coding or AI-assisted building report the same compulsive usage patterns as social media: checking in constantly, thinking about it when away, feeling pulled back to it. Except the output is products, research, automations, and skills instead of scroll sessions and parasocial relationships.</p>
 
         <p>This connects to the core dynamic we identified in <a href="/writing/the-gameable-society" class="underline hover:opacity-60">The Gameable Society</a>: the spectator class exists because consuming optimization content was easier than doing optimization. AI eliminated the gap. The effort required to <em>do</em> is now comparable to the effort required to <em>watch</em>. For the first time, playing the game is as easy as watching someone else play it.</p>
       `,
@@ -295,7 +295,7 @@ export const thePositiveLoopData: ResearchData = {
           </div>
         </div>
 
-        <p>The pattern across our research — from speculation pressure to belief-driven markets to <a href="/writing/the-gameable-society" class="underline hover:opacity-60">gameable society dynamics</a> — has consistently documented how technology reshapes behavior faster than institutions can adapt. AI is the most extreme instance of this pattern. It is not making existing processes faster. It is making previously impossible things trivial. And the people who internalize this earliest will compound advantages that look, in hindsight, like the early internet, early crypto, and early social media adoption curves combined.</p>
+        <p>The pattern across our research, from speculation pressure to belief-driven markets and <a href="/writing/the-gameable-society" class="underline hover:opacity-60">gameable society dynamics</a> has consistently documented how technology reshapes behavior faster than institutions can adapt. AI is the most extreme instance of this pattern. It is not making existing processes faster. It is making previously impossible things trivial. And the people who internalize this earliest will compound advantages that look, in hindsight, like the early internet, early crypto, and early social media adoption curves combined.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="text-sm text-[var(--fg)]">The doom scroll turned us into dopamine-driven animals. The positive loop turns us into dopamine-driven builders. Same wiring. Same addiction. Different output. The infrastructure changed. The humans did not have to.</p>

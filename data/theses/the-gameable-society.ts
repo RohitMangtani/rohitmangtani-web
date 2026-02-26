@@ -26,7 +26,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-6">
-          The evidence is everywhere. Teenagers follow O'Malley's looksmaxxing journey like a serialized drama, tracking his mewing progress and canthal tilt. Bryan Johnson spends $2 million a year on "don't die" protocols and livestreams his biomarkers to millions who will never afford his blood boy treatments. Gambling streamers become cultural icons not despite being unhinged but because of it—their million-dollar wins and losses transformed into spectator sport, their degeneracy into content.
+          The evidence is everywhere. Teenagers follow O'Malley's looksmaxxing journey like a serialized drama, tracking his mewing progress and canthal tilt. Bryan Johnson spends $2 million a year on "don't die" protocols and livestreams his biomarkers to millions who will never afford his blood boy treatments. Gambling streamers become cultural icons not despite being unhinged but because of it. Their million-dollar wins and losses transformed into spectator sport, their degeneracy into content.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -63,7 +63,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-6">
-          When systems become legible, when metrics are visible, feedback is instant, and outcomes can be min-maxed, people begin to play them as games. This is not a metaphor. Social platforms gamify attention. Financial markets gamify risk. Health tracking gamifies the body. Career platforms gamify credentials.
+          When systems become legible, when metrics are visible, feedback is instant, and outcomes can be min-maxed, people begin to play them as games. Social platforms gamify attention. Financial markets gamify risk. Health tracking gamifies the body. Career platforms gamify credentials.
         </p>
         
         <p class="leading-relaxed mb-6">
@@ -253,7 +253,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-10">
-          This is not a conspiracy. It is an equilibrium. The incentives are aligned for persistence, not for redistribution. The system does not need to be defended. It only needs to continue operating.
+          It is an equilibrium. The incentives are aligned for persistence, not for redistribution. The system does not need to be defended. It only needs to continue operating.
         </p>
 
         <p class="leading-relaxed text-[var(--fg)] text-lg">

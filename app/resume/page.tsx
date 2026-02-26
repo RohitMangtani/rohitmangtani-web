@@ -8,7 +8,7 @@ export default function ResumePage() {
     <>
       <Nav />
       <main className="max-w-[720px] mx-auto px-4 sm:px-6 py-10 sm:py-16 print:py-0 print:px-0 print:max-w-none">
-        {/* Download button — hidden in print */}
+        {/* Download button, hidden in print */}
         <div className="mb-6 sm:mb-8 flex items-center justify-between print:hidden">
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Resume</h1>
           <a

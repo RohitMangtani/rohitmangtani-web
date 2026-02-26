@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 function ArticleContent({ article }: { article: ResearchData }) {
   // Note: All HTML content comes from trusted, developer-authored data files
-  // within the codebase — not from user input or external sources
+  // within the codebase, not from user input or external sources
   return (
     <main className="max-w-[680px] mx-auto px-6 py-20">
       <Link
