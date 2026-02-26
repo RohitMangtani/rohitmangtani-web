@@ -18,6 +18,12 @@ export const metadata: Metadata = {
 
 const externalProjects = [
   {
+    title: 'Tinkerbox',
+    href: 'https://tinkerbox-theta.vercel.app',
+    description: 'AI-powered project idea generator — turn your interests into buildable weekend projects.',
+    date: '2026',
+  },
+  {
     title: 'Booksby',
     href: 'https://booksby-ten.vercel.app',
     description: 'Personalized book recommendations that learn your reading taste over time.',
