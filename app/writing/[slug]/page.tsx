@@ -1,21 +1,14 @@
-import { ArticleTemplate } from '@/components/research/ArticleTemplate';
-import { ThesisTemplate } from '@/components/theses/ThesisTemplate';
+import { WritingTemplate } from '@/components/WritingTemplate';
 import { thePositiveLoopData } from '@/data/research/the-positive-loop';
 import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
-import type { ResearchData } from '@/types/research';
-import type { ThesisArticleData } from '@/types/theses';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-type ArticleEntry =
-  | { type: 'research'; data: ResearchData }
-  | { type: 'thesis'; data: ThesisArticleData };
-
-const articles: Record<string, ArticleEntry> = {
-  'the-positive-loop': { type: 'research', data: thePositiveLoopData },
-  'honest-gambling': { type: 'research', data: honestGamblingData },
-  'the-gameable-society': { type: 'thesis', data: theGameableSocietyData },
+const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['data'] }> = {
+  'the-positive-loop': { data: thePositiveLoopData },
+  'honest-gambling': { data: honestGamblingData },
+  'the-gameable-society': { data: theGameableSocietyData },
 };
 
 export async function generateStaticParams() {
@@ -54,9 +47,5 @@ export default async function WritingArticlePage({ params }: { params: Promise<{
     notFound();
   }
 
-  if (entry.type === 'research') {
-    return <ArticleTemplate data={entry.data} />;
-  }
-
-  return <ThesisTemplate data={entry.data} />;
+  return <WritingTemplate data={entry.data} />;
 }
