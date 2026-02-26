@@ -16,19 +16,19 @@ export const metadata: Metadata = {
     default: "Rohit Mangtani",
     template: "%s | Rohit Mangtani",
   },
-  description: "Essays, research, and projects by Rohit Mangtani.",
+  description: "Writing, research, and projects by Rohit Mangtani.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
     siteName: "Rohit Mangtani",
     title: "Rohit Mangtani",
-    description: "Essays, research, and projects by Rohit Mangtani.",
+    description: "Writing, research, and projects by Rohit Mangtani.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Rohit Mangtani",
-    description: "Essays, research, and projects by Rohit Mangtani.",
+    description: "Writing, research, and projects by Rohit Mangtani.",
   },
 };
 

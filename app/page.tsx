@@ -9,7 +9,7 @@ export default function Home() {
           Writing &nbsp;&nbsp;&middot;&nbsp;&nbsp; Research &nbsp;&nbsp;&middot;&nbsp;&nbsp; Projects
         </p>
         <p className="text-lg md:text-xl text-[var(--fg-muted)] max-w-lg leading-relaxed animate-fade-in-delay-1">
-          Essays, research, and projects on topics I find worth exploring.
+          Exploring tech, game theory, and systems. Sharing what I find.
         </p>
       </main>
     </>

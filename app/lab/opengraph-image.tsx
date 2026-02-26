@@ -26,7 +26,7 @@ export default async function Image() {
           Lab
         </div>
         <div style={{ fontSize: 22, color: '#78716c', marginTop: 16 }}>
-          Projects, tools, and applied work
+          Tools, experiments, and independent analyses
         </div>
       </div>
     ),

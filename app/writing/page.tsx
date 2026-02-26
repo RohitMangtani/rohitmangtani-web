@@ -4,16 +4,16 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Writing',
-  description: 'Essays and research across technology, markets, and systems.',
+  description: 'Essays, frameworks, and research on game theory, coordination, AI, and cultural systems.',
   openGraph: {
     title: 'Writing - Rohit Mangtani',
-    description: 'Essays and research across technology, markets, and systems.',
+    description: 'Essays, frameworks, and research on game theory, coordination, AI, and cultural systems.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Writing - Rohit Mangtani',
-    description: 'Essays and research across technology, markets, and systems.',
+    description: 'Essays, frameworks, and research on game theory, coordination, AI, and cultural systems.',
   },
 };
 
@@ -43,7 +43,7 @@ export default function WritingPage() {
         <header className="mb-10">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Writing</h1>
           <p className="text-[var(--fg-muted)]">
-            Essays and research across technology, markets, and systems.
+            Essays, frameworks, and research on game theory, coordination, AI, and cultural systems.
           </p>
         </header>
 
