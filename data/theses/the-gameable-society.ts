@@ -15,7 +15,7 @@ export const theGameableSocietyData: ThesisArticleData = {
   sections: [
     {
       id: 'spectator-class',
-      title: 'I',
+      title: 'I. The Spectator Class',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           Something shifted in how people relate to effort. It started as internet irony. "Looksmaxxing," "moneymaxxing," treating life like a character build screen where you min-max stats until you win.
@@ -48,14 +48,14 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'the-game',
-      title: 'II',
+      title: 'II. The Game',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           The instinct is to call this irrational. It is not.
         </p>
 
         <p class="leading-relaxed mb-6">
-          The behaviors emerging across society, the spectatorship, the obsessive optimization, the gambling, the meme coins, appear irrational only when measured against frameworks that no longer describe the environment.
+          The behaviors emerging across society, the spectatorship, the obsessive optimization, the gambling, appear irrational only when measured against frameworks that no longer describe the environment.
         </p>
 
         <p class="leading-relaxed mb-6 text-[var(--fg)] font-medium">
@@ -89,7 +89,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'attention-economics',
-      title: 'III',
+      title: 'III. Attention Economics',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           Attention has become the primary denominator of value in digital economies. Not money. Not labor. Not credentials. Attention.
@@ -135,7 +135,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'new-behaviors',
-      title: 'IV',
+      title: 'IV. New Behaviors',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           In response to these pressures, new behaviors emerge.
@@ -181,7 +181,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'value-concentration',
-      title: 'V',
+      title: 'V. Value Concentration',
       content: `
         <p class="text-lg leading-relaxed mb-6 text-[var(--fg)] font-medium">
           Value does not disappear in a spectator-dominated society. It concentrates.
@@ -217,49 +217,8 @@ export const theGameableSocietyData: ThesisArticleData = {
       `,
     },
     {
-      id: 'meme-coins',
-      title: 'VI',
-      content: `
-        <p class="text-lg leading-relaxed mb-6">
-          Meme coins emerge naturally from this environment. They are not anomalies. They are optimized instruments for a gameable society.
-        </p>
-
-        <p class="leading-relaxed mb-6">
-          A meme coin is not a claim on cash flows, assets, or utility. It is a claim on coordination. The value is a function of collective belief that others will also believe. There is no fundamental anchor. The price is the belief, made legible and tradable.
-        </p>
-
-        <p class="leading-relaxed mb-6">
-          Meme coin markets depend on spectators. Without an audience watching, discussing, and occasionally participating, there is no attention to convert into volume. Spectators provide the substrate. They generate the social proof that attracts marginal buyers. They supply exit liquidity when early participants sell. They absorb losses that fund gains elsewhere in the system.
-        </p>
-
-        <p class="leading-relaxed mb-6">
-          Participation feels like action. It is fast, visible, and emotionally engaging. For spectators accustomed to passive consumption, buying a meme coin provides the sensation of doing something without the sustained commitment that traditional paths require. The trade is a compressed, legible unit of agency.
-        </p>
-
-        <p class="leading-relaxed mb-6">
-          Most participants lose. This is known. The losses are framed as entertainment, education, or acceptable risk. The system does not hide this. It operates in the open.
-        </p>
-
-        <div class="border-l-2 border-[var(--border)] pl-6 my-10">
-          <p class="leading-relaxed mb-4">
-            Traditional financial products obscure risk. Fee structures are complex. Information asymmetries favor insiders. Extraction is hidden behind jargon, credentialism, and regulatory capture.
-          </p>
-          <p class="leading-relaxed mb-4">
-            Meme coins invert this. The risk is obvious. The game is transparent.
-          </p>
-          <p class="leading-relaxed mb-4">
-            Everyone knows that most coins go to zero, that early participants extract from late participants, and that timing is everything.
-          </p>
-        </div>
-
-        <p class="leading-relaxed mb-6">
-          This transparency attracts capital from participants who distrust opaque systems. The logic is not that meme coins are safe. The logic is that meme coins are legible. For participants who have experienced extraction in traditional systems, whether through failed investments, credential inflation, or institutional dysfunction, transparent risk feels preferable to hidden risk. At least the game is honest about being a game.
-        </p>
-      `,
-    },
-    {
       id: 'equilibrium',
-      title: 'VII',
+      title: 'VI. Equilibrium',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           The system is stable because it satisfies local incentives for all participants.
