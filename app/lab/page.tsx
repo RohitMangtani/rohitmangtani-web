@@ -1,4 +1,5 @@
 import Nav from '@/components/Nav';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -15,6 +16,14 @@ export const metadata: Metadata = {
     description: 'Tools, experiments, and independent analyses.',
   },
 };
+
+const tools = [
+  {
+    href: '/lab/dashboard',
+    title: 'Hindu Stories — Upload Dashboard',
+    description: 'Step-by-step upload guide for The Sleepless Rishi. Shows what to upload today.',
+  },
+];
 
 const externalProjects = [
   {
@@ -48,6 +57,29 @@ export default function LabPage() {
             Tools, experiments, and independent analyses.
           </p>
         </header>
+
+        {/* Tools */}
+        <div className="space-y-3 mb-8">
+          {tools.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="block group"
+            >
+              <div className="p-4 border border-green-900/60 bg-green-950/10 rounded-lg transition-all duration-200 hover:border-green-700 hover:bg-green-950/20">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
+                  </div>
+                  <span className="text-xs font-mono text-green-400 flex-shrink-0">Live</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
 
         <div className="space-y-3">
           {externalProjects.map((item) => (
