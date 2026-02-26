@@ -1,5 +1,4 @@
 import Nav from '@/components/Nav';
-import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -17,19 +16,6 @@ export const metadata: Metadata = {
   },
 };
 
-const allLab = [
-  {
-    slug: 'medicaid-fraud-analysis',
-    title: 'Medicaid Provider Spending Anomalies',
-    date: '2026'
-  },
-  {
-    slug: 'medicaid-fraud-phase2',
-    title: 'Medicaid Fraud Detection: Cross-Validation Analysis',
-    date: '2026'
-  },
-];
-
 export default function LabPage() {
   return (
     <>
@@ -42,23 +28,8 @@ export default function LabPage() {
           </p>
         </header>
 
-        <div className="space-y-3">
-          {allLab.map((item) => (
-            <Link
-              key={item.slug}
-              href={`/lab/${item.slug}`}
-              className="block group"
-            >
-              <div className="p-4 border border-[var(--border)] rounded-lg transition-all duration-200 hover:border-[var(--fg-muted)] hover:bg-[var(--bg-secondary)]">
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
-                    {item.title}
-                  </h3>
-                  <span className="text-xs font-mono text-[var(--fg-muted)] flex-shrink-0">{item.date}</span>
-                </div>
-              </div>
-            </Link>
-          ))}
+        <div className="py-12 text-center">
+          <p className="text-[var(--fg-muted)] text-sm">Nothing here yet.</p>
         </div>
       </main>
     </>

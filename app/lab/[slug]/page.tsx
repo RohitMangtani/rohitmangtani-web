@@ -1,21 +1,13 @@
 import Nav from '@/components/Nav';
 import Link from 'next/link';
-import { medicaidFraudData } from '@/data/lab/medicaid-fraud-analysis';
-import { medicaidFraudPhase2Data } from '@/data/lab/medicaid-fraud-phase2';
 import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-const articles: Record<string, ResearchData> = {
-  'medicaid-fraud-analysis': medicaidFraudData,
-  'medicaid-fraud-phase2': medicaidFraudPhase2Data,
-};
+const articles: Record<string, ResearchData> = {};
 
 export async function generateStaticParams() {
-  return [
-    { slug: 'medicaid-fraud-analysis' },
-    { slug: 'medicaid-fraud-phase2' },
-  ];
+  return [];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

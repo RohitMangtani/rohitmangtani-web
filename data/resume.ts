@@ -25,7 +25,7 @@ export interface ResumeData {
   projects: {
     name: string;
     bullets: string[];
-  }[];
+  }[]; // kept in type for compatibility
   leadership: {
     org: string;
     location: string;
@@ -109,24 +109,7 @@ export const resumeData: ResumeData = {
     },
   ],
 
-  projects: [
-    {
-      name: 'RMGTNI — Financial Intelligence & Research Platform',
-      bullets: [
-        'Built a full-stack market research platform (Next.js, TypeScript, Python) with 79 internal modules spanning signal detection, regime classification, event-driven analysis, and automated backtesting',
-        'Engineered a real-time signal pipeline integrating yfinance, FRED, Finnhub, and Polygon data with event detectors for Fed decisions, earnings, VIX regime shifts, yield curve inversions, and commodity moves',
-        'Designed and implemented a scenario-first trading intelligence architecture with regime-conditional scoring, signal decay tracking, out-of-sample validation, and honest-mode invalidation triggers',
-        'Published 12+ quantitative research articles including multi-asset correlation analysis (364 days of price data), market persistence studies (736 days, $130B volume), and macro liquidity signal dashboards',
-      ],
-    },
-    {
-      name: 'Medicaid Provider Fraud Detection',
-      bullets: [
-        'Built a two-phase anomaly detection system identifying statistical outliers in Medicaid provider spending patterns across billing categories and geographic regions',
-        'Applied cross-validation techniques in Phase 2 to reduce false positive rates and isolate high-confidence fraud indicators from legitimate variance',
-      ],
-    },
-  ],
+  projects: [],
 
   leadership: [
     {

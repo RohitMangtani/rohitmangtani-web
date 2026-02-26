@@ -20,14 +20,21 @@ export default function ContactPage() {
 
         <div className="space-y-8 animate-fade-in-delay-1">
           <div>
-            <h2 className="text-sm uppercase tracking-wider text-[var(--fg-muted)] mb-2">Twitter</h2>
+            <h2 className="text-sm uppercase tracking-wider text-[var(--fg-muted)] mb-2">Email</h2>
             <a
-              href="https://twitter.com/rmgtni"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:mangtani.rohit20@gmail.com"
               className="text-xl font-medium hover:opacity-70 transition-all duration-200 inline-block"
             >
-              @rmgtni
+              mangtani.rohit20@gmail.com
+            </a>
+          </div>
+          <div>
+            <h2 className="text-sm uppercase tracking-wider text-[var(--fg-muted)] mb-2">Phone</h2>
+            <a
+              href="tel:6033050320"
+              className="text-xl font-medium hover:opacity-70 transition-all duration-200 inline-block"
+            >
+              603.305.0320
             </a>
           </div>
         </div>
