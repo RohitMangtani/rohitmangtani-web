@@ -19,11 +19,6 @@ export const metadata: Metadata = {
 
 const allLab = [
   {
-    slug: 'factory-briefing',
-    title: 'The Factory: AI Company Infrastructure',
-    date: '2026'
-  },
-  {
     slug: 'medicaid-fraud-analysis',
     title: 'Medicaid Provider Spending Anomalies',
     date: '2026'

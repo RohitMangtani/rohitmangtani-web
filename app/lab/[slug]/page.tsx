@@ -1,6 +1,5 @@
 import Nav from '@/components/Nav';
 import Link from 'next/link';
-import { factoryBriefingData } from '@/data/lab/factory-briefing';
 import { medicaidFraudData } from '@/data/lab/medicaid-fraud-analysis';
 import { medicaidFraudPhase2Data } from '@/data/lab/medicaid-fraud-phase2';
 import { ResearchData } from '@/types/research';
@@ -8,14 +7,12 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 const articles: Record<string, ResearchData> = {
-  'factory-briefing': factoryBriefingData,
   'medicaid-fraud-analysis': medicaidFraudData,
   'medicaid-fraud-phase2': medicaidFraudPhase2Data,
 };
 
 export async function generateStaticParams() {
   return [
-    { slug: 'factory-briefing' },
     { slug: 'medicaid-fraud-analysis' },
     { slug: 'medicaid-fraud-phase2' },
   ];

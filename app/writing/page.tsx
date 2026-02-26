@@ -29,24 +29,9 @@ const allWriting = [
     date: '2025',
   },
   {
-    slug: 'belief-escalation-in-coordination-systems',
-    title: 'Belief Escalation in Coordination Systems',
-    date: '2025',
-  },
-  {
-    slug: 'coordination-dominant-assets',
-    title: 'Coordination-Dominant Assets',
-    date: '2025',
-  },
-  {
     slug: 'honest-gambling',
     title: 'Preference for Legible Risk',
     date: '2025',
-  },
-  {
-    slug: 'prediction-market-contrarian-signals',
-    title: 'Prediction Market Contrarian Signals',
-    date: '2026',
   },
 ];
 

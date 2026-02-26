@@ -3,9 +3,6 @@ import { ThesisTemplate } from '@/components/theses/ThesisTemplate';
 import { thePositiveLoopData } from '@/data/research/the-positive-loop';
 import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
-import { beliefEscalationInCoordinationSystemsData } from '@/data/theses/belief-escalation-in-coordination-systems';
-import { coordinationDominantAssetsData } from '@/data/theses/coordination-dominant-assets';
-import { predictionMarketContrarianSignalsData } from '@/data/theses/prediction-market-contrarian-signals';
 import type { ResearchData } from '@/types/research';
 import type { ThesisArticleData } from '@/types/theses';
 import type { Metadata } from 'next';
@@ -19,9 +16,6 @@ const articles: Record<string, ArticleEntry> = {
   'the-positive-loop': { type: 'research', data: thePositiveLoopData },
   'honest-gambling': { type: 'research', data: honestGamblingData },
   'the-gameable-society': { type: 'thesis', data: theGameableSocietyData },
-  'belief-escalation-in-coordination-systems': { type: 'thesis', data: beliefEscalationInCoordinationSystemsData },
-  'coordination-dominant-assets': { type: 'thesis', data: coordinationDominantAssetsData },
-  'prediction-market-contrarian-signals': { type: 'thesis', data: predictionMarketContrarianSignalsData },
 };
 
 export async function generateStaticParams() {
