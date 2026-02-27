@@ -1,9 +1,9 @@
 import type { ResearchData } from '@/types/research';
 
-export const theContextProblemData: ResearchData = {
-  slug: 'the-context-problem',
+export const theFutureOfPmData: ResearchData = {
+  slug: 'the-future-of-pm',
   date: '2026',
-  title: 'The Context Problem',
+  title: 'The Future of PM',
   subtitle: 'Why the future of project management is a terminal, a map, and a swarm of agents that ping you when they are lost',
 
   onRamp: {
