@@ -71,6 +71,16 @@ Specific refinements made during editing sessions. Each one sharpens future outp
 - **Removed version badges**: v2.0 badges removed from article headers. Internal detail, not reader-facing.
 - **keyNumbers stat boxes removed**: Colored stat grids look cheap and AI-generated. Removed from all templates.
 
+### Session: Feb 27, 2026 - The Context Problem (new article)
+- **New article**: "The Context Problem" on the future of PM with agent swarms. Research category.
+- **Voice calibration**: Article uses the observation-layering structure from Human Yield and Positive Loop. Opens with "this is already happening" energy, not predictions.
+- **Black box framing**: "Black box, my design and thoughts, output" is a direct Rohit phrasing. Used as the anchor for the terminal layer.
+- **Concrete references**: Carlini's 16 parallel Claudes, Zach Wills' 20-agent swarm, Gartner 40% projection. No hedging on these.
+- **Find My iPhone metaphor**: Agent management as device tracking. Green = driving, red = lost. Road metaphor for the workflow.
+- **Crawler reference**: Referenced as proof of concept for the map layer. Links to live deployment.
+- **Three SVG diagrams**: Created matching light theme. Three Layers stack, Find My Agents interface, Full PM Workflow.
+- **Effort connection**: Ties back to Human Yield effort nuance. "The effort matters, but only when pointed at this."
+
 ## Reference Phrasings
 
 Real lines from Rohit that capture the voice. Use these as tuning forks, not templates.
