@@ -50,6 +50,33 @@ Reads like someone who watched these things happen and is connecting what they s
 - The `whatItDoesNot` field stays in data for internal reference but is not rendered on the site
 - No version badges, version numbers, or internal metadata anywhere reader-facing
 
+### Article Production Pipeline
+Every article goes through these phases in order. Do not skip steps.
+
+**Phase 1: Research**
+Before writing a single word, research the topic. This is not optional.
+- Web search for real data points: statistics, projections, named people, specific events, published findings
+- Find 3-5 concrete references that are nameable (a person, a company, a study, a number). "Carlini's 16 parallel Claudes" is a concrete reference. "Studies show" is not.
+- Look for real-world systems or experiences that map to the argument (Roblox AFK farming, Find My iPhone, WiFi signal). These become the metaphors.
+- Check what Rohit's existing articles already cover. Cross-reference, do not repeat.
+- Search for counterarguments or nuance. Rohit's voice is not binary. If something has a ceiling or a scale, find it.
+
+**Phase 2: Structure**
+Structure emerges from what the research found, not from a template.
+- The opening section should establish that the thing is already happening. Present tense. Not predictions.
+- Each subsequent section should build on the previous one. Reader should not be able to skip sections.
+- The structural pattern is: observation → mechanism → system → implication. But the sections are named by what they contain, not by this framework.
+- Diagrams go at natural break points where visual information carries what text cannot. Not decorative.
+- The closing section connects back to the broader body of work (Human Yield, Positive Loop, etc.) and lands with conviction.
+
+**Phase 3: Quality Check**
+Before considering the article done, verify:
+- Every claim has a concrete reference or is grounded in an observable reality. No "many experts believe" energy.
+- Every section adds information the reader did not have before. If a section only restates what previous sections said in different words, cut it.
+- The article teaches something. A reader who finishes should know specific things they did not know before (names, numbers, systems, patterns).
+- Metaphors are from real systems the reader already understands. Not invented analogies.
+- Cross-references to other articles are natural, not forced. Only reference another piece if it genuinely extends the point.
+
 ### Gold Standard: The Future of PM
 The article `data/research/the-future-of-pm.ts` is the benchmark for all future articles. Study it before writing anything new. What makes it work:
 - **Opens with "this is already happening"** not predictions or theory. Immediate credibility.

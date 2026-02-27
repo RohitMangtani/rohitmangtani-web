@@ -32,6 +32,47 @@ This file is the living reference for Rohit's writing voice on rohitmangtani.com
 - AI: "Let me break this down..." "There are several factors to consider..."
 - Hedged: "This might be..." "One could argue..." "It remains to be seen..."
 
+## Research Methodology
+
+How data points and references get into articles. This is what makes the writing informative, not just well-voiced.
+
+### What counts as a valid data point
+- **Named and specific**: "Carlini ran 16 parallel Claudes to build a C compiler" not "researchers have used multiple AI agents." A name, a number, a specific event.
+- **Verifiable**: The reader could search for it and find it. Real people, real companies, real publications, real statistics.
+- **Current**: Prefer data from the last 12 months. Older references only if they are foundational (Frey & Osborne 2017 on automation displacement).
+- **From the source**: Gartner projections, Anthropic engineering posts, firsthand accounts. Not "according to a Medium article that summarized a report."
+
+### What does NOT count
+- "Studies show" or "experts agree" without naming the study or expert
+- Round numbers that feel invented ("AI will replace 50% of jobs")
+- Projections without attribution
+- Secondhand summaries of summaries
+
+### How to find data points
+1. **Web search** the topic with specific terms + year. "AI agent swarm management 2026" not "future of AI."
+2. **Fetch primary sources**. If a search result references a study or blog post, go read the original.
+3. **Look for firsthand accounts**. People who actually did the thing (Zach Wills managing 20 agents for a week) are worth more than analysts commenting on it.
+4. **Find the number**. Every good article has at least 2-3 specific numbers. Gartner's 40%, Carlini's 16 agents, "cognitive load peaks after 3 hours." Numbers ground the argument.
+5. **Check Rohit's existing articles** for related claims. Build on them, do not contradict without reason.
+
+### How references get woven in
+References are not footnotes. They are part of the argument. The pattern:
+- **Name the person or entity**: "When Anthropic ran 16 parallel agents..."
+- **Describe what happened**: "...the biggest challenge was not the code. It was keeping agents from colliding."
+- **Extract the insight**: "They solved it with file locks, the digital equivalent of putting a sticky note on a task."
+- **Connect to the argument**: "This is already documented in real swarm operations."
+
+Never: "According to a study by Anthropic (2026)..." That is academic citation format. This is observation format.
+
+### How sections self-organize
+Sections are not planned from a template. They emerge from what the research found.
+1. Research produces a pile of data points, references, and metaphors.
+2. Group them by what they prove. Each group becomes a section.
+3. Order the sections so each one builds on the last. The reader should not be able to rearrange them.
+4. The opening section uses the most immediately credible data points (things already happening).
+5. The closing section synthesizes and connects to the broader body of work.
+6. If a section only restates previous sections in different words, it does not exist yet. Cut it or fill it with new substance.
+
 ## Content Principles
 
 These are nuanced positions Rohit holds. Not simple takes. Get these right.
