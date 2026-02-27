@@ -44,6 +44,12 @@ const externalProjects = [
     description: 'Fully automated YouTube channel. AI-generated Hindu stories, narration, and visuals end to end.',
     date: '2026',
   },
+  {
+    title: 'Stotram',
+    href: 'https://stotram.vercel.app',
+    description: 'Sacred hymns of India. Read, watch, and download every major Hindu prayer in English and Hindi.',
+    date: '2026',
+  },
 ];
 
 export default function LabPage() {
