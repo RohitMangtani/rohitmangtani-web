@@ -28,6 +28,10 @@ interface HymnDef {
   titleEn: string;
   titleHi: string;
   slug: string; // matches output dir: ch{NN}_{slug}
+  descriptionEn?: string;  // rich per-chapter description (from pipeline metadata)
+  descriptionHi?: string;
+  hymnTagsEn?: string[];   // chapter-specific tags
+  hymnTagsHi?: string[];
 }
 
 interface DeityDef {
@@ -53,13 +57,69 @@ export const DEITIES: DeityDef[] = [
     tagsHi: ['गणेश', 'गणपति', 'विघ्नहर्ता', 'गणेश स्तोत्र', 'विनायक'],
     generated: { en: true, hi: false },
     hymns: [
-      { titleEn: 'Vakratunda Mahakaya — The Great Invocation', titleHi: 'वक्रतुण्ड महाकाय — महान आवाहन', slug: 'vakratunda_mahakaya' },
-      { titleEn: 'Ganesh Atharvashirsha — The Vedic Hymn', titleHi: 'गणेश अथर्वशीर्ष — वैदिक स्तोत्र', slug: 'ganesh_atharvashirsha' },
-      { titleEn: 'Sankat Nashan Ganesh Stotra — Destroyer of Difficulties', titleHi: 'संकट नाशन गणेश स्तोत्र — कठिनाइयों का नाश', slug: 'sankat_nashan_ganesh_stotra' },
-      { titleEn: 'Ganesh Chalisa — Forty Verses of Devotion', titleHi: 'गणेश चालीसा — भक्ति के चालीस छंद', slug: 'ganesh_chalisa' },
-      { titleEn: 'Jai Ganesh Deva — The Beloved Aarti', titleHi: 'जय गणेश देवा — प्रिय आरती', slug: 'jai_ganesh_deva' },
-      { titleEn: 'Siddhi Vinayak Stotram — Lord of Success', titleHi: 'सिद्धि विनायक स्तोत्रम् — सफलता के देवता', slug: 'siddhi_vinayak_stotram' },
-      { titleEn: 'Ganesha Ashtakam — Eight Verses of Praise', titleHi: 'गणेश अष्टकम् — आठ स्तुति छंद', slug: 'ganesha_ashtakam' },
+      {
+        titleEn: 'Vakratunda Mahakaya — The Great Invocation', titleHi: 'वक्रतुण्ड महाकाय — महान आवाहन', slug: 'vakratunda_mahakaya',
+        descriptionEn: `Welcome to Part 1 of our 7-part series exploring the sacred hymns of Lord Ganesha! In this opening video, we dive deep into the most beloved and widely recited Ganesha invocation: "Vakratunda Mahakaya Suryakoti Samaprabha." This powerful mantra is traditionally chanted at the beginning of every Hindu ritual, prayer, and auspicious occasion to remove obstacles and invoke divine blessings.
+
+Join us as we break down each Sanskrit word of this great invocation: Vakratunda (the curved trunk that removes obstacles), Mahakaya (the magnificent large body), Suryakoti (radiance equal to ten million suns), and Nirvighna (the remover of all impediments). Whether you're new to Hindu mantras or deepening your spiritual practice, this detailed explanation will help you understand the profound meaning behind these sacred words and their significance in Ganesha worship. Perfect for daily recitation and meditation.
+
+🕉️ Part of the Sacred Hymns of Ganesha series.
+🙏 Subscribe for more Hindu hymns and mythology narrated for sleep.`,
+        hymnTagsEn: ['Vakratunda Mahakaya', 'Suryakoti Samaprabha', 'Ganesha invocation mantra', 'Hindu ritual prayers', 'Sanskrit mantra meaning', 'obstacle remover prayer'],
+      },
+      {
+        titleEn: 'Ganesh Atharvashirsha — The Vedic Hymn', titleHi: 'गणेश अथर्वशीर्ष — वैदिक स्तोत्र', slug: 'ganesh_atharvashirsha',
+        descriptionEn: `Welcome to Part 2 of our 7-part sacred series exploring the divine hymns of Lord Ganesha! In this episode, we delve deep into the profound "Ganesh Atharvashirsha" - one of the most powerful and philosophically rich Vedic hymns dedicated to Ganapati from the Atharva Veda Upanishads.
+
+This sacred Upanishadic text reveals Ganesha not merely as the beloved remover of obstacles, but as the supreme reality itself - Brahman. The hymn's most profound declaration "Tvam eva pratyaksham tattvam asi" (You alone are the visible truth/reality) establishes Ganesha as the ultimate cosmic principle. We'll explore the deep Vedantic philosophy embedded in this ancient text, understanding how it presents Ganapati as both the manifest and unmanifest divine consciousness, bridging the gap between devotional practice and absolute spiritual realization.
+
+🕉️ Part of the Sacred Hymns of Ganesha series.
+🙏 Subscribe for more Hindu hymns and mythology narrated for sleep.`,
+        hymnTagsEn: ['Ganapati Atharvashirsha Upanishad', 'Tvam eva pratyaksham tattvam', 'Atharva Veda hymns', 'Ganesha as Brahman', 'Vedantic philosophy Ganesha', 'Atharvashirsha meaning'],
+      },
+      {
+        titleEn: 'Sankat Nashan Ganesh Stotra — Destroyer of Difficulties', titleHi: 'संकट नाशन गणेश स्तोत्र — कठिनाइयों का नाश', slug: 'sankat_nashan_ganesh_stotra',
+        descriptionEn: `Welcome to Part 3 of our 7-part series exploring the sacred hymns of Lord Ganesha! In this episode, we dive deep into the powerful "Sankat Nashan Ganesh Stotra" from the ancient Narada Purana - a divine prayer specifically designed to destroy difficulties and remove all obstacles from your path. This stotra is one of the most potent invocations to Lord Ganesha for those facing challenges in life, career, relationships, or spiritual practice.
+
+Join us as we explore each verse of this sacred hymn with detailed explanations of how different aspects of Lord Ganesha's divine power work to eliminate specific types of obstacles. From financial troubles to health issues, from family conflicts to career blockages - each verse addresses different categories of difficulties that devotees commonly face. Learn the proper pronunciation, understand the deeper meaning, and discover how this ancient wisdom from the Narada Purana can transform your life by invoking Ganesha's role as the ultimate remover of obstacles (Vighnaharta).
+
+🕉️ Part of the Sacred Hymns of Ganesha series.
+🙏 Subscribe for more Hindu hymns and mythology narrated for sleep.`,
+        hymnTagsEn: ['Sankat Nashan Ganesh Stotra', 'Narada Purana Ganesha', 'obstacle removal prayer', 'Vighnaharta stotra', 'Ganesh mantra for difficulties', 'Hindu devotional stotra'],
+      },
+      {
+        titleEn: 'Ganesh Chalisa — Forty Verses of Devotion', titleHi: 'गणेश चालीसा — भक्ति के चालीस छंद', slug: 'ganesh_chalisa',
+        descriptionEn: `Welcome to Part 4 of our 7-part series exploring the sacred hymns of Lord Ganesha! In this video, we dive deep into the beloved Ganesh Chalisa - a powerful devotional hymn consisting of 40 verses that beautifully narrate the divine story of Ganesha's birth, his magnificent form, extraordinary powers, and the countless blessings he bestows upon devotees. We'll explore key verses of this Hindi poetry, examining the rich devotional language and spiritual significance embedded in each line.
+
+This comprehensive guide takes you through the enchanting tale of Ganesha's miraculous birth from Mother Parvati's sandalwood paste, explaining how this beloved elephant-headed deity came to be the remover of obstacles and the lord of new beginnings. Whether you're learning the Ganesh Chalisa for the first time or deepening your understanding of its profound meanings, this video offers verse-by-verse explanations that will enhance your devotional practice and connection with Lord Ganesha. Perfect for devotees, students of Hindu scriptures, and anyone interested in the beautiful tradition of Ganesha worship.
+
+🕉️ Part of the Sacred Hymns of Ganesha series.
+🙏 Subscribe for more Hindu hymns and mythology narrated for sleep.`,
+        hymnTagsEn: ['ganesh chalisa lyrics', '40 verses ganesha', 'parvati sandalwood story', 'hindi devotional poetry', 'ganesha birth story', 'chalisa meaning explained'],
+      },
+      {
+        titleEn: 'Jai Ganesh Deva — The Beloved Aarti', titleHi: 'जय गणेश देवा — प्रिय आरती', slug: 'jai_ganesh_deva',
+        descriptionEn: `Welcome to Part 5 of our 7-part sacred series exploring the divine hymns of Lord Ganesha! In this episode, we dive deep into "Jai Ganesh Deva" - the most beloved and widely sung Ganesha Aarti that resonates in temples, homes, and hearts across India. This timeless devotional song beautifully captures the essence of the elephant-headed deity through its melodious verses.
+
+Join us as we explore each meaningful stanza of this cherished aarti, understanding the profound descriptions of Ganesha's divine form, his love for modak sweets, his sacred relationship with mother Parvati and father Shiva, and the symbolism of his faithful mouse vehicle Mushak. Whether you're seeking spiritual understanding or simply want to connect with this ancient tradition, this detailed explanation will enrich your devotional practice and deepen your connection with Vighnaharta Ganesha.
+
+🕉️ Part of the Sacred Hymns of Ganesha series.
+🙏 Subscribe for more Hindu hymns and mythology narrated for sleep.`,
+        hymnTagsEn: ['jai ganesh deva aarti', 'ganesh aarti lyrics meaning', 'modak ganesha favorite sweet', 'parvati shiva ganesha family', 'mushak ganesha mouse vehicle', 'temple aarti ganesha'],
+      },
+      {
+        titleEn: 'Siddhi Vinayak Stotram — Lord of Success', titleHi: 'सिद्धि विनायक स्तोत्रम् — सफलता के देवता', slug: 'siddhi_vinayak_stotram',
+        descriptionEn: `Welcome to Part 6 of our 7-part series exploring sacred Ganesha hymns! In this episode, we delve into the powerful "Siddhi Vinayak Stotram" from the ancient Ganesh Purana, which honors Lord Ganesha as Siddhi Vinayak - the divine bestower of success and supernatural powers. This beautiful stotra invokes Ganesha's blessings for achieving both material success and spiritual siddhis (mystical powers).
+
+We'll explore the profound concept of the eight classical siddhis in Hindu philosophy: Anima (the power to become minute), Mahima (expanding to cosmic size), Garima (becoming infinitely heavy), Laghima (becoming weightless), Prapti (obtaining anything desired), Prakamya (fulfilling wishes), Ishitva (lordship over creation), and Vashitva (control over natural forces). Discover how devotees invoke Lord Ganesha's grace through this sacred hymn to overcome obstacles and attain both worldly achievements and divine realizations. Perfect for daily recitation, meditation, and understanding the deeper mysteries of Ganesha worship.
+
+🕉️ Part of the Sacred Hymns of Ganesha series.
+🙏 Subscribe for more Hindu hymns and mythology narrated for sleep.`,
+        hymnTagsEn: ['Siddhi Vinayak Stotram', 'eight siddhis hinduism', 'Ganesh Purana stotram', 'supernatural powers hinduism', 'Siddhi Vinayak mantra', 'mystical powers ganesha'],
+      },
+      {
+        titleEn: 'Ganesha Ashtakam — Eight Verses of Praise', titleHi: 'गणेश अष्टकम् — आठ स्तुति छंद', slug: 'ganesha_ashtakam',
+      },
     ],
   },
   {
@@ -264,6 +324,10 @@ export function computeSchedule(): ScheduleEntry[] {
         const deityTags = isHi ? deity.tagsHi : deity.tagsEn;
         const basePath = `${OUTPUT_BASE}/${deity.id}/${lang}/ch${chPad}_${hymn.slug}`;
 
+        // Prefer rich per-chapter description/tags when available
+        const richDesc = isHi ? hymn.descriptionHi : hymn.descriptionEn;
+        const hymnTags = isHi ? hymn.hymnTagsHi : hymn.hymnTagsEn;
+
         entries.push({
           index: idx,
           date,
@@ -278,8 +342,8 @@ export function computeSchedule(): ScheduleEntry[] {
           time: isHi ? '8:00 PM IST' : '8:00 PM EST',
           playlist: isHi ? deity.playlistHi : deity.playlistEn,
           ytTitle: `${title} ${suffix}`,
-          description: buildDescription(isHi ? deity.nameHi : deity.nameEn, title, lang),
-          tags: [...baseTags, ...deityTags],
+          description: richDesc || buildDescription(isHi ? deity.nameHi : deity.nameEn, title, lang),
+          tags: [...baseTags, ...deityTags, ...(hymnTags || [])],
           videoPath: `${basePath}/video_final.mp4`,
           thumbnailPath: `${basePath}/thumbnail.jpg`,
           subtitlesPath: `${basePath}/subtitles_clean.srt`,
