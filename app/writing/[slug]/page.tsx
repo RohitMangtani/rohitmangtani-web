@@ -3,6 +3,7 @@ import { thePositiveLoopData } from '@/data/research/the-positive-loop';
 import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
 import { theHumanYieldData } from '@/data/research/the-human-yield';
+import { theContextProblemData } from '@/data/research/the-context-problem';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -11,6 +12,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'the-human-yield': { data: theHumanYieldData },
   'honest-gambling': { data: honestGamblingData },
   'the-gameable-society': { data: theGameableSocietyData },
+  'the-context-problem': { data: theContextProblemData },
 };
 
 export async function generateStaticParams() {
