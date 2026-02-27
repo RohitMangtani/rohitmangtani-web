@@ -71,15 +71,19 @@ Specific refinements made during editing sessions. Each one sharpens future outp
 - **Removed version badges**: v2.0 badges removed from article headers. Internal detail, not reader-facing.
 - **keyNumbers stat boxes removed**: Colored stat grids look cheap and AI-generated. Removed from all templates.
 
-### Session: Feb 27, 2026 - The Context Problem (new article)
-- **New article**: "The Context Problem" on the future of PM with agent swarms. Research category.
-- **Voice calibration**: Article uses the observation-layering structure from Human Yield and Positive Loop. Opens with "this is already happening" energy, not predictions.
-- **Black box framing**: "Black box, my design and thoughts, output" is a direct Rohit phrasing. Used as the anchor for the terminal layer.
-- **Concrete references**: Carlini's 16 parallel Claudes, Zach Wills' 20-agent swarm, Gartner 40% projection. No hedging on these.
-- **Find My iPhone metaphor**: Agent management as device tracking. Green = driving, red = lost. Road metaphor for the workflow.
-- **Crawler reference**: Referenced as proof of concept for the map layer. Links to live deployment.
-- **Three SVG diagrams**: Created matching light theme. Three Layers stack, Find My Agents interface, Full PM Workflow.
-- **Effort connection**: Ties back to Human Yield effort nuance. "The effort matters, but only when pointed at this."
+### Session: Feb 27, 2026 - The Future of PM (GOLD STANDARD)
+- **This article is the benchmark.** Rohit said "substance, graphs, style, designs, structure, readability, everything is PERFECT." All future articles should match this standard.
+- **Title reframe**: Started as "The Context Problem" but reframed to "The Future of PM" because the article is about the future of PM, not about context as an abstract problem. Name it what it is.
+- **Opening pattern that works**: "This is not a prediction. It is already the workflow." Immediate, present tense, no hedging. Credibility before argument.
+- **Diagram integration that works**: SVG diagrams embedded as `<figure>` + `<img>` in content HTML. Three diagrams, each at a natural break point. Not decorative. Each one carries information the text cannot. Find My Agents interface is the standout, iPhone-style list with green/red dots plus a project map view.
+- **Metaphor layering that works**: WiFi signal for context degradation. Find My iPhone for agent management. Road/drivers for workflow. Each metaphor grounded in something the reader already knows. Never abstract.
+- **Reference integration that works**: Carlini's 16 parallel Claudes, Zach Wills' 8 rules, Gartner 40% projection. Named, described, woven into the argument. Not dropped as footnotes or "studies show."
+- **Structural pattern that works**: observation → mechanism → system → implication. Each section builds. The conclusion ("That is project management now.") feels inevitable, not argued.
+- **Callout box rhythm that works**: Alternating between `border-l-2` blockquotes and `bg-[var(--bg-secondary)]` boxes. Breaks up density. Used for compression, not decoration.
+- **Cross-referencing that works**: Human Yield effort nuance, Positive Loop, Crawler. Referenced naturally as "The Human Yield identified..." not "As discussed in our previous research..."
+- **No version numbers anywhere**: Stripped from all footers, headers, badges. Internal metadata, not reader-facing.
+- **Black box framing**: "Black box, my design and thoughts, output" is a direct Rohit phrasing. Anchored the terminal layer concept.
+- **Effort connection**: Ties back to Human Yield. "The effort matters, but only when pointed at this." Consistent across the body of work.
 
 ## Reference Phrasings
 
@@ -97,3 +101,8 @@ Real lines from Rohit that capture the voice. Use these as tuning forks, not tem
 - "Do what you feel is right and will make you happy, even if it's wrong, it's not ruining anything"
 - "My ability to find specific people and filter bs also makes me more bullish on what I found"
 - "Greatest game ever"
+- "The biggest problem is context. You need a context buddy to help manage your projects"
+- "Like imagine Find My iPhone but each instance is your device"
+- "One simple interface. And they ping you when they need direction"
+- "Black box, my design and thoughts, output" (anchor phrasing, used in Future of PM)
+- "100x efficiency of projects that I couldn't do in the past 100000x the speed and sourcing every aspect"
