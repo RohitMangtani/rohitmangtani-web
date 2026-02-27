@@ -53,8 +53,8 @@ export const theHumanYieldData: ResearchData = {
         <ul>
           <li><strong class="text-[var(--fg)]">Content farming:</strong> You do not create meaningful content. You exist inside a system that produces volume. Your presence fills a quota. The system monetizes the aggregate.</li>
           <li><strong class="text-[var(--fg)]">AI supervision:</strong> You do not do the work. AI does the work. You sit there and approve it, flag errors, provide the human stamp. Your judgment is minimal. Your presence is required.</li>
-          <li><strong class="text-[var(--fg)]">Engagement farming:</strong> You join a community, a DAO, a platform. You click, react, show up. The system needs human bodies in seats to generate metrics. Your activity does not need to be meaningful. It needs to be measurable.</li>
-          <li><strong class="text-[var(--fg)]">Participation mining:</strong> You join early, stay active, qualify for airdrops or rewards. The economic value is not in what you do, it is in the fact that you showed up and stayed.</li>
+          <li><strong class="text-[var(--fg)]">Engagement farming:</strong> You join a community, an online collective, a platform. You click, react, show up. The system needs human bodies in seats to generate metrics. Your activity does not need to be meaningful. It needs to be measurable.</li>
+          <li><strong class="text-[var(--fg)]">Participation mining:</strong> You join early, stay active, qualify for rewards or incentives. The economic value is not in what you do, it is in the fact that you showed up and stayed.</li>
         </ul>
 
         <p>In every case, the pattern is the same: <em>a system that needs human inputs but not human effort.</em> The human is not performing labor. The human is providing something else: presence, attention, a warm body in the system, and getting compensated for it.</p>
@@ -127,7 +127,7 @@ export const theHumanYieldData: ResearchData = {
         <p>The resistance layer takes multiple forms:</p>
 
         <ul>
-          <li><strong class="text-[var(--fg)]">Community assets:</strong> Groups creating their own economic instruments: tokens, communities, mutual aid structures, all operating outside the traditional system. The value is not financial returns. The value is belonging to something that does not require you to be economically productive in the traditional sense.</li>
+          <li><strong class="text-[var(--fg)]">Community assets:</strong> Groups creating their own economic instruments: community instruments, mutual aid structures, shared resources, all operating outside the traditional system. The value is not financial returns. The value is belonging to something that does not require you to be economically productive in the traditional sense.</li>
           <li><strong class="text-[var(--fg)]">Decentralized identity:</strong> Platforms where participation itself generates status, not achievement. Being present, contributing to the culture, maintaining activity. These become the credentials. The system values consistency over capability.</li>
           <li><strong class="text-[var(--fg)]">Content as labor:</strong> Creating content about the opt-out itself. Documenting the experience. Building audience around the rejection of traditional work. The irony is obvious: the act of refusing to participate in the economy becomes, itself, an economic activity. The rejection is the content. The content is the product.</li>
         </ul>

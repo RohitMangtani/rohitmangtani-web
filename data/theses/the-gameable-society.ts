@@ -266,7 +266,7 @@ export const theGameableSocietyData: ThesisArticleData = {
       `,
     },
   ],
-  footerText: 'RMGTNI | 2025',
+  footerText: 'Rohit Mangtani | 2025',
 };
 
 export default theGameableSocietyData;

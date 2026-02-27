@@ -298,5 +298,5 @@ Product ships</code></pre>
     { title: 'n8n AI Starter Kit', href: 'https://github.com/n8n-io/self-hosted-ai-starter-kit' },
   ],
 
-  footerVersion: 'Internal briefing document. Not for public distribution.\n\nRMGTNI Lab • January 2026',
+  footerVersion: 'Internal briefing document. Not for public distribution.\n\nRohit Mangtani • January 2026',
 };

@@ -102,7 +102,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The gaming metaphor matters because it explains the adoption curve. Games spread through word of mouth, through watching other people play, through the feeling of "I could do that." The reason AI adoption will be faster than any technology in history is that the barrier to entry is not learning a new skill. It is typing a sentence.</p>
 
-        <p>This connects to the coordination dynamics we study in Belief-Driven Markets and <a href="/writing/coordination-dominant-assets" class="underline hover:opacity-60">Coordination-Dominant Assets</a>: the most powerful adoption curves happen when the cost of participation drops to near zero and the perceived upside is visible. Meme coins proved this for speculative coordination. AI is proving it for productive coordination.</p>
+        <p>This connects to the coordination dynamics we study across our research: the most powerful adoption curves happen when the cost of participation drops to near zero and the perceived upside is visible. AI is proving this for productive coordination at a scale we have never seen.</p>
       `,
     },
     {
@@ -222,7 +222,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The analogy is early internet. In 1995, most people thought the internet was for email and maybe some research. The idea that it would restructure commerce, media, communication, and culture was not on the radar for 99% of the population. We are in the equivalent of 1995 right now, except the adoption curve is compressed from decades to years.</p>
 
-        <p>The under-allocation we documented in Observed Multipliers (extreme outcomes clustering in compressed windows) is about to happen in productivity, not just financial markets. The same structural conditions that produced 100x price moves (low barriers, network effects, compressed time) are now producing 100x productivity moves. But because productivity gains are less visible than price gains, the market has not priced this in.</p>
+        <p>The same structural conditions that have historically produced outsized outcomes — low barriers, network effects, compressed time — are now producing outsized productivity gains. But because productivity gains are less visible than price movements, the market has not priced this in.</p>
       `,
     },
     {
@@ -234,7 +234,7 @@ export const thePositiveLoopData: ResearchData = {
         <div class="space-y-4 my-6">
           <div class="p-4 border border-[var(--border)] rounded-lg">
             <p class="text-sm font-semibold text-[var(--fg)] mb-1">Research → Publication → Live in Hours</p>
-            <p class="text-xs text-[var(--fg-muted)]">Pull real-time market data from Yahoo Finance, CoinGecko, FRED. Generate interactive charts. Write analysis with honest scoring of predictions. Publish to a live website with OpenGraph images for social sharing. What used to require a research team and a publishing pipeline is now a conversation.</p>
+            <p class="text-xs text-[var(--fg-muted)]">Pull real-time data from Yahoo Finance, FRED, and public APIs. Generate interactive charts. Write analysis with honest scoring of predictions. Publish to a live website with OpenGraph images for social sharing. What used to require a research team and a publishing pipeline is now a conversation.</p>
           </div>
           <div class="p-4 border border-[var(--border)] rounded-lg">
             <p class="text-sm font-semibold text-[var(--fg)] mb-1">Idea → Working Product → Deployed</p>
@@ -278,7 +278,7 @@ export const thePositiveLoopData: ResearchData = {
       id: 'what-this-means',
       title: 'What This Means',
       content: `
-        <p>If this analysis is correct, we are at the beginning of a structural shift in how humans spend their attention. Not a gradual shift. An abrupt one, compressed by the same dynamics that compressed crypto adoption cycles, information propagation, and cultural change.</p>
+        <p>If this analysis is correct, we are at the beginning of a structural shift in how humans spend their attention. Not a gradual shift. An abrupt one, compressed by the same dynamics that compressed information propagation and cultural change.</p>
 
         <div class="space-y-4 my-6">
           <div class="p-4 border border-[var(--border)] rounded-lg">
@@ -295,7 +295,7 @@ export const thePositiveLoopData: ResearchData = {
           </div>
         </div>
 
-        <p>The pattern across our research, from speculation pressure to belief-driven markets and <a href="/writing/the-gameable-society" class="underline hover:opacity-60">gameable society dynamics</a> has consistently documented how technology reshapes behavior faster than institutions can adapt. AI is the most extreme instance of this pattern. It is not making existing processes faster. It is making previously impossible things trivial. And the people who internalize this earliest will compound advantages that look, in hindsight, like the early internet, early crypto, and early social media adoption curves combined.</p>
+        <p>The pattern across our research — from <a href="/writing/the-gameable-society" class="underline hover:opacity-60">gameable society dynamics</a> to behavioral economics — has consistently documented how technology reshapes behavior faster than institutions can adapt. AI is the most extreme instance of this pattern. It is not making existing processes faster. It is making previously impossible things trivial. And the people who internalize this earliest will compound advantages that look, in hindsight, like the early internet and early social media adoption curves combined.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="text-sm text-[var(--fg)]">The doom scroll turned us into dopamine-driven animals. The positive loop turns us into dopamine-driven builders. Same wiring. Same addiction. Different output. The infrastructure changed. The humans did not have to.</p>
@@ -305,12 +305,8 @@ export const thePositiveLoopData: ResearchData = {
   ],
 
   references: [
-    { text: 'RMGTNI (2025). <em>The Gameable Society</em>.', url: '/theses/the-gameable-society' },
-    { text: 'RMGTNI (2025). <em>Why People Choose Honest Gambling</em>.', url: '/research/honest-gambling' },
-    { text: 'RMGTNI (2025). <em>Meme Coins Are a Real Asset Class</em>.', url: '/research/belief-driven-markets' },
-    { text: 'RMGTNI (2025). <em>Observed Multipliers and Speculative Regimes</em>.', url: '/research/observed-multipliers-and-speculative-regimes' },
-    { text: 'RMGTNI (2025). <em>Coordination-Dominant Assets</em>.', url: '/theses/coordination-dominant-assets' },
-    { text: 'RMGTNI (2025). <em>Retail Speculation Pressure Index</em>.', url: '/research/dei' },
+    { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
+    { text: 'Mangtani, R. (2025). <em>Preference for Legible Risk</em>.', url: '/writing/honest-gambling' },
     { text: 'Harris, T. (2016). "How Technology is Hijacking Your Mind."' },
     { text: 'Alter, A. (2017). <em>Irresistible: The Rise of Addictive Technology</em>.' },
     { text: 'Huberman, A. (2023). "Dopamine, Motivation, and Drive." Stanford Neuroscience.' },
@@ -319,13 +315,12 @@ export const thePositiveLoopData: ResearchData = {
   dataAvailability: [
     'Behavioral observations from early AI adopter communities (2024-2026)',
     'Product development timelines compared across pre-AI and AI-assisted workflows',
-    'Cross-referenced with existing RMGTNI research on coordination dynamics and speculative behavior',
+    'Cross-referenced with existing research on coordination dynamics and behavioral economics',
   ],
 
   relatedWork: [
     { title: 'The Gameable Society', href: '/writing/the-gameable-society' },
     { title: 'Preference for Legible Risk', href: '/writing/honest-gambling' },
-    { title: 'Coordination-Dominant Assets', href: '/writing/coordination-dominant-assets' },
   ],
 
   footerVersion: 'Version 1.0 • February 2026 • Rohit Mangtani',
