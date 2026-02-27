@@ -29,7 +29,7 @@ const externalProjects = [
   {
     title: 'Crawler',
     href: 'https://trycrawler.com',
-    description: 'Paste a GitHub repo, get a visual project map. Flowcharts, layer breakdowns, and context blocks.',
+    description: 'Crawl any GitHub repo. Get flowcharts, layer breakdowns, and context blocks that explain how the project works.',
     date: '2026',
   },
   {
