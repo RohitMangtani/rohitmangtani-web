@@ -66,6 +66,10 @@ Specific refinements made during editing sessions. Each one sharpens future outp
 - **Honest Gambling "What This Is Not" section**: Entire section removed. Substance folded into closing.
 - **Meta-commentary killed**: "Abstract arguments are less convincing than concrete examples" removed.
 - **Footer disclaimers killed**: "This essay is descriptive, not prescriptive. It does not constitute an endorsement." removed.
+- **Capybara → AFK farming**: Replaced abstract capybara metaphor with Roblox AFK farming progression (manual → AFK → real money → bots outfarm you → human becomes a node). Maps the economic argument through a real experience.
+- **Proxy → Node**: Changed all "proxy" terminology to "node" with network metaphor. Node language aligns with crypto/decentralized thinking and is more intuitive. "A node does not need to process every transaction. It needs to be connected, live, and trusted."
+- **Removed version badges**: v2.0 badges removed from article headers. Internal detail, not reader-facing.
+- **keyNumbers stat boxes removed**: Colored stat grids look cheap and AI-generated. Removed from all templates.
 
 ## Reference Phrasings
 

@@ -35,20 +35,24 @@ export const theHumanYieldData: ResearchData = {
       `,
     },
     {
-      id: 'the-capybara-economy',
-      title: 'The Capybara Economy',
+      id: 'the-afk-economy',
+      title: 'The AFK Economy',
       content: `
-        <p>There is a genre of game that should not work. You open the app. You are a capybara. You sit there. That is the game.</p>
+        <p>The clearest version of this already played out on Roblox.</p>
 
-        <p>No fighting. No puzzles. No stat optimization. You sit in a hot spring, or a field, or a room, and the game rewards you for being present. Sometimes other capybaras show up. Sometimes things happen around you. Your contribution is existing.</p>
+        <p>First, people farmed manually. You grinded for hours, collected resources, earned in-game currency. Your effort was the input. Your time was the cost. The reward scaled with how much you were willing to sit there and do it.</p>
 
-        <p>These games have millions of players. They are not ironic. People genuinely find them satisfying. And the reason is not just psychological. It is economic in nature, even if nobody frames it that way yet.</p>
+        <p>Then AFK farming emerged. Players figured out they could earn while idle. Log in, position your character, walk away. The system kept generating value as long as you were technically present. Not playing. Just there.</p>
+
+        <p>Then Roblox started paying real money. Developers building on the platform could earn actual income. The game economy became a real economy. And that changed everything, because now the same farming that used to be a grind became something worth automating.</p>
+
+        <p>So bots showed up. Scripts that farm 24/7, no breaks, no sleep, no mistakes. They outfarm any human on every metric. Your manual effort cannot compete with something that never stops.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg-muted)]">Idle games are prototypes for an economic phase that has not fully arrived. They normalize the idea that presence, not effort, is the mechanism of participation. You do not need to perform. You need to be there. The system generates value from you being there and gives you a cut of it.</p>
+          <p class="text-sm text-[var(--fg-muted)]">This is the sequence that matters: manual labor → idle earning → automation → bots outperform you → your value shifts. You are no longer the farmer. You are not even the AFK farmer. The bots farm better than you ever could. What you become, if you become anything, is a human node. A verifier. An overseer. A warm body the system still needs for trust, for identity, for the fact that a person was in the loop.</p>
         </div>
 
-        <p>This is already taking shape in the real economy:</p>
+        <p>This is not a metaphor. It is a prototype for what is happening to labor broadly. The same sequence is playing out across the real economy:</p>
 
         <ul>
           <li><strong class="text-[var(--fg)]">Content farming:</strong> You do not create anything meaningful. You exist inside a system that produces volume. Your presence fills a quota. The system monetizes the aggregate.</li>
@@ -57,35 +61,35 @@ export const theHumanYieldData: ResearchData = {
           <li><strong class="text-[var(--fg)]">Participation mining:</strong> You show up early, stay active, qualify for rewards. The value is not what you do. It is the fact that you showed up and stayed.</li>
         </ul>
 
-        <p>Same pattern every time. A system that needs human inputs but not human effort. The person is not performing labor. They are providing something else: presence, attention, a body in the system. And getting compensated for it.</p>
+        <p>Same pattern every time. A system that needs human inputs but not human effort. The bots handle the farming. The person is not performing labor. They are providing something else: presence, verification, a human node in an automated network. And getting compensated for it.</p>
 
-        <p>That is the capybara economy. You sit in the hot spring. The game continues around you. You get paid for being there.</p>
+        <p>The farmer went AFK. Then the bots replaced the farmer entirely. What remains is the need for a human to have been there at all.</p>
       `,
     },
     {
-      id: 'proxy-labor',
-      title: 'Proxy Labor',
+      id: 'node-labor',
+      title: 'Node Labor',
       content: `
         <p>The old model worked like this. You have a skill. You apply it. You get paid for the output. The skill is the moat. The effort is the input. The output is the product.</p>
 
         <p>AI breaks this for a growing range of work. The skill is no longer the moat, because AI has the skill. The effort is no longer the input, because AI handles it. So what is left?</p>
 
-        <p>The human as a proxy.</p>
+        <p>The human as a node.</p>
 
         <div class="border-l-2 border-[var(--border)] pl-6 my-10">
-          <p class="leading-relaxed mb-4">Think about how proxies work in other domains. A proxy vote is cast on behalf of someone not present. A proxy server acts as an intermediary. In both cases, the proxy's value is not in what it can do. It is in its position.</p>
-          <p class="leading-relaxed mb-4">Proxy labor is the same thing. The human does not contribute skill. The human contributes position: a legal identity, a physical presence, an accountability structure that AI cannot provide yet.</p>
+          <p class="leading-relaxed mb-4">Think about how nodes work in a network. A node does not need to process every transaction. It does not need to be the fastest or the most capable. It needs to be connected, live, and trusted. Its value is not in what it does. It is in the fact that it exists in the network at all.</p>
+          <p class="leading-relaxed mb-4">Human node labor works the same way. The human does not contribute skill. The human contributes position: a legal identity, a physical presence, an accountability structure that AI cannot provide yet. You are a node in a system that still requires human verification to function.</p>
         </div>
 
         <p>This is already real:</p>
 
         <ul>
-          <li><strong class="text-[var(--fg)]">Regulatory proxies:</strong> AI writes the report. A human signs it. The value is the signature, not the analysis.</li>
-          <li><strong class="text-[var(--fg)]">Supervision proxies:</strong> AI drives the car, monitors the patient, manages the workflow. A human watches the dashboard. The value is being liable, not being skilled.</li>
-          <li><strong class="text-[var(--fg)]">Social proxies:</strong> AI generates the content. A human posts it. The value is their identity, their network, their face. Not their creative ability.</li>
+          <li><strong class="text-[var(--fg)]">Regulatory nodes:</strong> AI writes the report. A human signs it. The value is the signature, not the analysis.</li>
+          <li><strong class="text-[var(--fg)]">Supervision nodes:</strong> AI drives the car, monitors the patient, manages the workflow. A human watches the dashboard. The value is being liable, not being skilled.</li>
+          <li><strong class="text-[var(--fg)]">Social nodes:</strong> AI generates the content. A human posts it. The value is their identity, their network, their face. Not their creative ability.</li>
         </ul>
 
-        <p>In each case, the human is not performing the core function. They are performing the function of being human. That is the job. Existing within a system that still requires, legally, socially, practically, a human in the room.</p>
+        <p>In each case, the human is not performing the core function. They are performing the function of being human. That is the job. A verified node in a system that still requires, legally, socially, practically, a human in the loop.</p>
 
         <p>This is not a transition period before the "real future" kicks in. This is a new category of work with no historical precedent: work where the qualification is being a person.</p>
       `,
@@ -149,18 +153,18 @@ export const theHumanYieldData: ResearchData = {
           <p class="leading-relaxed mb-4">The floor does not need to be generous or comfortable. It just needs to keep the system stable. UBI in this context is not about making lives better. It is system maintenance. The displaced population is not being served. It is being managed. That is the honest framing.</p>
         </div>
 
-        <p>Above the floor, a new stratification takes shape. Positive Loop riders, people compounding with AI, operate in one economy. Proxy laborers, people lending their presence to AI systems, operate in another. Floor dwellers, people whose participation the economy does not need at all, occupy a third.</p>
+        <p>Above the floor, a new stratification takes shape. Positive Loop riders, people compounding with AI, operate in one economy. Human nodes, people lending their presence and verification to AI systems, operate in another. Floor dwellers, people whose participation the economy does not need at all, occupy a third.</p>
 
         <p>The dividing line is not intelligence or education. Effort still counts, but only up to the ceiling of what your orientation allows. Someone putting maximum effort into tasks AI does better will hit a wall. Someone putting the same effort into taste, judgment, direction, will compound past it. The question is not whether you work hard. It is whether what you work hard at still needs a human. Taste. Direction. Judgment. Social trust. Physical presence. Accountability. These are the residual human inputs. Everything else is getting absorbed.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="text-sm text-[var(--fg-muted)]">The spectator class from <a href="/writing/the-gameable-society" class="underline hover:opacity-60">The Gameable Society</a> was a preview of this. People who watched optimization content instead of optimizing. People fluent in the language of improvement but stuck on the other side of acting on it.</p>
-          <p class="text-sm text-[var(--fg-muted)] mt-3">That class is about to get much larger. Not because people choose to spectate. Because the system is choosing it for them. When AI does your job better than you can, watching becomes the rational use of your time. The spectator class was voluntary. The proxy class is not.</p>
+          <p class="text-sm text-[var(--fg-muted)] mt-3">That class is about to get much larger. Not because people choose to spectate. Because the system is choosing it for them. When AI does your job better than you can, watching becomes the rational use of your time. The spectator class was voluntary. The node class is not.</p>
         </div>
 
         <p>The game does not stop. It restructures. The players become supervisors. The supervisors become spectators. The spectators become background. Present, counted, compensated at the floor, but not needed.</p>
 
-        <p class="text-lg leading-relaxed text-[var(--fg)] font-medium mt-8">The capybara sits in the hot spring. The world moves around it. The game continues. It gets paid for being there.</p>
+        <p class="text-lg leading-relaxed text-[var(--fg)] font-medium mt-8">The farmer went AFK. The bots took over. The system kept running. And somewhere in the loop, a human node stays logged in. Not farming. Not building. Just present. Verified. Counted.</p>
 
         <p class="text-xl leading-relaxed text-[var(--fg)] font-medium mt-4">That is the human yield.</p>
       `,

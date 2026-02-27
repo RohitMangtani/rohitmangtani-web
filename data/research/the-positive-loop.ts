@@ -2,7 +2,6 @@ import type { ResearchData } from '@/types/research';
 
 export const thePositiveLoopData: ResearchData = {
   slug: 'the-positive-loop',
-  version: 'v2.0',
   date: '2026',
   title: 'The Positive Loop',
   subtitle: 'How AI broke the doom scroll and created the first productive dopamine cycle in internet history',
