@@ -8,8 +8,8 @@ export const thePositiveLoopData: ResearchData = {
   subtitle: 'How AI broke the doom scroll and created the first productive dopamine cycle in internet history',
 
   onRamp: {
-    description: 'This piece argues that AI tools, particularly vibe coding and conversational AI, the first internet-native dopamine loop that makes users more capable instead of less. It connects this to the broader pattern of late-stage capitalism producing dopamine-driven behavior, and examines why almost nobody has recognized how fast things are changing.',
-    whatItDoes: 'Documents the shift from consumptive to productive dopamine loops. what changed technically, and why we are extremely early.',
+    description: 'AI tools (vibe coding, conversational AI) are the first internet-native dopamine loop that makes you more capable instead of less. The internet spent 15 years perfecting addictive consumption. Now the same dopamine mechanics are wired to production. Almost nobody has noticed how fast this is moving.',
+    whatItDoes: 'Walks through the shift from consumptive to productive dopamine loops, what changed technically, and why we are extremely early.',
     whatItDoesNot: 'Claim AI will solve everything, endorse any specific tool or company, or predict timelines.',
   },
 

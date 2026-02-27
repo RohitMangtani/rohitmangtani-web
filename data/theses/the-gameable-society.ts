@@ -6,12 +6,12 @@ export const theGameableSocietyData: ThesisArticleData = {
   title: 'The Gameable Society',
   subtitle: 'On spectatorship, optimization, and the mechanics of a society that operates like a game.',
   onRamp: {
-    description: 'This thesis explores a cultural pattern: people increasingly relate to life as a game to be optimized, and to others\' optimization as content to be consumed. It examines the spectator class, gamified systems, and what happens when society becomes legible enough to exploit.',
-    whatItDoes: 'Describes emerging cultural patterns around optimization, spectatorship, and system exploitation.',
+    description: 'People increasingly treat life like a game to be optimized, and other people\'s optimization as content to watch. This looks at the spectator class, gamified systems, and what happens when society becomes legible enough to exploit.',
+    whatItDoes: 'Traces the loop between optimization culture, spectatorship, and value concentration.',
     whatItDoesNot: 'Prescribe solutions, moralize about behavior, or claim these trends are good or bad.',
-    howToRead: 'This is an essay, not a framework. Read it straight through.',
+    howToRead: 'An essay, not a framework. Read it straight through.',
   },
-  intro: 'This essay describes cultural patterns around optimization and spectatorship without prescribing responses.',
+  intro: 'On optimization, spectatorship, and the mechanics of a society that operates like a game.',
   sections: [
     {
       id: 'spectator-class',

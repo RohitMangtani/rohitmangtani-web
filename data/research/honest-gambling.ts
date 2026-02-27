@@ -7,8 +7,8 @@ export const honestGamblingData: ResearchData = {
   subtitle: 'Why participants prefer legible rules over hidden extraction',
   
   onRamp: {
-    description: 'This essay explores why participants often prefer transparent, negative-sum games over opaque systems that claim better odds. It proposes that under perceived unfairness, legible rules become more attractive than hidden extraction.',
-    whatItDoes: 'A descriptive analysis of risk preferences and coordination under constraint.',
+    description: 'People voluntarily enter games they know are negative-sum. The standard explanation is irrationality, but that misses something. When the alternatives feel rigged or opaque, a game with visible rules starts to look rational, even if the odds are worse.',
+    whatItDoes: 'Looks at why legible risk beats hidden extraction, even when the math says otherwise.',
     whatItDoesNot: 'Investment advice, moral endorsement, or a claim that gambling is wise.',
   },
   

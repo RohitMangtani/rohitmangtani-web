@@ -7,9 +7,9 @@ export const theHumanYieldData: ResearchData = {
   subtitle: 'On idle economics, proxy labor, and the phase where presence becomes the product',
 
   onRamp: {
-    description: 'This essay examines an emerging economic phase: as AI absorbs traditional labor, a growing class of people will find that their highest-value economic activity is not working. It is being present. Supervising, participating, farming, existing inside systems that need human inputs but not human effort. It argues this is not dystopia or laziness. It is the logical next state of a system that already turned attention into a commodity.',
-    whatItDoes: 'Describes the conditions that make passive participation economically rational, and connects it to existing patterns in idle games, passive investing, and spectator economics.',
-    whatItDoesNot: 'Argue that people are worthless, predict specific timelines, or endorse UBI as policy. This is descriptive.',
+    description: 'As AI takes over more labor, a growing number of people will find that their most valuable economic activity is just being present. Not working. Being there. Supervising, participating, existing inside systems that need human inputs but not human effort. Not dystopia, not laziness. Just the next phase of a system that already turned attention into a commodity.',
+    whatItDoes: 'Connects idle games, passive investing, and spectator economics to show why passive participation is becoming rational.',
+    whatItDoesNot: 'Argue that people are worthless, predict specific timelines, or endorse UBI as policy.',
   },
 
   claim: 'AI does not make humans useless. It makes human labor useless for a growing share of the population. What remains valuable is not effort. It is presence. And an entire economy is about to be built on the difference.',

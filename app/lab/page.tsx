@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const tools = [
   {
     href: '/lab/dashboard',
-    title: 'Hindu Stories — Upload Dashboard',
+    title: 'Hindu Stories Upload Dashboard',
     description: 'Step-by-step upload guide for The Sleepless Rishi. Shows what to upload today.',
   },
 ];
@@ -35,7 +35,7 @@ const externalProjects = [
   {
     title: 'Nudge',
     href: 'https://nudge-jade.vercel.app',
-    description: 'Life maintenance on autopilot — smart reminders for health, car, home, finance, and more.',
+    description: 'Life maintenance on autopilot. Smart reminders for health, car, home, finance, and more.',
     date: '2026',
   },
   {
@@ -47,7 +47,7 @@ const externalProjects = [
   {
     title: 'The Sleepless Rishi',
     href: 'https://www.youtube.com/@TheSleeplessRishi',
-    description: 'Fully automated YouTube channel — AI-generated Hindu stories, narration, and visuals end to end.',
+    description: 'Fully automated YouTube channel. AI-generated Hindu stories, narration, and visuals end to end.',
     date: '2026',
   },
 ];
