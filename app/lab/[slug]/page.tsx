@@ -58,22 +58,6 @@ function ArticleContent({ article }: { article: ResearchData }) {
         </p>
       </div>
 
-      {article.keyNumbers && article.keyNumbers.length > 0 && (
-        <section className="mb-12 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-          {article.keyNumbers.map((num, i) => (
-            <div key={i} className="p-4 border border-[var(--border)] rounded">
-              <div className={`text-xl font-bold ${
-                num.color === 'green' ? 'text-green-700' :
-                num.color === 'yellow' ? 'text-amber-700' :
-                num.color === 'red' ? 'text-red-700' :
-                'text-[var(--fg)]'
-              }`}>{num.value}</div>
-              <div className="text-xs text-[var(--fg-muted)]">{num.label}</div>
-            </div>
-          ))}
-        </section>
-      )}
-
       {article.claim && (
         <section className="mb-12 p-6 border border-[var(--border)] rounded bg-[var(--bg-secondary)]">
           <h2 className="text-xs uppercase tracking-wider text-[var(--fg-muted)] mb-3">The Claim</h2>

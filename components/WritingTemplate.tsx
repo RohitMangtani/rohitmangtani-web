@@ -47,17 +47,6 @@ interface WritingTemplateProps {
   };
 }
 
-function getColorClass(color?: string): string {
-  switch (color) {
-    case 'green': return 'text-green-700';
-    case 'blue': return 'text-blue-700';
-    case 'yellow': return 'text-amber-700';
-    case 'red': return 'text-red-700';
-    case 'zinc': return 'text-stone-500';
-    default: return '';
-  }
-}
-
 // Note: All HTML content rendered via dangerouslySetInnerHTML comes from
 // trusted, developer-authored data files within the codebase, not from
 // user input or external sources.
@@ -108,18 +97,6 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
             </p>
           )}
         </div>
-
-        {/* Key Numbers */}
-        {data.keyNumbers && data.keyNumbers.length > 0 && (
-          <section className="mb-12 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-            {data.keyNumbers.map((num, i) => (
-              <div key={i} className="p-4 border border-[var(--border)] rounded">
-                <div className={`text-xl font-bold ${getColorClass(num.color)}`}>{num.value}</div>
-                <div className="text-xs text-[var(--fg-muted)]">{num.label}</div>
-              </div>
-            ))}
-          </section>
-        )}
 
         {/* Claim Box */}
         {data.claim && (
