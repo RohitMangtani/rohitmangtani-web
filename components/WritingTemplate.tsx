@@ -102,9 +102,6 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
           <p className="text-sm text-[var(--fg-muted)] mb-3">
             <strong className="text-[var(--fg)]">Scope:</strong> {data.onRamp.whatItDoes}
           </p>
-          <p className="text-sm text-[var(--fg-muted)] mb-3">
-            <strong className="text-[var(--fg)]">Not arguing:</strong> {data.onRamp.whatItDoesNot}
-          </p>
           {data.onRamp.howToRead && (
             <p className="text-xs text-[var(--fg-muted)] opacity-70">
               <em>How to read:</em> {data.onRamp.howToRead}

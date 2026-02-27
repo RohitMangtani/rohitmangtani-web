@@ -56,9 +56,6 @@ function ArticleContent({ article }: { article: ResearchData }) {
         <p className="mb-2">
           <strong className="text-[var(--fg)]">Scope:</strong> {article.onRamp.whatItDoes}
         </p>
-        <p>
-          <strong className="text-[var(--fg)]">Not arguing:</strong> {article.onRamp.whatItDoesNot}
-        </p>
       </div>
 
       {article.keyNumbers && article.keyNumbers.length > 0 && (

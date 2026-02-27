@@ -45,9 +45,6 @@ export function ArticleTemplate({ data }: ArticleTemplateProps) {
           <p className="mb-2">
             <strong className="text-[var(--fg)]">Scope:</strong> {data.onRamp.whatItDoes}
           </p>
-          <p>
-            <strong className="text-[var(--fg)]">Not arguing:</strong> {data.onRamp.whatItDoesNot}
-          </p>
         </div>
 
         {/* Key Numbers */}
