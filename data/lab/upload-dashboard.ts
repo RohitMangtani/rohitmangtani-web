@@ -365,15 +365,7 @@ export interface ScheduleEntry {
   videoGenerated: boolean;
 }
 
-function buildDescription(deityName: string, hymnTitle: string, lang: 'en' | 'hi'): string {
-  if (lang === 'hi') {
-    return `${hymnTitle} — शांतिपूर्ण नींद के लिए भक्तिमय कथा के रूप में वर्णित।
-
-यह प्राचीन स्तोत्र सदियों से गाया जाता रहा है। यहाँ इसके अर्थ और पौराणिक कथाओं को एक शांत सोने की कहानी के रूप में सुनाया गया है।
-
-🕉️ ${deityName} के पवित्र स्तोत्र श्रृंखला का भाग।
-🙏 और अधिक हिंदू स्तोत्र और कथाओं के लिए सब्सक्राइब करें।`;
-  }
+function buildDescription(deityName: string, hymnTitle: string): string {
   return `${hymnTitle} — narrated as a calming devotional story for deep sleep.
 
 This ancient hymn has been chanted for centuries. Here, its meaning and mythology are woven into a peaceful bedtime narration.
@@ -423,16 +415,15 @@ export function computeSchedule(): ScheduleEntry[] {
           futureIdx++;
         }
 
-        const suffix = isHi ? '| हिंदू भक्ति स्तोत्र' : '| Hindu Devotional Hymns';
-        const deityName = isHi ? deity.nameHi : deity.nameEn;
-        const title = isHi ? hymn.titleHi : hymn.titleEn;
-        const baseTags = isHi ? BASE_TAGS_HI : BASE_TAGS_EN;
-        const deityTags = isHi ? deity.tagsHi : deity.tagsEn;
+        // Always English metadata with language suffix (matches pipeline normalization)
+        const langLabel = isHi ? 'Hindi' : 'English';
+        const baseTags = BASE_TAGS_EN;
+        const deityTags = deity.tagsEn;
         const basePath = `${OUTPUT_BASE}/${deity.id}/${lang}/ch${chPad}_${hymn.slug}`;
 
-        // Prefer rich per-chapter description/tags when available
-        const richDesc = isHi ? hymn.descriptionHi : hymn.descriptionEn;
-        const hymnTags = isHi ? hymn.hymnTagsHi : hymn.hymnTagsEn;
+        // Always use English descriptions and tags
+        const richDesc = hymn.descriptionEn;
+        const hymnTags = hymn.hymnTagsEn;
 
         entries.push({
           index: idx,
@@ -447,8 +438,8 @@ export function computeSchedule(): ScheduleEntry[] {
           language: lang,
           time: isHi ? '8:00 PM IST' : '8:00 PM EST',
           playlist: isHi ? deity.playlistHi : deity.playlistEn,
-          ytTitle: `${deity.nameEn} — Part ${chNum}: ${title} ${suffix}`,
-          description: richDesc || buildDescription(deityName, title, lang),
+          ytTitle: `${deity.nameEn} — Part ${chNum}: ${hymn.titleEn} - ${langLabel}`,
+          description: richDesc || buildDescription(deity.nameEn, hymn.titleEn),
           tags: [...baseTags, ...deityTags, ...(hymnTags || [])],
           videoPath: `${basePath}/video_final.mp4`,
           thumbnailPath: `${basePath}/thumbnail.jpg`,

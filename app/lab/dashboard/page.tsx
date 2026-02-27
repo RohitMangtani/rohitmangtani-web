@@ -148,7 +148,7 @@ function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: str
           {entry.language === 'hi' ? entry.deityNameHi : entry.deityNameEn} &middot; Chapter {entry.chapter} of {entry.totalChapters}
         </p>
         <h2 className="text-2xl font-bold text-[var(--fg)] leading-tight">
-          {entry.language === 'hi' ? entry.titleHi : entry.titleEn}
+          {entry.titleEn}
         </h2>
         <p className="text-[var(--fg-muted)] text-sm mt-1">
           {formatDate(entry.date)} at <span className="font-mono font-bold text-[var(--fg)]">{entry.time}</span>
