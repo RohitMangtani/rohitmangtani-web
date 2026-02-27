@@ -54,10 +54,10 @@ function ArticleContent({ article }: { article: ResearchData }) {
       <div className="mb-10 p-4 border-l-2 border-[var(--border)] text-sm text-[var(--fg-muted)]">
         <p className="mb-3">{article.onRamp.description}</p>
         <p className="mb-2">
-          <strong className="text-[var(--fg)]">What this does:</strong> {article.onRamp.whatItDoes}
+          <strong className="text-[var(--fg)]">Scope:</strong> {article.onRamp.whatItDoes}
         </p>
         <p>
-          <strong className="text-[var(--fg)]">What this does not do:</strong> {article.onRamp.whatItDoesNot}
+          <strong className="text-[var(--fg)]">Not arguing:</strong> {article.onRamp.whatItDoesNot}
         </p>
       </div>
 

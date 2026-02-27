@@ -42,10 +42,10 @@ export function ThesisTemplate({ data }: ThesisTemplateProps) {
         <div className="mb-12 p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)]">
           <p className="text-sm text-[var(--fg-muted)] mb-4">{data.onRamp.description}</p>
           <p className="text-sm text-[var(--fg-muted)] mb-3">
-            <strong className="text-[var(--fg)]">What this does:</strong> {data.onRamp.whatItDoes}
+            <strong className="text-[var(--fg)]">Scope:</strong> {data.onRamp.whatItDoes}
           </p>
           <p className="text-sm text-[var(--fg-muted)] mb-3">
-            <strong className="text-[var(--fg)]">What this does not do:</strong> {data.onRamp.whatItDoesNot}
+            <strong className="text-[var(--fg)]">Not arguing:</strong> {data.onRamp.whatItDoesNot}
           </p>
           {data.onRamp.howToRead && (
             <p className="text-xs text-[var(--fg-muted)] opacity-70">

@@ -43,10 +43,10 @@ export function ArticleTemplate({ data }: ArticleTemplateProps) {
         <div className="mb-10 p-4 border-l-2 border-[var(--border)] text-sm text-[var(--fg-muted)]">
           <p className="mb-3">{data.onRamp.description}</p>
           <p className="mb-2">
-            <strong className="text-[var(--fg)]">What this does:</strong> {data.onRamp.whatItDoes}
+            <strong className="text-[var(--fg)]">Scope:</strong> {data.onRamp.whatItDoes}
           </p>
           <p>
-            <strong className="text-[var(--fg)]">What this does not do:</strong> {data.onRamp.whatItDoesNot}
+            <strong className="text-[var(--fg)]">Not arguing:</strong> {data.onRamp.whatItDoesNot}
           </p>
         </div>
 
