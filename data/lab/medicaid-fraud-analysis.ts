@@ -235,6 +235,5 @@ Processing: Python 3.11, Pandas 2.1.4, Scikit-learn 1.3.2
 Methodology: Modified Z-score outlier detection, DBSCAN clustering
 Validation: Cross-referenced with DOJ enforcement actions 2020-2024
 
-Last Updated: February 13, 2026
-Version: 1.0 - Initial Analysis`,
+Last Updated: February 13, 2026`,
 };

@@ -194,5 +194,5 @@ export const theFutureOfPmData: ResearchData = {
     { title: 'Crawler', href: 'https://crawler-alpha-rose.vercel.app' },
   ],
 
-  footerVersion: 'Version 1.0 . February 2026 . Rohit Mangtani',
+  footerVersion: 'February 2026 . Rohit Mangtani',
 };

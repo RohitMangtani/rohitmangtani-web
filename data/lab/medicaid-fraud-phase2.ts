@@ -415,6 +415,5 @@ Statistical: Python 3.11, SciPy 1.11, 95% confidence intervals
 Methodology validated against 500 known DOJ fraud cases (2020-2024)
 Cross-validation accuracy: 89.4% true positive rate, 1.8% false positive rate
 
-Last Updated: February 13, 2026
-Version: 2.0 - Cross-Validation Analysis`,
+Last Updated: February 13, 2026`,
 };

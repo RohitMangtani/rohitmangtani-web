@@ -94,5 +94,5 @@ export const honestGamblingData: ResearchData = {
     },
   ],
 
-  footerVersion: 'Version 2.0 • 2024 • Rohit Mangtani',
+  footerVersion: '2024 . Rohit Mangtani',
 };

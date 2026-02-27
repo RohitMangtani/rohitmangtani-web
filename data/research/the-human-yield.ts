@@ -186,5 +186,5 @@ export const theHumanYieldData: ResearchData = {
     { title: 'Preference for Legible Risk', href: '/writing/honest-gambling' },
   ],
 
-  footerVersion: 'Version 2.0 • February 2026 • Rohit Mangtani',
+  footerVersion: 'February 2026 . Rohit Mangtani',
 };
