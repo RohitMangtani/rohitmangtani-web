@@ -13,6 +13,8 @@ All custom CSS in `@layer base` or `@layer components`. Never unlayered CSS exce
 
 ## Writing Style Guide
 
+**Read `data/writing-voice.md` before writing or editing any article.** That file is the living voice reference. It has Rohit's actual phrasings, content principles, nuanced positions, and a corrections log from every editing session. Update it after each session with new corrections and refinements.
+
 When writing or editing articles (`data/research/`, `data/theses/`), follow this voice.
 
 ### Tone: 70% professional, 30% conversational

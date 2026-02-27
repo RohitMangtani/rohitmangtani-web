@@ -12,7 +12,7 @@ export const theHumanYieldData: ResearchData = {
     whatItDoesNot: 'Argue that people are worthless, predict specific timelines, or pitch UBI as policy.',
   },
 
-  claim: 'AI does not make humans useless. It makes human labor useless for a growing share of the population. What remains valuable is not effort. It is presence. An entire economy is forming around the difference.',
+  claim: 'AI does not make humans useless. It makes human labor useless for a growing share of the population. Effort still matters, but only when pointed at what AI cannot do. For everyone else, what remains valuable is not work. It is presence. An entire economy is forming around the difference.',
 
   sections: [
     {
@@ -151,7 +151,7 @@ export const theHumanYieldData: ResearchData = {
 
         <p>Above the floor, a new stratification takes shape. Positive Loop riders, people compounding with AI, operate in one economy. Proxy laborers, people lending their presence to AI systems, operate in another. Floor dwellers, people whose participation the economy does not need at all, occupy a third.</p>
 
-        <p>The dividing line is not intelligence. Not education. Not effort. It is orientation: how much a person's natural wiring lines up with what AI still cannot do. Taste. Direction. Judgment. Social trust. Physical presence. Accountability. These are the residual human inputs. Everything else is getting absorbed.</p>
+        <p>The dividing line is not intelligence or education. Effort still counts, but only up to the ceiling of what your orientation allows. Someone putting maximum effort into tasks AI does better will hit a wall. Someone putting the same effort into taste, judgment, direction, will compound past it. The question is not whether you work hard. It is whether what you work hard at still needs a human. Taste. Direction. Judgment. Social trust. Physical presence. Accountability. These are the residual human inputs. Everything else is getting absorbed.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="text-sm text-[var(--fg-muted)]">The spectator class from <a href="/writing/the-gameable-society" class="underline hover:opacity-60">The Gameable Society</a> was a preview of this. People who watched optimization content instead of optimizing. People fluent in the language of improvement but stuck on the other side of acting on it.</p>
