@@ -36,7 +36,7 @@ const allWriting = [
   {
     slug: 'honest-gambling',
     title: 'Preference for Legible Risk',
-    date: '2025',
+    date: '2024',
   },
 ];
 

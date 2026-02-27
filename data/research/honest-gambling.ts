@@ -2,7 +2,7 @@ import { ResearchData } from '@/types/research';
 
 export const honestGamblingData: ResearchData = {
   slug: 'honest-gambling',
-  date: '2025',
+  date: '2024',
   title: 'Why People Choose Honest Gambling Over Extractive Games',
   subtitle: 'Why participants prefer legible rules over hidden extraction',
   
@@ -85,5 +85,5 @@ export const honestGamblingData: ResearchData = {
     },
   ],
   
-  footerVersion: 'This essay is descriptive, not prescriptive. It does not constitute investment advice or endorsement of any asset class.\n\nRohit Mangtani • 2025',
+  footerVersion: 'This essay is descriptive, not prescriptive. It does not constitute investment advice or endorsement of any asset class.\n\nRohit Mangtani • 2024',
 };

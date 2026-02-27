@@ -15,7 +15,7 @@ export const theGameableSocietyData: ThesisArticleData = {
   sections: [
     {
       id: 'spectator-class',
-      title: 'I. The Spectator Class',
+      title: 'The Spectator Class',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           Something shifted in how people relate to effort. It started as internet irony. "Looksmaxxing," "moneymaxxing," treating life like a character build screen where you min-max stats until you win.
@@ -48,7 +48,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'the-game',
-      title: 'II. The Game',
+      title: 'The Game',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           The instinct is to call this irrational. It is not.
@@ -89,7 +89,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'attention-economics',
-      title: 'III. Attention Economics',
+      title: 'Attention Economics',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           Attention has become the primary denominator of value in digital economies. Not money. Not labor. Not credentials. Attention.
@@ -135,7 +135,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'new-behaviors',
-      title: 'IV. New Behaviors',
+      title: 'New Behaviors',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           In response to these pressures, new behaviors emerge.
@@ -181,7 +181,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'value-concentration',
-      title: 'V. Value Concentration',
+      title: 'Value Concentration',
       content: `
         <p class="text-lg leading-relaxed mb-6 text-[var(--fg)] font-medium">
           Value does not disappear in a spectator-dominated society. It concentrates.
@@ -218,7 +218,7 @@ export const theGameableSocietyData: ThesisArticleData = {
     },
     {
       id: 'equilibrium',
-      title: 'VI. Equilibrium',
+      title: 'Equilibrium',
       content: `
         <p class="text-lg leading-relaxed mb-6">
           The system is stable because it satisfies local incentives for all participants.

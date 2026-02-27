@@ -306,7 +306,7 @@ export const thePositiveLoopData: ResearchData = {
 
   references: [
     { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
-    { text: 'Mangtani, R. (2025). <em>Preference for Legible Risk</em>.', url: '/writing/honest-gambling' },
+    { text: 'Mangtani, R. (2024). <em>Preference for Legible Risk</em>.', url: '/writing/honest-gambling' },
     { text: 'Harris, T. (2016). "How Technology is Hijacking Your Mind."' },
     { text: 'Alter, A. (2017). <em>Irresistible: The Rise of Addictive Technology</em>.' },
     { text: 'Huberman, A. (2023). "Dopamine, Motivation, and Drive." Stanford Neuroscience.' },

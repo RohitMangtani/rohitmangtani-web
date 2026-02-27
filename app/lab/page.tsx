@@ -28,7 +28,7 @@ const tools = [
 const externalProjects = [
   {
     title: 'Crawler',
-    href: 'https://crawler-alpha-rose.vercel.app',
+    href: 'https://trycrawler.com',
     description: 'Paste a GitHub repo, get a visual project map. Flowcharts, layer breakdowns, and context blocks.',
     date: '2026',
   },

@@ -17,7 +17,7 @@ export const theHumanYieldData: ResearchData = {
   sections: [
     {
       id: 'the-bifurcation',
-      title: 'I. The Bifurcation',
+      title: 'The Bifurcation',
       content: `
         <p>The Positive Loop described a new kind of person: someone who discovered that AI tools could turn idle time into productive output, and got addicted to the cycle. Idea to product, phone to deployed software, curiosity to published research. The dopamine loop that builds instead of drains.</p>
 
@@ -36,7 +36,7 @@ export const theHumanYieldData: ResearchData = {
     },
     {
       id: 'the-capybara-economy',
-      title: 'II. The Capybara Economy',
+      title: 'The Capybara Economy',
       content: `
         <p>There is a genre of game that should not exist. You open the app. You are a capybara. You sit there. That is the game.</p>
 
@@ -64,7 +64,7 @@ export const theHumanYieldData: ResearchData = {
     },
     {
       id: 'proxy-labor',
-      title: 'III. Proxy Labor',
+      title: 'Proxy Labor',
       content: `
         <p>The traditional labor model is: you have a skill, you apply it, you get paid for the output. The skill is the moat. The effort is the input. The output is the product.</p>
 
@@ -92,7 +92,7 @@ export const theHumanYieldData: ResearchData = {
     },
     {
       id: 'passive-investing-parallel',
-      title: 'IV. The Passive Investing Parallel',
+      title: 'The Passive Investing Parallel',
       content: `
         <p>Passive investing works like this: you put capital into an index fund. You do not pick stocks. You do not analyze earnings. You do not time the market. You contribute capital, and the system generates returns on it. Your role is to be invested. Not to be smart about it.</p>
 
@@ -112,7 +112,7 @@ export const theHumanYieldData: ResearchData = {
     },
     {
       id: 'the-resistance-layer',
-      title: 'V. The Resistance Layer',
+      title: 'The Resistance Layer',
       content: `
         <p>Not everyone will accept this quietly.</p>
 
@@ -137,7 +137,7 @@ export const theHumanYieldData: ResearchData = {
     },
     {
       id: 'the-floor',
-      title: 'VI. The Floor',
+      title: 'The Floor',
       content: `
         <p>Every system with enough displaced participants eventually builds a floor. The floor is UBI, or something that functions like UBI, regardless of what it is called.</p>
 
@@ -171,7 +171,7 @@ export const theHumanYieldData: ResearchData = {
   references: [
     { text: 'Mangtani, R. (2026). <em>The Positive Loop: How AI Broke the Doom Scroll</em>.', url: '/writing/the-positive-loop' },
     { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
-    { text: 'Mangtani, R. (2025). <em>Why People Choose Honest Gambling Over Extractive Games</em>.', url: '/writing/honest-gambling' },
+    { text: 'Mangtani, R. (2024). <em>Why People Choose Honest Gambling Over Extractive Games</em>.', url: '/writing/honest-gambling' },
     { text: 'Frey, C.B. & Osborne, M.A. (2017). "The Future of Employment." Oxford Martin Programme.' },
     { text: 'Susskind, D. (2020). <em>A World Without Work: Technology, Automation, and How We Should Respond</em>.' },
     { text: 'Malkiel, B. (2019). <em>A Random Walk Down Wall Street</em>. 12th Edition.' },
