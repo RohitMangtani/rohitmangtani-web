@@ -17,13 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const tools = [
-  {
-    href: '/lab/dashboard',
-    title: 'Hindu Stories Upload Dashboard',
-    description: 'Step-by-step upload guide for The Sleepless Rishi. Shows what to upload today.',
-  },
-];
+const tools: { href: string; title: string; description: string }[] = [];
 
 const externalProjects = [
   {
