@@ -5,6 +5,7 @@ import Nav from '@/components/Nav';
 import Link from 'next/link';
 import References from '@/components/References';
 import DataAvailability from '@/components/DataAvailability';
+import TableOfContents from '@/components/TableOfContents';
 import type { ResearchData } from '@/types/research';
 
 interface ArticleTemplateProps {
@@ -68,6 +69,9 @@ export function ArticleTemplate({ data }: ArticleTemplateProps) {
             <p className="text-lg text-[var(--fg)] leading-relaxed font-medium">{data.claim}</p>
           </section>
         )}
+
+        {/* Section Navigation */}
+        <TableOfContents items={data.sections.map(s => ({ id: s.id, label: s.title }))} />
 
         {/* Main Content Sections */}
         <article className="prose">
