@@ -1,7 +1,7 @@
 'use client';
 
 import Nav from '@/components/Nav';
-import { computeSchedule, type ScheduleEntry } from '@/data/lab/upload-dashboard';
+import { computeSchedule, TOTAL_UPLOADS, DEITIES, type ScheduleEntry } from '@/data/lab/upload-dashboard';
 import { useState, useMemo } from 'react';
 
 /* ── Helpers ─────────────────────────────────────────── */
@@ -80,14 +80,13 @@ function Step({ n, label, children, dimmed }: { n: number; label: string; childr
 /* ── Main Upload Card ────────────────────────────────── */
 
 function UploadNow({ entry, label }: { entry: ScheduleEntry; label: string }) {
-  const [showQueue, setShowQueue] = useState(false);
   const langLabel = entry.language === 'hi' ? 'Hindi' : 'English';
   const langColor = entry.language === 'hi' ? 'bg-orange-950 text-orange-300 border-orange-900' : 'bg-blue-950 text-blue-300 border-blue-900';
 
   return (
     <div className="border border-green-900/60 rounded-xl bg-green-950/10 p-6 sm:p-8">
       {/* Status Badge */}
-      <div className="flex items-center gap-3 mb-5">
+      <div className="flex items-center gap-2 flex-wrap mb-5">
         <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
         <span className="text-green-400 text-xs font-bold uppercase tracking-widest">{label}</span>
         <span className={`text-[10px] px-2 py-0.5 rounded border font-mono ${langColor}`}>{langLabel}</span>
@@ -96,9 +95,14 @@ function UploadNow({ entry, label }: { entry: ScheduleEntry; label: string }) {
         )}
       </div>
 
+      {/* Deity + Chapter */}
+      <div className="text-xs text-[var(--fg-muted)] mb-1">
+        {entry.language === 'hi' ? entry.deityNameHi : entry.deityNameEn} &middot; Chapter {entry.chapter} of {entry.totalChapters}
+      </div>
+
       {/* Title */}
       <h2 className="text-xl sm:text-2xl font-bold text-[var(--fg)] leading-tight mb-1">
-        {entry.language === 'hi' ? entry.episode.titleHi : entry.episode.titleEn}
+        {entry.language === 'hi' ? entry.titleHi : entry.titleEn}
       </h2>
       <p className="text-[var(--fg-muted)] text-sm mb-8">
         {formatDate(entry.date)} at <span className="font-mono font-bold text-[var(--fg)]">{entry.time}</span>
@@ -109,9 +113,9 @@ function UploadNow({ entry, label }: { entry: ScheduleEntry; label: string }) {
 
         {/* Step 0: Generate (only if not ready) */}
         {!entry.generated && (
-          <Step n={0} label="Generate this video first">
-            <CopyField label="Run in terminal" value={entry.pipelineCmd} mono />
-            <p className="text-xs text-yellow-400/70 mt-2">This takes ~20 min. Come back when it&apos;s done.</p>
+          <Step n={0} label={`Generate all ${entry.totalChapters} ${entry.deityNameEn} ${langLabel} chapters`}>
+            <CopyField label="Run in terminal (generates all chapters at once)" value={entry.pipelineCmd} mono />
+            <p className="text-xs text-yellow-400/70 mt-2">This generates all {entry.totalChapters} chapters. Come back when it&apos;s done.</p>
           </Step>
         )}
 
@@ -152,9 +156,9 @@ function UploadNow({ entry, label }: { entry: ScheduleEntry; label: string }) {
           <CopyField label="Tags" value={entry.tags.join(', ')} />
         </Step>
 
-        {/* Step 8: Upload subtitles */}
-        <Step n={8} label="Upload subtitles" dimmed={!entry.generated}>
-          <CopyField label="Subtitles file path" value={entry.subtitlesPath} mono />
+        {/* Step 8: Upload subtitles (optional — already burned in) */}
+        <Step n={8} label="Upload subtitles (optional — already burned into video)" dimmed={!entry.generated}>
+          <CopyField label="SRT file path" value={entry.subtitlesPath} mono />
         </Step>
 
         {/* Step 9: Settings */}
@@ -179,14 +183,36 @@ function UploadNow({ entry, label }: { entry: ScheduleEntry; label: string }) {
           </p>
         </Step>
       </div>
+    </div>
+  );
+}
 
-      {/* Toggle upcoming queue */}
-      <button
-        onClick={() => setShowQueue(!showQueue)}
-        className="mt-8 text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors cursor-pointer"
-      >
-        {showQueue ? 'Hide upcoming queue' : 'Show upcoming queue'} &darr;
-      </button>
+/* ── Deity Progress Bar ──────────────────────────────── */
+
+function DeityProgress({ schedule }: { schedule: ScheduleEntry[] }) {
+  const today = new Date();
+  return (
+    <div className="space-y-2">
+      {DEITIES.map(deity => {
+        const deityEntries = schedule.filter(e => e.deityId === deity.id);
+        const uploaded = deityEntries.filter(e => e.date < today && !isSameDay(e.date, today)).length;
+        const total = deityEntries.length;
+        const pct = total > 0 ? Math.round((uploaded / total) * 100) : 0;
+        const enDone = deity.generated.en;
+        const hiDone = deity.generated.hi;
+
+        return (
+          <div key={deity.id} className="flex items-center gap-3 text-xs">
+            <span className="w-24 shrink-0 text-[var(--fg)]">{deity.nameEn}</span>
+            <div className="flex-1 h-1.5 bg-[var(--border)] rounded-full overflow-hidden">
+              <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
+            </div>
+            <span className="text-[var(--fg-muted)] w-12 text-right">{uploaded}/{total}</span>
+            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${enDone ? 'bg-blue-400' : 'bg-zinc-600'}`} title={`EN ${enDone ? 'generated' : 'pending'}`} />
+            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${hiDone ? 'bg-orange-400' : 'bg-zinc-600'}`} title={`HI ${hiDone ? 'generated' : 'pending'}`} />
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -203,20 +229,20 @@ export default function UploadDashboard() {
   const activeEntry = todayEntry || upcoming[0];
   const isToday = todayEntry !== undefined;
 
-  const totalUploads = schedule.length;
   const completedCount = past.length;
 
   const [showFullSchedule, setShowFullSchedule] = useState(false);
+  const [showProgress, setShowProgress] = useState(false);
 
   return (
     <>
       <Nav />
       <main className="max-w-[640px] mx-auto px-5 py-16 sm:py-20">
 
-        {/* Header — minimal */}
+        {/* Header */}
         <header className="mb-8">
           <p className="text-xs text-[var(--fg-muted)] mb-2">
-            {dayName(today)} &middot; {completedCount} of {totalUploads} uploaded
+            {dayName(today)} &middot; {completedCount} of {TOTAL_UPLOADS} uploaded &middot; 9 deities &middot; 59 hymns
           </p>
           <h1 className="text-xl font-bold tracking-tight text-[var(--fg)]">
             The Sleepless Rishi
@@ -231,13 +257,24 @@ export default function UploadDashboard() {
           />
         ) : (
           <div className="border border-[var(--border)] rounded-xl p-8 text-center">
-            <p className="text-[var(--fg-muted)]">All {totalUploads} videos have been scheduled. You&apos;re done.</p>
+            <p className="text-[var(--fg-muted)]">All {TOTAL_UPLOADS} videos have been uploaded. You&apos;re done.</p>
           </div>
         )}
 
-        {/* Upcoming Queue (collapsed inside the card, or shown below) */}
+        {/* Deity Progress */}
+        <section className="mt-8">
+          <button
+            onClick={() => setShowProgress(!showProgress)}
+            className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors cursor-pointer mb-3"
+          >
+            {showProgress ? 'Hide' : 'Show'} deity progress
+          </button>
+          {showProgress && <DeityProgress schedule={schedule} />}
+        </section>
+
+        {/* Upcoming Queue */}
         {upcoming.length > 0 && (
-          <section className="mt-8">
+          <section className="mt-6">
             <button
               onClick={() => setShowFullSchedule(!showFullSchedule)}
               className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors cursor-pointer mb-3"
@@ -262,7 +299,8 @@ export default function UploadDashboard() {
                       }`}>
                         {entry.language.toUpperCase()}
                       </span>
-                      <span className="text-[var(--fg)] truncate">{entry.episode.titleEn}</span>
+                      <span className="text-[var(--fg-muted)] shrink-0">{entry.deityNameEn}</span>
+                      <span className="text-[var(--fg)] truncate">{entry.titleEn}</span>
                       <span className="ml-auto shrink-0">
                         {entry.generated ? (
                           <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />
@@ -280,7 +318,7 @@ export default function UploadDashboard() {
 
         {/* Footer */}
         <footer className="mt-12 pt-4 border-t border-[var(--border)] text-[10px] text-[var(--fg-muted)]">
-          Every 2 days &middot; 8 PM EST (EN) / 8 PM IST (HI) &middot; {totalUploads} total
+          Every 2 days &middot; 8 PM EST (EN) / 8 PM IST (HI) &middot; {TOTAL_UPLOADS} total &middot; 9 deities &middot; 59 hymns
         </footer>
       </main>
     </>
