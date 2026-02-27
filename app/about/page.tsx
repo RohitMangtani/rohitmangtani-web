@@ -19,7 +19,7 @@ export default function AboutPage() {
   return (
     <>
       <Nav />
-      <main className="max-w-3xl mx-auto px-6 py-16">
+      <main className="max-w-5xl mx-auto px-6 py-16">
         <header className="mb-12 animate-fade-in">
           <h1 className="text-4xl font-bold tracking-tight mb-4">About</h1>
         </header>
@@ -42,6 +42,9 @@ export default function AboutPage() {
           </p>
           <p className="leading-relaxed">
             All content is educational and reflects personal research interests.
+          </p>
+          <p className="leading-relaxed mt-6">
+            <strong className="text-[var(--fg)]">If you are interested in similar things or anything adjacent, please reach out. I would love to talk.</strong>
           </p>
         </div>
       </main>

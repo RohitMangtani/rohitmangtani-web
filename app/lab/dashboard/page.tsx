@@ -227,7 +227,7 @@ export default function UploadDashboard() {
   return (
     <>
       <Nav />
-      <main className="max-w-3xl mx-auto px-5 py-16 sm:py-24">
+      <main className="max-w-5xl mx-auto px-5 py-16 sm:py-24">
 
         {/* Header */}
         <header className="mb-12">

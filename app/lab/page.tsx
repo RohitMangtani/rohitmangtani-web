@@ -56,7 +56,7 @@ export default function LabPage() {
   return (
     <>
       <Nav />
-      <main className="max-w-xl mx-auto px-6 py-16">
+      <main className="max-w-5xl mx-auto px-6 py-16">
         <header className="mb-10">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Lab</h1>
           <p className="text-[var(--fg-muted)]">

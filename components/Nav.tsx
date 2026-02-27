@@ -16,7 +16,7 @@ export default function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[var(--bg)]/95 backdrop-blur-sm border-b border-[var(--border)]">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center gap-4 sm:gap-0 sm:justify-between overflow-x-auto scrollbar-hide">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center gap-4 sm:gap-0 sm:justify-between overflow-x-auto scrollbar-hide">
         <Link href="/" className="text-sm font-semibold tracking-tight hover:opacity-70 shrink-0 whitespace-nowrap">
           RM
         </Link>
