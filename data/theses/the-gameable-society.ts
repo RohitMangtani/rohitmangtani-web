@@ -41,9 +41,9 @@ export const theGameableSocietyData: ThesisArticleData = {
           So the observer gets a hit, feels temporarily aligned with the values on screen, and then the video ends. The next video begins. The cycle continues.
         </p>
 
-        <p class="leading-relaxed text-[var(--fg)] font-medium">
-          Over time, this creates a class of people who are fluent in the language of self-improvement but have not improved. They can explain periodization, caloric deficits, compound interest, and dopamine regulation. They know the meta. They have never played the game.
-        </p>
+        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
+          <p class="text-sm text-[var(--fg)]">Over time, this creates a class of people who are fluent in the language of self-improvement but have not improved. They can explain periodization, caloric deficits, compound interest, and dopamine regulation. They know the meta. They have never played the game.</p>
+        </div>
       `,
     },
     {
@@ -58,12 +58,12 @@ export const theGameableSocietyData: ThesisArticleData = {
           The behaviors emerging across society, the spectatorship, the obsessive optimization, the gambling, appear irrational only when measured against frameworks that no longer describe the environment.
         </p>
 
-        <p class="leading-relaxed mb-6 text-[var(--fg)] font-medium">
-          The environment has changed. It now operates like a game.
-        </p>
+        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
+          <p class="text-sm text-[var(--fg)] font-medium">The environment has changed. It now operates like a game.</p>
+        </div>
 
         <p class="leading-relaxed mb-6">
-          When systems become legible, when metrics are visible, feedback is instant, and outcomes can be min-maxed, people begin to play them as games. Social platforms gamify attention. Financial markets gamify risk. Health tracking gamifies the body. Career platforms gamify credentials.
+          When systems become legible, when metrics are visible, feedback is instant, and outcomes can be min-maxed, people begin to play them as games. Social platforms gamify attention. Health tracking gamifies the body. Career platforms gamify credentials. Dating apps gamify attraction.
         </p>
         
         <p class="leading-relaxed mb-6">
@@ -117,11 +117,11 @@ export const theGameableSocietyData: ThesisArticleData = {
         </div>
 
         <p class="leading-relaxed mb-6">
-          Under these conditions, expected value becomes a misleading metric. A strategy that maximizes expected value will systematically underperform a strategy that maximizes exposure to asymmetric upside. Variance is not a bug to be minimized. It is the mechanism through which outsized returns are accessed.
+          Under these conditions, expected value becomes a misleading metric. A strategy that maximizes expected value will systematically underperform a strategy that maximizes exposure to outsized outcomes. Variance is not a bug to be minimized. It is the mechanism through which disproportionate success is accessed.
         </p>
 
         <p class="leading-relaxed mb-6">
-          This explains the rationality of behaviors that appear reckless. Concentrated bets. Speculative positions. High-risk career moves. These are not failures of risk assessment. They are correct adaptations to a landscape where the middle has collapsed and the tails dominate.
+          This explains the rationality of behaviors that appear reckless. Bold career pivots. High-risk creative swings. All-in commitments to unproven paths. These are not failures of risk assessment. They are correct adaptations to a landscape where the middle has collapsed and the tails dominate.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -129,7 +129,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
         
         <p class="leading-relaxed mb-6">
-          The moderate actor never blows up, but also never escapes baseline. The environment does not reward consistency. It rewards spikes. A single breakout event, viral attention, asymmetric return, visible transformation, outweighs years of moderate accumulation. The math favors volatility.
+          The moderate actor never blows up, but also never escapes baseline. The environment does not reward consistency. It rewards spikes. A single breakout event — viral attention, unexpected recognition, visible transformation — outweighs years of moderate accumulation. The math favors bold swings over safe consistency.
         </p>
       `,
     },
@@ -170,12 +170,12 @@ export const theGameableSocietyData: ThesisArticleData = {
           </p>
         </div>
 
-        <p class="leading-relaxed mb-6">
-          Saturated environments penalize polish. When everything looks optimized, optimization stops signaling quality. It signals conformity. Authenticity, visible struggle, real-time learning, unedited process, becomes a differentiator. Not because it is virtuous. Because it cannot be faked at scale. The inefficiency is the proof.
-        </p>
+        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
+          <p class="text-sm text-[var(--fg-muted)]">Saturated environments penalize polish. When everything looks optimized, optimization stops signaling quality. It signals conformity. Authenticity — visible struggle, real-time learning, unedited process — becomes a differentiator. Not because it is virtuous. Because it cannot be faked at scale. The inefficiency is the proof.</p>
+        </div>
 
         <p class="leading-relaxed mb-6">
-          Tolerance for awkwardness becomes a competitive input. It is not a personality trait. It is a resource allocation decision. The willingness to spend social capital now in exchange for compounding returns later.
+          Tolerance for awkwardness becomes a competitive input. It is not a personality trait. It is a resource allocation decision. The willingness to spend social capital now in exchange for compounding advantages later.
         </p>
       `,
     },
@@ -183,9 +183,9 @@ export const theGameableSocietyData: ThesisArticleData = {
       id: 'value-concentration',
       title: 'Value Concentration',
       content: `
-        <p class="text-lg leading-relaxed mb-6 text-[var(--fg)] font-medium">
-          Value does not disappear in a spectator-dominated society. It concentrates.
-        </p>
+        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
+          <p class="text-sm text-[var(--fg)] font-medium">Value does not disappear in a spectator-dominated society. It concentrates.</p>
+        </div>
 
         <p class="leading-relaxed mb-6">
           Spectators are not passive. They are economically productive inputs. Every hour of watching generates data. Every scroll generates signal. Every view generates demand. The attention itself is the product, packaged, segmented, and sold to advertisers, platforms, and intermediaries who convert it into revenue.
@@ -208,7 +208,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-6">
-          In attention markets, spectators provide liquidity. They are the pool of available attention that creators, influencers, and speculators draw from. Without spectators, there is no audience. Without audience, there is no monetizable attention. The entire ecosystem of visible success depends on a substrate of invisible watching.
+          In attention economies, spectators provide the raw material. They are the pool of available attention that creators, influencers, and platforms draw from. Without spectators, there is no audience. Without audience, there is no monetizable attention. The entire ecosystem of visible success depends on a substrate of invisible watching.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -225,7 +225,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-6">
-          Spectators receive low-cost stimulation. Platforms receive scalable revenue. Creators receive attention and validation. Speculators receive access to asymmetric upside. Optimization industries receive anxious demand.
+          Spectators receive low-cost stimulation. Platforms receive scalable revenue. Creators receive attention and validation. Risk-takers receive access to outsized outcomes. Optimization industries receive anxious demand.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -233,7 +233,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-6">
-          The aggregate outcome is concentration. Value flows upward to those who intermediate, exploit, or own the infrastructure. Value flows outward from those who watch, click, and spend time without capturing compounding returns.
+          The aggregate outcome is concentration. Value flows upward to those who intermediate, exploit, or own the infrastructure. Value flows outward from those who watch, click, and spend time without capturing compounding advantages.
         </p>
 
         <p class="leading-relaxed mb-6">

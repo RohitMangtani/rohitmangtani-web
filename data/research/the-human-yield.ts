@@ -8,7 +8,7 @@ export const theHumanYieldData: ResearchData = {
 
   onRamp: {
     description: 'As AI takes over more labor, a growing number of people will find that their most valuable economic activity is just being present. Not working. Being there. Supervising, participating, existing inside systems that need human inputs but not human effort. Not dystopia, not laziness. Just the next phase of a system that already turned attention into a commodity.',
-    whatItDoes: 'Connects idle games, passive investing, and spectator economics to show why passive participation is becoming rational.',
+    whatItDoes: 'Connects idle games, automation, and spectator economics to show why passive participation is becoming rational.',
     whatItDoesNot: 'Argue that people are worthless, predict specific timelines, or endorse UBI as policy.',
   },
 
@@ -81,7 +81,7 @@ export const theHumanYieldData: ResearchData = {
 
         <ul>
           <li><strong class="text-[var(--fg)]">Regulatory proxies:</strong> AI writes the report. A human signs it. The human's value is their signature, not their analysis.</li>
-          <li><strong class="text-[var(--fg)]">Supervision proxies:</strong> AI drives the car, monitors the patient, manages the portfolio. A human watches the dashboard. The human's value is being liable, not being skilled.</li>
+          <li><strong class="text-[var(--fg)]">Supervision proxies:</strong> AI drives the car, monitors the patient, manages the workflow. A human watches the dashboard. The human's value is being liable, not being skilled.</li>
           <li><strong class="text-[var(--fg)]">Social proxies:</strong> AI generates the content. A human posts it. The human's value is their identity, their network, their face, not their creative ability.</li>
         </ul>
 
@@ -91,21 +91,21 @@ export const theHumanYieldData: ResearchData = {
       `,
     },
     {
-      id: 'passive-investing-parallel',
-      title: 'The Passive Investing Parallel',
+      id: 'the-automation-parallel',
+      title: 'The Automation Parallel',
       content: `
-        <p>Passive investing works like this: you put capital into an index fund. You do not pick stocks. You do not analyze earnings. You do not time the market. You contribute capital, and the system generates returns on it. Your role is to be invested. Not to be smart about it.</p>
+        <p>Automation works like this: you set up a system, describe the workflow, and let the machinery handle execution. You do not perform each step manually. You do not intervene at every decision point. You contribute the initial setup and oversight, and the system generates output. Your role is to be present. Not to be busy.</p>
 
-        <p>Passive investing outperforms active investing for most people. The data is unambiguous. The reason is structural: the costs of active management (fees, errors, emotional trading) exceed the benefits for the median participant. Doing less produces more.</p>
+        <p>Automated systems outperform manual effort for most tasks. The data is unambiguous. The reason is structural: the costs of active intervention — errors, inconsistency, fatigue — exceed the benefits for the median participant. Doing less produces more.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg-muted)]">The same structural logic is about to apply to labor.</p>
-          <p class="text-sm text-[var(--fg-muted)] mt-3">For a growing share of the population, the costs of active labor (the effort, the training, the competition with AI systems) will exceed the benefits. The median worker's active contribution will be worth less than the system could generate without them. At that point, the economically rational behavior is not to work harder. It is to participate passively.</p>
+          <p class="text-sm text-[var(--fg-muted)]">The same structural logic is about to apply to labor broadly.</p>
+          <p class="text-sm text-[var(--fg-muted)] mt-3">For a growing share of the population, the costs of active labor — the effort, the training, the competition with AI systems — will exceed the benefits. The median worker's active contribution will be worth less than the system could generate without them. At that point, the economically rational behavior is not to work harder. It is to participate passively.</p>
         </div>
 
-        <p>Just as passive investors contribute capital and let the system allocate it, passive participants will contribute presence and let the system use it. Show up. Supervise. Approve. React. Exist inside the economic machinery. Do not try to outperform it. The machinery is better than you at the task. Your value is in being there, not in being good.</p>
+        <p>Just as automated systems need someone to set them up and monitor them, AI-driven workflows will need humans to contribute presence and let the system operate. Show up. Supervise. Approve. React. Exist inside the economic machinery. Do not try to outperform it. The machinery is better than you at the task. Your value is in being there, not in being good.</p>
 
-        <p>This sounds degrading until you realize that passive investing is not degrading. Nobody mocks the index fund investor. They mock the day trader who thought they could beat the market. The passive approach is, objectively, the smarter play for most people.</p>
+        <p>This sounds degrading until you consider how we already relate to automation. Nobody mocks the person who set up an automated pipeline and lets it run. They respect the efficiency. The passive approach is, objectively, the smarter play for most tasks.</p>
 
         <p>Passive participation in an AI-driven economy may follow the same trajectory. First mocked, then tolerated, then recognized as the rational default for the majority of participants. Not because people are lazy. Because the system generates more value from their passive presence than from their active interference.</p>
       `,
@@ -174,7 +174,7 @@ export const theHumanYieldData: ResearchData = {
     { text: 'Mangtani, R. (2024). <em>Why People Choose Honest Gambling Over Extractive Games</em>.', url: '/writing/honest-gambling' },
     { text: 'Frey, C.B. & Osborne, M.A. (2017). "The Future of Employment." Oxford Martin Programme.' },
     { text: 'Susskind, D. (2020). <em>A World Without Work: Technology, Automation, and How We Should Respond</em>.' },
-    { text: 'Malkiel, B. (2019). <em>A Random Walk Down Wall Street</em>. 12th Edition.' },
+    { text: 'Brynjolfsson, E. & McAfee, A. (2014). <em>The Second Machine Age</em>.' },
   ],
 
   relatedWork: [

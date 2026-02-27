@@ -133,8 +133,8 @@ export const thePositiveLoopData: ResearchData = {
                   <td class="py-2">Describe it, hours</td>
                 </tr>
                 <tr class="border-b border-[var(--border)]">
-                  <td class="py-2">Market research</td>
-                  <td class="py-2">Bloomberg + analyst team, weeks</td>
+                  <td class="py-2">Deep research</td>
+                  <td class="py-2">Expert team + databases, weeks</td>
                   <td class="py-2">Conversational query, minutes</td>
                 </tr>
                 <tr class="border-b border-[var(--border)]">
@@ -222,7 +222,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The analogy is early internet. In 1995, most people thought the internet was for email and maybe some research. The idea that it would restructure commerce, media, communication, and culture was not on the radar for 99% of the population. We are in the equivalent of 1995 right now, except the adoption curve is compressed from decades to years.</p>
 
-        <p>The same structural conditions that have historically produced outsized outcomes — low barriers, network effects, compressed time — are now producing outsized productivity gains. But because productivity gains are less visible than price movements, the market has not priced this in.</p>
+        <p>The same structural conditions that have historically produced outsized outcomes — low barriers, network effects, compressed time — are now producing outsized productivity gains. But because productivity gains are less visible than headcount changes or quarterly reports, almost nobody has fully registered how fast this is moving.</p>
       `,
     },
     {
@@ -286,8 +286,8 @@ export const thePositiveLoopData: ResearchData = {
             <p class="text-xs text-[var(--fg-muted)]">The gap between people who are using AI to build and people who are not is widening at an exponential rate. This is not because AI users are smarter. It is because they discovered the positive loop and are compounding on it daily. Every day you are not in the loop, the distance grows.</p>
           </div>
           <div class="p-4 border border-[var(--border)] rounded-lg">
-            <p class="text-sm font-semibold text-[var(--fg)] mb-1">For Markets</p>
-            <p class="text-xs text-[var(--fg-muted)]">AI productivity gains are radically under-priced because they are invisible. A person who automated 80% of their job with AI did not announce it. A startup that replaced a 10-person team with AI tools did not file a press release. The productivity revolution is happening silently, in individual workflows, and it is not reflected in any index.</p>
+            <p class="text-sm font-semibold text-[var(--fg)] mb-1">For Organizations</p>
+            <p class="text-xs text-[var(--fg-muted)]">AI productivity gains are radically under-recognized because they are invisible. A person who automated 80% of their job with AI did not announce it. A startup that replaced a 10-person team with AI tools did not file a press release. The productivity revolution is happening silently, in individual workflows, and most institutions have not begun to account for it.</p>
           </div>
           <div class="p-4 border border-[var(--border)] rounded-lg">
             <p class="text-sm font-semibold text-[var(--fg)] mb-1">For Culture</p>
