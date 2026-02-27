@@ -1,7 +1,7 @@
 'use client';
 
 import Nav from '@/components/Nav';
-import { computeSchedule, TOTAL_UPLOADS, DEITIES, type ScheduleEntry } from '@/data/lab/upload-dashboard';
+import { computeSchedule, TOTAL_UPLOADS, getUploadsCompleted, DEITIES, type ScheduleEntry } from '@/data/lab/upload-dashboard';
 import { useState, useMemo } from 'react';
 
 /* ── Helpers ─────────────────────────────────────────── */
@@ -27,6 +27,64 @@ function formatShort(d: Date) {
 function daysUntil(from: Date, to: Date) {
   const ms = to.getTime() - from.getTime();
   return Math.ceil(ms / (1000 * 60 * 60 * 24));
+}
+
+/* ── Status Badge ────────────────────────────────────── */
+
+function StatusBadge({ entry }: { entry: ScheduleEntry }) {
+  const today = new Date();
+  const isToday = isSameDay(entry.date, today);
+
+  switch (entry.status) {
+    case 'uploaded':
+      return entry.youtubeUrl ? (
+        <a
+          href={entry.youtubeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[10px] px-2 py-0.5 rounded border border-green-300 bg-green-50 text-green-700 hover:bg-green-100 transition-colors"
+          onClick={e => e.stopPropagation()}
+        >
+          Uploaded
+        </a>
+      ) : (
+        <span className="text-[10px] px-2 py-0.5 rounded border border-green-300 bg-green-50 text-green-700">Uploaded</span>
+      );
+    case 'generating':
+      return (
+        <span className="text-[10px] px-2 py-0.5 rounded border border-yellow-300 bg-yellow-50 text-yellow-700 animate-pulse">
+          Generating...
+        </span>
+      );
+    case 'uploading':
+      return (
+        <span className="text-[10px] px-2 py-0.5 rounded border border-blue-300 bg-blue-50 text-blue-700 animate-pulse">
+          Uploading...
+        </span>
+      );
+    case 'ready':
+      if (isToday) {
+        return (
+          <span className="text-[10px] px-2 py-0.5 rounded border border-amber-300 bg-amber-50 text-amber-700 animate-pulse">
+            Coming at 8 PM
+          </span>
+        );
+      }
+      return (
+        <span className="text-[10px] px-2 py-0.5 rounded border border-cyan-300 bg-cyan-50 text-cyan-700">Ready</span>
+      );
+    case 'generation_failed':
+      return (
+        <span className="text-[10px] px-2 py-0.5 rounded border border-red-300 bg-red-50 text-red-700">Failed</span>
+      );
+    default: {
+      const diff = daysUntil(today, entry.date);
+      if (diff <= 0) return null;
+      return (
+        <span className="text-[10px] text-[var(--fg-muted)] font-mono">{formatShort(entry.date)}</span>
+      );
+    }
+  }
 }
 
 /* ── Copy Block ──────────────────────────────────────── */
@@ -83,9 +141,7 @@ function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: str
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           <span className="text-green-700 text-xs font-bold uppercase tracking-widest">{label}</span>
           <span className={`text-[10px] px-2 py-0.5 rounded border font-mono ${langColor}`}>{langLabel}</span>
-          {!entry.generated && (
-            <span className="text-[10px] px-2 py-0.5 rounded border border-yellow-400 bg-yellow-50 text-yellow-700">Needs Generation</span>
-          )}
+          <StatusBadge entry={entry} />
         </div>
 
         <p className="text-xs text-[var(--fg-muted)] mb-1">
@@ -98,6 +154,22 @@ function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: str
           {formatDate(entry.date)} at <span className="font-mono font-bold text-[var(--fg)]">{entry.time}</span>
         </p>
       </div>
+
+      {/* ── YouTube Link (if uploaded) ── */}
+      {entry.youtubeUrl && (
+        <a
+          href={entry.youtubeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 p-4 rounded-xl border border-green-300/60 bg-green-50/50 hover:bg-green-50 transition-colors"
+        >
+          <span className="text-green-600 text-lg">&#9654;</span>
+          <div>
+            <p className="text-sm font-medium text-green-700">Watch on YouTube</p>
+            <p className="text-xs text-green-600/60 font-mono">{entry.youtubeUrl}</p>
+          </div>
+        </a>
+      )}
 
       {/* ── Generate (if needed) ── */}
       {!entry.generated && (
@@ -161,16 +233,15 @@ function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: str
 /* ── Deity Progress ──────────────────────────────────── */
 
 function DeityProgress({ schedule }: { schedule: ScheduleEntry[] }) {
-  const today = new Date();
   return (
     <div className="space-y-2">
       {DEITIES.map(deity => {
         const deityEntries = schedule.filter(e => e.deityId === deity.id);
-        const uploaded = deityEntries.filter(e => e.date < today && !isSameDay(e.date, today)).length;
+        const uploaded = deityEntries.filter(e => e.uploaded).length;
         const total = deityEntries.length;
         const pct = total > 0 ? Math.round((uploaded / total) * 100) : 0;
-        const enDone = deity.generated.en;
-        const hiDone = deity.generated.hi;
+        const enGenerated = deityEntries.some(e => e.language === 'en' && e.videoGenerated);
+        const hiGenerated = deityEntries.some(e => e.language === 'hi' && e.videoGenerated);
 
         return (
           <div key={deity.id} className="flex items-center gap-3 text-xs">
@@ -179,8 +250,8 @@ function DeityProgress({ schedule }: { schedule: ScheduleEntry[] }) {
               <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
             </div>
             <span className="text-[var(--fg-muted)] w-12 text-right">{uploaded}/{total}</span>
-            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${enDone ? 'bg-blue-500' : 'bg-zinc-300'}`} title={`EN ${enDone ? 'generated' : 'pending'}`} />
-            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${hiDone ? 'bg-orange-500' : 'bg-zinc-300'}`} title={`HI ${hiDone ? 'generated' : 'pending'}`} />
+            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${enGenerated ? 'bg-blue-500' : 'bg-zinc-300'}`} title={`EN ${enGenerated ? 'generated' : 'pending'}`} />
+            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${hiGenerated ? 'bg-orange-500' : 'bg-zinc-300'}`} title={`HI ${hiGenerated ? 'generated' : 'pending'}`} />
           </div>
         );
       })}
@@ -194,12 +265,11 @@ export default function UploadDashboard() {
   const today = new Date();
   const schedule = useMemo(() => computeSchedule(), []);
 
-  const todayEntry = schedule.find(e => isSameDay(e.date, today));
-  const upcoming = schedule.filter(e => e.date > today);
+  const todayEntry = schedule.find(e => !e.uploaded && isSameDay(e.date, today));
+  const upcoming = schedule.filter(e => !e.uploaded && e.date > today);
   const defaultEntry = todayEntry || upcoming[0];
   const isToday = todayEntry !== undefined;
-  const past = schedule.filter(e => e.date < today && !isSameDay(e.date, today));
-  const completedCount = past.length;
+  const completedCount = getUploadsCompleted();
 
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [showFullSchedule, setShowFullSchedule] = useState(false);
@@ -273,7 +343,6 @@ export default function UploadDashboard() {
           {showFullSchedule && (
             <div className="space-y-0.5">
               {schedule.map(entry => {
-                const isPast = entry.date < today && !isSameDay(entry.date, today);
                 const isCurrent = defaultEntry && entry.index === defaultEntry.index;
                 const isSelected = selectedIndex === entry.index;
                 return (
@@ -288,11 +357,16 @@ export default function UploadDashboard() {
                         ? 'bg-green-50 border border-green-400'
                         : isCurrent
                           ? 'bg-green-50/50 border border-green-300/50'
-                          : isPast
+                          : entry.uploaded
                             ? 'opacity-35 hover:opacity-60'
                             : 'hover:bg-[var(--bg-secondary)]'
                     }`}
                   >
+                    {entry.uploaded ? (
+                      <span className="text-green-600 shrink-0">&#10003;</span>
+                    ) : (
+                      <span className="w-3 shrink-0" />
+                    )}
                     <span className="text-[var(--fg-muted)] font-mono w-20 shrink-0">{formatShort(entry.date)}</span>
                     <span className={`px-1.5 py-0.5 rounded font-mono shrink-0 ${
                       entry.language === 'hi' ? 'bg-orange-50 text-orange-700' : 'bg-blue-50 text-blue-700'
@@ -302,11 +376,7 @@ export default function UploadDashboard() {
                     <span className="text-[var(--fg-muted)] shrink-0">{entry.deityNameEn}</span>
                     <span className="text-[var(--fg)] truncate">{entry.titleEn}</span>
                     <span className="ml-auto shrink-0">
-                      {entry.generated ? (
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
-                      ) : (
-                        <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 inline-block" />
-                      )}
+                      <StatusBadge entry={entry} />
                     </span>
                   </button>
                 );

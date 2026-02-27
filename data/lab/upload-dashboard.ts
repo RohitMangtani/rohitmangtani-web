@@ -6,9 +6,31 @@
  * Each pipeline run generates ALL chapters for a deity+language at once.
  */
 
+import scheduleStateJson from './schedule-state.json';
+
 export const START_DATE = '2026-02-26';
 export const INTERVAL_DAYS = 2;
 export const OUTPUT_BASE = '~/factory/projects/rmgtni-web/tools/sleep-history-yt/output';
+
+// ── State from scheduler ────────────────────────────────
+
+type EntryStatus = 'uploaded' | 'ready' | 'generating' | 'uploading' | 'scheduled' | 'pending' | 'generation_failed';
+
+interface StateEntry {
+  status: EntryStatus;
+  video_id?: string;
+  url?: string;
+  uploaded_at?: string;
+  date?: string;
+  video_generated?: boolean;
+}
+
+interface ScheduleState {
+  last_run: string | null;
+  uploads: Record<string, StateEntry>;
+}
+
+const scheduleState: ScheduleState = scheduleStateJson as ScheduleState;
 
 export const BASE_TAGS_EN = [
   'hinduism', 'hindu hymns', 'hindu stotra', 'sleep story', 'bedtime story',
@@ -184,7 +206,7 @@ Each verse of this ashtakam illuminates a different facet of Ganesha's divine pe
     playlistEn: 'Sacred Hymns of Lord Shiva', playlistHi: 'भगवान शिव के पवित्र स्तोत्र',
     tagsEn: ['Shiva', 'Mahadev', 'Shiv stotra', 'Om Namah Shivaya', 'Shiva meditation'],
     tagsHi: ['शिव', 'महादेव', 'शिव स्तोत्र', 'ॐ नमः शिवाय', 'भोलेनाथ'],
-    generated: { en: false, hi: false },
+    generated: { en: true, hi: true },
     hymns: [
       { titleEn: 'Shiv Tandav Stotram — Ravana\'s Thunderous Hymn', titleHi: 'शिव तांडव स्तोत्रम् — रावण का गर्जनापूर्ण स्तोत्र', slug: 'shiv_tandav_stotram' },
       { titleEn: 'Lingashtakam — Eight Verses on the Sacred Linga', titleHi: 'लिंगाष्टकम् — पवित्र लिंग के आठ छंद', slug: 'lingashtakam' },
@@ -335,6 +357,12 @@ export interface ScheduleEntry {
   subtitlesPath: string;
   pipelineCmd: string;
   generated: boolean;
+  uploaded: boolean;
+  status: EntryStatus;
+  videoId?: string;
+  youtubeUrl?: string;
+  uploadedAt?: string;
+  videoGenerated: boolean;
 }
 
 function buildDescription(deityName: string, hymnTitle: string, lang: 'en' | 'hi'): string {
@@ -357,11 +385,18 @@ This ancient hymn has been chanted for centuries. Here, its meaning and mytholog
 /**
  * Upload order: deity by deity, EN then HI, chapters in sequence.
  * Total: 59 hymns × 2 languages = 118 uploads.
+ *
+ * Uploaded entries keep original historical dates.
+ * Remaining entries start from today with INTERVAL_DAYS spacing.
+ * Status is merged from schedule-state.json (written by scheduler.py).
  */
 export function computeSchedule(): ScheduleEntry[] {
   const start = new Date(START_DATE + 'T12:00:00');
+  const today = new Date();
+  today.setHours(12, 0, 0, 0);
   const entries: ScheduleEntry[] = [];
   let idx = 0;
+  let futureIdx = 0;
 
   for (const deity of DEITIES) {
     for (const lang of ['en', 'hi'] as const) {
@@ -371,10 +406,25 @@ export function computeSchedule(): ScheduleEntry[] {
         const chPad = String(chNum).padStart(2, '0');
         const isHi = lang === 'hi';
 
-        const date = new Date(start);
-        date.setDate(start.getDate() + idx * INTERVAL_DAYS);
+        // Merge status from state file
+        const stateEntry = scheduleState.uploads[String(idx)];
+        const status: EntryStatus = stateEntry?.status ?? 'pending';
+        const isUploaded = status === 'uploaded';
+        const videoGenerated = stateEntry?.video_generated ?? deity.generated[lang];
 
-        const suffix = isHi ? '| हिंदू स्तोत्र नींद के लिए' : '| Hindu Hymns For Sleep';
+        // Uploaded entries keep historical dates; future entries start from today
+        let date: Date;
+        if (isUploaded) {
+          date = new Date(start);
+          date.setDate(start.getDate() + idx * INTERVAL_DAYS);
+        } else {
+          date = new Date(today);
+          date.setDate(today.getDate() + futureIdx * INTERVAL_DAYS);
+          futureIdx++;
+        }
+
+        const suffix = isHi ? '| हिंदू भक्ति स्तोत्र' : '| Hindu Devotional Hymns';
+        const deityName = isHi ? deity.nameHi : deity.nameEn;
         const title = isHi ? hymn.titleHi : hymn.titleEn;
         const baseTags = isHi ? BASE_TAGS_HI : BASE_TAGS_EN;
         const deityTags = isHi ? deity.tagsHi : deity.tagsEn;
@@ -397,14 +447,20 @@ export function computeSchedule(): ScheduleEntry[] {
           language: lang,
           time: isHi ? '8:00 PM IST' : '8:00 PM EST',
           playlist: isHi ? deity.playlistHi : deity.playlistEn,
-          ytTitle: `${title} ${suffix}`,
-          description: richDesc || buildDescription(isHi ? deity.nameHi : deity.nameEn, title, lang),
+          ytTitle: `${deity.nameEn} — Part ${chNum}: ${title} ${suffix}`,
+          description: richDesc || buildDescription(deityName, title, lang),
           tags: [...baseTags, ...deityTags, ...(hymnTags || [])],
           videoPath: `${basePath}/video_final.mp4`,
           thumbnailPath: `${basePath}/thumbnail.jpg`,
           subtitlesPath: `${basePath}/subtitles_clean.srt`,
           pipelineCmd: `python3 pipeline.py --deity ${deity.id} --lang ${lang}`,
-          generated: deity.generated[lang],
+          generated: videoGenerated,
+          uploaded: isUploaded,
+          status,
+          videoId: stateEntry?.video_id,
+          youtubeUrl: stateEntry?.url,
+          uploadedAt: stateEntry?.uploaded_at,
+          videoGenerated,
         });
         idx++;
       }
@@ -412,6 +468,11 @@ export function computeSchedule(): ScheduleEntry[] {
   }
 
   return entries;
+}
+
+/** Count entries with status 'uploaded' from the live state file. */
+export function getUploadsCompleted(): number {
+  return Object.values(scheduleState.uploads).filter(e => e.status === 'uploaded').length;
 }
 
 // ── Stats ────────────────────────────────────────────────
