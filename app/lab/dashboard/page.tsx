@@ -45,8 +45,8 @@ function CopyBlock({ label, value, mono }: { label: string; value: string; mono?
           }}
           className={`text-[10px] uppercase tracking-wider px-2.5 py-1 rounded transition-all cursor-pointer ${
             copied
-              ? 'bg-green-900/40 text-green-400'
-              : 'bg-[var(--bg-hover)] text-[var(--fg-muted)] hover:text-[var(--fg)]'
+              ? 'bg-green-100 text-green-700'
+              : 'bg-[var(--bg-secondary)] text-[var(--fg-muted)] hover:text-[var(--fg)]'
           }`}
         >
           {copied ? 'Copied' : 'Copy'}
@@ -63,7 +63,7 @@ function CopyBlock({ label, value, mono }: { label: string; value: string; mono?
 
 function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: string; onBack?: () => void }) {
   const langLabel = entry.language === 'hi' ? 'Hindi' : 'English';
-  const langColor = entry.language === 'hi' ? 'bg-orange-950 text-orange-300 border-orange-900' : 'bg-blue-950 text-blue-300 border-blue-900';
+  const langColor = entry.language === 'hi' ? 'bg-orange-50 text-orange-700 border-orange-300' : 'bg-blue-50 text-blue-700 border-blue-300';
 
   return (
     <div className="space-y-10">
@@ -80,11 +80,11 @@ function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: str
         )}
 
         <div className="flex items-center gap-2 flex-wrap mb-3">
-          <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-green-400 text-xs font-bold uppercase tracking-widest">{label}</span>
+          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+          <span className="text-green-700 text-xs font-bold uppercase tracking-widest">{label}</span>
           <span className={`text-[10px] px-2 py-0.5 rounded border font-mono ${langColor}`}>{langLabel}</span>
           {!entry.generated && (
-            <span className="text-[10px] px-2 py-0.5 rounded border border-yellow-900 bg-yellow-950 text-yellow-300">Needs Generation</span>
+            <span className="text-[10px] px-2 py-0.5 rounded border border-yellow-400 bg-yellow-50 text-yellow-700">Needs Generation</span>
           )}
         </div>
 
@@ -101,10 +101,10 @@ function UploadCard({ entry, label, onBack }: { entry: ScheduleEntry; label: str
 
       {/* ── Generate (if needed) ── */}
       {!entry.generated && (
-        <div className="border border-yellow-900/40 rounded-xl bg-yellow-950/10 p-6 space-y-4">
-          <p className="text-sm font-medium text-yellow-300">Step 0 — Generate videos first</p>
+        <div className="border border-yellow-300 rounded-xl bg-yellow-50 p-6 space-y-4">
+          <p className="text-sm font-medium text-yellow-800">Step 0 — Generate videos first</p>
           <CopyBlock label="Pipeline command" value={entry.pipelineCmd} mono />
-          <p className="text-xs text-yellow-400/60">Generates all {entry.totalChapters} chapters. Come back when done.</p>
+          <p className="text-xs text-yellow-600">Generates all {entry.totalChapters} chapters. Come back when done.</p>
         </div>
       )}
 
@@ -179,8 +179,8 @@ function DeityProgress({ schedule }: { schedule: ScheduleEntry[] }) {
               <div className="h-full bg-green-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
             </div>
             <span className="text-[var(--fg-muted)] w-12 text-right">{uploaded}/{total}</span>
-            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${enDone ? 'bg-blue-400' : 'bg-zinc-600'}`} title={`EN ${enDone ? 'generated' : 'pending'}`} />
-            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${hiDone ? 'bg-orange-400' : 'bg-zinc-600'}`} title={`HI ${hiDone ? 'generated' : 'pending'}`} />
+            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${enDone ? 'bg-blue-500' : 'bg-zinc-300'}`} title={`EN ${enDone ? 'generated' : 'pending'}`} />
+            <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${hiDone ? 'bg-orange-500' : 'bg-zinc-300'}`} title={`HI ${hiDone ? 'generated' : 'pending'}`} />
           </div>
         );
       })}
@@ -285,17 +285,17 @@ export default function UploadDashboard() {
                     }}
                     className={`w-full flex items-center gap-2 px-3 py-2.5 rounded-lg text-xs text-left transition-colors cursor-pointer ${
                       isSelected
-                        ? 'bg-green-950/30 border border-green-700/60'
+                        ? 'bg-green-50 border border-green-400'
                         : isCurrent
-                          ? 'bg-green-950/15 border border-green-900/30'
+                          ? 'bg-green-50/50 border border-green-300/50'
                           : isPast
                             ? 'opacity-35 hover:opacity-60'
-                            : 'hover:bg-[var(--bg-hover)]'
+                            : 'hover:bg-[var(--bg-secondary)]'
                     }`}
                   >
                     <span className="text-[var(--fg-muted)] font-mono w-20 shrink-0">{formatShort(entry.date)}</span>
                     <span className={`px-1.5 py-0.5 rounded font-mono shrink-0 ${
-                      entry.language === 'hi' ? 'bg-orange-950 text-orange-300' : 'bg-blue-950 text-blue-300'
+                      entry.language === 'hi' ? 'bg-orange-50 text-orange-700' : 'bg-blue-50 text-blue-700'
                     }`}>
                       {entry.language.toUpperCase()}
                     </span>
@@ -303,9 +303,9 @@ export default function UploadDashboard() {
                     <span className="text-[var(--fg)] truncate">{entry.titleEn}</span>
                     <span className="ml-auto shrink-0">
                       {entry.generated ? (
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
                       ) : (
-                        <span className="w-1.5 h-1.5 rounded-full bg-zinc-600 inline-block" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 inline-block" />
                       )}
                     </span>
                   </button>

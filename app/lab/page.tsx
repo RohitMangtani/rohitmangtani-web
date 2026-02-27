@@ -72,7 +72,7 @@ export default function LabPage() {
               href={item.href}
               className="block group"
             >
-              <div className="p-4 border border-green-900/60 bg-green-950/10 rounded-lg transition-all duration-200 hover:border-green-700 hover:bg-green-950/20">
+              <div className="p-4 border border-green-300 bg-green-50/50 rounded-lg transition-all duration-200 hover:border-green-500 hover:bg-green-50">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
@@ -80,7 +80,7 @@ export default function LabPage() {
                     </h3>
                     <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
                   </div>
-                  <span className="text-xs font-mono text-green-400 flex-shrink-0">Live</span>
+                  <span className="text-xs font-mono text-green-600 flex-shrink-0">Live</span>
                 </div>
               </div>
             </Link>
