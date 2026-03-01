@@ -128,6 +128,6 @@ export const resumeData: ResumeData = {
     { category: 'Skills', items: 'Financial Modeling, Analytical Skills, Agile Methodologies, Strategic Thinking, Communication, Collaboration' },
     { category: 'Applications', items: 'Microsoft Word, Microsoft Excel, Microsoft PowerPoint, JIRA, Confluence, PowerBI, Tableau, Alteryx, Snowflake, PyCharm, Eclipse, Rstudio, MySQL, SAP, ServiceNOW, Bloomberg, Morningstar' },
     { category: 'Computer Languages', items: 'Python, R, SQL, HTML, CSS' },
-    { category: 'Interests', items: 'Thematic Investing, Collecting Novelty Shoes, Music Production, Taekwondo (Black Belt II)' },
+    { category: 'Interests', items: 'Thematic Investing, Game Theory, Internet Culture, Taekwondo (Black Belt II)' },
   ],
 };
