@@ -4,6 +4,7 @@ import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
 import { theHumanYieldData } from '@/data/research/the-human-yield';
 import { theFutureOfPmData } from '@/data/research/the-future-of-pm';
+import { theHumanSensorLayerData } from '@/data/research/the-human-sensor-layer';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -13,6 +14,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'honest-gambling': { data: honestGamblingData },
   'the-gameable-society': { data: theGameableSocietyData },
   'the-future-of-pm': { data: theFutureOfPmData },
+  'the-human-sensor-layer': { data: theHumanSensorLayerData },
 };
 
 export async function generateStaticParams() {
