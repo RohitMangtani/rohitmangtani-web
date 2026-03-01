@@ -84,7 +84,7 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
         </header>
 
         {/* Narration */}
-        <ArticleNarrator sections={data.sections} />
+        <ArticleNarrator slug={data.slug} />
 
         {/* Table of Contents */}
         <TableOfContents items={tocItems} />

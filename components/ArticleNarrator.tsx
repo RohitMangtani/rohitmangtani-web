@@ -1,53 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, useMemo, useCallback } from 'react';
-import type { ContentSection } from '@/types/base';
-
-function stripHtml(html: string): string {
-  return html
-    .replace(/<(?:table|figure|svg)[\s\S]*?<\/(?:table|figure|svg)>/gi, '')
-    .replace(/<\/(?:p|div|li|h[1-6]|blockquote|tr|figcaption)>/gi, '\n')
-    .replace(/<br\s*\/?>/gi, ' ')
-    .replace(/<[^>]*>/g, '')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function splitSentences(text: string): string[] {
-  if (!text) return [];
-  return text.split(/\n/)
-    .flatMap(line => line.split(/(?<=[.!?])\s+/))
-    .filter(s => s.trim().length > 0);
-}
-
-function extractSentences(sections: ContentSection[]): string[] {
-  const result: string[] = [];
-  for (const section of sections) {
-    result.push(section.title);
-    const text = stripHtml(section.content);
-    if (text) result.push(...splitSentences(text));
-    if (section.subsections) {
-      for (const sub of section.subsections) {
-        result.push(sub.title);
-        const subText = stripHtml(sub.content);
-        if (subText) result.push(...splitSentences(subText));
-        if (sub.list) {
-          for (const item of sub.list) {
-            const t = stripHtml(item);
-            if (t) result.push(...splitSentences(t));
-          }
-        }
-      }
-    }
-  }
-  return result;
-}
+import { useState, useRef, useEffect, useCallback } from 'react';
 
 function formatTime(totalSeconds: number): string {
   const m = Math.floor(totalSeconds / 60);
@@ -55,178 +8,85 @@ function formatTime(totalSeconds: number): string {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-function selectBestVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null {
-  const english = voices.filter(v => v.lang.startsWith('en'));
-  if (english.length === 0) return null;
-  // macOS/iOS premium and enhanced voices sound the most natural
-  const premium = english.find(v => /premium/i.test(v.name));
-  if (premium) return premium;
-  const enhanced = english.find(v => /enhanced/i.test(v.name));
-  if (enhanced) return enhanced;
-  // Edge ships high-quality neural voices
-  const natural = english.find(v => /natural/i.test(v.name));
-  if (natural) return natural;
-  // Chrome's Google voices are decent
-  const google = english.find(v => /google/i.test(v.name));
-  if (google) return google;
-  return english[0];
-}
-
 const SPEEDS = [1, 1.25, 1.5, 0.75] as const;
-const WPM = 150;
-
-type Status = 'idle' | 'playing' | 'paused';
 
 interface ArticleNarratorProps {
-  sections: ContentSection[];
+  slug: string;
 }
 
-export function ArticleNarrator({ sections }: ArticleNarratorProps) {
-  const [status, setStatus] = useState<Status>('idle');
-  const [currentIndex, setCurrentIndex] = useState(0);
+export function ArticleNarrator({ slug }: ArticleNarratorProps) {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [available, setAvailable] = useState(true);
+  const [playing, setPlaying] = useState(false);
+  const [duration, setDuration] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
   const [speedIdx, setSpeedIdx] = useState(0);
-  const [mounted, setMounted] = useState(false);
 
-  const statusRef = useRef<Status>('idle');
-  const indexRef = useRef(0);
-  const speedRef = useRef<number>(SPEEDS[0]);
-  const genRef = useRef(0);
-  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
+  const handleError = useCallback(() => setAvailable(false), []);
 
-  // Keep refs in sync for async callback access
-  statusRef.current = status;
-  indexRef.current = currentIndex;
-  speedRef.current = SPEEDS[speedIdx];
-
-  const { sentences, cumulativeWords, totalWords } = useMemo(() => {
-    const s = extractSentences(sections);
-    const wc = s.map(sent => sent.split(/\s+/).length);
-    const cum: number[] = [];
-    let sum = 0;
-    for (const c of wc) {
-      sum += c;
-      cum.push(sum);
-    }
-    return { sentences: s, cumulativeWords: cum, totalWords: sum };
-  }, [sections]);
-
-  const sentencesRef = useRef(sentences);
-  sentencesRef.current = sentences;
-
-  useEffect(() => {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-    setMounted(true);
-
-    function loadVoices() {
-      const voices = window.speechSynthesis.getVoices();
-      if (voices.length > 0) voiceRef.current = selectBestVoice(voices);
-    }
-    loadVoices();
-    window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
-
-    return () => {
-      window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
-      window.speechSynthesis.cancel();
-    };
+  const handleLoadedMetadata = useCallback(() => {
+    if (audioRef.current) setDuration(audioRef.current.duration);
   }, []);
 
-  const speakFrom = useCallback((index: number) => {
-    const gen = ++genRef.current;
-    window.speechSynthesis.cancel();
+  const handleTimeUpdate = useCallback(() => {
+    if (audioRef.current) setCurrentTime(audioRef.current.currentTime);
+  }, []);
 
-    if (index >= sentencesRef.current.length) {
-      statusRef.current = 'idle';
-      setStatus('idle');
-      indexRef.current = 0;
-      setCurrentIndex(0);
-      return;
-    }
-
-    const utterance = new SpeechSynthesisUtterance(sentencesRef.current[index]);
-    if (voiceRef.current) utterance.voice = voiceRef.current;
-    utterance.rate = speedRef.current;
-
-    utterance.onend = () => {
-      if (gen !== genRef.current) return;
-      if (statusRef.current !== 'playing') return;
-      const next = indexRef.current + 1;
-      indexRef.current = next;
-      setCurrentIndex(next);
-      if (next < sentencesRef.current.length) {
-        speakFrom(next);
-      } else {
-        statusRef.current = 'idle';
-        setStatus('idle');
-        indexRef.current = 0;
-        setCurrentIndex(0);
-      }
-    };
-
-    window.speechSynthesis.speak(utterance);
+  const handleEnded = useCallback(() => {
+    setPlaying(false);
+    setCurrentTime(0);
+    if (audioRef.current) audioRef.current.currentTime = 0;
   }, []);
 
   function handlePlayPause() {
-    if (status === 'playing') {
-      window.speechSynthesis.pause();
-      statusRef.current = 'paused';
-      setStatus('paused');
-    } else if (status === 'paused') {
-      window.speechSynthesis.resume();
-      statusRef.current = 'playing';
-      setStatus('playing');
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (playing) {
+      audio.pause();
+      setPlaying(false);
     } else {
-      statusRef.current = 'playing';
-      setStatus('playing');
-      speakFrom(indexRef.current);
+      audio.play();
+      setPlaying(true);
     }
   }
 
   function handleSeek(e: React.ChangeEvent<HTMLInputElement>) {
-    const pct = Number(e.target.value) / 100;
-    const targetWords = pct * totalWords;
-    let idx = 0;
-    for (let i = 0; i < cumulativeWords.length; i++) {
-      if (cumulativeWords[i] >= targetWords) { idx = i; break; }
-      idx = i;
-    }
-    indexRef.current = idx;
-    setCurrentIndex(idx);
-    if (status === 'playing' || status === 'paused') {
-      statusRef.current = 'playing';
-      setStatus('playing');
-      speakFrom(idx);
-    }
+    const audio = audioRef.current;
+    if (!audio || !duration) return;
+    const time = (Number(e.target.value) / 100) * duration;
+    audio.currentTime = time;
+    setCurrentTime(time);
   }
 
   function handleSpeedChange() {
     const newIdx = (speedIdx + 1) % SPEEDS.length;
     setSpeedIdx(newIdx);
-    speedRef.current = SPEEDS[newIdx];
-    if (status === 'playing' || status === 'paused') {
-      statusRef.current = 'playing';
-      setStatus('playing');
-      speakFrom(indexRef.current);
-    }
+    if (audioRef.current) audioRef.current.playbackRate = SPEEDS[newIdx];
   }
 
   const speed = SPEEDS[speedIdx];
-  const totalTimeSec = (totalWords / WPM) * 60 / speed;
-  const elapsedWords = currentIndex > 0 && currentIndex <= cumulativeWords.length
-    ? cumulativeWords[currentIndex - 1]
-    : 0;
-  const elapsedTimeSec = (elapsedWords / WPM) * 60 / speed;
-  const progress = totalWords > 0 ? (elapsedWords / totalWords) * 100 : 0;
+  const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
 
-  if (!mounted || sentences.length === 0) return null;
+  if (!available) return null;
 
   return (
     <div className="mb-8 flex items-center gap-3 px-4 py-3 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)]">
+      <audio
+        ref={audioRef}
+        src={`/audio/${slug}.mp3`}
+        preload="metadata"
+        onLoadedMetadata={handleLoadedMetadata}
+        onTimeUpdate={handleTimeUpdate}
+        onEnded={handleEnded}
+        onError={handleError}
+      />
+
       <button
         onClick={handlePlayPause}
         className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-[var(--fg-muted)] hover:text-[var(--fg)]"
-        aria-label={status === 'playing' ? 'Pause narration' : 'Play narration'}
+        aria-label={playing ? 'Pause narration' : 'Play narration'}
       >
-        {status === 'playing' ? (
+        {playing ? (
           <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
             <rect x="2" y="1" width="3.5" height="12" rx="0.75" />
             <rect x="8.5" y="1" width="3.5" height="12" rx="0.75" />
@@ -258,7 +118,7 @@ export function ArticleNarrator({ sections }: ArticleNarratorProps) {
       </button>
 
       <span className="flex-shrink-0 text-xs text-[var(--fg-muted)] tabular-nums min-w-[4.5rem] text-right">
-        {formatTime(elapsedTimeSec)} / {formatTime(totalTimeSec)}
+        {formatTime(currentTime)} / {formatTime(duration)}
       </span>
     </div>
   );
