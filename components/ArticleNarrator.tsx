@@ -55,6 +55,23 @@ function formatTime(totalSeconds: number): string {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
+function selectBestVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null {
+  const english = voices.filter(v => v.lang.startsWith('en'));
+  if (english.length === 0) return null;
+  // macOS/iOS premium and enhanced voices sound the most natural
+  const premium = english.find(v => /premium/i.test(v.name));
+  if (premium) return premium;
+  const enhanced = english.find(v => /enhanced/i.test(v.name));
+  if (enhanced) return enhanced;
+  // Edge ships high-quality neural voices
+  const natural = english.find(v => /natural/i.test(v.name));
+  if (natural) return natural;
+  // Chrome's Google voices are decent
+  const google = english.find(v => /google/i.test(v.name));
+  if (google) return google;
+  return english[0];
+}
+
 const SPEEDS = [1, 1.25, 1.5, 0.75] as const;
 const WPM = 150;
 
@@ -74,6 +91,7 @@ export function ArticleNarrator({ sections }: ArticleNarratorProps) {
   const indexRef = useRef(0);
   const speedRef = useRef<number>(SPEEDS[0]);
   const genRef = useRef(0);
+  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
 
   // Keep refs in sync for async callback access
   statusRef.current = status;
@@ -96,10 +114,20 @@ export function ArticleNarrator({ sections }: ArticleNarratorProps) {
   sentencesRef.current = sentences;
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      setMounted(true);
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    setMounted(true);
+
+    function loadVoices() {
+      const voices = window.speechSynthesis.getVoices();
+      if (voices.length > 0) voiceRef.current = selectBestVoice(voices);
     }
-    return () => { window.speechSynthesis?.cancel(); };
+    loadVoices();
+    window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+
+    return () => {
+      window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
+      window.speechSynthesis.cancel();
+    };
   }, []);
 
   const speakFrom = useCallback((index: number) => {
@@ -115,6 +143,7 @@ export function ArticleNarrator({ sections }: ArticleNarratorProps) {
     }
 
     const utterance = new SpeechSynthesisUtterance(sentencesRef.current[index]);
+    if (voiceRef.current) utterance.voice = voiceRef.current;
     utterance.rate = speedRef.current;
 
     utterance.onend = () => {
