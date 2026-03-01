@@ -27,7 +27,7 @@ Future PM workspace:
 
 **[SVG DIAGRAM 1: Three Layers stacked/connected]**
 
-### 4. Find My Agents
+### 4. Hive
 Deep dive on the manager. Road metaphor: agents are drivers, map shows the road, manager makes sure everyone drives. Green = running, red = stopped.
 
 **[SVG DIAGRAM 2: iPhone-style agent status interface]**
@@ -42,7 +42,7 @@ PM becomes a context provider. Taste, direction, judgment. Same residual human i
 
 ## Visual Assets (3 SVGs)
 1. Three Layers Diagram
-2. Find My Agents Interface (iPhone-style)
+2. Hive Interface (iPhone-style)
 3. Full Workflow Diagram
 
 ## References

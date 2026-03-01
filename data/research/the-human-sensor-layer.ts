@@ -72,23 +72,6 @@ export const theHumanSensorLayerData: ResearchData = {
       `,
     },
     {
-      id: 'the-floor',
-      title: 'The Floor',
-      content: `
-        <p>Sam Altman handed 3,000 people $1,000 a month for three years and watched what happened. No strings attached. No work requirements. Just cash, every month, deposited directly. The OpenResearch results landed in 2025: participants worked 1.3 fewer hours per week. They were 6% more likely to pursue education or training. They did not stop working. They redirected.</p>
-
-        <p>Finland ran the same experiment at a different scale. Two thousand unemployed people, €560 per month, two years. Employment effects were minimal. Well-being improved measurably. GiveDirectly went even further in Kenya: 200 villages, $22.50 per month, for 12 years. No work disincentives. Measurable improvements in health and education spending.</p>
-
-        <div class="border-l-2 border-[var(--border)] pl-6 my-10">
-          <p class="leading-relaxed mb-4">The pattern across every pilot is the same. People do not stop. They redirect. The 1.3 hours that OpenResearch participants stopped working were not hours of laziness. They were hours that shifted toward education, care, creative projects. Things that do not show up in employment statistics but show up in what people build next.</p>
-        </div>
-
-        <p>Here is the hypothesis: every system with enough displaced people eventually builds a floor. AI is displacing people faster than any previous technology. The floor will get built because the alternative is instability. And that floor is not charity. <a href="/writing/the-human-yield" class="underline hover:opacity-60">The Human Yield</a> described it directly: UBI in this context is system maintenance. The displaced population is not being served. It is being managed.</p>
-
-        <p>Above the floor, the stratification holds. Sensors compound. Nodes participate. The floor catches everyone else. And from every tier, fiat erosion keeps pushing capital into the one place that has no gatekeeper: the market.</p>
-      `,
-    },
-    {
       id: 'belief-as-signal',
       title: 'Belief as Signal',
       content: `

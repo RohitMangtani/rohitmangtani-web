@@ -2,6 +2,7 @@ import { ImageResponse } from 'next/og';
 import { thePositiveLoopData } from '@/data/research/the-positive-loop';
 import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
+import { theFiveInputsData } from '@/data/research/the-five-inputs';
 
 export const runtime = 'edge';
 export const alt = 'Article - Rohit Mangtani';
@@ -12,6 +13,7 @@ const articles: Record<string, { title: string; subtitle: string }> = {
   'the-positive-loop': thePositiveLoopData,
   'honest-gambling': honestGamblingData,
   'the-gameable-society': theGameableSocietyData,
+  'the-five-inputs': theFiveInputsData,
 };
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
