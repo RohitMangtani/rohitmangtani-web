@@ -51,9 +51,9 @@ const externalProjects = [
     date: '2026',
   },
   {
-    title: 'Find My Agents',
+    title: 'Hive',
     href: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0',
-    description: 'Find My iPhone for Claude Code. Live dashboard that discovers every running instance on your machine, identifies what each one is working on, and lets you message them.',
+    description: 'Multi-agent orchestration dashboard. Discovers every running Claude Code instance, shows what each one is working on with green/red status, and lets you message them.',
     date: '2026',
   },
 ];
