@@ -6,6 +6,7 @@ import Link from 'next/link';
 import TableOfContents from '@/components/TableOfContents';
 import References from '@/components/References';
 import DataAvailability from '@/components/DataAvailability';
+import { ArticleNarrator } from '@/components/ArticleNarrator';
 
 interface WritingTemplateProps {
   data: {
@@ -81,6 +82,9 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
           <p className="text-lg text-[var(--fg-muted)] mb-4">{data.subtitle}</p>
           <p className="text-sm text-[var(--fg-muted)]">{data.date}</p>
         </header>
+
+        {/* Narration */}
+        <ArticleNarrator sections={data.sections} />
 
         {/* Table of Contents */}
         <TableOfContents items={tocItems} />
