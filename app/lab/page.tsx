@@ -50,6 +50,12 @@ const externalProjects = [
     description: 'Sacred hymns of India. Read, watch, and download every major Hindu prayer in English and Hindi.',
     date: '2026',
   },
+  {
+    title: 'Find My Agents',
+    href: 'https://dashboard-flame-two-83.vercel.app',
+    description: 'Find My iPhone for Claude Code. Live dashboard that discovers every running instance on your machine, identifies what each one is working on, and lets you message them.',
+    date: '2026',
+  },
 ];
 
 export default function LabPage() {
