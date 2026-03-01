@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'the-human-bridge',
+    title: 'The Human Bridge',
+    date: '2026',
+  },
+  {
     slug: 'the-human-sensor-layer',
     title: 'The Human Sensor Layer',
     date: '2026',

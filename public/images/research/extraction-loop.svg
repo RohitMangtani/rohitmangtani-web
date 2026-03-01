@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" fill="none">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="680" height="400" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">THE EXTRACTION FEEDBACK LOOP</text>
+
+  <!-- Center label -->
+  <text x="340" y="195" text-anchor="middle" font-size="10" font-weight="500" fill="#a8a29e">COMPOUNDS</text>
+  <text x="340" y="210" text-anchor="middle" font-size="10" font-weight="500" fill="#a8a29e">EACH CYCLE</text>
+
+  <!-- Node 1: AI Output (top center) -->
+  <rect x="250" y="55" width="180" height="50" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">1. AI Output</text>
+  <text x="340" y="94" text-anchor="middle" font-size="9" fill="#44403c">System generates content</text>
+
+  <!-- Node 2: Human Detection (right) -->
+  <rect x="490" y="130" width="160" height="50" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="570" y="153" text-anchor="middle" font-size="11" font-weight="600" fill="#991b1b">2. Human Detection</text>
+  <text x="570" y="169" text-anchor="middle" font-size="9" fill="#dc2626">"This reads like AI"</text>
+
+  <!-- Node 3: Signal Extraction (bottom right) -->
+  <rect x="440" y="240" width="180" height="50" rx="6" fill="#fdf4ff" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="530" y="263" text-anchor="middle" font-size="11" font-weight="600" fill="#7e22ce">3. Signal Extraction</text>
+  <text x="530" y="279" text-anchor="middle" font-size="9" fill="#a855f7">Articulate what feels off</text>
+
+  <!-- Node 4: Rule Formalization (bottom left) -->
+  <rect x="60" y="240" width="180" height="50" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="150" y="263" text-anchor="middle" font-size="11" font-weight="600" fill="#1e40af">4. Rule Formalization</text>
+  <text x="150" y="279" text-anchor="middle" font-size="9" fill="#3b82f6">Structured constraint</text>
+
+  <!-- Node 5: System Update (left) -->
+  <rect x="30" y="130" width="170" height="50" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="115" y="153" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">5. System Update</text>
+  <text x="115" y="169" text-anchor="middle" font-size="9" fill="#22c55e">Pipeline improved</text>
+
+  <!-- Arrows connecting nodes -->
+  <!-- 1 to 2 -->
+  <path d="M 430 85 Q 490 90 490 130" stroke="#d6d3d1" stroke-width="1.5" fill="none"/>
+  <polygon points="484,126 490,136 496,126" fill="#d6d3d1"/>
+
+  <!-- 2 to 3 -->
+  <path d="M 570 180 Q 570 210 550 240" stroke="#d6d3d1" stroke-width="1.5" fill="none"/>
+  <polygon points="544,236 550,246 556,236" fill="#d6d3d1"/>
+
+  <!-- 3 to 4 -->
+  <path d="M 440 265 L 240 265" stroke="#d6d3d1" stroke-width="1.5" fill="none"/>
+  <polygon points="244,259 234,265 244,271" fill="#d6d3d1"/>
+
+  <!-- 4 to 5 -->
+  <path d="M 130 240 Q 115 210 115 180" stroke="#d6d3d1" stroke-width="1.5" fill="none"/>
+  <polygon points="109,184 115,174 121,184" fill="#d6d3d1"/>
+
+  <!-- 5 to 1 (completing the loop, green) -->
+  <path d="M 200 148 Q 240 120 250 90" stroke="#22c55e" stroke-width="1.5" fill="none"/>
+  <polygon points="246,95 256,85 255,97" fill="#22c55e"/>
+
+  <!-- Example annotation -->
+  <rect x="130" y="330" width="420" height="45" rx="6" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="350" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">Example: "paragraphs blend claims with context"</text>
+  <text x="340" y="366" text-anchor="middle" font-size="9" fill="#a8a29e">Formalized as: context, then hypothesis, then data. Never blended.</text>
+</svg>
