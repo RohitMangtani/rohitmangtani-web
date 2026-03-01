@@ -100,7 +100,7 @@ export const theFutureOfPmData: ResearchData = {
 
         <p>Now replace devices with agents. Each agent instance is a device. The manager watches all of them. Green means the agent is driving. It has context, it knows what it is doing, it is producing output that aligns with intent. Red means the agent stopped. It hit a context wall, encountered ambiguity, needs a decision from you. It is asking for directions.</p>
 
-        <p>One simple interface. A list of every agent, what it is working on, and whether it is running or stuck. When one goes red, it pings you. You provide the context it lost, the decision it cannot make, the direction it needs. You send it back. It resumes driving. There is a <a href="https://dashboard-flame-two-83.vercel.app?viewer=bc72885726bc0636b18d26d8c34383cc359a84223fa1a183ce1e3eb9d2301472" class="underline hover:opacity-60" target="_blank" rel="noopener">working proof of concept</a> of this running right now, built on the architecture described here.</p>
+        <p>One simple interface. A list of every agent, what it is working on, and whether it is running or stuck. When one goes red, it pings you. You provide the context it lost, the decision it cannot make, the direction it needs. You send it back. It resumes driving. There is a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">working proof of concept</a> of this running right now, built on the architecture described here.</p>
 
         <p>You are not micromanaging. You are routing. The difference is everything.</p>
       `,
@@ -112,13 +112,13 @@ export const theFutureOfPmData: ResearchData = {
         <p>The manager layer is the one that does not exist yet in any serious form. And it is the one that matters most. Because this is where context either holds or collapses.</p>
 
         <figure class="my-8" style="position:relative">
-          <a href="https://dashboard-flame-two-83.vercel.app?viewer=bc72885726bc0636b18d26d8c34383cc359a84223fa1a183ce1e3eb9d2301472" target="_blank" rel="noopener" style="display:block;position:relative;cursor:pointer">
+          <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" target="_blank" rel="noopener" style="display:block;position:relative;cursor:pointer">
             <img src="/images/research/find-my-agents.svg" alt="Find My Agents interface showing agent list with green and red status indicators alongside a map view" class="w-full rounded-lg border border-[var(--border)]" style="transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--fg-muted)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.nextElementSibling.style.opacity='1'" onmouseout="this.style.borderColor='';this.style.boxShadow='';this.nextElementSibling.style.opacity='0'" />
             <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.2s ease;background:rgba(0,0,0,0.03);border-radius:0.5rem;pointer-events:none">
               <span style="background:var(--bg);border:1px solid var(--border);box-shadow:0 4px 12px rgba(0,0,0,0.1);border-radius:9999px;padding:0.5rem 1rem;font-size:0.875rem;font-weight:500;color:var(--fg)">Open live proof of concept ↗</span>
             </span>
           </a>
-          <figcaption style="margin-top:0.5rem;font-size:0.75rem;color:var(--fg-muted)">This is a live system. <a href="https://dashboard-flame-two-83.vercel.app?viewer=bc72885726bc0636b18d26d8c34383cc359a84223fa1a183ce1e3eb9d2301472" target="_blank" rel="noopener" class="underline hover:opacity-60">Open the proof of concept</a> to see it running.</figcaption>
+          <figcaption style="margin-top:0.5rem;font-size:0.75rem;color:var(--fg-muted)">This is a live system. <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" target="_blank" rel="noopener" class="underline hover:opacity-60">Open the proof of concept</a> to see it running.</figcaption>
         </figure>
 
         <p>Picture the interface. Left side is a list. Every agent, named by its role: Research, Writer, Design, Builder, QA. Each one has a status. A green dot means it is running fine. You can see what it is doing in one line. "Sourcing references, 12 found." "Drafting section 3 of 6." "Compiling routes, 89% done."</p>
@@ -158,7 +158,7 @@ export const theFutureOfPmData: ResearchData = {
 
         <p>The output is a shipped product. Not a plan. Not a proposal. Not a deck. A working thing, built, tested, deployed. By one person sitting at a terminal, directing a swarm that does in an afternoon what used to take a team of twelve a quarter.</p>
 
-        <p>This is not about replacing project managers. It is about what project management becomes when the execution layer is automated and the human layer is pure direction. The standup is dead. The sprint review is dead. The Jira board is dead. What replaces them is a terminal, a map, and a <a href="https://dashboard-flame-two-83.vercel.app?viewer=bc72885726bc0636b18d26d8c34383cc359a84223fa1a183ce1e3eb9d2301472" class="underline hover:opacity-60" target="_blank" rel="noopener">status board</a> that pings you when it needs you.</p>
+        <p>This is not about replacing project managers. It is about what project management becomes when the execution layer is automated and the human layer is pure direction. The standup is dead. The sprint review is dead. The Jira board is dead. What replaces them is a terminal, a map, and a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">status board</a> that pings you when it needs you.</p>
       `,
     },
     {
@@ -198,7 +198,7 @@ export const theFutureOfPmData: ResearchData = {
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
     { title: 'Crawler', href: 'https://trycrawler.com' },
-    { title: 'Hive: Find My Agents (live proof of concept)', href: 'https://dashboard-flame-two-83.vercel.app?viewer=bc72885726bc0636b18d26d8c34383cc359a84223fa1a183ce1e3eb9d2301472' },
+    { title: 'Hive: Find My Agents (live proof of concept)', href: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0' },
   ],
 
   footerVersion: 'February 2026 . Rohit Mangtani',

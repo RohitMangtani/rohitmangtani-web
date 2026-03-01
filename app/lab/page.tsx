@@ -52,7 +52,7 @@ const externalProjects = [
   },
   {
     title: 'Find My Agents',
-    href: 'https://dashboard-flame-two-83.vercel.app?viewer=bc72885726bc0636b18d26d8c34383cc359a84223fa1a183ce1e3eb9d2301472',
+    href: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0',
     description: 'Find My iPhone for Claude Code. Live dashboard that discovers every running instance on your machine, identifies what each one is working on, and lets you message them.',
     date: '2026',
   },
