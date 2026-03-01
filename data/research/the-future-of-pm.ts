@@ -31,6 +31,10 @@ export const theFutureOfPmData: ResearchData = {
 
         <p>This is the part most people in project management have not processed yet. They are still thinking about sprints and standups and Jira tickets. They are optimizing a workflow built for humans coordinating with humans. And that workflow is about to look the way fax machines look now. Not wrong. Just from a different era.</p>
 
+        <p>You have been at a four-way stop. No traffic lights. Four cars, four drivers, all trying to figure out who goes next. You read body language through windshields. Was that a wave? Are they creeping forward or just rolling? You make eye contact, nod, go. The whole thing works because everyone is watching everyone else and adjusting in real time. That is coordination between humans. It is slow, it is ambient, and it depends on everyone paying attention to everyone else simultaneously.</p>
+
+        <p>Now picture the same intersection, but the other three cars are AI agents. They do not make eye contact. They do not wave. They do not read your body language. They just drive, fast, until they hit something they cannot resolve. Then they stop. The coordination model flips. You are not reading subtle cues from peers. You are watching for red lights in a system that is either moving or stuck. Green means go. Red means lost. That is the entire signal vocabulary. And it changes everything about what managing a project feels like.</p>
+
         <p>The new PM does not manage people. They manage a swarm.</p>
       `,
     },
