@@ -70,9 +70,9 @@ export const theHumanYieldData: ResearchData = {
       id: 'node-labor',
       title: 'Node Labor',
       content: `
-        <p>The old model worked like this. You have a skill. You apply it. You get paid for the output. The skill is the moat. The effort is the input. The output is the product.</p>
+        <p>Watch a compliance officer at a mid-size firm. AI drafts the report, runs the analysis, cross-references the regulations. The officer reads the output, signs the document. That signature is the entire job now. Not the analysis. Not the writing. The fact that a licensed human reviewed it and put their name on it.</p>
 
-        <p>AI breaks this for a growing range of work. The skill is no longer the moat, because AI has the skill. The effort is no longer the input, because AI handles it. So what is left?</p>
+        <p>The old model was: you have a skill, you apply it, you get paid for the output. AI breaks this for a growing range of work. The skill is no longer the moat, because AI has the skill. The effort is no longer the input, because AI handles it. So what is left?</p>
 
         <p>The human as a node.</p>
 
@@ -143,9 +143,9 @@ export const theHumanYieldData: ResearchData = {
       id: 'the-floor',
       title: 'The Floor',
       content: `
-        <p>Every system with enough displaced people eventually builds a floor. The floor is UBI, or something that functions like it, whatever name it ends up with.</p>
+        <p>Picture a city where 30% of the workforce got displaced in under five years. Not by a factory closing or an industry relocating. By software that does their jobs without needing them. The tax base shrinks. Consumer spending drops. The displaced population does not vanish. They are still there, still needing housing, food, healthcare. Still voting.</p>
 
-        <p>The argument for UBI has always been moral. It is about to become practical. When enough people cannot generate economic value through labor, not because they are incapable but because AI generates more without them, the system either subsidizes their existence or deals with what follows.</p>
+        <p>Every system with enough displaced people eventually builds a floor. The floor is UBI, or something that functions like it, whatever name it ends up with. The argument for UBI has always been moral. It is about to become practical. When enough people cannot generate economic value through labor, not because they are incapable but because AI generates more without them, the system either subsidizes their existence or deals with what follows.</p>
 
         <p>And what follows is not theoretical. It is the same thing that comes after every period of mass displacement: instability, radicalization, the erosion of every social contract that assumed labor as the basis for participation.</p>
 

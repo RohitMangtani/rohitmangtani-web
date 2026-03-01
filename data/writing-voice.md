@@ -64,6 +64,14 @@ References are not footnotes. They are part of the argument. The pattern:
 
 Never: "According to a study by Anthropic (2026)..." That is academic citation format. This is observation format.
 
+### Paragraph structure (mandatory)
+Every paragraph and section follows context → hypothesis → supporting data. In that order. Never blend them.
+1. **Context first**: Open with a vivid scene the reader can picture. Ground them in something specific and happening now. Not a claim. A scenario.
+2. **Hypothesis second**: State the claim. It should feel like a consequence of what the reader just pictured.
+3. **Supporting data third**: Back it up with named references, numbers, real examples.
+
+The AI tell is opening with a claim before context. "The value does not spread. It concentrates." hitting before the reader has any scene to anchor it. Always paint the picture first.
+
 ### How sections self-organize
 Sections are not planned from a template. They emerge from what the research found.
 1. Research produces a pile of data points, references, and metaphors.
@@ -125,6 +133,14 @@ Specific refinements made during editing sessions. Each one sharpens future outp
 - **No version numbers anywhere**: Stripped from all footers, headers, badges. Internal metadata, not reader-facing.
 - **Black box framing**: "Black box, my design and thoughts, output" is a direct Rohit phrasing. Anchored the terminal layer concept.
 - **Effort connection**: Ties back to Human Yield. "The effort matters, but only when pointed at this." Consistent across the body of work.
+
+### Session: Feb 28, 2026 - Human Sensor Layer structure refactor
+- **Context-first paragraphs**: V1 opened sections with claims ("This is not a projection. The split is already forming."). That is an AI tell. V2 opens every section with a vivid scene the reader can picture FIRST, then drops the hypothesis, then backs it with data. Every paragraph follows context → hypothesis → supporting data.
+- **Scene-setting openings**: "Watch two people interact with AI right now..." / "Picture yourself running twenty AI agents in parallel..." / "Someone buys a meme coin that could go to zero. They know it." The reader needs to be grounded in a scenario before any claim lands.
+- **No blended claims**: V1 dropped random claims mid-paragraph ("The value does not spread. It concentrates.") before the reader had context for why. V2 builds the scene, then the insight emerges from it. The claim should feel like a consequence of what the reader just pictured, not a declaration.
+- **Persuasive essay structure per section**: 1. Context (paint the scene) 2. Hypothesis (state the claim) 3. Supporting facts/data (back it up). Do not blend these three throughout a paragraph.
+- **OnRamp rewrite**: V1 opened with three rapid-fire claims. V2 opens with a scene: "Right now, two people are sitting at their desks looking at the same AI tools. One of them will use those tools to build an entire product by Thursday."
+- **Human voice example**: "Imagine this, you are talking to a fleet of ai agents for daily status updates... well it's already a reality the only thing missing; context." The insight arrives as a pivot/reframe after the context, not before it.
 
 ## Reference Phrasings
 

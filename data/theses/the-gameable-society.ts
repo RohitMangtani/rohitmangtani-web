@@ -51,19 +51,15 @@ export const theGameableSocietyData: ThesisArticleData = {
       title: 'The Game',
       content: `
         <p class="text-lg leading-relaxed mb-6">
-          The instinct is to call this irrational. It is not.
+          Open any app on your phone. Your step count has a streak. Your dating profile has an Elo score. Your LinkedIn has an engagement rate. Your sleep tracker grades your night from 1 to 100. Every surface of your life now has metrics, leaderboards, and feedback loops.
         </p>
 
         <p class="leading-relaxed mb-6">
-          The behaviors showing up across society, the spectatorship, the obsessive optimization, the gambling, look irrational only when measured against frameworks that no longer describe the environment.
+          When everything looks like a game, people start playing everything like a game. The spectatorship, the obsessive optimization, the gambling, these behaviors look irrational only when measured against frameworks that no longer describe the environment. The environment changed. It runs like a game now.
         </p>
 
-        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg)] font-medium">The environment has changed. It now runs like a game.</p>
-        </div>
-
         <p class="leading-relaxed mb-6">
-          When systems become legible, when metrics are visible, feedback is instant, and outcomes can be min-maxed, people start playing them as games. Social platforms gamify attention. Health tracking gamifies the body. Career platforms gamify credentials. Dating apps gamify attraction.
+          Social platforms gamify attention. Health tracking gamifies the body. Career platforms gamify credentials. Dating apps gamify attraction.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -92,11 +88,11 @@ export const theGameableSocietyData: ThesisArticleData = {
       title: 'Attention Economics',
       content: `
         <p class="text-lg leading-relaxed mb-6">
-          Attention is the primary currency of digital economies now. Not money. Not labor. Not credentials. Attention.
+          Two people build the same product. Same quality. Same features. One of them posts a build thread on Twitter. The other ships quietly. A month later, the one who posted has 10,000 users. The quiet one has 12. Same product. Different distribution of a single resource: attention.
         </p>
 
         <p class="leading-relaxed mb-6">
-          Money can be printed. Labor can be automated. Credentials can be inflated. Attention cannot be manufactured. It is zero-sum. Every unit directed at one thing is a unit unavailable to another.
+          Attention is the primary currency of digital economies now. Not money. Not labor. Not credentials. Money can be printed. Labor can be automated. Credentials can be inflated. Attention cannot be manufactured. It is zero-sum. Every unit directed at one thing is a unit unavailable to another.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -138,11 +134,11 @@ export const theGameableSocietyData: ThesisArticleData = {
       title: 'New Behaviors',
       content: `
         <p class="text-lg leading-relaxed mb-6">
-          These pressures produce new behaviors.
+          A 22-year-old posts a video of themselves building a SaaS product from scratch. No degree, no bootcamp, no credentials. Just screen recordings of the process, unpolished, real-time. It gets more traction than any resume they could have written. A hiring manager sees it and reaches out. The credential was the process itself.
         </p>
 
         <p class="leading-relaxed mb-6">
-          Skill-maxxing shows up where traditional credentialing feels slow, blocked, or disconnected from outcomes. When institutional paths lose trust, visible capability becomes the alternative signal. The person who can demonstrably do something bypasses the person who can only claim credentials.
+          Skill-maxxing shows up wherever traditional credentialing feels slow, blocked, or disconnected from outcomes. When institutional paths lose trust, visible capability becomes the alternative signal. The person who can demonstrably do something bypasses the person who can only claim credentials.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -183,12 +179,12 @@ export const theGameableSocietyData: ThesisArticleData = {
       id: 'value-concentration',
       title: 'Value Concentration',
       content: `
-        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg)] font-medium">Value does not disappear in a spectator-dominated society. It concentrates.</p>
-        </div>
+        <p class="text-lg leading-relaxed mb-6">
+          Scroll through any platform for an hour. You did not pay anything. You did not buy anything. But in that hour, you generated data points on what holds your attention, what makes you pause, what you skip. That data got packaged and sold before you closed the app. You were the product the entire time.
+        </p>
 
         <p class="leading-relaxed mb-6">
-          Spectators are not passive in the way people assume. They are economically productive inputs. Every hour of watching generates data. Every scroll generates signal. Every view generates demand. The attention itself is the product, packaged, segmented, and sold to advertisers, platforms, and intermediaries who convert it into revenue.
+          Value does not disappear in a spectator-dominated society. It concentrates. Spectators are not passive in the way people assume. They are economically productive inputs. Every hour of watching generates data. Every scroll generates signal. Every view generates demand. The attention itself is the product, packaged, segmented, and sold to advertisers, platforms, and intermediaries who convert it into revenue.
         </p>
 
         <p class="leading-relaxed mb-6">
@@ -221,15 +217,11 @@ export const theGameableSocietyData: ThesisArticleData = {
       title: 'Equilibrium',
       content: `
         <p class="text-lg leading-relaxed mb-6">
-          The system is stable because every participant is getting something out of it locally.
+          Ask anyone in the loop if they feel trapped. The spectator will say they enjoy the content. The creator will say they love making it. The platform will say they are connecting people. The optimizer will say they are improving themselves. Everyone is getting something. Nobody feels coerced.
         </p>
 
         <p class="leading-relaxed mb-6">
-          Spectators get low-cost stimulation. Platforms get scalable revenue. Creators get attention and validation. Risk-takers get access to outsized outcomes. Optimization industries get anxious demand.
-        </p>
-
-        <p class="leading-relaxed mb-6">
-          No single actor experiences the structure as coercive. Each transaction is voluntary. Each participant is locally satisfied. Or at least, not dissatisfied enough to leave.
+          That is why the system is stable. Spectators get low-cost stimulation. Platforms get scalable revenue. Creators get attention and validation. Risk-takers get access to outsized outcomes. Optimization industries get anxious demand. Each transaction is voluntary. Each participant is locally satisfied. Or at least, not dissatisfied enough to leave.
         </p>
 
         <p class="leading-relaxed mb-6">

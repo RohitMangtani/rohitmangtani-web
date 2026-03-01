@@ -12,13 +12,6 @@ export const thePositiveLoopData: ResearchData = {
     whatItDoesNot: 'Claim AI will solve everything, endorse any specific tool or company, or predict timelines.',
   },
 
-  keyNumbers: [
-    { value: '99.99%', label: 'Not Playing Yet', color: 'green' },
-    { value: '<18mo', label: 'Since This Existed', color: 'blue' },
-    { value: '0→1', label: 'Anyone Can Build', color: 'yellow' },
-    { value: '$0', label: 'Cost to Start', color: 'zinc' },
-  ],
-
   claim: 'For the first time in internet history, we have a dopamine loop that makes you more capable instead of less. AI tools have turned the most addictive interface ever built, the phone, into a production engine. And almost nobody has realized it yet.',
 
   sections: [
@@ -51,9 +44,9 @@ export const thePositiveLoopData: ResearchData = {
       id: 'what-changed',
       title: 'What Changed',
       content: `
-        <p>In roughly 18 months, a pipeline emerged that nobody fully saw coming.</p>
+        <p>Picture someone who has never written a line of code. They wake up, open their phone, describe a product idea in plain English. By lunch, it is live on the internet. Not a mockup. A working product with real users accessing it.</p>
 
-        <p>The pipeline is simple:</p>
+        <p>That pipeline did not exist 18 months ago. It emerged that fast, and it works like this:</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">The New Pipeline</p>
@@ -170,9 +163,9 @@ export const thePositiveLoopData: ResearchData = {
       id: 'the-positive-loop',
       title: 'From Scroll Addict to Efficiency Addict',
       content: `
-        <p>This is where it connects back to the dopamine problem.</p>
+        <p>Notice what happens when you ship something with AI. The code runs. The page loads. Something that did not exist five minutes ago is now live on the internet. Your brain fires. Not the dull buzz of a liked post or a finished scroll session. A hit that says: I made that.</p>
 
-        <p>For the first time, we have an interface that is <em>as addictive as doom scrolling</em> but produces real output. The loop is not: scroll → content → brief pleasure → nothing. The loop is:</p>
+        <p>That feeling is the key to the whole thing. For the first time, there is an interface that is <em>as addictive as doom scrolling</em> but produces real output. The loop is not: scroll → content → brief pleasure → nothing. The loop is:</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-2">The Positive Loop</p>
@@ -204,9 +197,9 @@ export const thePositiveLoopData: ResearchData = {
       id: 'how-early',
       title: 'How Early We Are',
       content: `
-        <p>The speed of change is hiding the size of the change.</p>
+        <p>Ask someone if they have used AI. They will say yes. Ask them what they built with it. Silence. Maybe they wrote an email. Maybe they asked it a trivia question. That is where most people are right now.</p>
 
-        <p><strong class="text-[var(--fg)]">Most people have not used AI for anything beyond a chatbot conversation.</strong> They have asked it trivia questions. Maybe written an email. They have not used it to build a product, run research, automate a workflow, or ship something real. The gap between "I have used ChatGPT" and "I use AI to build things" is the gap between having a phone and building an app.</p>
+        <p>The gap between "I have used ChatGPT" and "I use AI to build things" is the gap between having a phone and building an app. Most people have not used AI for anything beyond a chatbot conversation. They have not built a product, run research, automated a workflow, or shipped something real. The speed of change is hiding the size of the change.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">The Under-Allocation Is Staggering</p>
@@ -256,9 +249,9 @@ export const thePositiveLoopData: ResearchData = {
       id: 'replacing-doom-scrolling',
       title: 'Replacing the Doom Scroll',
       content: `
-        <p>Here is the part that matters beyond productivity:</p>
+        <p>It is 11pm. You are tired, stressed, done for the day. You reach for your phone. Normally this is when you open Instagram or TikTok and lose 45 minutes to a feed. But tonight you open a different app. You describe something you have been thinking about. Twenty minutes later, you are looking at a working prototype.</p>
 
-        <p>Doom scrolling persists because it is the path of least resistance to dopamine. You are tired, stressed, bored. You open your phone. Infinite content appears. Your brain gets what it wants. Zero activation energy. Immediate reward. The cost is invisible (time, attention, mental health) and deferred.</p>
+        <p>That is the substitution that changes everything. Doom scrolling persists because it is the path of least resistance to dopamine. Zero activation energy. Immediate reward. The cost is invisible (time, attention, mental health) and deferred.</p>
 
         <p>AI tools have matched that activation energy. Open your phone. Describe what you want. Watch it happen. The reward is equally immediate. But instead of losing 45 minutes to a feed, you spent 45 minutes building something. The dopamine is equivalent. The output is not.</p>
 
@@ -277,7 +270,9 @@ export const thePositiveLoopData: ResearchData = {
       id: 'what-this-means',
       title: 'What This Means',
       content: `
-        <p>We are at the beginning of a structural shift in how humans spend their attention. Not gradual. Abrupt. Compressed by the same dynamics that compressed information and cultural change.</p>
+        <p>Look at what is already happening around you. Someone who used to spend their evenings scrolling built a side project last month. A friend who "isn't technical" shipped a website over a weekend. A teenager with zero coding experience launched a working product and has paying users.</p>
+
+        <p>These are not outliers. They are early signals of a structural shift in how humans spend their attention. Not gradual. Abrupt. Compressed by the same dynamics that compressed information and cultural change.</p>
 
         <div class="space-y-4 my-6">
           <div class="p-4 border border-[var(--border)] rounded-lg">

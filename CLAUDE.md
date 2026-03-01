@@ -42,6 +42,14 @@ Reads like someone who watched these things happen and is connecting what they s
 - Meta-commentary about your own argument ("Abstract arguments are less convincing than concrete examples")
 - Em dashes anywhere
 
+### Paragraph Structure (mandatory)
+Every paragraph and section opening follows this order. Do not blend these throughout a paragraph.
+1. **Context**: Paint a scene the reader can picture. Ground them in something vivid, specific, happening right now. "Watch two people interact with AI right now..." / "Picture yourself running twenty AI agents in parallel..."
+2. **Hypothesis**: State the claim. It should feel like a consequence of what the reader just pictured, not a declaration dropped from nowhere.
+3. **Supporting data**: Back it up with named references, numbers, real examples.
+
+**The AI tell**: Opening a paragraph or section with a claim before the reader has context for it. "The value does not spread. It concentrates." landing before the reader knows what value, what system, what context. Fix: always lead with the scene.
+
 ### Structure
 - Sections, callout boxes, comparison grids, bullet lists are all fine
 - Structure should serve the reader, not perform thoroughness
