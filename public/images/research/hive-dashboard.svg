@@ -7,7 +7,7 @@
   <rect width="680" height="480" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
 
   <!-- Title -->
-  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">FIND MY AGENTS</text>
+  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">HIVE</text>
 
   <!-- Device frame -->
   <rect x="40" y="56" width="600" height="400" rx="12" fill="white" stroke="#e7e5e4" stroke-width="1"/>

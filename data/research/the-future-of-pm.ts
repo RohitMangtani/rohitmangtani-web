@@ -102,18 +102,22 @@ export const theFutureOfPmData: ResearchData = {
 
         <p>One simple interface. A list of every agent, what it is working on, and whether it is running or stuck. When one goes red, it pings you. You provide the context it lost, the decision it cannot make, the direction it needs. You send it back. It resumes driving. There is a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">working proof of concept</a> of this running right now, built on the architecture described here.</p>
 
+        <p>This is the transformation that matters. Without it, you are staring at terminals. Scrolling text output, trying to remember what each agent is doing, parsing logs to figure out if something drifted. The cognitive overhead is enormous. You have to hold the state of every agent in your head, reconstruct context from raw output, and somehow notice when something subtle goes wrong in a wall of text. The visual layer collapses all of that into color. Green means driving. Red means lost. You see the entire swarm in one glance and know exactly where your attention is needed. No parsing. No remembering. No terminal archaeology.</p>
+
+        <p>This is also the interface for both coordination roles that <a href="/writing/the-human-bridge" class="underline hover:opacity-60">The Human Bridge</a> describes. The Technical Bridge, the person managing system fidelity and agent drift, sees health at a glance instead of digging through output logs. The Human Extraction Layer, the person who detects when AI output needs human judgment, sees exactly where signal is needed. Red is not just "stuck." Red is "this needs a human." The visual layer turns both roles from reactive firefighting into calm routing.</p>
+
         <p>You are not micromanaging. You are routing. The difference is everything.</p>
       `,
     },
     {
-      id: 'find-my-agents',
-      title: 'Find My Agents',
+      id: 'hive',
+      title: 'Hive',
       content: `
         <p>The manager layer is the one that does not exist yet in any serious form. And it is the one that matters most. Because this is where context either holds or collapses.</p>
 
         <figure class="my-8" style="position:relative">
           <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" target="_blank" rel="noopener" style="display:block;position:relative;cursor:pointer">
-            <img src="/images/research/find-my-agents.svg" alt="Find My Agents interface showing agent list with green and red status indicators alongside a map view" class="w-full rounded-lg border border-[var(--border)]" style="transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--fg-muted)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.nextElementSibling.style.opacity='1'" onmouseout="this.style.borderColor='';this.style.boxShadow='';this.nextElementSibling.style.opacity='0'" />
+            <img src="/images/research/hive-dashboard.svg" alt="Hive interface showing agent list with green and red status indicators alongside a map view" class="w-full rounded-lg border border-[var(--border)]" style="transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--fg-muted)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.nextElementSibling.style.opacity='1'" onmouseout="this.style.borderColor='';this.style.boxShadow='';this.nextElementSibling.style.opacity='0'" />
             <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.2s ease;background:rgba(0,0,0,0.03);border-radius:0.5rem;pointer-events:none">
               <span style="background:var(--bg);border:1px solid var(--border);box-shadow:0 4px 12px rgba(0,0,0,0.1);border-radius:9999px;padding:0.5rem 1rem;font-size:0.875rem;font-weight:500;color:var(--fg)">Open live proof of concept ↗</span>
             </span>
@@ -134,6 +138,40 @@ export const theFutureOfPmData: ResearchData = {
         <p>The cost of this model is your attention. Not your labor. You are not doing the research, the writing, the building, the testing. You are maintaining the thread. Providing context when it degrades. Making decisions when agents cannot. The cognitive load peaks when multiple agents go red at the same time, and that is a real constraint. But it is a fundamentally different constraint than doing all the work yourself.</p>
 
         <p>Gartner projects 40% of enterprise applications will embed task-specific AI agents by the end of 2026. Most of those organizations cannot control the swarm. That gap, between deploying agents and actually managing them, is the market. The interface described here is what fills it.</p>
+
+        <p>Watch what happens when the system manages itself. Four agents running in parallel, all visible on the dashboard. Two of them are debugging the dashboard's own status detection. Agent 3 is investigating why text-only responses cause a green-to-red flicker. Agent 4 is investigating why hooks from one agent get misrouted to another when both work in the same project. Neither agent knows what the other is finding. They are working independently, in separate terminals, on different aspects of the same system.</p>
+
+        <p>The human is watching the dashboard. Agent 3 is green. Agent 4 is green. Both are working. Then the human notices something: Agent 3 never turns red, even when it finishes. That is the anomaly. Not a log entry. Not an error message. A visual signal that something is wrong, caught because the interface makes status legible at a glance.</p>
+
+        <p>Agent 4 finds the root cause. When two agents share the same project directory, the hook routing falls back to matching by file path instead of session ID. It picks the first match. Every hook Agent 4 fires gets routed to Agent 3. That is why Agent 3 never turns red. It keeps receiving Agent 4's activity as its own. Agent 3, meanwhile, finds a separate bug: when an agent generates a long text response without calling any tools, the session file scanner sees the response as the last entry and marks the agent idle, even though it is mid-stream.</p>
+
+        <p>Two agents. Two independent investigations. Two bugs found that interact with each other. The human did not read a single line of code. They watched the dashboard, noticed the visual anomaly, directed each agent to investigate, then asked a third agent to read both sets of findings, synthesize them into a single diagnosis, and produce a fix. The third agent compared the session routing logic against the status detection logic, identified where they collide, and generated a unified patch that addresses both bugs without breaking the existing flow.</p>
+
+        <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
+          <p class="text-sm text-[var(--fg-muted)]">The system was debugging itself. The agents managed by the dashboard were fixing the dashboard that manages them. The human's role was exactly what this article describes: watching the road from above, noticing when something is off, and routing agents to the problem. No terminal archaeology. No log parsing. Green and red, and the judgment to know what the colors mean.</p>
+        </div>
+
+        <p>This is the workflow. Not in theory. Not as a projection. This happened, on this system, with the <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">proof of concept</a> running live. The coordination roles that <a href="/writing/the-human-bridge" class="underline hover:opacity-60">The Human Bridge</a> describes, the Technical Bridge managing system fidelity and the Extraction Layer detecting when something needs human judgment, both operated through the same visual interface. One person, four agents, two bugs found, one synthesized fix. The human wrote zero code and held the entire operation together.</p>
+
+        <p>But the specific example is not the point. The pattern underneath it is. Every feature of this system was built the same way, and the technique compounds on itself.</p>
+
+        <p>Take the auto-pilot. The feature that ensures agents never stay stuck waiting for a prompt. To build it, an agent first had to understand the full system: how Claude Code presents questions, what the options look like, which answers are safe to select automatically, what happens when the wrong one is chosen. The agent studied the system. Then it built the auto-responder. Then it ran inside the system it just built, managed by the dashboard, answering its own prompts, while the human watched the dashboard to see if the answers were correct. The agent was testing itself by operating inside the thing it created. When it chose wrong, the human noticed the visual anomaly, directed a correction, and the agent updated the selection logic. Each cycle made the auto-pilot smarter. Each cycle also made the agent better at understanding the system, which made the next cycle's investigation deeper.</p>
+
+        <p>The status detection worked the same way. An agent read its own session files to understand how green and red get determined. Then it ran a task and watched its own status on the dashboard. It should have been green. It was red. It investigated why, found the scan logic was too shallow, fixed it, and ran again. Green. Then it generated a long text response with no tool calls. Red again. Another edge case. Another fix. Each loop tightened the detection. And because the agent understood the full system from the first step, each fix was surgical instead of a guess.</p>
+
+        <div class="border-l-2 border-[var(--border)] pl-6 my-10">
+          <p class="leading-relaxed">The pattern is always the same. The agent understands the full context of the system before it touches anything. Then it operates inside the system. Then the human watches the visual layer for anomalies the agent cannot see about itself. Then the agent fixes what the human identified. Then it operates again. Each loop compounds. The system gets better at managing agents. The agents get better at understanding the system. The human holds the thread between cycles that no individual agent can maintain across its context window.</p>
+        </div>
+
+        <p>This is not a testing methodology. It is the operating model. The system improves itself through use, the same way a product improves through customer feedback, except the customers and the builders are the same agents, and the feedback loop runs in minutes instead of quarters. The human is not writing code. They are not debugging. They are watching for the thing that is off, the visual signal that does not match what should be happening, and routing agents back to it. That is the compounding loop. That is what makes the system get better every time it runs.</p>
+
+        <p>And this scales. With four agents, two can investigate while two keep shipping. With eight, three can cross-audit each other's findings while five produce output. The ratio stays the same: a small fraction of your swarm improves the infrastructure while the rest uses it. Every fix to the management layer makes every agent in the system more autonomous. A bug fix that prevents false idle detection does not just help the agent that found it. It helps every agent the dashboard will ever manage, including agents that do not exist yet. The infrastructure improvement is a one-time cost. The benefit multiplies across every agent and every future session.</p>
+
+        <p>This is the part that does not exist in traditional team scaling. When you add a tenth person to a nine-person team, you add communication overhead. More standups. More coordination. More context to share. The marginal return on each additional person decreases. When you add a tenth agent to a nine-agent swarm, you add zero communication overhead because agents do not talk to each other. The human holds the thread, and the dashboard shows ten dots instead of nine. The marginal cost of the tenth agent is one more dot to glance at. The marginal benefit is a full additional context window producing output, and one more perspective available when something in the system needs cross-investigation.</p>
+
+        <div class="border-l-2 border-[var(--border)] pl-6 my-10">
+          <p class="leading-relaxed">The compounding works in two directions simultaneously. Horizontally, more agents means more parallel output and more independent perspectives for cross-investigation. Vertically, every improvement any agent makes to the management layer benefits all agents forever. Traditional teams compound linearly at best. Agent swarms compound multiplicatively because the infrastructure and the workforce improve each other in a loop the human holds together.</p>
+        </div>
       `,
     },
     {
@@ -157,6 +195,24 @@ export const theFutureOfPmData: ResearchData = {
         </div>
 
         <p>The output is a shipped product. Not a plan. Not a proposal. Not a deck. A working thing, built, tested, deployed. By one person sitting at a terminal, directing a swarm that does in an afternoon what used to take a team of twelve a quarter.</p>
+
+        <p>Now scale that to what running this system actually looks like day to day. Four terminals open. Four agents running simultaneously. One is researching market data. One is building a feature. One is deploying a site. One is debugging the infrastructure that manages the other three. They do not share memory. They do not know the others exist. Each one is locked inside its own context window, working on its own task, producing its own output.</p>
+
+        <p>The human is the only entity that sees all four at once. The dashboard shows four quadrants, each with a green or red dot. That is the entire cognitive load. Not four terminal windows of scrolling text. Not four separate chat logs to track. Four dots. Green means driving. Yellow means waiting. Red means idle. One glance and you know the state of everything.</p>
+
+        <p>A single agent blocks constantly. "Allow this tool?" "Which approach should we use?" "Should I proceed?" Every permission prompt, every question, every confirmation, the agent stops and waits. If you step away for five minutes, five minutes of work stops. Multiply that by four agents and the system is unusable. You spend all your time answering prompts instead of directing work.</p>
+
+        <p>The auto-pilot changes the operating model entirely. Permission prompts auto-approve before the agent even pauses. Questions auto-answer: recommended option first, affirmative second, first option third. There is a three-second grace period for the human to override, then the system answers and the agent keeps moving. Four agents running continuously, resolving their own routine decisions, only surfacing the ones that genuinely require human judgment. Those show up as yellow on the dashboard. Everything else stays green.</p>
+
+        <div class="border-l-2 border-[var(--border)] pl-6 my-10">
+          <p class="leading-relaxed">The shift is attention efficiency. A single agent demands 100% of your attention 100% of the time. Four agents with auto-pilot demand 5% of your attention 95% of the time, and 100% of your attention 5% of the time, the moments where actual judgment is needed. The other 95% is green dots and agents running. You are freed to think about what to build next instead of babysitting what is building now.</p>
+        </div>
+
+        <p>Context isolation becomes a feature, not a limitation. When one agent runs out of context and compacts its memory, the other three still have their full thread. You do not lose everything. You lose one quarter of the operation, restart that agent fresh, and the others keep shipping. When two agents independently investigate different aspects of the same problem, as described above, they produce findings that no single agent could generate because each one explored a path the other never saw. The human bridges the gap by reading both sets of findings and directing a third agent to synthesize. The combined output is better than either agent working alone, because the human held context across isolated windows that no individual agent can cross.</p>
+
+        <p>The agents also leave artifacts on the file system. Code changes, session transcripts, deployed sites. One agent cannot talk to another in real time, but it can read what another agent built, wrote, or investigated. The human directs which agent reads which artifact. That routing, deciding which agent should look at which other agent's work and when, is the coordination skill that replaces sprint planning and Jira triage. Same function. Different substrate.</p>
+
+        <p>The multiplier is not four times the output of one agent. It compounds. While one agent debugs, another deploys, another researches, another writes. When two finish investigating, the human synthesizes across them and the fix addresses interactions neither agent saw independently. The fix goes back into the system. The system manages all four agents better. Better management means fewer yellow states, less human intervention, more autonomous throughput. Each cycle widens the gap between this workflow and someone running a single terminal answering every prompt by hand.</p>
 
         <p>This is not about replacing project managers. It is about what project management becomes when the execution layer is automated and the human layer is pure direction. The standup is dead. The sprint review is dead. The Jira board is dead. What replaces them is a terminal, a map, and a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">status board</a> that pings you when it needs you.</p>
       `,
@@ -198,7 +254,7 @@ export const theFutureOfPmData: ResearchData = {
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
     { title: 'Crawler', href: 'https://trycrawler.com' },
-    { title: 'Hive: Find My Agents (live proof of concept)', href: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0' },
+    { title: 'Hive (live proof of concept)', href: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0' },
   ],
 
   footerVersion: 'February 2026 . Rohit Mangtani',
