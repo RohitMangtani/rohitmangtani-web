@@ -14,7 +14,7 @@ export default function ContactPage() {
         <header className="mb-12 animate-fade-in">
           <h1 className="text-4xl font-bold tracking-tight mb-3">Contact</h1>
           <p className="text-[var(--fg-muted)]">
-            Inquiries, collaborations, or feedback.
+            If you have any feedback or are interested in similar things, please reach out. I would love to talk.
           </p>
         </header>
 
