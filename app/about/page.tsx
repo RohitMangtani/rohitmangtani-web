@@ -32,7 +32,7 @@ export default function AboutPage() {
             I build things with AI. Products, research pipelines, automated systems, data analyses. The skill is not the building. It is knowing what to build and what good looks like.
           </p>
           <p className="leading-relaxed">
-            I write about what I see happening. AI reshaping labor, dopamine loops flipping from extractive to productive, meme coins as decentralized resistance, spectatorship as a cultural default. The articles are not predictions. They are observations about things already in motion, grounded in named references and real data.
+            I write about what I see happening and what I like to think about.
           </p>
         </div>
 
