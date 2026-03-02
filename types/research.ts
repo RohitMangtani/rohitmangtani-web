@@ -12,6 +12,9 @@ export interface KeyNumber {
 }
 
 export interface ResearchData extends ArticleBase {
+  // Optional live project URL (shown in header)
+  liveUrl?: string;
+
   // Optional version tag
   version?: string;
 

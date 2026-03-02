@@ -51,6 +51,16 @@ function ArticleContent({ article }: { article: ResearchData }) {
             Internal
           </span>
           <span className="text-xs text-[var(--fg-muted)]">{article.date}</span>
+          {article.liveUrl && (
+            <a
+              href={article.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors"
+            >
+              Live Dashboard &#8599;
+            </a>
+          )}
         </div>
         <h1 className="text-3xl font-bold tracking-tight mb-2">{article.title}</h1>
         <p className="text-[var(--fg-muted)]">{article.subtitle}</p>

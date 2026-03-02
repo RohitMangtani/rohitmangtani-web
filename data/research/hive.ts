@@ -5,6 +5,7 @@ export const hiveData: ResearchData = {
   date: '2026',
   title: 'Hive',
   subtitle: 'An operating system for directing AI labor',
+  liveUrl: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0',
 
   onRamp: {
     description:
