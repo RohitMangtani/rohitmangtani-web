@@ -5,10 +5,12 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { hiveData } from '@/data/research/hive';
 import { theReferencePointData } from '@/data/research/the-reference-point';
+import { techIsNotTechAnymoreData } from '@/data/research/tech-is-not-tech-anymore';
 
 const articles: Record<string, ResearchData> = {
   hive: hiveData,
   'the-reference-point': theReferencePointData,
+  'tech-is-not-tech-anymore': techIsNotTechAnymoreData,
 };
 
 export async function generateStaticParams() {
