@@ -29,7 +29,7 @@ export default function AboutPage() {
             I like finance, game theory, internet culture, crypto, psychology, and marketing. Not as separate interests. As one thing. The way markets move, the way people behave online, the way attention concentrates, the way communities form around shared conviction. It is all the same system viewed from different angles.
           </p>
           <p className="leading-relaxed">
-            I build things with AI. Products, research pipelines, automated systems, data analyses. The skill is not the building. It is knowing what to build and what good looks like. AI handles execution. I handle direction.
+            I build things with AI. Products, research pipelines, automated systems, data analyses. The skill is not the building. It is knowing what to build and what good looks like.
           </p>
           <p className="leading-relaxed">
             I write about what I see happening. AI reshaping labor, dopamine loops flipping from extractive to productive, meme coins as decentralized resistance, spectatorship as a cultural default. The articles are not predictions. They are observations about things already in motion, grounded in named references and real data.
