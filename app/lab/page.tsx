@@ -30,6 +30,12 @@ const tools: { href: string; title: string; description: string }[] = [
     description:
       'The full arc from one terminal to a fleet. How the articles became the design spec, the agents built the system, and the skills involved.',
   },
+  {
+    href: '/lab/the-reference-point',
+    title: 'The Reference Point',
+    description:
+      'Cross-reference of every article, product, and system, mapped to resume language and tailored for three career paths.',
+  },
 ];
 
 const externalProjects = [
