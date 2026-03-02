@@ -37,6 +37,8 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>We turned ourselves into dopamine-driven animals. Not because we are weak. Because the infrastructure was built to make us that way. Every pixel, every notification, every autoplay was designed by teams of engineers whose KPI was your attention.</p>
 
+        <p>The neuroscience is more specific than most people realize. Kent Berridge's lab at the University of Michigan spent decades proving that dopamine is not a pleasure chemical. It is a wanting chemical. Dopamine drives craving, motivation, the compulsive pull toward the next hit. Pleasure, what Berridge calls "liking," runs on a separate system entirely. Mice with artificially elevated dopamine pursued sugar more aggressively but did not enjoy it more. Every platform that hacked your dopamine did not make scrolling pleasurable. It made scrolling compulsive. You kept doing it not because it felt good but because your brain could not stop wanting to do it. That distinction matters for everything that follows.</p>
+
         <p>And then something changed.</p>
       `,
     },
@@ -85,7 +87,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>And there is a DLC dropping every day. New capabilities. New models. New integrations. Every morning you wake up and the game is slightly more powerful than yesterday.</p>
 
-        <p>And 99.99% of people are not even playing yet.</p>
+        <p>And almost nobody is playing yet. 84% of professional developers use AI tools, but mostly to assist with code they already understand, not to build from scratch. Among developers who have heard of vibe coding, only 15% have tried it. 0.4% describe themselves as enthusiastic practitioners. Among the general population the number is effectively zero. The people who have discovered what this actually does are a rounding error.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">That game is AI. Right now.</p>
@@ -190,7 +192,9 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The key thing: <strong class="text-[var(--fg)]">the productive loop is just as addictive as the extractive one.</strong> The feedback is immediate. The reward is visible. The progress is tangible. The only difference is that when you come up for air, you have something to show for it.</p>
 
-        <p>The phone, the device that turned us into dopamine addicts, is now the device that can turn us into builders. Same addictive qualities. First time they are pointed at production.</p>
+        <p>The honest ceiling: a productive addiction is still an addiction. Clinical research on transfer addiction documents what happens when you replace one compulsive behavior with another. The output changes. The compulsive driver does not. People who quit substance abuse and shift to compulsive exercise produce visible results but the underlying pattern of avoiding discomfort through compulsive action persists. The positive loop has the same risk. Building things at 2am because you cannot stop is not automatically healthy just because the output is real. The difference between a productive loop and a productive compulsion is whether you can choose to stop. If you cannot, the dopamine is driving you the same way it drove the scroll. Berridge's wanting system does not care what it is pointed at.</p>
+
+        <p>The phone, the device that turned us into dopamine addicts, is now the device that can turn us into builders. Same addictive qualities. First time they are pointed at production. Whether that is liberation or a lateral move depends on the person using it.</p>
       `,
     },
     {
@@ -245,6 +249,8 @@ export const thePositiveLoopData: ResearchData = {
         </div>
 
         <p>Every one of these follows the same structure: <strong class="text-[var(--fg)]">human intent → natural language → AI translation → real output.</strong> The translation layer is the breakthrough. Everything else follows from it.</p>
+
+        <p>The ceiling on this pipeline is quality. A METR study found that experienced developers were 19% slower with AI tools despite believing they were 20% faster. Code churn, the rate of code written and then deleted or rewritten within two weeks, doubled between 2021 and 2024. AI-generated code carries 1.7 times more major issues and nearly three times more security vulnerabilities than human-written code. The pipeline works. The output is real. But the gap between "deployed" and "production-grade" is where the honest assessment lives. Vibe-coded products are real products. They are not yet reliable products at scale. That ceiling drops every quarter as models improve, but pretending it does not exist makes the argument weaker than acknowledging it.</p>
       `,
     },
     {
@@ -255,7 +261,9 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>That is the substitution that changes everything. Doom scrolling persists because it is the path of least resistance to dopamine. Zero activation energy. Immediate reward. The cost is invisible (time, attention, mental health) and deferred.</p>
 
-        <p>AI tools have matched that activation energy. Open your phone. Describe what you want. Watch it happen. The reward is equally immediate. But instead of losing 45 minutes to a feed, you spent 45 minutes building something. The dopamine is equivalent. The output is not.</p>
+        <p>AI tools have nearly matched that activation energy. Open your phone. Describe what you want. Watch it happen. The reward is almost as immediate. But "almost" matters. Doom scrolling requires zero cognitive effort. Zero. Content is delivered to you. AI building requires having an idea, articulating it, evaluating output, iterating. That is a fundamentally different cognitive demand. For people who already have something they want to build, the effort feels comparable. For people who do not, scrolling is still easier. The substitution only works when the person has a vision the tool can serve. The on-ramp is getting shorter every quarter, but it is not at zero yet for everyone.</p>
+
+        <p>For the people where it does work, the substitution is real. Instead of losing 45 minutes to a feed, you spent 45 minutes building something. The dopamine is comparable. The output is not.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">The Substitution Effect</p>
@@ -293,8 +301,10 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>Technology reshapes behavior faster than institutions can adapt. Every time. AI is the most extreme version of this. It is not making existing processes faster. It is making previously impossible things trivial. And the people who internalize this earliest will compound advantages that look, in hindsight, like the early internet and early social media adoption curves combined.</p>
 
+        <p>The unknown is whether the loop sustains. Much of the reported compulsion around AI building may be novelty-driven. The tool is new. The capabilities expand weekly. The feeling of discovering what it can do is itself a dopamine trigger independent of the output. No longitudinal data exists on whether the productive loop holds after the novelty fades. The honest bet: it holds for people building toward something they care about, the same way creative flow states sustain for artists and builders across decades. For people chasing the tool's novelty rather than their own vision, the loop may fade the way every shiny technology fades. The difference between the two groups is purpose, not the tool.</p>
+
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg)]">The doom scroll turned us into dopamine-driven animals. The positive loop turns us into dopamine-driven builders. Same wiring. Same addiction. Different output. The infrastructure changed. The humans did not have to.</p>
+          <p class="text-sm text-[var(--fg)]">The doom scroll turned us into dopamine-driven animals. The positive loop turns us into dopamine-driven builders. Same wiring. Same wanting system. Different output. The infrastructure changed. The humans did not have to. Whether that is enough depends on whether the wanting is serving something real or just finding a new thing to want.</p>
         </div>
       `,
     },
@@ -303,15 +313,22 @@ export const thePositiveLoopData: ResearchData = {
   references: [
     { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
     { text: 'Mangtani, R. (2024). <em>Preference for Legible Risk</em>.', url: '/writing/honest-gambling' },
+    { text: 'Berridge, K.C. (2007). "The debate over dopamine\'s role in reward: the case for incentive salience." <em>Psychopharmacology</em>.', url: 'https://pubmed.ncbi.nlm.nih.gov/17072591/' },
+    { text: 'Sharpe, B.T. & Spooner, R.A. (2025). "Dopamine-scrolling: a modern public health challenge requiring urgent attention." <em>SAGE Journals</em>.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12322333/' },
+    { text: 'METR (2025). AI tools developer productivity study. Cited in <em>MIT Technology Review</em>.', url: 'https://www.technologyreview.com/2025/12/15/1128352/rise-of-ai-coding-developers-2026/' },
+    { text: 'Craddock, M. (2025). "The Vibe Code Addiction: How AI-assisted development is tapping into our brains\' reward systems."', url: 'https://medium.com/@mcraddock/the-vibe-code-addiction-how-ai-assisted-development-is-tapping-into-our-brains-reward-systems-8e9cf58bc856' },
+    { text: 'Stack Overflow (2025). Developer Survey: AI adoption statistics.', url: 'https://survey.stackoverflow.co/2025/ai/' },
     { text: 'Harris, T. (2016). "How Technology is Hijacking Your Mind."' },
     { text: 'Alter, A. (2017). <em>Irresistible: The Rise of Addictive Technology</em>.' },
-    { text: 'Huberman, A. (2023). "Dopamine, Motivation, and Drive." Stanford Neuroscience.' },
   ],
 
   dataAvailability: [
     'Behavioral observations from early AI adopter communities (2024-2026)',
     'Product development timelines compared across pre-AI and AI-assisted workflows',
-    'Cross-referenced with existing research on coordination dynamics and behavioral economics',
+    'Berridge incentive salience research (University of Michigan, 1998-2025)',
+    'METR developer productivity study and code quality metrics (2025)',
+    'Stack Overflow Developer Survey AI adoption data (2025)',
+    'Transfer addiction clinical research from Gateway Foundation, High Focus Centers',
   ],
 
   relatedWork: [
