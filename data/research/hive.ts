@@ -137,7 +137,11 @@ export const hiveData: ResearchData = {
 
 <p>Hive sits in that middle layer. Not smarter agents. Not a new AI product. The plumbing that lets one person run as many agents as possible and not lose track of what is happening.</p>
 
-<p>The agents will get better. They will handle more autonomously, require less oversight, coordinate more effectively on their own. That is the point. The smarter they get, the more of them you run. The more you run, the more you need something showing you what is happening across all of them. The management layer does not become less necessary as agents improve. It becomes more necessary, because capable agents are worth running in larger numbers. Four today, ten next year, twenty when context windows and hardware allow it. The infrastructure that lets you manage the fleet is what makes scaling the fleet possible.</p>
+<p>The system gets smarter from two directions at once. From below, the models improve. Context windows grow from 128k to 200k to a million tokens. Each agent can hold more of the project in its head, work longer without losing track, handle more complex tasks autonomously. That is the AI labs' job. They pour billions into making the engine faster. Every quarter, the agents you are running become more capable without you changing anything.</p>
+
+<p>From above, the personal context compounds. Every editing session adds corrections to the writing-voice file. Every debugging session writes a lesson back to the project's knowledge base. Every article benchmarks against the gold standard from two months ago. The agents start each session from everything that was learned before. A fleet that runs for six months knows things about your projects, your voice, your patterns that no fresh agent could replicate. The model gets smarter because the lab improved it. The system gets smarter because it remembers what happened last Tuesday.</p>
+
+<p>These two forces multiply. A smarter model reading a thicker knowledge base produces better output than either force alone. And both forces make the management layer more necessary, not less. The smarter the agents get, the more of them you run. The more personal context accumulates, the more valuable each session becomes. Four agents today, ten next year, twenty when context windows and hardware allow it. The infrastructure that lets you manage the fleet is what makes scaling the fleet possible.</p>
       `.trim(),
     },
     {
