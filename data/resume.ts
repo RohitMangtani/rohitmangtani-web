@@ -44,7 +44,7 @@ export const resumeData: ResumeData = {
   location: 'Nashua, NH',
   phone: '603.305.0320',
   email: 'mangtani.rohit20@gmail.com',
-  linkedin: 'linkedin.com/in/rohitmangtani',
+  linkedin: 'linkedin.com/in/rohitmangtani | rohitmangtani.com',
 
   education: [
     {
@@ -109,7 +109,28 @@ export const resumeData: ResumeData = {
     },
   ],
 
-  projects: [],
+  projects: [
+    {
+      name: 'Hive — Multi-Agent Orchestration System',
+      bullets: [
+        'Built a daemon, dashboard, and coordination layer for running multiple AI agents simultaneously with real-time status detection, auto-pilot, and compound learning',
+        'Used daily to direct four concurrent Claude Code instances across independent projects',
+      ],
+    },
+    {
+      name: 'Independent Research — rohitmangtani.com/writing',
+      bullets: [
+        'Published ten articles on AI labor economics, agent management, human-AI coordination, and cultural systems',
+        'Topics include agent fleet management, residual human inputs in automated systems, and hybrid workflow design',
+      ],
+    },
+    {
+      name: 'The Sleepless Rishi — Automated Content Pipeline',
+      bullets: [
+        'Designed a seven-step AI pipeline from script generation to YouTube upload, producing narrated video content with AI-generated artwork and subtitles',
+      ],
+    },
+  ],
 
   leadership: [
     {
@@ -125,9 +146,9 @@ export const resumeData: ResumeData = {
   ],
 
   skills: [
-    { category: 'Skills', items: 'Financial Modeling, Analytical Skills, Agile Methodologies, Strategic Thinking, Communication, Collaboration' },
-    { category: 'Applications', items: 'Microsoft Word, Microsoft Excel, Microsoft PowerPoint, JIRA, Confluence, PowerBI, Tableau, Alteryx, Snowflake, PyCharm, Eclipse, Rstudio, MySQL, SAP, ServiceNOW, Bloomberg, Morningstar' },
-    { category: 'Computer Languages', items: 'Python, R, SQL, HTML, CSS' },
-    { category: 'Interests', items: 'Thematic Investing, Game Theory, Internet Culture, Taekwondo (Black Belt II)' },
+    { category: 'Skills', items: 'Financial Modeling, Data Analysis, AI Workflow Design, Product Direction, System Architecture, Reconciliation and Controls' },
+    { category: 'Technical', items: 'TypeScript, Python, Next.js, Node.js, SQL, R, Tailwind CSS, Vercel, PowerBI, Tableau, Snowflake, Excel' },
+    { category: 'Tools', items: 'Claude Code, JIRA, Confluence, Alteryx, SAP, ServiceNOW, Bloomberg, Git' },
+    { category: 'Interests', items: 'Thematic Investing, Game Theory, AI Systems, Internet Culture, Taekwondo (Black Belt II)' },
   ],
 };
