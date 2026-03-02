@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'safe-mode',
+    title: 'Safe Mode',
+    date: '2026',
+  },
+  {
     slug: 'close-your-eyes',
     title: 'Close Your Eyes',
     date: '2026',
