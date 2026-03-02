@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import CopyLinkButton from "@/components/CopyLinkButton";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sora.variable} font-sans antialiased`}>
+        <CopyLinkButton />
         {children}
       </body>
     </html>
