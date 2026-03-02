@@ -29,7 +29,7 @@ export default function AboutPage() {
             I like finance, game theory, internet culture, crypto, psychology, and marketing. Not as separate interests. As one thing. The way markets move, the way people behave online, the way attention concentrates, the way communities form around shared conviction. It is all the same system viewed from different angles.
           </p>
           <p className="leading-relaxed">
-            I build things with AI. Products, research pipelines, automated systems, data analyses. The hard part is not the building. It is figuring out what to build and whether it is any good.
+            Still figuring out what to build and whether it is any good.
           </p>
           <p className="leading-relaxed">
             I write about what I see happening and what I like to think about.
