@@ -139,7 +139,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong>HBR definition:</strong> Ability to communicate intent to AI systems effectively.</p>
 
-<p><strong>Evidence:</strong> Every product was built through iterative prompting across four simultaneous agent instances. The Sleepless Rishi pipeline generates scripts, audio, images, thumbnails, and video assembly through carefully tuned prompts at each step. The visualization loop described in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a> is a prompt craftsmanship methodology: describe what you want, see the result, identify the gap, describe the correction. <a href="/lab/how-hive-was-built" class="underline hover:opacity-60">How Hive Was Built</a> names this as "iterative direction," the core operational skill.</p>
+<p><strong>Evidence:</strong> Every product was built through iterative prompting across four simultaneous agent instances. The Sleepless Rishi pipeline generates scripts, audio, images, thumbnails, and video assembly through carefully tuned prompts at each step. The visualization loop described in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a> is a prompt craftsmanship methodology: describe what you want, see the result, identify the gap, describe the correction. <a href="https://rmgtni.xyz/lab/how-hive-was-built" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-60">How Hive Was Built</a> names this as "iterative direction," the core operational skill.</p>
 
 <p><strong>Resume language:</strong> "Developed and refined multi-step AI prompting pipelines for content generation, code development, and product iteration across five shipped products."</p>
           `.trim(),
@@ -282,7 +282,7 @@ export const theReferencePointData: ResearchData = {
 
   relatedWork: [
     { title: 'Hive', href: '/lab/hive' },
-    { title: 'How Hive Was Built', href: '/lab/how-hive-was-built' },
+    { title: 'How Hive Was Built', href: 'https://rmgtni.xyz/lab/how-hive-was-built' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
     { title: 'Career Playbook', href: 'https://rmgtni.xyz/lab/career-playbook' },
     { title: 'Career Audit', href: 'https://rmgtni.xyz/lab/career-audit' },

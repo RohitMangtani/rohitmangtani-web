@@ -25,12 +25,6 @@ const tools: { href: string; title: string; description: string }[] = [
       'An operating system for directing AI labor. Run multiple Claude Code agents simultaneously with status visibility, coordination, and compound learning.',
   },
   {
-    href: '/lab/how-hive-was-built',
-    title: 'How Hive Was Built',
-    description:
-      'The full arc from one terminal to a fleet. How the articles became the design spec, the agents built the system, and the skills involved.',
-  },
-  {
     href: '/lab/the-reference-point',
     title: 'The Reference Point',
     description:
