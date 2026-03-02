@@ -111,14 +111,14 @@ export const resumeData: ResumeData = {
 
   projects: [
     {
-      name: 'Hive — Multi-Agent Orchestration System',
+      name: 'Hive, Multi-Agent Orchestration System',
       bullets: [
         'Built a daemon, dashboard, and coordination layer for running multiple AI agents simultaneously with real-time status detection, auto-pilot, and compound learning',
         'Used daily to direct four concurrent Claude Code instances across independent projects',
       ],
     },
     {
-      name: 'Independent Research — rohitmangtani.com/writing',
+      name: 'Independent Research, rohitmangtani.com/writing',
       bullets: [
         'Published ten articles on AI labor economics, agent management, human-AI coordination, and cultural systems',
         'Topics include agent fleet management, residual human inputs in automated systems, and hybrid workflow design',
