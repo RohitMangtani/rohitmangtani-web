@@ -265,6 +265,8 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>For the people where it does work, the substitution is real. Instead of losing 45 minutes to a feed, you spent 45 minutes building something. The dopamine is comparable. The output is not.</p>
 
+        <p>There is something else happening that matters. The hardest part of doing any work has always been starting. The weight of the starting gap, sitting down, opening the blank page, grinding through the first hour before momentum kicks in. That weight lifts when the process is fun. You are not grinding through the hard part alone. You are having a conversation and watching things appear. The activation energy drops because the bridge between "I should do this" and "I am doing this" stops feeling like effort and starts feeling like play. That is the shift nobody expected. Not that AI makes work faster. That it makes starting work feel like something you want to do instead of something you have to force yourself through.</p>
+
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">The Substitution Effect</p>
           <p class="text-sm text-[var(--fg-muted)]">This is not about willpower. This is not about "just stop scrolling." This is about substitution. People do not quit addictive behaviors through discipline alone. They quit when a better reward shows up that scratches the same itch.</p>
