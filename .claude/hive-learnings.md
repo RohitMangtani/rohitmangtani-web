@@ -16,3 +16,7 @@ If you have any feedback or are interested in similar things, please reach out I
 - [2026-03-02] Completed: Every time you make a modification to this résumé through you, it should automatically reformat the PDF that’s downloadable Files: README.md, .gitignore, package.json, layout.tsx, tech-is-not-tech-anymore.ts, page.tsx, page.tsx, page.tsx, page.tsx, page.tsx, page.tsx, page.tsx, resume.ts, page.tsx, resume.md, resume.tex
 - [2026-03-02] Completed: The other PDF was working it just was not the current file that reflected what the webpage said Files: README.md, .gitignore, package.json, layout.tsx, tech-is-not-tech-anymore.ts, page.tsx, page.tsx, page.tsx, page.tsx, page.tsx, page.tsx, page.tsx, resume.ts, page.tsx, resume.md, resume.tex
 - [2026-03-02] Completed: Identify yourself. Say: I am Q2 (ttys001, rohitmangtani-web).
+- [2026-03-02] Completed: You are acting as a SENIOR FULL-STACK DEVELOPER conducting a deep technical audit. Read https://rmgtni.xyz/lab/hive-system-audit — fetch it with WebFetch.
+
+Your role: evaluate Hive PURELY from a techn
+- [2026-03-02] Completed: You were asked to write a developer technical report to /tmp/hive-q2-developer-report.md but it was not found. Write your full technical analysis NOW to /private/tmp/claude/hive-q2-developer-report.md

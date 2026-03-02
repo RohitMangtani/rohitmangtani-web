@@ -111,6 +111,21 @@ export const hiveData: ResearchData = {
       `.trim(),
     },
     {
+      id: 'orchestration',
+      title: 'Orchestration Is the Edge',
+      content: `
+<p>Watch what happens during a real session. Four terminals are open. You type a single prompt into Q1: "Act as a full-scale auditor. Tell Q2 to act as a senior developer. Tell Q3 to act as an investor. They should each go deep into their roles, conduct their analysis, and feed their findings back to you. Your audit should read their responses, synthesize, and pass the complete package to Q4 for final formatting."</p>
+
+<p>One sentence from a human. The system decomposes it. Q1 receives its role assignment and dispatches focused messages to Q2 and Q3 through the coordination API. Q2 drops into the codebase with developer eyes, auditing architecture, scalability bottlenecks, security gaps, and migration paths. Q3 reads the published articles and competitive landscape with investor eyes, evaluating market position, defensibility, and gaps. Both feed structured reports back to Q1. Q1 reads both, reconciles the technical reality with the market thesis, and dispatches a synthesis prompt to Q4. Q4 takes all of it and produces a formatted deliverable. Four agents, four roles, one coordinated output. The human typed one sentence.</p>
+
+<p>No existing tool does this. Omnara, the closest competitor, is a monitoring dashboard. It shows you what agents are doing. It sends you a push notification when one needs attention. You respond manually. There is no dispatch, no role assignment, no inter-agent message routing, no auto-approval of routine prompts, no task queue, no file collision prevention. It watches agents. Hive directs them.</p>
+
+<p>CrewAI lets you define agent roles and task flows in Python. You write code to set up roles, define delegation chains, specify output formats. That works for developers building automated pipelines. It does not work for someone who wants to type "audit this from four angles" and have it happen. The orchestration layer that takes natural language, decomposes it into structured directives, and routes each part to the right agent with the right role does not exist in any shipping product.</p>
+
+<p>This is the real gap. Not visibility. Not status detection. The ability to take a complex directive, split it across multiple agents with different expertise, coordinate their outputs, and synthesize the results. A prompt compiler that turns one human sentence into a multi-agent workflow. The dashboard is how you see it happening. The orchestration engine is what makes it happen.</p>
+      `.trim(),
+    },
+    {
       id: 'where-it-fits',
       title: 'Where It Fits',
       content: `
