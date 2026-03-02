@@ -1,97 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 700" fill="none">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   </style>
 
   <!-- Background -->
-  <rect width="680" height="560" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+  <rect width="680" height="700" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
 
   <!-- Title -->
-  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">THE VISUAL LAYER</text>
+  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">THE FIRST CAR</text>
+  <text x="340" y="54" text-anchor="middle" font-size="10" fill="#78716c">Every lab builds a faster engine. Nobody builds the interface.</text>
 
-  <!-- Top: Dashboard -->
-  <rect x="90" y="56" width="500" height="140" rx="8" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="116" y="78" font-size="11" font-weight="600" fill="#1c1917">Hive Dashboard</text>
-  <text x="530" y="78" font-size="9" fill="#a8a29e">Live</text>
-  <circle cx="554" cy="74" r="3" fill="#22c55e"/>
-
-  <!-- 2x2 Agent tiles -->
-  <!-- Tile 1: Claude (green) -->
-  <rect x="108" y="92" width="112" height="86" rx="6" fill="white" stroke="#d6d3d1" stroke-width="1"/>
-  <circle cx="124" cy="110" r="5" fill="#22c55e"/>
-  <text x="136" y="114" font-size="10" font-weight="500" fill="#1c1917">Claude</text>
-  <text x="196" y="114" font-size="8" fill="#a8a29e">Anthropic</text>
-  <text x="116" y="132" font-size="9" fill="#44403c">Refactoring auth</text>
-  <rect x="112" y="144" width="100" height="24" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
-  <text x="162" y="160" text-anchor="middle" font-size="8" fill="#78716c">Type a message...</text>
-
-  <!-- Tile 2: GPT (green) -->
-  <rect x="228" y="92" width="112" height="86" rx="6" fill="white" stroke="#d6d3d1" stroke-width="1"/>
-  <circle cx="244" cy="110" r="5" fill="#22c55e"/>
-  <text x="256" y="114" font-size="10" font-weight="500" fill="#1c1917">GPT</text>
-  <text x="280" y="114" font-size="8" fill="#a8a29e">OpenAI</text>
-  <text x="236" y="132" font-size="9" fill="#44403c">Writing tests</text>
-  <rect x="232" y="144" width="100" height="24" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
-  <text x="282" y="160" text-anchor="middle" font-size="8" fill="#78716c">Type a message...</text>
-
-  <!-- Tile 3: Gemini (red) -->
-  <rect x="348" y="92" width="112" height="86" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
-  <circle cx="364" cy="110" r="5" fill="#ef4444"/>
-  <text x="376" y="114" font-size="10" font-weight="500" fill="#1c1917">Gemini</text>
-  <text x="416" y="114" font-size="8" fill="#a8a29e">Google</text>
-  <text x="356" y="132" font-size="9" fill="#ef4444">Idle</text>
-  <rect x="352" y="144" width="100" height="24" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
-  <text x="402" y="160" text-anchor="middle" font-size="8" fill="#78716c">Type a message...</text>
-
-  <!-- Tile 4: + Add Instance -->
-  <rect x="468" y="92" width="112" height="86" rx="6" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="524" y="132" text-anchor="middle" font-size="20" fill="#a8a29e">+</text>
-  <text x="524" y="152" text-anchor="middle" font-size="9" fill="#a8a29e">Add Instance</text>
-
-  <!-- Label -->
-  <text x="340" y="220" text-anchor="middle" font-size="11" font-weight="500" fill="#1c1917">One dashboard. Any agent. Green means driving. Red means stopped.</text>
+  <!-- Top: Human director -->
+  <rect x="190" y="74" width="300" height="52" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="210" y="96" font-size="10" fill="#78716c">You:</text>
+  <text x="234" y="96" font-size="10" fill="#1c1917">"Audit this from four angles."</text>
+  <text x="210" y="114" font-size="9" fill="#a8a29e">One sentence. Four agents. Four roles. One output.</text>
 
   <!-- Arrow down -->
-  <line x1="340" y1="236" x2="340" y2="260" stroke="#e7e5e4" stroke-width="1.5"/>
-  <polygon points="334,256 340,266 346,256" fill="#e7e5e4"/>
+  <line x1="340" y1="126" x2="340" y2="148" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="334,144 340,154 346,144" fill="#d6d3d1"/>
 
-  <!-- Middle: Hive coordination layer -->
-  <rect x="140" y="272" width="400" height="64" rx="6" fill="#1c1917"/>
-  <text x="340" y="296" text-anchor="middle" font-size="12" font-weight="600" fill="#fafaf9" letter-spacing="0.04em">HIVE</text>
-  <text x="340" y="314" text-anchor="middle" font-size="10" fill="#78716c">Status detection  ·  Coordination  ·  Learning  ·  Auto-pilot</text>
+  <!-- THE CAR: Three edges -->
+  <rect x="60" y="158" width="560" height="160" rx="8" fill="#1c1917"/>
+  <text x="340" y="180" text-anchor="middle" font-size="12" font-weight="600" fill="#fafaf9" letter-spacing="0.06em">THE CAR</text>
+
+  <!-- Edge 1: Steering Wheel / Prompt Compiler -->
+  <rect x="80" y="192" width="164" height="108" rx="6" fill="#292524"/>
+  <text x="162" y="212" text-anchor="middle" font-size="10" font-weight="600" fill="#fafaf9">Steering Wheel</text>
+  <text x="162" y="228" text-anchor="middle" font-size="9" fill="#a8a29e">Prompt Compiler</text>
+  <line x1="100" y1="236" x2="224" y2="236" stroke="#44403c" stroke-width="0.5"/>
+  <text x="162" y="254" text-anchor="middle" font-size="8.5" fill="#d6d3d1">Parses your sentence into</text>
+  <text x="162" y="268" text-anchor="middle" font-size="8.5" fill="#d6d3d1">roles, delegation chains,</text>
+  <text x="162" y="282" text-anchor="middle" font-size="8.5" fill="#d6d3d1">and preserves the framing</text>
+  <text x="162" y="296" text-anchor="middle" font-size="8.5" fill="#d6d3d1">through the entire relay</text>
+
+  <!-- Edge 2: Speedometer / Stoplight -->
+  <rect x="258" y="192" width="164" height="108" rx="6" fill="#292524"/>
+  <text x="340" y="212" text-anchor="middle" font-size="10" font-weight="600" fill="#fafaf9">Speedometer</text>
+  <text x="340" y="228" text-anchor="middle" font-size="9" fill="#a8a29e">Stoplight Status</text>
+  <line x1="278" y1="236" x2="402" y2="236" stroke="#44403c" stroke-width="0.5"/>
+  <!-- Traffic light dots -->
+  <circle cx="316" cy="258" r="8" fill="#22c55e" opacity="0.9"/>
+  <circle cx="340" cy="258" r="8" fill="#22c55e" opacity="0.9"/>
+  <circle cx="364" cy="258" r="8" fill="#ef4444" opacity="0.9"/>
+  <text x="340" y="282" text-anchor="middle" font-size="8.5" fill="#d6d3d1">Color, not text. Glance</text>
+  <text x="340" y="296" text-anchor="middle" font-size="8.5" fill="#d6d3d1">and know instantly.</text>
+
+  <!-- Edge 3: Mirrors / Quadrant Map -->
+  <rect x="436" y="192" width="164" height="108" rx="6" fill="#292524"/>
+  <text x="518" y="212" text-anchor="middle" font-size="10" font-weight="600" fill="#fafaf9">Mirrors</text>
+  <text x="518" y="228" text-anchor="middle" font-size="9" fill="#a8a29e">Quadrant Map</text>
+  <line x1="456" y1="236" x2="580" y2="236" stroke="#44403c" stroke-width="0.5"/>
+  <!-- 2x2 mini grid -->
+  <rect x="486" y="248" width="28" height="20" rx="2" fill="#44403c" stroke="#57534e" stroke-width="0.5"/>
+  <text x="500" y="261" text-anchor="middle" font-size="7" fill="#a8a29e">Q1</text>
+  <rect x="518" y="248" width="28" height="20" rx="2" fill="#44403c" stroke="#57534e" stroke-width="0.5"/>
+  <text x="532" y="261" text-anchor="middle" font-size="7" fill="#a8a29e">Q2</text>
+  <rect x="486" y="272" width="28" height="20" rx="2" fill="#44403c" stroke="#57534e" stroke-width="0.5"/>
+  <text x="500" y="285" text-anchor="middle" font-size="7" fill="#a8a29e">Q3</text>
+  <rect x="518" y="272" width="28" height="20" rx="2" fill="#44403c" stroke="#57534e" stroke-width="0.5"/>
+  <text x="532" y="285" text-anchor="middle" font-size="7" fill="#a8a29e">Q4</text>
+  <text x="518" y="300" text-anchor="middle" font-size="8.5" fill="#d6d3d1">Spatial memory.</text>
+
+  <!-- Arrow down from car -->
+  <line x1="340" y1="318" x2="340" y2="344" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="334,340 340,350 346,340" fill="#d6d3d1"/>
+
+  <!-- HIVE coordination layer -->
+  <rect x="100" y="352" width="480" height="56" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="374" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Coordination Layer</text>
+  <text x="340" y="392" text-anchor="middle" font-size="9" fill="#78716c">File locks  ·  Task queue  ·  Messaging  ·  Conflict detection  ·  Auto-pilot</text>
+
+  <!-- Two-sided compounding arrows -->
+  <!-- Left: Personal context (from above) -->
+  <text x="56" y="382" text-anchor="middle" font-size="8" fill="#a8a29e" transform="rotate(-90, 56, 382)">PERSONAL CONTEXT</text>
+  <line x1="72" y1="340" x2="72" y2="420" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3,2"/>
+  <polygon points="68,344 72,336 76,344" fill="#d6d3d1"/>
+  <polygon points="68,416 72,424 76,416" fill="#d6d3d1"/>
+
+  <!-- Right: Model improvements (from below) -->
+  <text x="624" y="382" text-anchor="middle" font-size="8" fill="#a8a29e" transform="rotate(90, 624, 382)">MODELS IMPROVE</text>
+  <line x1="608" y1="340" x2="608" y2="420" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="3,2"/>
+  <polygon points="604,344 608,336 612,344" fill="#d6d3d1"/>
+  <polygon points="604,416 608,424 612,416" fill="#d6d3d1"/>
+
+  <!-- Compound Learning -->
+  <rect x="100" y="416" width="480" height="44" rx="6" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
+  <text x="340" y="436" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">Compound Learning</text>
+  <text x="340" y="450" text-anchor="middle" font-size="8.5" fill="#78716c">Smarter models from below. Thicker knowledge from above. Both forces multiply.</text>
 
   <!-- Arrow down splits into three -->
-  <line x1="220" y1="336" x2="220" y2="372" stroke="#e7e5e4" stroke-width="1.5"/>
-  <polygon points="214,368 220,378 226,368" fill="#e7e5e4"/>
-  <line x1="340" y1="336" x2="340" y2="372" stroke="#e7e5e4" stroke-width="1.5"/>
-  <polygon points="334,368 340,378 346,368" fill="#e7e5e4"/>
-  <line x1="460" y1="336" x2="460" y2="372" stroke="#e7e5e4" stroke-width="1.5"/>
-  <polygon points="454,368 460,378 466,368" fill="#e7e5e4"/>
+  <line x1="200" y1="460" x2="200" y2="490" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="194,486 200,496 206,486" fill="#d6d3d1"/>
+  <line x1="340" y1="460" x2="340" y2="490" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="334,486 340,496 346,486" fill="#d6d3d1"/>
+  <line x1="480" y1="460" x2="480" y2="490" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="474,486 480,496 486,486" fill="#d6d3d1"/>
 
-  <!-- Bottom: Agent providers -->
+  <!-- Bottom: Provider-agnostic agents -->
   <!-- Anthropic -->
-  <rect x="150" y="384" width="140" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="220" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Anthropic</text>
-  <text x="220" y="428" text-anchor="middle" font-size="9" fill="#44403c">Claude Code</text>
-  <text x="220" y="442" text-anchor="middle" font-size="9" fill="#44403c">Claude Agent SDK</text>
+  <rect x="130" y="500" width="140" height="64" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="200" y="524" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Anthropic</text>
+  <text x="200" y="540" text-anchor="middle" font-size="9" fill="#44403c">Claude Code</text>
+  <text x="200" y="554" text-anchor="middle" font-size="9" fill="#44403c">Agent SDK</text>
 
   <!-- OpenAI -->
-  <rect x="310" y="384" width="140" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="380" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">OpenAI</text>
-  <text x="380" y="428" text-anchor="middle" font-size="9" fill="#44403c">ChatGPT</text>
-  <text x="380" y="442" text-anchor="middle" font-size="9" fill="#44403c">Codex</text>
+  <rect x="290" y="500" width="140" height="64" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="360" y="524" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">OpenAI</text>
+  <text x="360" y="540" text-anchor="middle" font-size="9" fill="#44403c">GPT / Codex</text>
+  <text x="360" y="554" text-anchor="middle" font-size="9" fill="#44403c">Assistants API</text>
 
   <!-- Google -->
-  <rect x="470" y="384" width="140" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="540" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Google</text>
-  <text x="540" y="428" text-anchor="middle" font-size="9" fill="#44403c">Gemini</text>
-  <text x="540" y="442" text-anchor="middle" font-size="9" fill="#44403c">Jules</text>
+  <rect x="450" y="500" width="140" height="64" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="520" y="524" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Google</text>
+  <text x="520" y="540" text-anchor="middle" font-size="9" fill="#44403c">Gemini</text>
+  <text x="520" y="554" text-anchor="middle" font-size="9" fill="#44403c">Jules</text>
 
-  <!-- Ellipsis for more -->
-  <text x="110" y="424" text-anchor="middle" font-size="16" fill="#a8a29e">...</text>
+  <!-- Ellipsis -->
+  <text x="100" y="536" text-anchor="middle" font-size="16" fill="#a8a29e">...</text>
 
-  <!-- Bottom label -->
-  <rect x="140" y="476" width="400" height="60" rx="6" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
-  <text x="340" y="500" text-anchor="middle" font-size="11" font-weight="500" fill="#1c1917">Any agent, any provider. One visual layer.</text>
-  <text x="340" y="518" text-anchor="middle" font-size="10" fill="#78716c">Plug in a new model. It shows up as a tile. Green or red. Type into it.</text>
+  <!-- Bottom summary -->
+  <rect x="100" y="588" width="480" height="88" rx="6" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
+  <text x="340" y="612" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Provider-agnostic. One screen. Any agent.</text>
+  <text x="340" y="632" text-anchor="middle" font-size="9" fill="#78716c">The engine is Claude, GPT, Gemini, whoever ships next quarter.</text>
+  <text x="340" y="648" text-anchor="middle" font-size="9" fill="#78716c">The car is the steering wheel, speedometer, and mirrors</text>
+  <text x="340" y="664" text-anchor="middle" font-size="9" fill="#78716c">that let any person direct any fleet from one interface.</text>
 </svg>
