@@ -17,12 +17,13 @@ export const metadata: Metadata = {
   },
 };
 
-const projects = [
+const projects: { href: string; title: string; description: string; projectUrl?: string }[] = [
   {
     href: '/lab/hive',
     title: 'Hive',
     description:
       'An operating system for directing AI labor. Run multiple Claude Code agents simultaneously with status visibility, coordination, and compound learning.',
+    projectUrl: 'https://github.com/RohitMangtani/hive',
   },
 ];
 
@@ -49,20 +50,29 @@ export default function LabPage() {
 
         <div className="space-y-3">
           {projects.map((item) => (
-            <Link
+            <div
               key={item.href}
-              href={item.href}
-              className="block group"
+              className="p-4 border border-[var(--border)] rounded-lg transition-all duration-200 hover:border-[var(--fg-muted)] hover:bg-[var(--bg-secondary)]"
             >
-              <div className="p-4 border border-[var(--border)] rounded-lg transition-all duration-200 hover:border-[var(--fg-muted)] hover:bg-[var(--bg-secondary)]">
+              <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
-                    {item.title}
-                  </h3>
+                  <Link href={item.href} className="hover:opacity-80 transition-opacity">
+                    <h3 className="font-medium text-[var(--fg)]">{item.title}</h3>
+                  </Link>
                   <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
                 </div>
+                {item.projectUrl && (
+                  <a
+                    href={item.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors flex-shrink-0"
+                  >
+                    GitHub &#8599;
+                  </a>
+                )}
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 
