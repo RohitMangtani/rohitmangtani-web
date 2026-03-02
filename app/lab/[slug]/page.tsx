@@ -4,9 +4,11 @@ import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { hiveData } from '@/data/research/hive';
+import { howHiveWasBuiltData } from '@/data/research/how-hive-was-built';
 
 const articles: Record<string, ResearchData> = {
   hive: hiveData,
+  'how-hive-was-built': howHiveWasBuiltData,
 };
 
 export async function generateStaticParams() {
