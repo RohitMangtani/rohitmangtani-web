@@ -201,6 +201,8 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The gap between "I have used ChatGPT" and "I use AI to build things" is the gap between having a phone and building an app. Most people have not used AI for anything beyond a chatbot conversation. They have not built a product, run research, automated a workflow, or shipped something real. The speed of change is hiding the size of the change.</p>
 
+        <p>The barrier to entry feels annoying. That is the word people use. It feels like homework. It feels like learning a new tool when the last one was fine. But the growth underneath that friction is too exponential to sit out. The gap between people who conceptualize what AI can do and people who have not touched it yet is the largest capability mismatch in technology right now. And it is compounding. Every month the tools improve, the gap widens, and more people fall further behind without realizing how far behind they already are. Not because they are incapable. Because the on-ramp does not exist yet for how they think.</p>
+
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="font-semibold text-[var(--fg)] mb-3">The Under-Allocation Is Staggering</p>
           <div class="space-y-2 text-sm text-[var(--fg-muted)]">

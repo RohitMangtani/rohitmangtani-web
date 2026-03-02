@@ -50,6 +50,21 @@ export const techIsNotTechAnymoreData: ResearchData = {
       `.trim(),
     },
     {
+      id: 'the-gap',
+      title: 'The Gap',
+      content: `
+<p>I have been begging my friends to use AI for months. My sister. People I grew up with. College classmates. I show them what I built. I send screenshots. I explain the loop. Nobody does it. They download ChatGPT, ask it one question, close the app. That is where most people are.</p>
+
+<p>The barrier is not intelligence. It is that technology still feels like technology. It feels annoying. It feels like something you need to learn. That perception is wrong, but while it persists, the gap between people who use AI to build and people who do not is compounding every day.</p>
+
+<p>Here is what I notice. Every person I talk to knows something I do not. A friend in sales sees how people buy. Someone else sees what resonates emotionally. Another sees how incentives move. None of them use AI. All of them have signal that would make AI output dramatically better if they fed it in. The potential is enormous. The friction is what kills it.</p>
+
+<p>That is what all of this is about. Not building a better AI tool. Building a layer that makes the AI disappear. Stoplights instead of terminals. A phone instead of a laptop. Color instead of text. The people are not stupid. They have massive potential. The interface needs to meet them where they are.</p>
+
+<p>The growth underneath is exponential. Models get smarter every quarter. Capabilities drop weekly. The gap between what AI can do for someone and what most people think AI does is the biggest mismatch I have seen. And it accelerates. Every month the tools get more capable, the gap widens, and people fall behind not because they cannot do it but because nobody showed them what it looks like when it works.</p>
+      `.trim(),
+    },
+    {
       id: 'the-point',
       title: 'The Point',
       content: `
