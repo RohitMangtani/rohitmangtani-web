@@ -23,11 +23,11 @@ export const hiveData: ResearchData = {
       id: 'what-it-is',
       title: 'What It Is',
       content: `
-<p>Four terminal windows open on a single machine. Each one running a Claude Code instance. One is refactoring an authentication layer. Another is writing content for a marketing site. A third is debugging a deployment pipeline. The fourth is investigating a production bug. Each agent works independently, produces real output, and can run for an hour without human input.</p>
+<p>The premise is simple: run as many AI agents as possible at once and do not lose track of them. Four today. Ten when the hardware allows it. The agents get smarter every quarter. The more capable they become, the more of them you want running simultaneously across your projects. The bottleneck is never the AI. It is keeping track of what all of them are doing.</p>
 
-<p>The problem is not the agents. The problem is you. You cannot watch four terminals simultaneously. You do not know which agent finished, which one is stuck waiting for a permission prompt, or which two are about to edit the same file. You are the bottleneck, not the AI.</p>
+<p>Four terminal windows open on a single machine. Each one running a Claude Code instance. One is refactoring an authentication layer. Another is writing content for a marketing site. A third is debugging a deployment pipeline. The fourth is investigating a production bug. Each agent works independently, produces real output, and can run for an hour without human input. You cannot watch all of them. You do not know which one finished, which one is stuck on a permission prompt, or which two are about to edit the same file.</p>
 
-<p>Hive is the layer between you and those agents. A local daemon that discovers every running Claude Code instance on your machine, a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">dashboard</a> that shows their status in real time, and a coordination API that lets them share context, claim files, and compound what they learn. It is not AI. It does not make agents smarter. It makes running multiple agents manageable.</p>
+<p>Hive is the layer between you and those agents. A local daemon that discovers every running Claude Code instance on your machine, a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">dashboard</a> that shows their status in real time, and a coordination API that lets them share context, claim files, and compound what they learn. It does not make agents smarter. It lets you run more of them without things falling apart.</p>
 
 <p>The entire system was built using the agents it manages. Four Claude Code instances iterating on the daemon, the dashboard, and each other's output, while a human directed the architecture and resolved conflicts. A real product derived from real pain points, solved by iterating back and forth between the tools and the problems they were built to fix.</p>
       `.trim(),
@@ -119,9 +119,9 @@ export const hiveData: ResearchData = {
 
 <p>The middle layer is the infrastructure for actually running fleets of agents on real projects with real coordination needs. Status visibility, collision prevention, dispatch automation, compound learning. This is the layer that does not exist yet. The AI labs are focused on making individual agents better. The application layer is building single-agent products. The operational infrastructure for multi-agent work is an open gap.</p>
 
-<p>Hive sits in that middle layer. Not smarter agents. Not a new AI product. The plumbing that lets one person run a fleet and not lose track of what is happening.</p>
+<p>Hive sits in that middle layer. Not smarter agents. Not a new AI product. The plumbing that lets one person run as many agents as possible and not lose track of what is happening.</p>
 
-<p>The agents will get better at self-managing. They will handle more autonomously, require less oversight, and coordinate more effectively on their own. This does not make the management layer less necessary. Kubernetes did not become irrelevant when containers got smarter. It became more necessary, because more people ran more containers in more complex configurations. The same trajectory applies here. As agents get more capable, more people will run more of them, and the need for operational infrastructure compounds.</p>
+<p>The agents will get better. They will handle more autonomously, require less oversight, coordinate more effectively on their own. That is the point. The smarter they get, the more of them you run. The more you run, the more you need something showing you what is happening across all of them. The management layer does not become less necessary as agents improve. It becomes more necessary, because capable agents are worth running in larger numbers. Four today, ten next year, twenty when context windows and hardware allow it. The infrastructure that lets you manage the fleet is what makes scaling the fleet possible.</p>
       `.trim(),
     },
   ],
