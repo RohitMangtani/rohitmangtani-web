@@ -25,7 +25,7 @@ export const techIsNotTechAnymoreData: ResearchData = {
       content: `
 <p>I am laying on my bed. On my screen there are four boxes. Each one has a stoplight. Green means that robot is working. Red means it is done and waiting for me.</p>
 
-<p>I see a red light. I pick up my phone and text it: "Start the next Shiva video." The light turns green. The robot takes a hymn, writes a script, generates narration, creates artwork, burns subtitles, assembles a video, and uploads it to YouTube with a title I would have written myself. I go back to whatever I was doing.</p>
+<p>I see a red light. I pick up my phone and text it: "Build me a landing page for the new project." The light turns green. The robot designs the layout, writes the copy, styles it, and deploys it live. I go back to whatever I was doing.</p>
 
 <p>That is it. That is the workflow. Green means working. Red means done. I am the person who looks at the lights and decides what to start next.</p>
 
