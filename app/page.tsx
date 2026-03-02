@@ -9,7 +9,7 @@ export default function Home() {
           Rohit Mangtani
         </p>
         <p className="text-lg md:text-xl text-[var(--fg-muted)] max-w-lg leading-relaxed animate-fade-in-delay-1">
-          Thinking out loud about the things I find interesting. Building the ones I can.
+          Thinking out loud about the things I find interesting.
         </p>
       </main>
     </>
