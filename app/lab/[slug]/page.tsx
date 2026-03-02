@@ -3,11 +3,14 @@ import Link from 'next/link';
 import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { hiveData } from '@/data/research/hive';
 
-const articles: Record<string, ResearchData> = {};
+const articles: Record<string, ResearchData> = {
+  hive: hiveData,
+};
 
 export async function generateStaticParams() {
-  return [];
+  return Object.keys(articles).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

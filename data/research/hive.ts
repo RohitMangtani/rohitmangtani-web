@@ -1,0 +1,118 @@
+import type { ResearchData } from '@/types/research';
+
+export const hiveData: ResearchData = {
+  slug: 'hive',
+  date: '2026',
+  title: 'Hive',
+  subtitle: 'An operating system for directing AI labor',
+
+  onRamp: {
+    description:
+      'Hive is a daemon, dashboard, and coordination layer for running multiple Claude Code agents simultaneously. It discovers running instances automatically, tracks their status in real time, and prevents collisions when agents work across shared codebases.',
+    whatItDoes:
+      'Explains what Hive is, how it works, and where it fits in the emerging agent infrastructure stack.',
+    whatItDoesNot:
+      'This is not a thesis on AI or multi-agent behavior. For the argument, read The Future of PM.',
+  },
+
+  claim:
+    'AI labs are building smarter agents. Nobody is building the management layer for running fleets of them.',
+
+  sections: [
+    {
+      id: 'what-it-is',
+      title: 'What It Is',
+      content: `
+<p>Four terminal windows open on a single machine. Each one running a Claude Code instance. One is refactoring an authentication layer. Another is writing content for a marketing site. A third is debugging a deployment pipeline. The fourth is investigating a production bug. Each agent works independently, produces real output, and can run for an hour without human input.</p>
+
+<p>The problem is not the agents. The problem is you. You cannot watch four terminals simultaneously. You do not know which agent finished, which one is stuck waiting for a permission prompt, or which two are about to edit the same file. You are the bottleneck, not the AI.</p>
+
+<p>Hive is the layer between you and those agents. A local daemon that discovers every running Claude Code instance on your machine, a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">dashboard</a> that shows their status in real time, and a coordination API that lets them share context, claim files, and compound what they learn. It is not AI. It does not make agents smarter. It makes running multiple agents manageable.</p>
+
+<p>The entire system was built using the agents it manages. Four Claude Code instances iterating on the daemon, the dashboard, and each other's output, while a human directed the architecture and resolved conflicts. A real product derived from real pain points, solved by iterating back and forth between the tools and the problems they were built to fix.</p>
+      `.trim(),
+    },
+    {
+      id: 'the-gap',
+      title: 'The Gap',
+      content: `
+<p>Open Claude Code right now. It works well. You give it a task, it reads your codebase, runs commands, writes code, iterates. Within a single terminal, the experience is strong and getting stronger every quarter. Now open a second instance. And a third. And a fourth.</p>
+
+<p>There is no management layer. No way to see which agent is working and which one finished. No collision prevention when two agents edit the same config file. No mechanism for one agent to ask another about the API schema it just designed. You are left alt-tabbing between terminals, manually copying context from one window to another, hoping nothing breaks while you are looking at a different screen.</p>
+
+<p>Every major AI lab is racing to build smarter agents. Better reasoning, longer context windows, more autonomy. Anthropic, OpenAI, Google, all of them. The models improve every quarter. But none of them are shipping the infrastructure for running fleets of these agents across real projects with real coordination needs. They build the worker. Nobody builds the foreman's tools.</p>
+
+<p>This is the same gap that existed before Kubernetes. Docker made containers easy to run. Running twenty of them across a distributed system with health checks, restart policies, and resource isolation required infrastructure Docker never shipped. Containers got smarter every year. Kubernetes got more necessary, not less. The same dynamic is playing out with AI agents right now.</p>
+      `.trim(),
+    },
+    {
+      id: 'how-it-works',
+      title: 'How It Works',
+      content: `
+<p>Hive runs as a local daemon on your machine, managed by launchd. It exposes an Express API for telemetry and coordination, a WebSocket server for the live dashboard, and an ngrok tunnel that makes the dashboard accessible from any device. The system has five layers.</p>
+      `.trim(),
+      subsections: [
+        {
+          title: 'Auto-Discovery',
+          content: `
+<p>Launch a Claude Code instance in any terminal. Within three seconds, Hive finds it. No registration, no configuration, no setup. The daemon scans running processes, resolves each one's working directory and session file, and registers it on the dashboard. Close the terminal, it disappears. Open a new one, it appears. The system tracks what exists, not what you told it to track.</p>
+          `.trim(),
+        },
+        {
+          title: 'Status Detection',
+          content: `
+<p>Each agent on the dashboard shows green or red. Green means actively processing. Red means done. Getting this right required a three-layer detection pipeline: real-time hooks from Claude Code's tool lifecycle, backward pattern analysis of session log files, and idle timeout fallbacks. The layers cross-validate each other. A single detection method produces false positives. Three layers, calibrated against edge cases across hundreds of hours of live operation, produce a reliable signal.</p>
+          `.trim(),
+        },
+        {
+          title: 'Auto-Pilot',
+          content: `
+<p>Claude Code pauses for permission prompts. "Allow this bash command?" "Approve this file edit?" In a single terminal, you click yes and move on. With four agents, these prompts stack up. One agent pauses, you do not notice for ten minutes, and an hour of potential output is lost to a dialog box.</p>
+
+<p>Auto-pilot eliminates the pause. Routine prompts are auto-approved within a three-second grace window. The dashboard shows the prompt briefly, giving you a chance to intervene before it auto-resolves. If you do nothing, the agent continues. You only get pulled in when the system detects something that requires actual judgment. The result is continuous production: green means working, red means done, nothing sits idle waiting for a click.</p>
+          `.trim(),
+        },
+        {
+          title: 'Coordination',
+          content: `
+<p>Four agents working across shared codebases will eventually collide. Two agents editing the same file. One agent designing an API that another agent needs to consume. A third agent debugging code that a fourth agent is actively refactoring.</p>
+
+<p>Hive handles this with five coordination primitives. Inter-agent messaging lets any agent send a prompt to any other agent. Advisory file locks let an agent claim a file before editing and receive a conflict signal if someone else holds it. A shared scratchpad stores ephemeral working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched the file you are about to edit.</p>
+
+<p>On top of this sits a global task queue. Push a task, and the daemon auto-dispatches it to the next idle agent. Set a priority, add a dependency on another task, or target a specific project. When an agent finishes and goes idle, the queue fills it with the next available task. The fleet stays productive without manual dispatch.</p>
+          `.trim(),
+        },
+        {
+          title: 'Compound Learning',
+          content: `
+<p>An agent spends twenty minutes debugging a path resolution bug in a video processing pipeline. It finds the fix. The session ends. Tomorrow, a different agent hits the same problem in the same codebase and spends another twenty minutes arriving at the same solution.</p>
+
+<p>Hive's learning system prevents this. When an agent solves something non-obvious, it writes the lesson to a persistent file in the project. Every future agent in that project reads this file before starting work. The lessons compound across sessions and across agents. A four-agent fleet that runs for a week builds a body of operational knowledge that no single session could produce.</p>
+          `.trim(),
+        },
+      ],
+    },
+    {
+      id: 'where-it-fits',
+      title: 'Where It Fits',
+      content: `
+<p>There are three layers in the emerging agent stack. The bottom layer is the agents themselves: Claude, GPT, Gemini. Anthropic, OpenAI, and Google are pouring resources into making these smarter. Better reasoning, longer context windows, tool use, computer use. This layer is improving fast and will continue to improve. It is not something any individual needs to build.</p>
+
+<p>The top layer is the thesis for why agent fleets matter at all. The argument that <a href="/writing/the-future-of-pm" class="underline hover:opacity-60">one person directing multiple agents produces the output of a team</a>. That the PM role becomes an agent operator role. That <a href="/writing/the-human-bridge" class="underline hover:opacity-60">the human serves as the bridge</a> between independent AI workers who cannot see each other. This layer is written and published.</p>
+
+<p>The middle layer is the infrastructure for actually running fleets of agents on real projects with real coordination needs. Status visibility, collision prevention, dispatch automation, compound learning. This is the layer that does not exist yet. The AI labs are focused on making individual agents better. The application layer is building single-agent products. The operational infrastructure for multi-agent work is an open gap.</p>
+
+<p>Hive sits in that middle layer. Not smarter agents. Not a new AI product. The plumbing that lets one person run a fleet and not lose track of what is happening.</p>
+
+<p>The agents will get better at self-managing. They will handle more autonomously, require less oversight, and coordinate more effectively on their own. This does not make the management layer less necessary. Kubernetes did not become irrelevant when containers got smarter. It became more necessary, because more people ran more containers in more complex configurations. The same trajectory applies here. As agents get more capable, more people will run more of them, and the need for operational infrastructure compounds.</p>
+      `.trim(),
+    },
+  ],
+
+  relatedWork: [
+    { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
+    { title: 'The Human Bridge', href: '/writing/the-human-bridge' },
+  ],
+
+  footerVersion: 'March 2026 . Rohit Mangtani',
+};
