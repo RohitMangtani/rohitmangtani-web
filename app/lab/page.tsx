@@ -29,12 +29,6 @@ const projects: { href: string; title: string; description: string; projectUrl?:
 
 const lab = [
   {
-    href: '/lab/tech-is-not-tech-anymore',
-    title: 'Tech Is Not Tech Anymore',
-    description:
-      'How I built all of this by talking to four robots. No code, no jargon, just what happened.',
-  },
-  {
     href: '/lab/the-reference-point',
     title: 'The Reference Point',
     description:

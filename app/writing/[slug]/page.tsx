@@ -9,10 +9,12 @@ import { theHumanBridgeData } from '@/data/research/the-human-bridge';
 import { theFiveInputsData } from '@/data/research/the-five-inputs';
 import { closeYourEyesData } from '@/data/research/close-your-eyes';
 import { safeModeData } from '@/data/research/safe-mode';
+import { techIsNotTechAnymoreData } from '@/data/research/tech-is-not-tech-anymore';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['data'] }> = {
+  'tech-is-not-tech-anymore': { data: techIsNotTechAnymoreData },
   'the-positive-loop': { data: thePositiveLoopData },
   'the-human-yield': { data: theHumanYieldData },
   'honest-gambling': { data: honestGamblingData },
