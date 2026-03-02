@@ -160,7 +160,9 @@ export const hiveData: ResearchData = {
 
 <p>Every AI lab is racing to build the best individual agent. None of them are building the layer that lets you run agents from multiple providers simultaneously and manage them as a fleet. They have no incentive to. Anthropic wants you using Claude. OpenAI wants you using GPT. Google wants you using Gemini. The visual layer that treats all of them as interchangeable workers in a single fleet is not a product any of them will ship. It is a product that sits above all of them.</p>
 
-<p>That is where this goes. The proof of concept is four Claude instances on a MacBook with a stoplight dashboard on your phone. The product is the visual layer for AI labor, provider-agnostic, that lets any person direct any combination of agents from any company through one interface. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
+<p>Think about it like driving. Before cars existed, nobody knew how to drive. You did not fix that by making the engine more powerful. You fixed it by building the car: a steering wheel, a speedometer, mirrors, a dashboard. The engine matters. But the interface between the human and the engine is what turned driving from a mechanic's skill into something anyone could do. Every AI lab is building a faster engine. Nobody is building the car.</p>
+
+<p>That is where this goes. The proof of concept is four Claude instances on a MacBook with a stoplight dashboard on your phone. The product is the first car for AI labor. Provider-agnostic. A steering wheel that turns natural language into fleet operations. A speedometer that shows status as color, not text. Mirrors that give you spatial memory across every running agent. The interface that lets any person, not just engineers, direct any combination of agents from any company through one screen. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
       `.trim(),
     },
   ],
