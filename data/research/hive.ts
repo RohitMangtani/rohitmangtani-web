@@ -9,9 +9,9 @@ export const hiveData: ResearchData = {
 
   onRamp: {
     description:
-      'Hive is a daemon, dashboard, and coordination layer for running multiple Claude Code agents simultaneously. It discovers running instances automatically, tracks their status in real time, and prevents collisions when agents work across shared codebases.',
+      'Four AI agents running at once. One screen shows all of them. Green means working, red means done, yellow means stuck. Type into any tile to talk to it. Hive is the visual layer that lets one person direct multiple AI agents without losing track of what any of them are doing.',
     whatItDoes:
-      'Explains what Hive is, how it works, and where it fits in the emerging agent infrastructure stack.',
+      'Shows what Hive is, what the experience feels like, how the system works underneath, and where it fits in the emerging agent infrastructure stack.',
     whatItDoesNot:
       'This is not a thesis on AI or multi-agent behavior. For the argument, read The Future of PM.',
   },
@@ -20,6 +20,19 @@ export const hiveData: ResearchData = {
     'AI labs are building smarter agents. Nobody is building the management layer for running fleets of them.',
 
   sections: [
+    {
+      id: 'the-experience',
+      title: 'The Experience',
+      content: `
+<p>You are lying on your bed. On your screen there are four tiles. Each one has a dot. Green means that agent is working. Red means it is done. Yellow means it needs you.</p>
+
+<p>You see a red dot. You pick up your phone, tap the tile, and type: "Start the next chapter." The dot turns green. The agent takes the task, reads the project's history, remembers every lesson from the last six months of work, and begins. You glance at the other three tiles. All green. You put the phone down.</p>
+
+<p>Twenty minutes later you check again. Two green, one red, one yellow. The yellow one is stuck on a question. You read it, type a two-sentence answer, and the dot turns green. The red one finished its task. You type a new one. Four agents, all visible, all reachable, from your phone.</p>
+
+<p>That is what Hive feels like. <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Open the live dashboard</a> and see it running right now.</p>
+      `.trim(),
+    },
     {
       id: 'what-it-is',
       title: 'What It Is',
