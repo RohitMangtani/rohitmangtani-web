@@ -4,16 +4,16 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Tools, experiments, and independent analyses.',
+  description: 'Some projects.',
   openGraph: {
     title: 'Projects - Rohit Mangtani',
-    description: 'Tools, experiments, and independent analyses.',
+    description: 'Some projects.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Projects - Rohit Mangtani',
-    description: 'Tools, experiments, and independent analyses.',
+    description: 'Some projects.',
   },
 };
 
@@ -44,7 +44,7 @@ export default function LabPage() {
         <header className="mb-10">
           <h1 className="text-4xl font-bold tracking-tight mb-4">Projects</h1>
           <p className="text-[var(--fg-muted)]">
-            Tools, experiments, and independent analyses.
+            Some projects.
           </p>
         </header>
 
