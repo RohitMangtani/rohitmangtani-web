@@ -124,12 +124,6 @@ export const resumeData: ResumeData = {
         'Topics include agent fleet management, residual human inputs in automated systems, and hybrid workflow design',
       ],
     },
-    {
-      name: 'The Sleepless Rishi — Automated Content Pipeline',
-      bullets: [
-        'Designed a seven-step AI pipeline from script generation to YouTube upload, producing narrated video content with AI-generated artwork and subtitles',
-      ],
-    },
   ],
 
   leadership: [
