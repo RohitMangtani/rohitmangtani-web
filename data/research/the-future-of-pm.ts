@@ -92,7 +92,7 @@ export const theFutureOfPmData: ResearchData = {
 
         <p>This is what a vibe coding map does. It is a visual representation of your project, structured from the creator's perspective, not the code's perspective. You see layers, connections, decision points. Not file trees and function signatures.</p>
 
-        <p><a href="https://trycrawler.com" class="underline hover:opacity-60" target="_blank" rel="noopener">Crawler</a> is one version of this. You point it at a repository and it generates an interactive map of how the project works. Not what the code says. What the creator's idea looks like. Decision trees with real thresholds. Connections between layers. The logic flow from the perspective of someone who built it, not someone reading the source. You can see at a glance how the pieces fit together and what each part is actually doing.</p>
+        <p>One version of this already exists. You point a tool at a repository and it generates an interactive map of how the project works. Not what the code says. What the creator's idea looks like. Decision trees with real thresholds. Connections between layers. The logic flow from the perspective of someone who built it, not someone reading the source. You can see at a glance how the pieces fit together and what each part is actually doing.</p>
 
         <p>Scale that concept to a live build. The map is not a static diagram. It is a real-time view of what your agents are building, updated as they work, structured so you can see progress and connections without reading a single line of code. The map answers one question: where is my project right now?</p>
 
@@ -257,8 +257,7 @@ export const theFutureOfPmData: ResearchData = {
   relatedWork: [
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
-    { title: 'Crawler', href: 'https://trycrawler.com' },
-    { title: 'Hive (live proof of concept)', href: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0' },
+    { title: 'Hive', href: '/lab/hive' },
   ],
 
   footerVersion: 'February 2026 . Rohit Mangtani',

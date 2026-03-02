@@ -8,7 +8,7 @@ export const theReferencePointData: ResearchData = {
 
   onRamp: {
     description:
-      'This is the master reference document for refactoring a resume against the full body of work across rohitmangtani.com and rmgtni.xyz. It cross-references every article, product, and system, maps the demonstrated skills to market language, and provides a framework for tailoring the resume to specific roles in AI product management, enterprise AI leadership, and AI consulting.',
+      'This is the master reference document for refactoring a resume against the full body of work on rohitmangtani.com. It cross-references every article, product, and system, maps the demonstrated skills to market language, and provides a framework for tailoring the resume to specific roles in AI product management, enterprise AI leadership, and AI consulting.',
     whatItDoes:
       'Maps every piece of published work to demonstrable skills, translates those skills into industry language, and provides a resume architecture and tailoring framework for three career paths.',
     whatItDoesNot:
@@ -64,25 +64,23 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong><a href="/lab/hive" class="underline hover:opacity-60">Hive</a></strong> is the flagship. A daemon, dashboard, and coordination layer for running multiple Claude Code agents simultaneously. Auto-discovery, real-time status, auto-pilot, advisory locks, compound learning. Built using four agents iterating on each other's output while a human directed the architecture. This is the proof of concept for the entire thesis.</p>
 
-<p><strong><a href="https://trycrawler.com" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Crawler</a></strong> takes any GitHub repository and produces flowcharts, layer breakdowns, and context blocks explaining how the project works. Reverse Figma for code. Demonstrates system thinking applied to developer tooling.</p>
+<p><strong>Crawler</strong> takes any GitHub repository and produces flowcharts, layer breakdowns, and context blocks explaining how the project works. Reverse Figma for code. Demonstrates system thinking applied to developer tooling.</p>
 
-<p><strong><a href="https://nudge-jade.vercel.app" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Nudge</a></strong> is life maintenance on autopilot. Smart reminders for health, car, home, finance. Demonstrates product direction: identifying a problem space and building the minimum viable solution.</p>
+<p><strong>Nudge</strong> is life maintenance on autopilot. Smart reminders for health, car, home, finance. Demonstrates product direction: identifying a problem space and building the minimum viable solution.</p>
 
-<p><strong><a href="https://booksby-ten.vercel.app" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Booksby</a></strong> is personalized book recommendations that learn reading taste over time. Demonstrates iterative product development and recommendation system design.</p>
+<p><strong>Booksby</strong> is personalized book recommendations that learn reading taste over time. Demonstrates iterative product development and recommendation system design.</p>
 
-<p><strong><a href="https://www.youtube.com/@TheSleeplessRishi" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">The Sleepless Rishi</a></strong> is a fully automated YouTube channel. AI-generated Hindu scripture narration, visuals, and content end to end. Nine deities, 59 planned videos, seven-step pipeline from script to upload. Demonstrates pipeline engineering, content automation, and the ability to build and operate complex multi-step AI workflows at scale.</p>
+<p><strong>The Sleepless Rishi</strong> is a fully automated YouTube channel. AI-generated Hindu scripture narration, visuals, and content end to end. Nine deities, 59 planned videos, seven-step pipeline from script to upload. Demonstrates pipeline engineering, content automation, and the ability to build and operate complex multi-step AI workflows at scale.</p>
 
-<p><strong><a href="https://stotram.vercel.app" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Stotram</a></strong> is the web companion: sacred hymns of India, readable and downloadable. Built alongside the YouTube pipeline, sharing the same data layer.</p>
+<p><strong>Stotram</strong> is the web companion: sacred hymns of India, readable and downloadable. Built alongside the YouTube pipeline, sharing the same data layer.</p>
           `.trim(),
         },
         {
           title: 'The Websites',
           content: `
-<p><strong>rohitmangtani.com</strong> is the public portfolio. Clean, light theme, curated. Houses the research articles, lab tools, and resume. Built with Next.js, Tailwind v4, deployed on Vercel.</p>
+<p><strong>rohitmangtani.com</strong> is the public portfolio. Clean, light theme, curated. Houses the research articles, projects, and resume. Built with Next.js, Tailwind v4, deployed on Vercel.</p>
 
-<p><strong>rmgtni.xyz</strong> is the sandbox. Dark theme, unfiltered. Houses the career audit, career playbook, and experimental tools. Both sites were built using AI agents directed through the same workflow the articles describe.</p>
-
-<p>The sites themselves are evidence. They were not outsourced to a designer or a development team. They were built by one person directing multiple AI agents, iterating through the visualization loop, shipping production-quality web applications. The medium is the message.</p>
+<p>The site itself is evidence. It was not outsourced to a designer or a development team. It was built by one person directing multiple AI agents, iterating through the visualization loop, shipping a production-quality web application. The medium is the message.</p>
           `.trim(),
         },
       ],
@@ -99,7 +97,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong>HBR definition:</strong> Understanding how AI agents work, what they can and cannot do, how to evaluate their output.</p>
 
-<p><strong>Evidence:</strong> Hive is a production system for managing AI agent fleets. The Sleepless Rishi pipeline runs seven AI-driven steps end to end. Every product in the portfolio was built by directing AI agents, not by writing code manually. The articles demonstrate deep understanding of agent capabilities, limitations (context degradation, hallucination, coordination gaps), and operational patterns.</p>
+<p><strong>Evidence:</strong> Hive is a production system for managing AI agent fleets. Every product in the portfolio was built by directing AI agents, not by writing code manually. The articles demonstrate deep understanding of agent capabilities, limitations (context degradation, hallucination, coordination gaps), and operational patterns.</p>
 
 <p><strong>Resume language:</strong> "Built and operate production infrastructure for multi-agent AI systems. Daily operational experience directing four simultaneous Claude Code instances across independent projects."</p>
           `.trim(),
@@ -109,7 +107,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong>HBR definition:</strong> Deep domain knowledge that allows you to evaluate whether AI output is correct in your field.</p>
 
-<p><strong>Evidence:</strong> MBA in Business Analytics provides the finance and operations foundation. RBC fixed income operations provides daily experience with reconciliation, risk controls, and settlement systems. The research articles demonstrate ability to evaluate AI output against economic theory, labor market data, and technology trends. The <a href="https://rmgtni.xyz/lab/career-audit" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">career audit</a> demonstrates the ability to apply analytical frameworks to your own credentials and products with honesty.</p>
+<p><strong>Evidence:</strong> MBA in Business Analytics provides the finance and operations foundation. RBC fixed income operations provides daily experience with reconciliation, risk controls, and settlement systems. The research articles demonstrate ability to evaluate AI output against economic theory, labor market data, and technology trends. A rigorous career audit demonstrates the ability to apply analytical frameworks to your own credentials and products with honesty.</p>
 
 <p><strong>Resume language:</strong> "Combine MBA-level business analytics with daily financial operations experience and independent research in AI labor economics."</p>
           `.trim(),
@@ -119,7 +117,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong>HBR definition:</strong> Seeing how parts of a system interact and identifying leverage points.</p>
 
-<p><strong>Evidence:</strong> Hive's architecture (daemon, dashboard, hooks, coordination API, learning system) was designed as a complete system before any piece was built. <a href="/writing/the-future-of-pm" class="underline hover:opacity-60">The Future of PM</a> described the three-layer stack. Crawler reverse-engineers system architecture from code. The article series itself is a system: each piece builds on previous ones, cross-references create a lattice, the writing and building compound into a single proof of concept.</p>
+<p><strong>Evidence:</strong> Hive's architecture (daemon, dashboard, hooks, coordination API, learning system) was designed as a complete system before any piece was built. <a href="/writing/the-future-of-pm" class="underline hover:opacity-60">The Future of PM</a> described the three-layer stack. The article series itself is a system: each piece builds on previous ones, cross-references create a lattice, the writing and building compound into a single proof of concept.</p>
 
 <p><strong>Resume language:</strong> "Designed and built multi-component system architecture including real-time daemon, WebSocket dashboard, coordination API, and compound learning layer for AI agent management."</p>
           `.trim(),
@@ -129,7 +127,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong>HBR definition:</strong> Ability to adapt as AI capabilities evolve rapidly.</p>
 
-<p><strong>Evidence:</strong> The entire body of work was produced within twelve months using tools that did not exist eighteen months ago. Each quarter, the AI models improve. The workflow adapts. <a href="/writing/safe-mode" class="underline hover:opacity-60">Safe Mode</a> articulates the meta-skill: regime detection, knowing when conditions shifted. The <a href="https://rmgtni.xyz/lab/career-audit" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">career audit</a> honestly assessed which skills face commoditization and which compound. The portfolio itself is a demonstration of building in a rapidly shifting environment and adapting in real time.</p>
+<p><strong>Evidence:</strong> The entire body of work was produced within twelve months using tools that did not exist eighteen months ago. Each quarter, the AI models improve. The workflow adapts. <a href="/writing/safe-mode" class="underline hover:opacity-60">Safe Mode</a> articulates the meta-skill: regime detection, knowing when conditions shifted. The portfolio itself is a demonstration of building in a rapidly shifting environment and adapting in real time.</p>
 
 <p><strong>Resume language:</strong> "Produced twelve published research articles and five shipped products within twelve months by continuously adapting to evolving AI capabilities."</p>
           `.trim(),
@@ -139,7 +137,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p><strong>HBR definition:</strong> Ability to communicate intent to AI systems effectively.</p>
 
-<p><strong>Evidence:</strong> Every product was built through iterative prompting across four simultaneous agent instances. The Sleepless Rishi pipeline generates scripts, audio, images, thumbnails, and video assembly through carefully tuned prompts at each step. The visualization loop described in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a> is a prompt craftsmanship methodology: describe what you want, see the result, identify the gap, describe the correction. <a href="https://rmgtni.xyz/lab/how-hive-was-built" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-60">How Hive Was Built</a> names this as "iterative direction," the core operational skill.</p>
+<p><strong>Evidence:</strong> Every product was built through iterative prompting across four simultaneous agent instances. The visualization loop described in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a> is a prompt craftsmanship methodology: describe what you want, see the result, identify the gap, describe the correction. Iterative direction is the core operational skill.</p>
 
 <p><strong>Resume language:</strong> "Developed and refined multi-step AI prompting pipelines for content generation, code development, and product iteration across five shipped products."</p>
           `.trim(),
@@ -168,7 +166,7 @@ export const theReferencePointData: ResearchData = {
           content: `
 <p>Lead with a one-line positioning statement below the name. Not an "objective" or "summary." A declarative sentence that tells the reader what this person does.</p>
 
-<p>From the <a href="https://rmgtni.xyz/lab/career-playbook" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">career playbook</a>: "I build the coordination layer between AI systems and business outcomes." This works for enterprise roles. For frontier AI PM roles: "I build infrastructure for directing AI agent fleets." For consulting: "I help companies turn deployed AI into measurable business value."</p>
+<p>"I build the coordination layer between AI systems and business outcomes." This works for enterprise roles. For frontier AI PM roles: "I build infrastructure for directing AI agent fleets." For consulting: "I help companies turn deployed AI into measurable business value."</p>
           `.trim(),
         },
         {
@@ -188,8 +186,8 @@ export const theReferencePointData: ResearchData = {
 
 <ul>
 <li><strong>Hive:</strong> Production daemon and dashboard for managing multi-agent AI fleets. Real-time status detection, auto-pilot for routine approvals, coordination API for cross-agent communication, compound learning system. Used daily to direct four simultaneous Claude Code instances.</li>
-<li><strong>The Sleepless Rishi:</strong> Fully automated content pipeline. Seven-step AI workflow from script generation to YouTube upload. 59 planned videos across nine content categories.</li>
-<li><strong>Crawler:</strong> Developer tool that reverse-engineers any GitHub repository into flowcharts, layer breakdowns, and architectural context blocks.</li>
+<li><strong>Automated Content Pipeline:</strong> Seven-step AI workflow from script generation to video upload. 59 planned videos across nine content categories. Demonstrates pipeline engineering and content automation at scale.</li>
+<li><strong>Developer Tooling:</strong> Tools that reverse-engineer repositories into flowcharts, layer breakdowns, and architectural context blocks.</li>
 <li><strong>Published Research:</strong> Ten-article series on AI labor economics, agent management, and human-AI coordination. Topics include agent fleet management, residual human inputs in automated systems, the visualization development loop, and hybrid workflow design.</li>
 </ul>
 
@@ -232,7 +230,7 @@ export const theReferencePointData: ResearchData = {
 
 <p><strong>Key language:</strong> "Designed and built agent management infrastructure." "Identified the coordination gap between agent capability and fleet operations." "Published research on the operational layer missing from current AI tooling."</p>
 
-<p><strong>Portfolio link order:</strong> Hive, How Hive Was Built, The Future of PM, Crawler, The Five Inputs.</p>
+<p><strong>Portfolio link order:</strong> Hive, The Future of PM, The Five Inputs, Close Your Eyes.</p>
           `.trim(),
         },
         {
@@ -246,7 +244,7 @@ export const theReferencePointData: ResearchData = {
 
 <p><strong>Key language:</strong> "Evaluate operational workflows for AI automation potential." "Built coordination infrastructure for multi-agent AI systems." "Research-backed understanding of why enterprise AI pilots fail and how to fix them."</p>
 
-<p><strong>Portfolio link order:</strong> The Human Bridge, The Future of PM, Hive, Career Audit (on request), The Five Inputs.</p>
+<p><strong>Portfolio link order:</strong> The Human Bridge, The Future of PM, Hive, The Five Inputs.</p>
           `.trim(),
         },
         {
@@ -260,7 +258,7 @@ export const theReferencePointData: ResearchData = {
 
 <p><strong>Key language:</strong> "I help companies close the gap between AI deployment and business outcomes." "Portfolio of shipped AI products, published research, and production agent management infrastructure." "Direct operational experience running multi-agent AI systems across independent projects."</p>
 
-<p><strong>Portfolio link order:</strong> Career Playbook (as methodology sample), The Human Bridge, Hive, rohitmangtani.com/writing (full collection).</p>
+<p><strong>Portfolio link order:</strong> The Human Bridge, Hive, The Future of PM, rohitmangtani.com/writing (full collection).</p>
           `.trim(),
         },
       ],
@@ -269,7 +267,7 @@ export const theReferencePointData: ResearchData = {
       id: 'the-compound-advantage',
       title: 'The Compound Advantage',
       content: `
-<p>The <a href="https://rmgtni.xyz/lab/career-audit" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">career audit</a> concluded: "Not safe. Not doomed. Defensible only if you keep compounding." Everything since that audit has compounded.</p>
+<p>The starting point was clear: "Not safe. Not doomed. Defensible only if you keep compounding." Everything since has compounded.</p>
 
 <p>Hive did not exist when the career audit was written. The How Hive Was Built article did not exist. This reference point did not exist. Each piece added since the audit strengthens the portfolio, extends the research, and deepens the evidence stack. The products prove the articles. The articles describe the products. The workflow that produced both is the daily operational proof that the thesis works.</p>
 
@@ -282,10 +280,8 @@ export const theReferencePointData: ResearchData = {
 
   relatedWork: [
     { title: 'Hive', href: '/lab/hive' },
-    { title: 'How Hive Was Built', href: 'https://rmgtni.xyz/lab/how-hive-was-built' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
-    { title: 'Career Playbook', href: 'https://rmgtni.xyz/lab/career-playbook' },
-    { title: 'Career Audit', href: 'https://rmgtni.xyz/lab/career-audit' },
+    { title: 'The Human Bridge', href: '/writing/the-human-bridge' },
   ],
 
   footerVersion: 'March 2026 . Rohit Mangtani',
