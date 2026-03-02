@@ -9,7 +9,7 @@ export default function Home() {
           Rohit Mangtani
         </p>
         <p className="text-lg md:text-xl text-[var(--fg-muted)] max-w-lg leading-relaxed animate-fade-in-delay-1">
-          Building at the intersection of AI systems and human insight. Writing about what I see, shipping what I can.
+          Thinking out loud about the things I find interesting. Building the ones I can.
         </p>
       </main>
     </>
