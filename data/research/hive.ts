@@ -93,6 +93,23 @@ export const hiveData: ResearchData = {
       ],
     },
     {
+      id: 'four-contexts',
+      title: 'Four Contexts, Not Four Workers',
+      content: `
+<p>Watch someone use a single Claude Code instance on a hard problem. It spawns internal subagents to parallelize: one reading files, one searching the codebase, one running tests. All of them sharing one context window, one session, one project. When the task finishes, every subagent's context disappears. This is good. Claude already handles internal delegation well and will only get better at it.</p>
+
+<p>Now watch someone run four instances across four projects. One is an hour deep into an authentication refactor, with full context on every file it has touched. Another has been debugging a deployment pipeline for thirty minutes, with a mental model of the infrastructure built step by step. A third is writing content, tuned to the site's voice after reading the style guide and ten existing articles. A fourth is iterating on a video processing pipeline, aware of every edge case from previous runs.</p>
+
+<p>These are not four workers splitting one task. They are four independent contexts, each deeply embedded in a different problem. A subagent spawned fresh starts from zero. An agent that has been working in a codebase for an hour starts from everything it already knows. That distinction is the entire point.</p>
+
+<p>The human moves between them. You check the dashboard, see that Q2 is stuck, read its question, and realize the answer is in Q1's project. You tell Q1: "What is the API schema you designed for the auth endpoint?" Q1 already knows, because it spent the last hour building it. It responds from deep context, not from a cold read of the codebase. You relay that to Q2. Or Q2 messages Q1 directly through Hive's coordination layer, and Q1 answers from the same deep context. Either way, the knowledge transfer happens between two agents that each have genuine understanding of their own domain. Not between a parent and a disposable subagent.</p>
+
+<p>This is where the delegation question resolves. Yes, agents can dispatch tasks to each other through the task queue. But the valuable dispatch is not "split this task into four subtasks." A single Claude instance already does that internally. The valuable dispatch is: Q3 just changed the data schema in one project. Q1 is building the dashboard that consumes that data in a different project. Q1 needs to know. That is a cross-context bridge. No single instance holds both contexts. The human does, or the coordination layer does, but the agents individually do not.</p>
+
+<p>Eventually, AI labs will ship native multi-instance awareness. Agents might share context across sessions automatically, know what other instances are working on, avoid collisions without advisory locks. That eliminates the manual bridging, not the workflow. You still want four deep contexts running across your portfolio. You still want visibility into all of them. You still want the learning to persist across sessions. What changes is how much the system handles automatically versus how much you handle by hand. The infrastructure stays. The overhead shrinks. The pattern holds.</p>
+      `.trim(),
+    },
+    {
       id: 'where-it-fits',
       title: 'Where It Fits',
       content: `
