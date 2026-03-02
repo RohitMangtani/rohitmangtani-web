@@ -38,7 +38,7 @@ export default function AboutPage() {
 
         <div className="mt-16 pt-8 border-t border-[var(--border)] space-y-4 text-sm text-[var(--fg-muted)] animate-fade-in-delay-1">
           <p className="leading-relaxed">
-            <strong className="text-[var(--fg)]">Writing</strong> is where I think out loud. Things I like to think about, written down.
+            <strong className="text-[var(--fg)]">Writing</strong> is where I think out loud. Things I like to think about.
           </p>
           <p className="leading-relaxed">
             <strong className="text-[var(--fg)]">Projects</strong> is where the building lives. Some projects.
