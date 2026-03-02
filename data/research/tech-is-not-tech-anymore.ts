@@ -10,7 +10,7 @@ export const techIsNotTechAnymoreData: ResearchData = {
     description:
       'This is me explaining to the people I care about what I actually do all day and why you should try it. No code. No jargon.',
     whatItDoes:
-      'Shows how one person built five products, ten articles, two websites, and a YouTube channel by talking to AI.',
+      'Shows how one person built multiple projects and ten articles by talking to AI.',
     whatItDoesNot:
       'Teach you to code. That is the entire point.',
   },
@@ -29,7 +29,7 @@ export const techIsNotTechAnymoreData: ResearchData = {
 
 <p>Four cars in a garage. I can see which ones are running. I text my phone to start one again. That is the entire flow. No terminal. No code. Just lights and a phone.</p>
 
-<p>Everything you see on <a href="https://www.rohitmangtani.com" class="underline hover:opacity-60">this site</a>, on <a href="https://rmgtni.xyz" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">rmgtni.xyz</a>, <a href="/writing" class="underline hover:opacity-60">ten articles</a>, five products (<a href="/lab/hive" class="underline hover:opacity-60">Hive</a>, <a href="https://trycrawler.com" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Crawler</a>, <a href="https://nudge-jade.vercel.app" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Nudge</a>, <a href="https://booksby-ten.vercel.app" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Booksby</a>, a <a href="https://www.youtube.com/@TheSleeplessRishi" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">fully automated YouTube channel</a>) was built this way. Watching lights. Texting tasks. Looking at what came back and saying whether it felt right.</p>
+<p>Everything you see on <a href="https://www.rohitmangtani.com" class="underline hover:opacity-60">this site</a>, <a href="/writing" class="underline hover:opacity-60">ten articles</a>, and <a href="/lab/hive" class="underline hover:opacity-60">Hive</a> was built this way. Watching lights. Texting tasks. Looking at what came back and saying whether it felt right.</p>
       `.trim(),
     },
     {
