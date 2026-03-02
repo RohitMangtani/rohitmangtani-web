@@ -1,6 +1,5 @@
 import Nav from '@/components/Nav';
 import Link from 'next/link';
-import CopyLinkButton from '@/components/CopyLinkButton';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -99,10 +98,7 @@ export default function WritingPage() {
       <Nav />
       <main className="max-w-5xl mx-auto px-6 py-16">
         <header className="mb-10">
-          <div className="flex items-start justify-between">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Writing</h1>
-            <CopyLinkButton />
-          </div>
+          <h1 className="text-4xl font-bold tracking-tight mb-4">Writing</h1>
           <p className="text-[var(--fg-muted)]">
             Writing about things I like to think about.
           </p>
