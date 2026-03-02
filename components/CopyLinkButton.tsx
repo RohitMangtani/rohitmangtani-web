@@ -32,10 +32,10 @@ export default function CopyLinkButton() {
   return (
     <button
       onClick={handleCopy}
-      className={`fixed top-3 right-3 z-[60] p-1.5 rounded-md transition-all duration-200 ${
+      className={`p-1 rounded transition-all duration-200 print:hidden ${
         copied
           ? 'text-[var(--fg)] scale-110'
-          : 'text-[var(--fg-muted)] opacity-30 hover:opacity-70'
+          : 'text-[var(--fg-muted)] opacity-40 hover:opacity-70'
       }`}
       title="Copy link"
       aria-label="Copy link to clipboard"

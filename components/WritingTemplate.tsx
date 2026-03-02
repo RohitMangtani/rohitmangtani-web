@@ -7,6 +7,7 @@ import TableOfContents from '@/components/TableOfContents';
 import References from '@/components/References';
 import DataAvailability from '@/components/DataAvailability';
 import { ArticleNarrator } from '@/components/ArticleNarrator';
+import CopyLinkButton from '@/components/CopyLinkButton';
 
 interface WritingTemplateProps {
   data: {
@@ -62,12 +63,15 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
     <>
       <Nav />
       <main className="max-w-[680px] mx-auto px-6 py-20">
-        <Link
-          href="/writing"
-          className="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-8 inline-block hover:opacity-60"
-        >
-          ← Writing
-        </Link>
+        <div className="flex items-center justify-between mb-8">
+          <Link
+            href="/writing"
+            className="text-xs text-[var(--fg-muted)] uppercase tracking-wider hover:opacity-60"
+          >
+            ← Writing
+          </Link>
+          <CopyLinkButton />
+        </div>
 
         {/* Header */}
         <header className="mb-12">

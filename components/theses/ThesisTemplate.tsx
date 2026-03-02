@@ -3,6 +3,7 @@
 import React from 'react';
 import Nav from '@/components/Nav';
 import Link from 'next/link';
+import CopyLinkButton from '@/components/CopyLinkButton';
 import TableOfContents from '@/components/TableOfContents';
 import References from '@/components/References';
 import DataAvailability from '@/components/DataAvailability';
@@ -23,12 +24,15 @@ export function ThesisTemplate({ data }: ThesisTemplateProps) {
     <>
       <Nav />
       <main className="max-w-[680px] mx-auto px-6 py-20">
-        <Link 
-          href="/writing"
-          className="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-8 inline-block hover:opacity-60"
-        >
-          ← Writing
-        </Link>
+        <div className="flex items-center justify-between mb-8">
+          <Link
+            href="/writing"
+            className="text-xs text-[var(--fg-muted)] uppercase tracking-wider hover:opacity-60"
+          >
+            ← Writing
+          </Link>
+          <CopyLinkButton />
+        </div>
 
         <header className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">{data.title}</h1>

@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Link from 'next/link';
+import CopyLinkButton from '@/components/CopyLinkButton';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -42,7 +43,10 @@ export default function LabPage() {
       <Nav />
       <main className="max-w-5xl mx-auto px-6 py-16">
         <header className="mb-10">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">Projects</h1>
+          <div className="flex items-start justify-between">
+            <h1 className="text-4xl font-bold tracking-tight mb-4">Projects</h1>
+            <CopyLinkButton />
+          </div>
           <p className="text-[var(--fg-muted)]">
             Some projects.
           </p>

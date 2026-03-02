@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Link from 'next/link';
+import CopyLinkButton from '@/components/CopyLinkButton';
 import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -37,12 +38,15 @@ function ArticleContent({ article }: { article: ResearchData }) {
   // within the codebase, not from user input or external sources
   return (
     <main className="max-w-[680px] mx-auto px-6 py-20">
-      <Link
-        href="/lab"
-        className="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-6 inline-block hover:opacity-60"
-      >
-        ← Projects
-      </Link>
+      <div className="flex items-center justify-between mb-6">
+        <Link
+          href="/lab"
+          className="text-xs text-[var(--fg-muted)] uppercase tracking-wider hover:opacity-60"
+        >
+          ← Projects
+        </Link>
+        <CopyLinkButton />
+      </div>
 
       <header className="mb-8">
         <div className="flex items-center gap-3 mb-2">

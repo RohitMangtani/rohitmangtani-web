@@ -1,10 +1,14 @@
 import Nav from '@/components/Nav';
+import CopyLinkButton from '@/components/CopyLinkButton';
 
 export default function Home() {
   return (
     <>
       <Nav />
-      <main className="min-h-[calc(100vh-57px)] flex flex-col justify-center items-center text-center px-6">
+      <main className="relative min-h-[calc(100vh-57px)] flex flex-col justify-center items-center text-center px-6">
+        <div className="absolute top-4 right-4">
+          <CopyLinkButton />
+        </div>
         <p className="text-sm md:text-base text-[var(--fg-muted)] tracking-widest uppercase mb-8 animate-fade-in">
           Rohit Mangtani
         </p>
