@@ -38,10 +38,10 @@ export default function AboutPage() {
 
         <div className="mt-16 pt-8 border-t border-[var(--border)] space-y-4 text-sm text-[var(--fg-muted)] animate-fade-in-delay-1">
           <p className="leading-relaxed">
-            <strong className="text-[var(--fg)]">Writing</strong> is where the ideas live. Essays and research pieces that connect domains most people keep separate. Each one builds on the last.
+            <strong className="text-[var(--fg)]">Writing</strong> is where I think out loud. Things I like to think about, written down.
           </p>
           <p className="leading-relaxed">
-            <strong className="text-[var(--fg)]">Lab</strong> is where the building lives. Tools, experiments, data analyses. Things I shipped because I wanted them to exist.
+            <strong className="text-[var(--fg)]">Projects</strong> is where the building lives. Some projects.
           </p>
           <p className="leading-relaxed mt-6">
             <strong className="text-[var(--fg)]">If you are interested in similar things or anything adjacent, reach out. I would love to talk.</strong>
