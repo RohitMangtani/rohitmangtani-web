@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'close-your-eyes',
+    title: 'Close Your Eyes',
+    date: '2026',
+  },
+  {
     slug: 'the-five-inputs',
     title: 'The Five Inputs',
     date: '2026',

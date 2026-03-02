@@ -7,6 +7,7 @@ import { theFutureOfPmData } from '@/data/research/the-future-of-pm';
 import { theHumanSensorLayerData } from '@/data/research/the-human-sensor-layer';
 import { theHumanBridgeData } from '@/data/research/the-human-bridge';
 import { theFiveInputsData } from '@/data/research/the-five-inputs';
+import { closeYourEyesData } from '@/data/research/close-your-eyes';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -19,6 +20,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'the-human-sensor-layer': { data: theHumanSensorLayerData },
   'the-human-bridge': { data: theHumanBridgeData },
   'the-five-inputs': { data: theFiveInputsData },
+  'close-your-eyes': { data: closeYourEyesData },
 };
 
 export async function generateStaticParams() {

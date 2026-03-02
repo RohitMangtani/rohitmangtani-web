@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" fill="none">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="680" height="520" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">THE VISUALIZATION LOOP</text>
+
+  <!--
+    6 nodes in a hexagonal circle, center=(340, 255), radius=150
+    Node positions (clockwise from top):
+      Think:      (340, 105)    — 270 deg
+      Talk:       (470, 180)    — 330 deg
+      See:        (470, 330)    — 30 deg
+      Understand: (340, 405)    — 90 deg
+      Refine:     (210, 330)    — 150 deg
+      Ship:       (210, 180)    — 210 deg
+  -->
+
+  <!-- Node: Think (top center) -->
+  <rect x="295" y="85" width="90" height="36" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="108" text-anchor="middle" font-size="12" font-weight="500" fill="#1c1917">Think</text>
+
+  <!-- Node: Talk (top right) -->
+  <rect x="425" y="160" width="90" height="36" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="470" y="183" text-anchor="middle" font-size="12" font-weight="500" fill="#1c1917">Talk</text>
+
+  <!-- Node: See (bottom right) -->
+  <rect x="425" y="310" width="90" height="36" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="470" y="333" text-anchor="middle" font-size="12" font-weight="500" fill="#1c1917">See</text>
+
+  <!-- Node: Understand (bottom center) -->
+  <rect x="295" y="385" width="90" height="36" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="408" text-anchor="middle" font-size="12" font-weight="500" fill="#1c1917">Understand</text>
+
+  <!-- Node: Refine (bottom left) -->
+  <rect x="165" y="310" width="90" height="36" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="210" y="333" text-anchor="middle" font-size="12" font-weight="500" fill="#1c1917">Refine</text>
+
+  <!-- Node: Ship (top left) -->
+  <rect x="165" y="160" width="90" height="36" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="210" y="183" text-anchor="middle" font-size="12" font-weight="500" fill="#1c1917">Ship</text>
+
+  <!-- Arrow: Think -> Talk -->
+  <line x1="385" y1="107" x2="425" y2="166" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="421,158 429,166 419,168" fill="#e7e5e4"/>
+
+  <!-- Arrow: Talk -> See -->
+  <line x1="470" y1="196" x2="470" y2="310" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="464,304 470,314 476,304" fill="#e7e5e4"/>
+
+  <!-- Arrow: See -> Understand -->
+  <line x1="425" y1="340" x2="385" y2="391" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="389,383 381,391 391,393" fill="#e7e5e4"/>
+
+  <!-- Arrow: Understand -> Refine -->
+  <line x1="295" y1="407" x2="255" y2="340" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="259,348 251,340 249,350" fill="#e7e5e4"/>
+
+  <!-- Arrow: Refine -> Ship -->
+  <line x1="210" y1="310" x2="210" y2="196" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="204,202 210,192 216,202" fill="#e7e5e4"/>
+
+  <!-- Arrow: Ship -> Think -->
+  <line x1="255" y1="168" x2="295" y2="109" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="291,117 299,109 289,107" fill="#e7e5e4"/>
+
+  <!-- Center label -->
+  <text x="340" y="250" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917">The Visualization</text>
+  <text x="340" y="268" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917">Layer</text>
+
+  <!-- Subtitle -->
+  <text x="340" y="480" text-anchor="middle" font-size="11" fill="#44403c">Close your eyes. Think. Talk. See. Refine. Ship.</text>
+</svg>
