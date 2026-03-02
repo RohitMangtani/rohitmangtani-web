@@ -125,6 +125,29 @@ export const hiveData: ResearchData = {
 <p>The agents will get better. They will handle more autonomously, require less oversight, coordinate more effectively on their own. That is the point. The smarter they get, the more of them you run. The more you run, the more you need something showing you what is happening across all of them. The management layer does not become less necessary as agents improve. It becomes more necessary, because capable agents are worth running in larger numbers. Four today, ten next year, twenty when context windows and hardware allow it. The infrastructure that lets you manage the fleet is what makes scaling the fleet possible.</p>
       `.trim(),
     },
+    {
+      id: 'the-end-state',
+      title: 'The End State',
+      content: `
+<p>Right now Hive runs four Claude Code instances on one machine. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
+
+<p>Think about Find My iPhone. You open one app and see every Apple device you own on a map. Green dot, it is online. Grey dot, it is offline. You do not open a separate app for your MacBook, a different one for your iPad, a third for your AirPods. One visual layer shows you everything. The value is not in the devices. It is in the map.</p>
+
+<p>Now replace devices with AI agents. You are running a Claude instance refactoring your backend. An OpenAI Codex agent writing tests in a different repo. A Gemini agent researching competitors. Each one came from a different provider, uses a different API, runs in a different environment. Today, you alt-tab between three separate interfaces with three separate mental models. No shared view. No coordination. No way to glance at one screen and know what all of them are doing.</p>
+
+<figure class="my-8">
+  <img src="/images/research/hive-endstate.svg" alt="Hive end state: one visual layer connecting Anthropic, OpenAI, and Google agents through a universal coordination layer" class="w-full rounded-lg border border-[var(--border)]" />
+</figure>
+
+<p>The end state is a universal visual layer. One dashboard. You hit "Add Instance" and pick a provider: Anthropic, OpenAI, Google, whoever ships next quarter. The agent appears as a tile. Green means working. Red means idle. You type into the tile and your message goes to that agent, regardless of which company built it. The coordination layer underneath handles status detection, file locks, conflict prevention, compound learning, all of it, across providers.</p>
+
+<p>This is not a wrapper around APIs. It is the management interface that sits above all of them. The same way Kubernetes does not care whether your container runs Node or Python or Go. It cares whether the container is healthy, whether it needs to be restarted, whether it is consuming the resources you allocated. Hive does not care whether the agent is Claude or GPT or Gemini. It cares whether the agent is working, whether it is stuck, whether it is about to collide with another agent on the same file.</p>
+
+<p>Every AI lab is racing to build the best individual agent. None of them are building the layer that lets you run agents from multiple providers simultaneously and manage them as a fleet. They have no incentive to. Anthropic wants you using Claude. OpenAI wants you using GPT. Google wants you using Gemini. The visual layer that treats all of them as interchangeable workers in a single fleet is not a product any of them will ship. It is a product that sits above all of them.</p>
+
+<p>That is where this goes. The proof of concept is four Claude instances on a MacBook with a stoplight dashboard on your phone. The product is the visual layer for AI labor, provider-agnostic, that lets any person direct any combination of agents from any company through one interface. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
+      `.trim(),
+    },
   ],
 
   relatedWork: [

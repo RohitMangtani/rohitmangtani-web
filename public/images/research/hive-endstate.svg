@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" fill="none">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="680" height="560" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">THE VISUAL LAYER</text>
+
+  <!-- Top: Dashboard -->
+  <rect x="90" y="56" width="500" height="140" rx="8" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="116" y="78" font-size="11" font-weight="600" fill="#1c1917">Hive Dashboard</text>
+  <text x="530" y="78" font-size="9" fill="#a8a29e">Live</text>
+  <circle cx="554" cy="74" r="3" fill="#22c55e"/>
+
+  <!-- 2x2 Agent tiles -->
+  <!-- Tile 1: Claude (green) -->
+  <rect x="108" y="92" width="112" height="86" rx="6" fill="white" stroke="#d6d3d1" stroke-width="1"/>
+  <circle cx="124" cy="110" r="5" fill="#22c55e"/>
+  <text x="136" y="114" font-size="10" font-weight="500" fill="#1c1917">Claude</text>
+  <text x="196" y="114" font-size="8" fill="#a8a29e">Anthropic</text>
+  <text x="116" y="132" font-size="9" fill="#44403c">Refactoring auth</text>
+  <rect x="112" y="144" width="100" height="24" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
+  <text x="162" y="160" text-anchor="middle" font-size="8" fill="#78716c">Type a message...</text>
+
+  <!-- Tile 2: GPT (green) -->
+  <rect x="228" y="92" width="112" height="86" rx="6" fill="white" stroke="#d6d3d1" stroke-width="1"/>
+  <circle cx="244" cy="110" r="5" fill="#22c55e"/>
+  <text x="256" y="114" font-size="10" font-weight="500" fill="#1c1917">GPT</text>
+  <text x="280" y="114" font-size="8" fill="#a8a29e">OpenAI</text>
+  <text x="236" y="132" font-size="9" fill="#44403c">Writing tests</text>
+  <rect x="232" y="144" width="100" height="24" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
+  <text x="282" y="160" text-anchor="middle" font-size="8" fill="#78716c">Type a message...</text>
+
+  <!-- Tile 3: Gemini (red) -->
+  <rect x="348" y="92" width="112" height="86" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <circle cx="364" cy="110" r="5" fill="#ef4444"/>
+  <text x="376" y="114" font-size="10" font-weight="500" fill="#1c1917">Gemini</text>
+  <text x="416" y="114" font-size="8" fill="#a8a29e">Google</text>
+  <text x="356" y="132" font-size="9" fill="#ef4444">Idle</text>
+  <rect x="352" y="144" width="100" height="24" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
+  <text x="402" y="160" text-anchor="middle" font-size="8" fill="#78716c">Type a message...</text>
+
+  <!-- Tile 4: + Add Instance -->
+  <rect x="468" y="92" width="112" height="86" rx="6" fill="#f5f5f4" stroke="#d6d3d1" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="524" y="132" text-anchor="middle" font-size="20" fill="#a8a29e">+</text>
+  <text x="524" y="152" text-anchor="middle" font-size="9" fill="#a8a29e">Add Instance</text>
+
+  <!-- Label -->
+  <text x="340" y="220" text-anchor="middle" font-size="11" font-weight="500" fill="#1c1917">One dashboard. Any agent. Green means driving. Red means stopped.</text>
+
+  <!-- Arrow down -->
+  <line x1="340" y1="236" x2="340" y2="260" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="334,256 340,266 346,256" fill="#e7e5e4"/>
+
+  <!-- Middle: Hive coordination layer -->
+  <rect x="140" y="272" width="400" height="64" rx="6" fill="#1c1917"/>
+  <text x="340" y="296" text-anchor="middle" font-size="12" font-weight="600" fill="#fafaf9" letter-spacing="0.04em">HIVE</text>
+  <text x="340" y="314" text-anchor="middle" font-size="10" fill="#78716c">Status detection  ·  Coordination  ·  Learning  ·  Auto-pilot</text>
+
+  <!-- Arrow down splits into three -->
+  <line x1="220" y1="336" x2="220" y2="372" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="214,368 220,378 226,368" fill="#e7e5e4"/>
+  <line x1="340" y1="336" x2="340" y2="372" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="334,368 340,378 346,368" fill="#e7e5e4"/>
+  <line x1="460" y1="336" x2="460" y2="372" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="454,368 460,378 466,368" fill="#e7e5e4"/>
+
+  <!-- Bottom: Agent providers -->
+  <!-- Anthropic -->
+  <rect x="150" y="384" width="140" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="220" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Anthropic</text>
+  <text x="220" y="428" text-anchor="middle" font-size="9" fill="#44403c">Claude Code</text>
+  <text x="220" y="442" text-anchor="middle" font-size="9" fill="#44403c">Claude Agent SDK</text>
+
+  <!-- OpenAI -->
+  <rect x="310" y="384" width="140" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="380" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">OpenAI</text>
+  <text x="380" y="428" text-anchor="middle" font-size="9" fill="#44403c">ChatGPT</text>
+  <text x="380" y="442" text-anchor="middle" font-size="9" fill="#44403c">Codex</text>
+
+  <!-- Google -->
+  <rect x="470" y="384" width="140" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="540" y="410" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917">Google</text>
+  <text x="540" y="428" text-anchor="middle" font-size="9" fill="#44403c">Gemini</text>
+  <text x="540" y="442" text-anchor="middle" font-size="9" fill="#44403c">Jules</text>
+
+  <!-- Ellipsis for more -->
+  <text x="110" y="424" text-anchor="middle" font-size="16" fill="#a8a29e">...</text>
+
+  <!-- Bottom label -->
+  <rect x="140" y="476" width="400" height="60" rx="6" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
+  <text x="340" y="500" text-anchor="middle" font-size="11" font-weight="500" fill="#1c1917">Any agent, any provider. One visual layer.</text>
+  <text x="340" y="518" text-anchor="middle" font-size="10" fill="#78716c">Plug in a new model. It shows up as a tile. Green or red. Type into it.</text>
+</svg>
