@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${article.title} | Lab`,
+    title: `${article.title} | Projects`,
     description: article.subtitle,
     openGraph: {
-      title: `${article.title} | Lab`,
+      title: `${article.title} | Projects`,
       description: article.subtitle,
     },
   };
@@ -42,7 +42,7 @@ function ArticleContent({ article }: { article: ResearchData }) {
         href="/lab"
         className="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-6 inline-block hover:opacity-60"
       >
-        ← Lab
+        ← Projects
       </Link>
 
       <header className="mb-8">
