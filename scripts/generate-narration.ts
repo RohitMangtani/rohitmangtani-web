@@ -10,6 +10,7 @@ import { theHumanSensorLayerData } from '../data/research/the-human-sensor-layer
 import { theHumanBridgeData } from '../data/research/the-human-bridge';
 import { theFiveInputsData } from '../data/research/the-five-inputs';
 import { theGameableSocietyData } from '../data/theses/the-gameable-society';
+import { theCompoundData } from '../data/research/the-compound';
 
 const articles: Record<string, { slug: string; title: string; subtitle: string; sections: any[] }> = {
   'the-positive-loop': thePositiveLoopData,
@@ -20,6 +21,7 @@ const articles: Record<string, { slug: string; title: string; subtitle: string; 
   'the-human-bridge': theHumanBridgeData,
   'the-five-inputs': theFiveInputsData,
   'the-gameable-society': theGameableSocietyData,
+  'the-compound': theCompoundData,
 };
 
 const VOICE = 'en-US-AriaNeural';

@@ -10,6 +10,7 @@ import { theFiveInputsData } from '@/data/research/the-five-inputs';
 import { closeYourEyesData } from '@/data/research/close-your-eyes';
 import { safeModeData } from '@/data/research/safe-mode';
 import { techIsNotTechAnymoreData } from '@/data/research/tech-is-not-tech-anymore';
+import { theCompoundData } from '@/data/research/the-compound';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -25,6 +26,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'the-five-inputs': { data: theFiveInputsData },
   'close-your-eyes': { data: closeYourEyesData },
   'safe-mode': { data: safeModeData },
+  'the-compound': { data: theCompoundData },
 };
 
 export async function generateStaticParams() {

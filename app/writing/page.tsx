@@ -19,6 +19,12 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'the-compound',
+    title: 'The Compound',
+    description: 'What happens when you build with AI long enough that it starts building you back.',
+    date: '2026',
+  },
+  {
     slug: 'tech-is-not-tech-anymore',
     title: 'Tech Is Not Tech Anymore',
     description: 'How I built all of this by talking to four robots. For friends.',
