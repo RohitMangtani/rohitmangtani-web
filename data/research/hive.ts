@@ -137,6 +137,8 @@ export const hiveData: ResearchData = {
 
 <p>Hive sits in that middle layer. Not smarter agents. Not a new AI product. The plumbing that lets one person run as many agents as possible and not lose track of what is happening.</p>
 
+<p>The broader thesis connects here. Every person around you has signal that would make AI output better. Someone in finance sees incentives. Someone in operations sees bottlenecks. Someone in design feels what is wrong before naming it. <a href="/writing/tech-is-not-tech-anymore" class="underline hover:opacity-60">Tech Is Not Tech Anymore</a> traces the adoption gap, <a href="/writing/the-compound" class="underline hover:opacity-60">The Compound</a> traces the extraction pattern, <a href="/writing/the-positive-loop" class="underline hover:opacity-60">The Positive Loop</a> traces the acceleration. None of those people use AI because the interface is a terminal. Fleet orchestration is the mechanism for channeling all of that signal, different agents with different roles synthesizing different perspectives into one output. But orchestration is invisible if the interface requires engineering. Hive is the layer that makes the mechanism accessible. Stoplights instead of terminals. A phone instead of a laptop. The orchestration disappears. What remains is a person directing work in plain English.</p>
+
 <p>The system gets smarter from two directions at once. From below, the models improve. Context windows grow from 128k to 200k to a million tokens. Each agent can hold more of the project in its head, work longer without losing track, handle more complex tasks autonomously. That is the AI labs' job. They pour billions into making the engine faster. Every quarter, the agents you are running become more capable without you changing anything.</p>
 
 <p>From above, the personal context compounds. Every editing session adds corrections to the writing-voice file. Every debugging session writes a lesson back to the project's knowledge base. Every article benchmarks against the gold standard from two months ago. The agents start each session from everything that was learned before. A fleet that runs for six months knows things about your projects, your voice, your patterns that no fresh agent could replicate. The model gets smarter because the lab improved it. The system gets smarter because it remembers what happened last Tuesday.</p>
@@ -178,6 +180,9 @@ export const hiveData: ResearchData = {
   relatedWork: [
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
     { title: 'The Human Bridge', href: '/writing/the-human-bridge' },
+    { title: 'Tech Is Not Tech Anymore', href: '/writing/tech-is-not-tech-anymore' },
+    { title: 'The Compound', href: '/writing/the-compound' },
+    { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
   ],
 
   footerVersion: 'March 2026 . Rohit Mangtani',

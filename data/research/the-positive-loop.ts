@@ -317,6 +317,8 @@ export const thePositiveLoopData: ResearchData = {
   relatedWork: [
     { title: 'The Gameable Society', href: '/writing/the-gameable-society' },
     { title: 'Preference for Legible Risk', href: '/writing/honest-gambling' },
+    { title: 'Hive', href: '/lab/hive' },
+    { title: 'Tech Is Not Tech Anymore', href: '/writing/tech-is-not-tech-anymore' },
   ],
 
   footerVersion: 'February 2026 . Rohit Mangtani',

@@ -139,6 +139,7 @@ export const theCompoundData: ResearchData = {
     { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
     { title: 'The Human Sensor Layer', href: '/writing/the-human-sensor-layer' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
+    { title: 'Hive', href: '/lab/hive' },
   ],
 
   footerVersion: 'March 2026 . Rohit Mangtani',
