@@ -55,10 +55,10 @@ export const techIsNotTechAnymoreData: ResearchData = {
       content: `
 <p>It is not technology anymore. Eventually you will talk to a box and it will give you what you want. You do not need to be a tech person. You need to be a person who can see something, feel whether it is right, and describe the gap. That is it.</p>
 
-<p>It is like a friend. You talk to it. It gets easier the more you use it. The more it knows you, the better the output. It compounds. I can help you set it up. You just need to use it for a month.</p>
+<p>It is like a friend. You talk to it. It gets easier the more you use it. The more it knows you, the better the output. It compounds. Set it up, use it for a month, and see what happens.</p>
 
 <div class="p-6 border border-[var(--border)] rounded bg-[var(--bg-secondary)]">
-<p class="text-lg text-[var(--fg)] font-medium leading-relaxed">I am trying to save all the homies. This is the tool. Talk to it.</p>
+<p class="text-lg text-[var(--fg)] font-medium leading-relaxed">This is what I have been using. Figured it was worth sharing.</p>
 </div>
       `.trim(),
     },
