@@ -6,10 +6,8 @@ import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { hiveData } from '@/data/research/hive';
-import { theSteeringWheelData } from '@/data/research/the-steering-wheel';
 const articles: Record<string, ResearchData> = {
   hive: hiveData,
-  'the-steering-wheel': theSteeringWheelData,
 };
 
 export async function generateStaticParams() {

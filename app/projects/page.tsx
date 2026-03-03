@@ -25,12 +25,6 @@ const projects: { href: string; title: string; description: string; projectUrl?:
       'An operating system for directing AI labor. Run multiple Claude Code agents simultaneously with status visibility, coordination, and compound learning.',
     projectUrl: 'https://github.com/RohitMangtani/hive',
   },
-  {
-    href: '/projects/the-steering-wheel',
-    title: 'The Steering Wheel',
-    description:
-      'Why the gap between thinking and building was never intelligence. It was seeing. Visual cognition, cognitive load theory, and the case for steering layers over prompts.',
-  },
 ];
 
 export default function LabPage() {
