@@ -1,135 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580" fill="none">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   </style>
 
   <!-- Background -->
-  <rect width="680" height="620" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+  <rect width="680" height="580" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
 
-  <!-- ═══════════ TIER 1: TERMINAL ═══════════ -->
-  <rect x="30" y="20" width="620" height="160" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="340" y="44" text-anchor="middle" font-size="12" font-weight="600" fill="#1c1917" letter-spacing="0.06em">TERMINAL</text>
+  <!-- Title -->
+  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.06em">HOW YOU BUILD</text>
+  <text x="340" y="52" text-anchor="middle" font-size="10" fill="#a8a29e">The same idea, two development experiences.</text>
 
-  <!-- Input box -->
-  <rect x="50" y="60" width="160" height="50" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="56" y="76" font-size="10" font-weight="600" fill="#166534">Input</text>
-  <text x="56" y="92" font-size="9" fill="#166534">"What are my 4 agents</text>
-  <text x="56" y="103" font-size="9" fill="#166534">doing right now?"</text>
+  <!-- ═══════════ LEFT: WITHOUT THE VISUAL LAYER ═══════════ -->
+  <rect x="30" y="72" width="300" height="440" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="180" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917" letter-spacing="0.04em">WITHOUT THE VISUAL LAYER</text>
+  <text x="180" y="112" text-anchor="middle" font-size="9" fill="#a8a29e">How everyone builds with AI today.</text>
 
-  <!-- Arrow 1→2 -->
-  <line x1="218" y1="85" x2="238" y2="85" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="236,80 246,85 236,90" fill="#d6d3d1"/>
+  <!-- Step 1: Idea -->
+  <rect x="60" y="130" width="240" height="36" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="180" y="152" text-anchor="middle" font-size="10" fill="#166534">You have an idea in your head. You can see it.</text>
 
-  <!-- Process: Read logs -->
-  <rect x="248" y="56" width="180" height="58" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="258" y="74" font-size="9" font-family="'SF Mono', 'Fira Code', monospace" fill="#78716c">$ read terminal 1...</text>
-  <text x="258" y="86" font-size="9" font-family="'SF Mono', 'Fira Code', monospace" fill="#78716c">$ scroll terminal 2...</text>
-  <text x="258" y="98" font-size="9" font-family="'SF Mono', 'Fira Code', monospace" fill="#78716c">$ parse terminal 3...</text>
-  <text x="258" y="110" font-size="9" font-family="'SF Mono', 'Fira Code', monospace" fill="#78716c">$ cross-ref terminal 4...</text>
+  <!-- Arrow -->
+  <line x1="180" y1="170" x2="180" y2="188" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="174,184 180,194 186,184" fill="#d6d3d1"/>
 
-  <!-- Arrow 2→3 -->
-  <line x1="436" y1="85" x2="456" y2="85" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="454,80 464,85 454,90" fill="#d6d3d1"/>
+  <!-- Step 2: Describe -->
+  <rect x="60" y="196" width="240" height="36" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="180" y="218" text-anchor="middle" font-size="10" fill="#44403c">Describe it in text to the AI.</text>
 
-  <!-- Result -->
-  <rect x="466" y="60" width="170" height="50" rx="4" fill="#fef9c3" stroke="#fef08a" stroke-width="1"/>
-  <text x="476" y="78" font-size="9" fill="#854d0e">Minutes later, you think</text>
-  <text x="476" y="90" font-size="9" fill="#854d0e">you know. Maybe. Scroll</text>
-  <text x="476" y="102" font-size="9" fill="#854d0e">back up to double-check.</text>
+  <!-- Arrow -->
+  <line x1="180" y1="236" x2="180" y2="254" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="174,250 180,260 186,250" fill="#d6d3d1"/>
 
-  <!-- Tier 1 caption -->
-  <text x="340" y="140" text-anchor="middle" font-size="10" fill="#a8a29e">Serial reading. System 2. Working memory overloaded.</text>
-  <text x="340" y="154" text-anchor="middle" font-size="10" fill="#a8a29e">You are studying the engine manual while driving.</text>
+  <!-- Step 3: AI builds (blind) -->
+  <rect x="60" y="262" width="240" height="36" rx="4" fill="#1c1917"/>
+  <text x="180" y="284" text-anchor="middle" font-size="10" font-family="'SF Mono', 'Fira Code', monospace" fill="#78716c">AI builds. You cannot see it.</text>
 
-  <!-- ═══════════ TIER 2: DASHBOARD ═══════════ -->
-  <rect x="30" y="200" width="620" height="160" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="340" y="224" text-anchor="middle" font-size="12" font-weight="600" fill="#1c1917" letter-spacing="0.06em">DASHBOARD</text>
+  <!-- Arrow -->
+  <line x1="180" y1="302" x2="180" y2="320" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="174,316 180,326 186,316" fill="#d6d3d1"/>
 
-  <!-- Input box -->
-  <rect x="50" y="240" width="160" height="50" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="56" y="256" font-size="10" font-weight="600" fill="#166534">Input</text>
-  <text x="56" y="272" font-size="9" fill="#166534">"What are my 4 agents</text>
-  <text x="56" y="283" font-size="9" fill="#166534">doing right now?"</text>
+  <!-- Step 4: Read output -->
+  <rect x="60" y="328" width="240" height="36" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="180" y="350" text-anchor="middle" font-size="10" fill="#44403c">Read text output. Parse. Interpret.</text>
 
-  <!-- Arrow 1→2 -->
-  <line x1="218" y1="265" x2="238" y2="265" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="236,260 246,265 236,270" fill="#d6d3d1"/>
+  <!-- Arrow -->
+  <line x1="180" y1="368" x2="180" y2="386" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="174,382 180,392 186,382" fill="#d6d3d1"/>
 
-  <!-- Process: Glance -->
-  <rect x="248" y="238" width="180" height="54" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="338" y="256" text-anchor="middle" font-size="10" font-weight="500" fill="#44403c">Glance</text>
-  <!-- Status dots -->
-  <circle cx="290" cy="275" r="8" fill="#22c55e"/>
-  <circle cx="318" cy="275" r="8" fill="#22c55e"/>
-  <circle cx="346" cy="275" r="8" fill="#eab308"/>
-  <circle cx="374" cy="275" r="8" fill="#ef4444"/>
+  <!-- Step 5: Hope -->
+  <rect x="60" y="394" width="240" height="36" rx="4" fill="#fef9c3" stroke="#fef08a" stroke-width="1"/>
+  <text x="180" y="416" text-anchor="middle" font-size="10" fill="#854d0e">Hope it matches what was in your head.</text>
 
-  <!-- Arrow 2→3 -->
-  <line x1="436" y1="265" x2="456" y2="265" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="454,260 464,265 454,270" fill="#d6d3d1"/>
+  <!-- Loop arrow -->
+  <path d="M 300 412 L 316 412 L 316 214 L 300 214" stroke="#d6d3d1" stroke-width="1.2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="302,208 292,214 302,220" fill="#d6d3d1"/>
+  <text x="326" y="316" font-size="8" fill="#a8a29e" transform="rotate(90, 326, 316)">Repeat. Still blind.</text>
 
-  <!-- Result -->
-  <rect x="466" y="240" width="170" height="50" rx="4" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
-  <text x="476" y="258" font-size="9" fill="#1e40af">Instant. Two working,</text>
-  <text x="476" y="270" font-size="9" fill="#1e40af">one needs you, one done.</text>
-  <text x="476" y="282" font-size="9" fill="#1e40af">Under 200 milliseconds.</text>
+  <!-- Left caption -->
+  <text x="180" y="460" text-anchor="middle" font-size="9" fill="#a8a29e">The idea degrades through every text translation.</text>
+  <text x="180" y="474" text-anchor="middle" font-size="9" fill="#a8a29e">You never see what is being built.</text>
+  <text x="180" y="494" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">Building blind.</text>
 
-  <!-- Tier 2 caption -->
-  <text x="340" y="320" text-anchor="middle" font-size="10" fill="#a8a29e">Pre-attentive processing. System 1. Four chunks in working memory.</text>
-  <text x="340" y="334" text-anchor="middle" font-size="10" fill="#a8a29e">You are glancing at the speedometer.</text>
+  <!-- ═══════════ RIGHT: WITH THE VISUAL LAYER ═══════════ -->
+  <rect x="350" y="72" width="300" height="440" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="500" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1917" letter-spacing="0.04em">WITH THE VISUAL LAYER</text>
+  <text x="500" y="112" text-anchor="middle" font-size="9" fill="#a8a29e">What development becomes.</text>
 
-  <!-- ═══════════ TIER 3: HIVE (STEERING) ═══════════ -->
-  <rect x="30" y="380" width="620" height="220" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="340" y="404" text-anchor="middle" font-size="12" font-weight="600" fill="#1c1917" letter-spacing="0.06em">HIVE</text>
+  <!-- Step 1: Idea -->
+  <rect x="380" y="130" width="240" height="36" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="500" y="152" text-anchor="middle" font-size="10" fill="#166534">You have an idea in your head. You can see it.</text>
 
-  <!-- Input box -->
-  <rect x="50" y="420" width="120" height="50" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="56" y="436" font-size="10" font-weight="600" fill="#166534">Input</text>
-  <text x="56" y="452" font-size="9" fill="#166534">"What are my 4</text>
-  <text x="56" y="463" font-size="9" fill="#166534">agents doing?"</text>
+  <!-- Arrow -->
+  <line x1="500" y1="170" x2="500" y2="188" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="494,184 500,194 506,184" fill="#d6d3d1"/>
 
-  <!-- Arrow 1→2 -->
-  <line x1="178" y1="445" x2="194" y2="445" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="192,440 202,445 192,450" fill="#d6d3d1"/>
+  <!-- Step 2: Describe -->
+  <rect x="380" y="196" width="240" height="36" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="500" y="218" text-anchor="middle" font-size="10" fill="#44403c">Describe it in plain language.</text>
 
-  <!-- Glance -->
-  <rect x="202" y="422" width="96" height="46" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="250" y="438" text-anchor="middle" font-size="9" font-weight="500" fill="#44403c">Glance</text>
-  <circle cx="224" cy="454" r="6" fill="#22c55e"/>
-  <circle cx="240" cy="454" r="6" fill="#22c55e"/>
-  <circle cx="256" cy="454" r="6" fill="#eab308"/>
-  <circle cx="272" cy="454" r="6" fill="#ef4444"/>
+  <!-- Arrow -->
+  <line x1="500" y1="236" x2="500" y2="254" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="494,250 500,260 506,250" fill="#d6d3d1"/>
 
-  <!-- Arrow 2→3 -->
-  <line x1="306" y1="445" x2="322" y2="445" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="320,440 330,445 320,450" fill="#d6d3d1"/>
+  <!-- Step 3: See it forming -->
+  <rect x="380" y="262" width="240" height="44" rx="4" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="500" y="280" text-anchor="middle" font-size="10" font-weight="500" fill="#1e40af">See it forming.</text>
+  <text x="500" y="296" text-anchor="middle" font-size="9" fill="#1e40af">The artifact appears as the AI builds it.</text>
 
-  <!-- Feel -->
-  <rect x="330" y="422" width="96" height="46" rx="4" fill="#fce7f3" stroke="#fbcfe8" stroke-width="1"/>
-  <text x="378" y="438" text-anchor="middle" font-size="9" font-weight="500" fill="#9d174d">Feel</text>
-  <text x="378" y="452" text-anchor="middle" font-size="8" fill="#9d174d">Yellow too long.</text>
-  <text x="378" y="462" text-anchor="middle" font-size="8" fill="#9d174d">Something is off.</text>
+  <!-- Arrow -->
+  <line x1="500" y1="310" x2="500" y2="328" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="494,324 500,334 506,324" fill="#d6d3d1"/>
 
-  <!-- Arrow 3→4 -->
-  <line x1="434" y1="445" x2="450" y2="445" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="448,440 458,445 448,450" fill="#d6d3d1"/>
+  <!-- Step 4: Feel -->
+  <rect x="380" y="336" width="240" height="44" rx="4" fill="#fce7f3" stroke="#fbcfe8" stroke-width="1"/>
+  <text x="500" y="354" text-anchor="middle" font-size="10" font-weight="500" fill="#9d174d">Feel whether it is right.</text>
+  <text x="500" y="370" text-anchor="middle" font-size="9" fill="#9d174d">Your eyes do the work. 13 milliseconds.</text>
 
-  <!-- Steer -->
-  <rect x="458" y="422" width="178" height="46" rx="4" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
-  <text x="464" y="438" font-size="9" font-weight="500" fill="#1e40af">Steer</text>
-  <text x="464" y="452" font-size="8" fill="#1e40af">"Check the auth schema in Q1's</text>
-  <text x="464" y="462" font-size="8" fill="#1e40af">project and use that instead."</text>
+  <!-- Arrow -->
+  <line x1="500" y1="384" x2="500" y2="402" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="494,398 500,408 506,398" fill="#d6d3d1"/>
 
-  <!-- Loop arrow back -->
-  <path d="M 547 472 L 547 498 L 250 498 L 250 472" stroke="#d6d3d1" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
-  <polygon points="244,474 250,464 256,474" fill="#d6d3d1"/>
-  <text x="398" y="510" text-anchor="middle" font-size="8" fill="#a8a29e">Agent adjusts. Dot turns green. Loop completes in seconds.</text>
+  <!-- Step 5: Steer -->
+  <rect x="380" y="410" width="240" height="36" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="500" y="432" text-anchor="middle" font-size="10" fill="#166534">Steer it with a sentence. Ship when it matches.</text>
 
-  <!-- Tier 3 captions -->
-  <text x="340" y="545" text-anchor="middle" font-size="10" fill="#a8a29e">See. Feel. Steer. See the result. The full loop.</text>
-  <text x="340" y="559" text-anchor="middle" font-size="10" fill="#a8a29e">You are not reading the manual or checking the gauge.</text>
-  <text x="340" y="573" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">You are driving the car.</text>
+  <!-- Loop arrow -->
+  <path d="M 620 428 L 636 428 L 636 280 L 620 280" stroke="#22c55e" stroke-width="1.2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="622,274 612,280 622,286" fill="#22c55e"/>
+  <text x="646" y="356" font-size="8" fill="#22c55e" transform="rotate(90, 646, 356)">Each cycle: minutes.</text>
 
-  <!-- Figure caption -->
-  <text x="340" y="606" text-anchor="middle" font-size="9" fill="#a8a29e">Three ways to know what your agents are doing. Only one lets you steer.</text>
+  <!-- Right caption -->
+  <text x="500" y="460" text-anchor="middle" font-size="9" fill="#a8a29e">The idea stays intact because you see it at every step.</text>
+  <text x="500" y="474" text-anchor="middle" font-size="9" fill="#a8a29e">What you imagine and what exists converge.</text>
+  <text x="500" y="494" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">Building with your eyes open.</text>
+
+  <!-- Bottom line -->
+  <line x1="60" y1="530" x2="620" y2="530" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="554" text-anchor="middle" font-size="10" fill="#44403c">The gap between what you imagine and what you build was never intelligence.</text>
+  <text x="340" y="570" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">It was seeing.</text>
 </svg>

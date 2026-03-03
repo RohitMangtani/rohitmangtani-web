@@ -11,13 +11,13 @@ export const theSteeringWheelData: ResearchData = {
     description:
       'There is a room that most people who work with AI sit inside without realizing it. The walls are made of text. Terminal output, log files, status messages that technically describe what is happening but require you to already understand the system to interpret them. The room has all the information. It has none of the visibility.',
     whatItDoes:
-      'Explores why visual interfaces change how people direct AI, grounded in cognitive science and systems thinking. Connects pre-attentive processing, cognitive load theory, and recognition-primed decision-making to the argument that AI needs steering layers, not just prompts.',
+      'Argues that the future of development is visual, not textual. Grounded in cognitive science: pre-attentive processing, cognitive load theory, recognition-primed decision-making. The visual layer that lets you see what AI is building while it builds it is not a feature. It is the next interface for all of this.',
     whatItDoesNot:
       'This is not a product announcement or a technical walkthrough. For the system architecture, read the Hive project page.',
   },
 
   claim:
-    'When you can see what AI is doing, you can feel whether it is right. And when you can feel it, you can guide it. That visual layer between you and the machine is what turns AI from something confusing into something productive.',
+    'The future of development is not better prompts or smarter models. It is a visual layer that lets you see what is being built while it is being built. When you can see it, you can feel whether it is right. When you can feel it, you can steer it. That changes everything about what one person can build.',
 
   sections: [
     {
@@ -52,8 +52,10 @@ export const theSteeringWheelData: ResearchData = {
 <p>This is not a metaphor I arrived at after building the product. The metaphor is what made me build it. I was running four AI agents simultaneously in terminal windows, each one working on a different part of a system, and I could not tell at a glance what any of them were doing. I had to read. Scroll. Parse. Cross-reference one terminal's output against another's. The cognitive cost of simply knowing the state of my own system was consuming the mental energy I needed to direct it.</p>
 
 <figure class="my-8">
-  <img src="/images/research/steering-comparison.svg" alt="Three tiers of agent awareness: Terminal requires serial reading and minutes of effort. Dashboard gives instant status through colored dots in under 200ms. Hive adds the full loop: glance, feel, steer, see the result." class="w-full rounded-lg border border-[var(--border)]" />
+  <img src="/images/research/steering-comparison.svg" alt="Two development experiences side by side. Without the visual layer: idea, describe in text, AI builds blind, read text output, hope it matches, repeat. With the visual layer: idea, describe, see it forming, feel whether it is right, steer with a sentence, ship. The gap between imagination and artifact closes because you can see." class="w-full rounded-lg border border-[var(--border)]" />
 </figure>
+
+<p>That is the shift. Not from terminal to dashboard. From building blind to building with your eyes open. Every person who has tried to make something with AI has felt the gap between what they imagined and what came out. That gap is not about the AI's capability. It is about the human's inability to see the artifact forming. Close that gap, give people a way to watch what is being built in real time, and development stops being a text-translation exercise and becomes what it was always supposed to be: a visual, sensory act. Your eyes process the output. Your taste evaluates it. Your words correct it. The loop runs in minutes instead of hours because you never lost sight of the thing you were building.</p>
       `.trim(),
     },
     {
@@ -138,9 +140,11 @@ export const theSteeringWheelData: ResearchData = {
       content: `
 <p>Everyone has a vision for something they'd build if they knew how. A side project. A tool for their team. A better way to do their job. That gap between the idea and the first step is where most people stop. This is meant to shrink that gap.</p>
 
-<p>The gap was never about intelligence. It was never about access to AI. The models are available. The APIs are open. The capability is there. The gap was about the interface between a human mind that thinks in images and a machine that communicates in text. Close that gap, give people a way to see what AI is doing and feel whether it is right, and you do not just make AI easier to use. You make it usable by the people who have the ideas but never had the tools.</p>
+<p>The gap was never about intelligence. It was never about access to AI. The models are available. The APIs are open. The capability is there. The gap was about the interface between a human mind that thinks in images and a machine that communicates in text. Every person who has sat down to build something with AI and felt the thing in their head dissolve into text they cannot evaluate has hit this wall. It is not a skill problem. It is a sensory one. You are building without the one input your brain is designed to use.</p>
 
-<p>That is what I keep coming back to. The person in the room with no windows, the one I described in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a>, is not unintelligent. They are deprived. Show them what is happening. Give them the visual input their brain is wired to process. And watch what happens to their ability to build. It does not improve incrementally. It transforms.</p>
+<p>The visual layer is not a feature. It is the future of how all of this works. Right now, the entire AI development experience is text in, text out. Describe what you want, read what you get, guess whether it matches, describe the correction, read again. Every cycle is a translation from visual thought to text and back. Every translation loses information. The visual layer eliminates the translation. You see the artifact forming. You see whether it matches. You see the correction take effect. Your brain's 13-millisecond image processing replaces your brain's multi-second text parsing as the primary development interface. That is not an incremental improvement. That is a different kind of building entirely.</p>
+
+<p>That is what I keep coming back to. The person in the room with no windows, the one I described in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a>, is not unintelligent. They are deprived. Show them what is happening. Give them the visual input their brain is wired to process. And watch what happens to their ability to build. It does not improve incrementally. It transforms. Development becomes a sensory act. The gap between imagination and artifact closes not because the AI got smarter, but because the human can finally see.</p>
 
 <p>It's helped my workflow a lot. Sharing in case anyone finds the same value in it.</p>
       `.trim(),
