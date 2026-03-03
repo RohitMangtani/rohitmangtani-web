@@ -50,6 +50,10 @@ export const theSteeringWheelData: ResearchData = {
 <p>Think about driving. You don't read engine diagnostics to know what's happening. You glance at the dashboard. Green light, you're good. Red light, stop. That's what Hive does for AI. It compresses everything happening across your agents into a visual layer you can read at a glance. Green means working. Red means done. Yellow means it needs you. No logs. No terminals. Just a clear view of the road.</p>
 
 <p>This is not a metaphor I arrived at after building the product. The metaphor is what made me build it. I was running four AI agents simultaneously in terminal windows, each one working on a different part of a system, and I could not tell at a glance what any of them were doing. I had to read. Scroll. Parse. Cross-reference one terminal's output against another's. The cognitive cost of simply knowing the state of my own system was consuming the mental energy I needed to direct it.</p>
+
+<figure class="my-8">
+  <img src="/images/research/steering-comparison.svg" alt="Three tiers of agent awareness: Terminal requires serial reading and minutes of effort. Dashboard gives instant status through colored dots in under 200ms. Hive adds the full loop: glance, feel, steer, see the result." class="w-full rounded-lg border border-[var(--border)]" />
+</figure>
       `.trim(),
     },
     {
