@@ -33,14 +33,7 @@ const projects: { href: string; title: string; description: string; projectUrl?:
   },
 ];
 
-const lab = [
-  {
-    href: '/lab/the-reference-point',
-    title: 'The Reference Point',
-    description:
-      'Cross-reference of every article, product, and system, mapped to resume language and tailored for three career paths.',
-  },
-];
+const lab: { href: string; title: string; description: string }[] = [];
 
 export default function LabPage() {
   return (
