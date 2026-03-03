@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import Link from 'next/link';
 import CopyLinkButton from '@/components/CopyLinkButton';
+import ExportPDFButton from '@/components/ExportPDFButton';
 import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -47,7 +48,10 @@ function ArticleContent({ article }: { article: ResearchData }) {
         >
           ← Projects
         </Link>
-        <CopyLinkButton />
+        <div className="flex items-center gap-2">
+          <CopyLinkButton />
+          <ExportPDFButton />
+        </div>
       </div>
 
       <header className="mb-8">
