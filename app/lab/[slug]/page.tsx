@@ -5,9 +5,11 @@ import { ResearchData } from '@/types/research';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { hiveData } from '@/data/research/hive';
+import { theSteeringWheelData } from '@/data/research/the-steering-wheel';
 import { theReferencePointData } from '@/data/research/the-reference-point';
 const articles: Record<string, ResearchData> = {
   hive: hiveData,
+  'the-steering-wheel': theSteeringWheelData,
   'the-reference-point': theReferencePointData,
 };
 
