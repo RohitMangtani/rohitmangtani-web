@@ -31,12 +31,6 @@ const allWriting = [
     date: '2026',
   },
   {
-    slug: 'the-reference-point',
-    title: 'The Reference Point',
-    description: 'Everything built, written, and proven, mapped to the next role.',
-    date: '2026',
-  },
-  {
     slug: 'the-split',
     title: 'The Split',
     description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',

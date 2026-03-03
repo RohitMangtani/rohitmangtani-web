@@ -13,7 +13,6 @@ import { techIsNotTechAnymoreData } from '@/data/research/tech-is-not-tech-anymo
 import { theCompoundData } from '@/data/research/the-compound';
 import { theSplitData } from '@/data/research/the-split';
 import { hiveData } from '@/data/research/hive';
-import { theReferencePointData } from '@/data/research/the-reference-point';
 import { theSteeringWheelData } from '@/data/research/the-steering-wheel';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -33,7 +32,6 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'the-compound': { data: theCompoundData },
   'the-split': { data: theSplitData },
   'hive': { data: hiveData },
-  'the-reference-point': { data: theReferencePointData },
   'the-steering-wheel': { data: theSteeringWheelData },
 };
 
