@@ -12,7 +12,6 @@ import { safeModeData } from '@/data/research/safe-mode';
 import { techIsNotTechAnymoreData } from '@/data/research/tech-is-not-tech-anymore';
 import { theCompoundData } from '@/data/research/the-compound';
 import { theSplitData } from '@/data/research/the-split';
-import { hiveData } from '@/data/research/hive';
 import { theSteeringWheelData } from '@/data/research/the-steering-wheel';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -31,7 +30,6 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'safe-mode': { data: safeModeData },
   'the-compound': { data: theCompoundData },
   'the-split': { data: theSplitData },
-  'hive': { data: hiveData },
   'the-steering-wheel': { data: theSteeringWheelData },
 };
 

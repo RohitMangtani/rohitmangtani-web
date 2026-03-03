@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const featured = [
+const featured: { slug: string; title: string; description: string; date: string; projectUrl?: string }[] = [
   {
     slug: 'the-split',
     title: 'The Split',
@@ -29,6 +29,7 @@ const featured = [
     title: 'A Visual Workflow for AI Agents',
     description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
     date: '2026',
+    projectUrl: '/projects/hive',
   },
   {
     slug: 'the-positive-loop',
@@ -105,12 +106,6 @@ const allWriting = [
     description: 'Why people choose transparent bad odds over opaque systems that claim to be fair.',
     date: '2024',
   },
-  {
-    slug: 'hive',
-    title: 'Hive',
-    description: 'An operating system for directing AI labor. Status dots, coordination, and compound learning across sessions.',
-    date: '2026',
-  },
 ];
 
 export default function WritingPage() {
@@ -141,7 +136,18 @@ export default function WritingPage() {
                     </h3>
                     <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
                   </div>
-                  <span className="text-xs font-mono text-[var(--fg-muted)] flex-shrink-0">{item.date}</span>
+                  <div className="flex items-center gap-3 flex-shrink-0">
+                    {item.projectUrl && (
+                      <Link
+                        href={item.projectUrl}
+                        className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Hive &#8599;
+                      </Link>
+                    )}
+                    <span className="text-xs font-mono text-[var(--fg-muted)]">{item.date}</span>
+                  </div>
                 </div>
               </div>
             </Link>
