@@ -11,6 +11,13 @@ import { theHumanBridgeData } from '../data/research/the-human-bridge';
 import { theFiveInputsData } from '../data/research/the-five-inputs';
 import { theGameableSocietyData } from '../data/theses/the-gameable-society';
 import { theCompoundData } from '../data/research/the-compound';
+import { theSplitData } from '../data/research/the-split';
+import { closeYourEyesData } from '../data/research/close-your-eyes';
+import { hiveData } from '../data/research/hive';
+import { safeModeData } from '../data/research/safe-mode';
+import { techIsNotTechAnymoreData } from '../data/research/tech-is-not-tech-anymore';
+import { theReferencePointData } from '../data/research/the-reference-point';
+import { theSteeringWheelData } from '../data/research/the-steering-wheel';
 
 const articles: Record<string, { slug: string; title: string; subtitle: string; sections: any[] }> = {
   'the-positive-loop': thePositiveLoopData,
@@ -22,6 +29,13 @@ const articles: Record<string, { slug: string; title: string; subtitle: string; 
   'the-five-inputs': theFiveInputsData,
   'the-gameable-society': theGameableSocietyData,
   'the-compound': theCompoundData,
+  'the-split': theSplitData,
+  'close-your-eyes': closeYourEyesData,
+  'hive': hiveData,
+  'safe-mode': safeModeData,
+  'tech-is-not-tech-anymore': techIsNotTechAnymoreData,
+  'the-reference-point': theReferencePointData,
+  'the-steering-wheel': theSteeringWheelData,
 };
 
 const VOICE = 'en-US-AriaNeural';
