@@ -123,7 +123,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>It has helped my workflow a lot. Sharing it in case anyone finds the same value in it.</p>
 
-<p>The <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">live dashboard is here</a> if you want to see it running. More details on the system architecture at <a href="/lab/hive" class="underline hover:opacity-60">the Hive project page</a>.</p>
+<p>The <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener">live dashboard is here</a> if you want to see it running. More details on the system architecture at <a href="/projects/hive" class="underline hover:opacity-60">the Hive project page</a>.</p>
       `.trim(),
     },
   ],
@@ -139,7 +139,7 @@ export const theSteeringWheelData: ResearchData = {
   ],
 
   relatedWork: [
-    { title: 'Hive', href: '/lab/hive' },
+    { title: 'Hive', href: '/projects/hive' },
     { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
     { title: 'The Five Inputs', href: '/writing/the-five-inputs' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },

@@ -62,7 +62,7 @@ export const theReferencePointData: ResearchData = {
         {
           title: 'The Products',
           content: `
-<p><strong><a href="/lab/hive" class="underline hover:opacity-60">Hive</a></strong> is the flagship. A daemon, dashboard, and coordination layer for running multiple Claude Code agents simultaneously. Auto-discovery, real-time status, auto-pilot, advisory locks, compound learning. Built using four agents iterating on each other's output while a human directed the architecture. This is the proof of concept for the entire thesis.</p>
+<p><strong><a href="/projects/hive" class="underline hover:opacity-60">Hive</a></strong> is the flagship. A daemon, dashboard, and coordination layer for running multiple Claude Code agents simultaneously. Auto-discovery, real-time status, auto-pilot, advisory locks, compound learning. Built using four agents iterating on each other's output while a human directed the architecture. This is the proof of concept for the entire thesis.</p>
 
 <p><strong>Crawler</strong> takes any GitHub repository and produces flowcharts, layer breakdowns, and context blocks explaining how the project works. Reverse Figma for code. Demonstrates system thinking applied to developer tooling.</p>
 
@@ -279,7 +279,7 @@ export const theReferencePointData: ResearchData = {
   ],
 
   relatedWork: [
-    { title: 'Hive', href: '/lab/hive' },
+    { title: 'Hive', href: '/projects/hive' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
     { title: 'The Human Bridge', href: '/writing/the-human-bridge' },
   ],

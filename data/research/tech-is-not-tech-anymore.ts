@@ -29,7 +29,7 @@ export const techIsNotTechAnymoreData: ResearchData = {
 
 <p>Four cars in a garage. I can see which ones are running. I text my phone to start one again. That is the entire flow. No terminal. No code. Just lights and a phone.</p>
 
-<p>Everything you see on <a href="https://www.rohitmangtani.com" class="underline hover:opacity-60">this site</a>, <a href="/writing" class="underline hover:opacity-60">ten articles</a>, and <a href="/lab/hive" class="underline hover:opacity-60">Hive</a> was built this way. Watching lights. Texting tasks. Looking at what came back and saying whether it felt right.</p>
+<p>Everything you see on <a href="https://www.rohitmangtani.com" class="underline hover:opacity-60">this site</a>, <a href="/writing" class="underline hover:opacity-60">ten articles</a>, and <a href="/projects/hive" class="underline hover:opacity-60">Hive</a> was built this way. Watching lights. Texting tasks. Looking at what came back and saying whether it felt right.</p>
       `.trim(),
     },
     {
@@ -80,8 +80,8 @@ export const techIsNotTechAnymoreData: ResearchData = {
   ],
 
   relatedWork: [
-    { title: 'Hive', href: '/lab/hive' },
-    { title: 'The Reference Point', href: '/lab/the-reference-point' },
+    { title: 'Hive', href: '/projects/hive' },
+    { title: 'The Reference Point', href: '/projects/the-reference-point' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
   ],
 

@@ -33,7 +33,7 @@ export const theCompoundData: ResearchData = {
 <p class="text-lg text-[var(--fg)] font-medium leading-relaxed">The resume did not get upgraded. The concept of a resume disappeared. What replaced it is a living system that proves what you can do by being the thing you built.</p>
 </div>
 
-<p>Sharing resumes is different now. Modifying resumes is different. When someone asks what I do, I send a link. The link is not a document about my work. It is my work. Every article, every project, every system, live and running. <a href="/lab/the-reference-point" class="underline hover:opacity-60">The Reference Point</a> maps all of it to market language if anyone needs that translation. But the real resume is everything you are looking at right now.</p>
+<p>Sharing resumes is different now. Modifying resumes is different. When someone asks what I do, I send a link. The link is not a document about my work. It is my work. Every article, every project, every system, live and running. <a href="/projects/the-reference-point" class="underline hover:opacity-60">The Reference Point</a> maps all of it to market language if anyone needs that translation. But the real resume is everything you are looking at right now.</p>
       `.trim(),
     },
     {
@@ -139,7 +139,7 @@ export const theCompoundData: ResearchData = {
     { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
     { title: 'The Human Sensor Layer', href: '/writing/the-human-sensor-layer' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
-    { title: 'Hive', href: '/lab/hive' },
+    { title: 'Hive', href: '/projects/hive' },
   ],
 
   footerVersion: 'March 2026 . Rohit Mangtani',

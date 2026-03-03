@@ -257,7 +257,7 @@ export const theFutureOfPmData: ResearchData = {
   relatedWork: [
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
-    { title: 'Hive', href: '/lab/hive' },
+    { title: 'Hive', href: '/projects/hive' },
   ],
 
   footerVersion: 'February 2026 . Rohit Mangtani',

@@ -41,7 +41,7 @@ function ArticleContent({ article }: { article: ResearchData }) {
     <main className="max-w-[680px] mx-auto px-6 py-20">
       <div className="flex items-center justify-between mb-6">
         <Link
-          href="/lab"
+          href="/projects"
           className="text-xs text-[var(--fg-muted)] uppercase tracking-wider hover:opacity-60"
         >
           ← Projects

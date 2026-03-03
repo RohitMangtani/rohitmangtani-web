@@ -19,21 +19,19 @@ export const metadata: Metadata = {
 
 const projects: { href: string; title: string; description: string; projectUrl?: string }[] = [
   {
-    href: '/lab/hive',
+    href: '/projects/hive',
     title: 'Hive',
     description:
       'An operating system for directing AI labor. Run multiple Claude Code agents simultaneously with status visibility, coordination, and compound learning.',
     projectUrl: 'https://github.com/RohitMangtani/hive',
   },
   {
-    href: '/lab/the-steering-wheel',
+    href: '/projects/the-steering-wheel',
     title: 'The Steering Wheel',
     description:
       'Why the gap between thinking and building was never intelligence. It was seeing. Visual cognition, cognitive load theory, and the case for steering layers over prompts.',
   },
 ];
-
-const lab: { href: string; title: string; description: string }[] = [];
 
 export default function LabPage() {
   return (
@@ -72,28 +70,6 @@ export default function LabPage() {
             </Link>
           ))}
         </div>
-
-        <section className="mt-12">
-          <h2 className="text-xs uppercase tracking-wider text-[var(--fg-muted)] mb-4">Lab</h2>
-          <div className="space-y-3">
-            {lab.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block group"
-              >
-                <div className="p-4 border border-[var(--border)] rounded-lg transition-all duration-200 hover:border-[var(--fg-muted)] hover:bg-[var(--bg-secondary)]">
-                  <div>
-                    <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
       </main>
     </>
   );

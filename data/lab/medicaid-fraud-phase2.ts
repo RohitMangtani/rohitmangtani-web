@@ -390,7 +390,7 @@ export const medicaidFraudPhase2Data: ResearchData = {
   relatedWork: [
     {
       title: 'Phase 1: Medicaid Provider Spending Anomalies',
-      href: '/lab/medicaid-fraud-analysis',
+      href: '/projects/medicaid-fraud-analysis',
     },
     {
       title: 'HHS Fraud Prevention Strategic Plan',

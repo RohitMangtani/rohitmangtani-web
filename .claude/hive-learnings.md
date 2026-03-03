@@ -20,3 +20,17 @@ If you have any feedback or are interested in similar things, please reach out I
 
 Your role: evaluate Hive PURELY from a techn
 - [2026-03-02] Completed: You were asked to write a developer technical report to /tmp/hive-q2-developer-report.md but it was not found. Write your full technical analysis NOW to /private/tmp/claude/hive-q2-developer-report.md
+- [2026-03-02] Completed: hi Files: the-positive-loop.ts
+- [2026-03-02] Completed: RESEARCH TASK from Q1: Pump.fun growth metrics and competitive landscape. I need you to research and compile:
+
+1) Is Pump.fun the fastest growing company in the world? Define rigorously: users, volume Files: research-q3-pumpfun-growth.md
+- [2026-03-02] Completed: RESEARCH TASK from Q1: Cognitive Science & Interface Research for Medium Article.
+
+I need deep research on the following topics to provide intellectual scaffolding for a Medium article about why visua Files: research-q3-pumpfun-growth.md
+- [2026-03-03] Completed: What is 2+2? Reply with just the number. Files: research-q3-pumpfun-growth.md, medium-q3-cognitive-research.md
+- [2026-03-03] Completed: Write a 500-word essay about why the internet changed everything. Do not use any tools, just write the essay directly. Files: research-q3-pumpfun-growth.md, medium-q3-cognitive-research.md
+- [2026-03-03] Completed: Read the file at ~/factory/projects/hive/README.md and tell me how many sections it has. Use the Read tool. Files: research-q3-pumpfun-growth.md, medium-q3-cognitive-research.md
+- [2026-03-03] Completed: You have been calling "Fetching web page" 20+ times consecutively. You are stuck in a retry loop. Stop retrying the web fetch. Try a different approach — use a search tool, read cached content, or ski
+- [2026-03-03] Completed: hi
+- [2026-03-03] Completed: Test the yellow selection UI feature. Use the AskUserQuestion tool to present the user with a question that has 3 options. Ask: Which color theme should the Swarm dashboard use? Options: 1) Current da
+- [2026-03-03] Completed: Use the AskUserQuestion tool right now. Ask: "Which deployment target for Swarm?" with these options: Option 1 label "Vercel" description "Static dashboard, WS relay stays local", Option 2 label "Fly.
