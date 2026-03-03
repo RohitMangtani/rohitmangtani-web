@@ -110,6 +110,10 @@ export const theSteeringWheelData: ResearchData = {
 <p class="leading-relaxed">The shift is attention efficiency. A single agent demands 100% of your attention 100% of the time. Four agents with the visual layer and auto-pilot demand 5% of your attention 95% of the time, and 100% of your attention 5% of the time, the moments where actual judgment is needed. The other 95% is green dots and agents running. You are freed to think about what to build next instead of babysitting what is building now.</p>
 </div>
 
+<p>The models are getting smarter every few months. Context windows are growing. The agents that need restarting today will hold longer threads tomorrow. They will handle more decisions on their own, delegate subtasks to other agents, read findings from parallel sessions without you bridging the context manually. Some of the manual work described in this article will disappear. That is the trajectory.</p>
+
+<p>That is also exactly why the visual layer matters more over time, not less. When four agents become eight, or when each agent starts spawning sub-agents that handle their own coordination, the total work happening in parallel multiplies. The terminal output you cannot parse today becomes orders of magnitude more than that. Smarter AI does not reduce the need for human steering. It increases the surface area of what there is to steer. Someone still has to look at what the fleet built, say this is right, point it at the reference it missed, make the call when the direction drifts. That job does not disappear when AI gets smarter. It gets bigger. The bottleneck was never the AI's capability. It was always how much a single human can hold in their head while directing the fleet. A visual layer that compresses all of that into something you can feel at a glance is not a temporary fix for today's limitations. It is the interface pattern that scales with everything AI becomes.</p>
+
 <p>The floor also means this is not for everyone yet. You need to be running multiple AI agents to benefit. You need to be building things, not just asking questions. If your AI use is one conversation at a time, the dashboard is unnecessary. This is for the person who has crossed into running parallel work streams and is drowning in terminal output. For that person, the floor changes everything.</p>
       `.trim(),
     },
@@ -120,6 +124,8 @@ export const theSteeringWheelData: ResearchData = {
 <p>Everyone has a vision for something they would build if they could see the process. A side project. A tool for their team. A better way to do their job. The gap between the idea and the first step is where most people stop. The gap was never intelligence. It was never access to AI. It was the interface between a human mind that thinks in images and a machine that communicates in text.</p>
 
 <p>Hive closed that gap for me. I can see what my agents are building while they build it. I can feel whether it is right. I can steer it with a sentence. The loop runs in minutes. The output is real. The gap between what I imagine and what exists is smaller than it has ever been.</p>
+
+<p>This is not reinventing AI. It is making a workflow you need to get good at easier to manage, for every human reason described above.</p>
 
 <p>It has helped my workflow a lot. Sharing it in case anyone finds the same value in it.</p>
 
