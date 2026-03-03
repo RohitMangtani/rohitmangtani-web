@@ -64,6 +64,35 @@ export function ArticleNarrator({ slug }: ArticleNarratorProps) {
     if (audioRef.current) audioRef.current.playbackRate = SPEEDS[newIdx];
   }
 
+  // Media Session API: enables iOS lock screen / background playback + controls
+  useEffect(() => {
+    if (!('mediaSession' in navigator) || !available) return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+      artist: 'Rohit Mangtani',
+      album: 'Writing',
+    });
+    navigator.mediaSession.setActionHandler('play', () => {
+      audioRef.current?.play();
+      setPlaying(true);
+    });
+    navigator.mediaSession.setActionHandler('pause', () => {
+      audioRef.current?.pause();
+      setPlaying(false);
+    });
+    navigator.mediaSession.setActionHandler('seekto', (details) => {
+      if (audioRef.current && details.seekTime != null) {
+        audioRef.current.currentTime = details.seekTime;
+        setCurrentTime(details.seekTime);
+      }
+    });
+    return () => {
+      navigator.mediaSession.setActionHandler('play', null);
+      navigator.mediaSession.setActionHandler('pause', null);
+      navigator.mediaSession.setActionHandler('seekto', null);
+    };
+  }, [slug, available]);
+
   const speed = SPEEDS[speedIdx];
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
 
