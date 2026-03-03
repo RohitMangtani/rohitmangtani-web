@@ -39,6 +39,8 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>The neuroscience is more specific than most people realize. Kent Berridge's lab at the University of Michigan spent decades proving that dopamine is not a pleasure chemical. It is a wanting chemical. Dopamine drives craving, motivation, the compulsive pull toward the next hit. Pleasure, what Berridge calls "liking," runs on a separate system entirely. Mice with artificially elevated dopamine pursued sugar more aggressively but did not enjoy it more. Every platform that hacked your dopamine did not make scrolling pleasurable. It made scrolling compulsive. You kept doing it not because it felt good but because your brain could not stop wanting to do it. That distinction matters for everything that follows.</p>
 
+        <p>The neural damage is measurable. A 2025 study in <em>Neurocognitive Impact of Social Media Usage</em> found a 22% reduction in prefrontal cortex beta power after just 20 minutes of social media engagement. The prefrontal cortex is the part of your brain responsible for decision-making, impulse control, and long-term planning. Twenty minutes of scrolling and a fifth of its capacity is suppressed. That suppression leads to heightened impulsivity, which leads to more scrolling, which leads to more suppression. The feed does not just waste your time. It degrades the neural machinery you need to stop wasting it.</p>
+
         <p>And then something changed.</p>
       `,
     },
@@ -177,6 +179,10 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>This has never happened before. Every previous internet dopamine loop was extractive: it took your time and gave you nothing durable in return. Likes, views, streaks. They vanish. You cannot compound a TikTok scroll session into anything.</p>
 
+        <p>The neuroscience of why this loop sustains goes deeper than dopamine. Mihaly Csikszentmihalyi spent 30 years studying what he called "flow," the state where a person is so absorbed in an activity that time disappears. His research across artists, athletes, surgeons, and programmers found the same conditions every time: clear goals, immediate feedback, and a challenge that matches skill level. AI building hits all three. You describe what you want (clear goal). You watch it get built in real time (immediate feedback). The complexity scales with your ambition (matching challenge). A 2024 neuroimaging study at Drexel by John Kounios and David Rosen found what happens in the brain during creative flow: the superior frontal gyri, the region responsible for conscious executive control, go quiet. The brain voluntarily releases oversight and lets trained circuits run. That is the opposite of what scrolling does, where the prefrontal cortex is suppressed against your will. In flow, the brain chooses to let go because the activity has earned its trust.</p>
+
+        <p>Edward Deci and Richard Ryan's Self-Determination Theory explains the rest. Their research, spanning over 40 years, found that sustained motivation requires three psychological needs: autonomy (choosing what you do), competence (getting better at it), and relatedness (connecting with others through it). Doom scrolling satisfies none of these. You do not choose the content, the algorithm does. You do not improve at anything. You do not connect, you spectate. AI building satisfies all three. You decide what to build. Each session makes you better at prompting, evaluating, directing. You ship things other people can use. Di Domenico and Ryan's 2017 neuroscience review showed that these three needs are subserved by dopaminergic systems in the ventral tegmental area and nucleus accumbens, the same reward circuitry Berridge studied. The difference: intrinsically motivated dopamine fires in service of growth. Scroll-driven dopamine fires in service of nothing.</p>
+
         <p>AI loops are compounding. The website you built yesterday is still live today. The automation you set up last week is still running. The research you published is still being read. Each session deposits something real into the world that persists after the dopamine fades.</p>
 
         <div class="grid grid-cols-2 gap-4 my-6">
@@ -250,7 +256,7 @@ export const thePositiveLoopData: ResearchData = {
 
         <p>Every one of these follows the same structure: <strong class="text-[var(--fg)]">human intent → natural language → AI translation → real output.</strong> The translation layer is the breakthrough. Everything else follows from it.</p>
 
-        <p>The ceiling on this pipeline is quality. A METR study found that experienced developers were 19% slower with AI tools despite believing they were 20% faster. Code churn, the rate of code written and then deleted or rewritten within two weeks, doubled between 2021 and 2024. AI-generated code carries 1.7 times more major issues and nearly three times more security vulnerabilities than human-written code. The pipeline works. The output is real. But the gap between "deployed" and "production-grade" is where the honest assessment lives. Vibe-coded products are real products. They are not yet reliable products at scale. That ceiling drops every quarter as models improve, but pretending it does not exist makes the argument weaker than acknowledging it.</p>
+        <p>The ceiling on this pipeline is quality. A METR study found that experienced developers were 19% slower with AI tools despite believing they were 20% faster. GitClear's analysis of 153 million lines of code found that code churn, the rate of code written and then deleted or rewritten within two weeks, doubled between 2021 and 2024 as AI adoption spread. Veracode's 2025 GenAI Code Security Report tested over 100 LLMs across four languages and found that AI-generated code introduced security vulnerabilities in 45% of all coding tasks, with flaws mapping directly to the OWASP Top 10. The pipeline works. The output is real. But the gap between "deployed" and "production-grade" is where the honest assessment lives. Vibe-coded products are real products. They are not yet reliable products at scale. That ceiling drops every quarter as models improve, but pretending it does not exist makes the argument weaker than acknowledging it.</p>
       `,
     },
     {
@@ -322,6 +328,13 @@ export const thePositiveLoopData: ResearchData = {
     { text: 'Stack Overflow (2025). Developer Survey: AI adoption statistics.', url: 'https://survey.stackoverflow.co/2025/ai/' },
     { text: 'Harris, T. (2016). "How Technology is Hijacking Your Mind."' },
     { text: 'Alter, A. (2017). <em>Irresistible: The Rise of Addictive Technology</em>.' },
+    { text: 'Csikszentmihalyi, M. (1990). <em>Flow: The Psychology of Optimal Experience</em>. Harper & Row.' },
+    { text: 'Kounios, J. & Rosen, D. (2024). "How the Brain Achieves a Creative Flow State." Drexel University Creativity Research Lab.', url: 'https://drexel.edu/news/archive/2024/March/New-Neuroimaging-Study-Reveals-How-the-Brain-Achieves-a-Creative-Flow-State' },
+    { text: 'Ryan, R.M. & Deci, E.L. (2000). "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being." <em>American Psychologist</em>, 55, 68-78.', url: 'https://pubmed.ncbi.nlm.nih.gov/11392867/' },
+    { text: 'Di Domenico, S.I. & Ryan, R.M. (2017). "The Emerging Neuroscience of Intrinsic Motivation." <em>Frontiers in Human Neuroscience</em>, 11, 145.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5364176/' },
+    { text: 'GitClear (2024). "Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality." Analysis of 153M lines of code.', url: 'https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality' },
+    { text: 'Veracode (2025). "GenAI Code Security Report." 100+ LLMs tested across 4 languages.', url: 'https://www.veracode.com/blog/ai-generated-code-security-risks/' },
+    { text: 'Modern Day High: The Neurocognitive Impact of Social Media Usage (2025). <em>PMC</em>.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12329480/' },
   ],
 
   dataAvailability: [
@@ -331,6 +344,10 @@ export const thePositiveLoopData: ResearchData = {
     'METR developer productivity study and code quality metrics (2025)',
     'Stack Overflow Developer Survey AI adoption data (2025)',
     'Transfer addiction clinical research from Gateway Foundation, High Focus Centers',
+    'Csikszentmihalyi flow state research and Drexel University 2024 neuroimaging study',
+    'Deci & Ryan Self-Determination Theory and Di Domenico & Ryan 2017 neuroscience review',
+    'GitClear code churn analysis (153M lines, 2024) and Veracode GenAI security report (2025)',
+    'Social media neurocognitive impact: PFC beta power reduction study (PMC, 2025)',
   ],
 
   relatedWork: [
