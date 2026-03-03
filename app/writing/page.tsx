@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const allWriting = [
   {
     slug: 'the-steering-wheel',
-    title: 'The Steering Wheel',
+    title: 'A Visual Workflow for AI Agents',
     description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
     date: '2026',
   },

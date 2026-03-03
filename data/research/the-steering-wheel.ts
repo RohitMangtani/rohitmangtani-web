@@ -3,7 +3,7 @@ import type { ResearchData } from '@/types/research';
 export const theSteeringWheelData: ResearchData = {
   slug: 'the-steering-wheel',
   date: '2026',
-  title: 'The Steering Wheel',
+  title: 'A Visual Workflow for AI Agents',
   subtitle: 'I built a visual layer for managing AI agents. It changed how I build everything.',
   liveUrl: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0',
 
@@ -69,7 +69,7 @@ export const theSteeringWheelData: ResearchData = {
 <p>That is exactly what the dashboard provides. Rich, simple, spatial cues that my brain can pattern-match against without effort. I have been looking at those four tiles long enough that the patterns are internalized. I do not think "Agent 3 has been in a waiting state for an unusually long duration." I feel that the grid looks wrong. And I respond to that feeling faster and more accurately than I ever responded to log output.</p>
 
 <div class="border-l-2 border-[var(--border)] pl-6 my-10">
-<p class="leading-relaxed">In <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a> I wrote about a visualization loop: think about what you want, describe it to AI, see what it built, feel whether it matches, refine, ship. Each cycle uses the part of your brain that is fastest: your eyes. Hive is that loop applied to directing AI agents. You see the fleet. You feel the state. You intervene where the feeling says to. And the intervention is a message in plain English, not a code change. The loop completes in seconds.</p>
+<p class="leading-relaxed">There is a visualization loop that runs underneath all of this: think about what you want, describe it to AI, see what it built, feel whether it matches, refine, ship. Each cycle uses the part of your brain that is fastest: your eyes. Hive is that loop applied to directing AI agents. You see the fleet. You feel the state. You intervene where the feeling says to. And the intervention is a message in plain English, not a code change. The loop completes in seconds.</p>
 </div>
       `.trim(),
     },
@@ -84,7 +84,7 @@ export const theSteeringWheelData: ResearchData = {
 <p>The result is that one person, without an engineering degree, produced a multi-agent orchestration system with a real-time dashboard, a coordination daemon, an auto-pilot, a messaging layer, task queuing, file locks, and compound learning that persists across sessions. Not because AI wrote it for me. Because I could see what AI was building and steer it toward what I had in my head.</p>
 
 <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-<p class="text-sm text-[var(--fg-muted)]">I described this in <a href="/writing/the-five-inputs" class="underline hover:opacity-60">The Five Inputs</a> as the convergence of taste, direction, judgment, presence, and context-holding. That is what the human provides. Not code. Not technical implementation. The ability to see a system forming, feel whether it matches the vision, and communicate corrections in plain language. The visual layer is what makes those five inputs possible. Without seeing, you cannot taste. Without tasting, you cannot steer.</p>
+<p class="text-sm text-[var(--fg-muted)]">The human contribution comes down to five things: taste, direction, judgment, presence, and context-holding. Not code. Not technical implementation. The ability to see a system forming, feel whether it matches the vision, and communicate corrections in plain language. The visual layer is what makes those five inputs possible. Without seeing, you cannot taste. Without tasting, you cannot steer.</p>
 </div>
 
 <p>Here is a concrete example. Two agents were debugging the dashboard's own status detection. Agent 3 was investigating why text-only responses caused a green-to-red flicker. Agent 4 was investigating why hooks from one agent got misrouted when both agents shared the same project directory. Neither knew what the other was finding. I was watching the dashboard. Agent 3 never turned red, even when it should have. That was the anomaly. Not a log entry. Not an error message. A visual signal that something was wrong, caught because the interface made it legible at a glance.</p>
@@ -102,7 +102,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>It does not make the AI smarter. The models still hallucinate. They still drift when context fills up. They still need restarting when a task runs too long. The dashboard does not fix those problems. It makes them visible. You see the drift happening instead of discovering it twenty minutes later in a log. You see the stall instead of wondering why nothing is moving. The floor is visibility. What you build on that floor is up to you.</p>
 
-<p>The agents still hit context limits. <a href="/writing/the-future-of-pm" class="underline hover:opacity-60">The Future of PM</a> documented this in detail: the bottleneck is context, not intelligence. When an agent's context window fills, it compacts memory and starts losing the thread. The dashboard shows you this happening in real time because an agent that lost context starts behaving differently, longer yellow states, more frequent stops, output that drifts from intent. You learn to read those patterns the way a driver reads engine sounds. Something is off. You restart. Fresh context. The thread picks up.</p>
+<p>The agents still hit context limits. The bottleneck is context, not intelligence. When an agent's context window fills, it compacts memory and starts losing the thread. The dashboard shows you this happening in real time because an agent that lost context starts behaving differently, longer yellow states, more frequent stops, output that drifts from intent. You learn to read those patterns the way a driver reads engine sounds. Something is off. You restart. Fresh context. The thread picks up.</p>
 
 <p>The auto-pilot handles the routine interruptions. Permission prompts auto-approve. Simple questions auto-answer. There is a grace period for the human to override, then the system answers and the agent keeps moving. Four agents running continuously, resolving their own routine decisions, only surfacing the ones that genuinely require human judgment. Those show up as yellow. Everything else stays green.</p>
 
@@ -146,9 +146,6 @@ export const theSteeringWheelData: ResearchData = {
 
   relatedWork: [
     { title: 'Hive', href: '/projects/hive' },
-    { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
-    { title: 'The Five Inputs', href: '/writing/the-five-inputs' },
-    { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
   ],
 
   footerVersion: 'March 2026 . Rohit Mangtani',
