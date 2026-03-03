@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 540" fill="none">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="680" height="540" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="340" y="36" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.08em">THE SPLIT</text>
+  <text x="340" y="54" text-anchor="middle" font-size="11" fill="#78716c">Both extremes compound. The middle drifts.</text>
+
+  <!-- The horseshoe arc — a U-shape opening downward -->
+  <!-- Path: starts top-left, curves down to bottom-center, curves back up to top-right -->
+  <path d="M 120 140 C 120 380, 340 440, 340 400 C 340 440, 560 380, 560 140"
+        stroke="#d6d3d1" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+
+  <!-- LEFT EXTREME: AI Mastery -->
+  <rect x="52" y="92" width="136" height="56" rx="6" fill="#1c1917"/>
+  <text x="120" y="116" text-anchor="middle" font-size="11" font-weight="600" fill="#fafaf9">AI MASTERY</text>
+  <text x="120" y="132" text-anchor="middle" font-size="9" fill="#a8a29e">Technology builders</text>
+
+  <!-- RIGHT EXTREME: Deep Craft -->
+  <rect x="492" y="92" width="136" height="56" rx="6" fill="#1c1917"/>
+  <text x="560" y="116" text-anchor="middle" font-size="11" font-weight="600" fill="#fafaf9">DEEP CRAFT</text>
+  <text x="560" y="132" text-anchor="middle" font-size="9" fill="#a8a29e">Identity builders</text>
+
+  <!-- Shared traits bridge at the top connecting both extremes -->
+  <line x1="188" y1="120" x2="492" y2="120" stroke="#e7e5e4" stroke-width="1" stroke-dasharray="3,3"/>
+  <rect x="240" y="68" width="200" height="28" rx="14" fill="white" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="86" text-anchor="middle" font-size="9" font-weight="500" fill="#44403c">Shared: commitment, identity, community, loops</text>
+
+  <!-- LEFT side traits descending along the curve -->
+  <!-- Trait 1 -->
+  <circle cx="108" cy="190" r="4" fill="#22c55e"/>
+  <text x="120" y="194" font-size="10" fill="#44403c">Leverage compounds</text>
+
+  <!-- Trait 2 -->
+  <circle cx="118" cy="230" r="4" fill="#22c55e"/>
+  <text x="130" y="234" font-size="10" fill="#44403c">Tools remember you</text>
+
+  <!-- Trait 3 -->
+  <circle cx="138" cy="270" r="4" fill="#22c55e"/>
+  <text x="150" y="274" font-size="10" fill="#44403c">Output is proof</text>
+
+  <!-- Trait 4 -->
+  <circle cx="168" cy="308" r="4" fill="#22c55e"/>
+  <text x="180" y="312" font-size="10" fill="#44403c">Ship → dopamine → ship</text>
+
+  <!-- RIGHT side traits descending along the curve -->
+  <!-- Trait 1 -->
+  <circle cx="572" cy="190" r="4" fill="#22c55e"/>
+  <text x="560" y="194" text-anchor="end" font-size="10" fill="#44403c">Depth compounds</text>
+
+  <!-- Trait 2 -->
+  <circle cx="562" cy="230" r="4" fill="#22c55e"/>
+  <text x="550" y="234" text-anchor="end" font-size="10" fill="#44403c">Hands remember</text>
+
+  <!-- Trait 3 -->
+  <circle cx="542" cy="270" r="4" fill="#22c55e"/>
+  <text x="530" y="274" text-anchor="end" font-size="10" fill="#44403c">Authenticity is scarce</text>
+
+  <!-- Trait 4 -->
+  <circle cx="512" cy="308" r="4" fill="#22c55e"/>
+  <text x="500" y="312" text-anchor="end" font-size="10" fill="#44403c">Make → belong → make</text>
+
+  <!-- THE MIDDLE — bottom of the horseshoe, the unstable zone -->
+  <rect x="255" y="374" width="170" height="62" rx="6" fill="white" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="340" y="396" text-anchor="middle" font-size="11" font-weight="600" fill="#ef4444">THE MIDDLE</text>
+  <text x="340" y="412" text-anchor="middle" font-size="9" fill="#78716c">No loop. No identity.</text>
+  <text x="340" y="424" text-anchor="middle" font-size="9" fill="#78716c">Aware of both. Committed to neither.</text>
+
+  <!-- Drift arrows pointing down from middle -->
+  <line x1="320" y1="436" x2="310" y2="458" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <polygon points="306,454 310,464 316,456" fill="#ef4444" opacity="0.5"/>
+  <line x1="340" y1="436" x2="340" y2="458" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <polygon points="334,454 340,464 346,454" fill="#ef4444" opacity="0.5"/>
+  <line x1="360" y1="436" x2="370" y2="458" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <polygon points="364,456 370,464 374,454" fill="#ef4444" opacity="0.5"/>
+
+  <text x="340" y="480" text-anchor="middle" font-size="10" fill="#ef4444" opacity="0.7">drift</text>
+
+  <!-- Bottom label -->
+  <rect x="170" y="500" width="340" height="28" rx="14" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="340" y="518" text-anchor="middle" font-size="10" fill="#44403c">The extremes are closer to each other than either is to the middle</text>
+</svg>

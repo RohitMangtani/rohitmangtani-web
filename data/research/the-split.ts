@@ -55,6 +55,12 @@ export const theSplitData: ResearchData = {
 <p>The AI builder's loop runs on leverage. Each cycle multiplies output because the tools compound. The woodworker's loop runs on depth. Each cycle adds skill that cannot be automated because it lives in muscle memory and material intuition. Both loops are real. Both produce meaning. Both create the kind of identity that sustains a person through uncertainty, because the person can point at something and say: I built that. I am the kind of person who builds this.</p>
 
 <p>The critical observation is that the loop does not care which direction you pick. It cares that you pick one.</p>
+
+<figure class="my-8">
+<img src="/images/research/the-split-horseshoe.svg" alt="Horseshoe diagram showing AI mastery and deep craft as two extremes that share commitment, identity, community, and compounding loops, with the unstable drifting middle at the bottom" class="w-full rounded-lg border border-[var(--border)]" />
+</figure>
+
+<p>There is a concept in political theory called horseshoe theory. The idea is that the far ends of a spectrum are closer to each other than either is to the center. The same structure applies here. The AI builder and the woodworker have more in common with each other than either has with the person scrolling in the middle. Both chose. Both produce. Both compound. Both have identity. Both have community. The thing they build is different. The structure of how they build meaning is the same.</p>
       `.trim(),
     },
     {
