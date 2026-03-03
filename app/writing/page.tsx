@@ -19,6 +19,24 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'the-steering-wheel',
+    title: 'The Steering Wheel',
+    description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
+    date: '2026',
+  },
+  {
+    slug: 'hive',
+    title: 'Hive',
+    description: 'An operating system for directing AI labor.',
+    date: '2026',
+  },
+  {
+    slug: 'the-reference-point',
+    title: 'The Reference Point',
+    description: 'Everything built, written, and proven, mapped to the next role.',
+    date: '2026',
+  },
+  {
     slug: 'the-split',
     title: 'The Split',
     description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
