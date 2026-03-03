@@ -146,6 +146,9 @@ export const theSteeringWheelData: ResearchData = {
 
   relatedWork: [
     { title: 'Hive', href: '/projects/hive' },
+    { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
+    { title: 'The Five Inputs', href: '/writing/the-five-inputs' },
+    { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
   ],
 
   footerVersion: 'March 2026 . Rohit Mangtani',
