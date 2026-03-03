@@ -19,6 +19,12 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'the-split',
+    title: 'The Split',
+    description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
+    date: '2026',
+  },
+  {
     slug: 'the-compound',
     title: 'The Compound',
     description: 'What happens when you build with AI long enough that it starts building you back.',
