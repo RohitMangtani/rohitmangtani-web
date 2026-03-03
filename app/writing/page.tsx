@@ -17,6 +17,27 @@ export const metadata: Metadata = {
   },
 };
 
+const featured = [
+  {
+    slug: 'the-split',
+    title: 'The Split',
+    description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
+    date: '2026',
+  },
+  {
+    slug: 'the-steering-wheel',
+    title: 'A Visual Workflow for AI Agents',
+    description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
+    date: '2026',
+  },
+  {
+    slug: 'the-positive-loop',
+    title: 'The Positive Loop',
+    description: 'The first productive dopamine cycle in internet history. AI flipped the doom scroll into building.',
+    date: '2026',
+  },
+];
+
 const allWriting = [
   {
     slug: 'the-five-inputs',
@@ -31,27 +52,9 @@ const allWriting = [
     date: '2026',
   },
   {
-    slug: 'the-positive-loop',
-    title: 'The Positive Loop',
-    description: 'The first productive dopamine cycle in internet history. AI flipped the doom scroll into building.',
-    date: '2026',
-  },
-  {
-    slug: 'the-steering-wheel',
-    title: 'A Visual Workflow for AI Agents',
-    description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
-    date: '2026',
-  },
-  {
     slug: 'close-your-eyes',
     title: 'Close Your Eyes',
     description: 'The gap between thinking and building was never code. It was seeing.',
-    date: '2026',
-  },
-  {
-    slug: 'hive',
-    title: 'Hive',
-    description: 'An operating system for directing AI labor. Status dots, coordination, and compound learning across sessions.',
     date: '2026',
   },
   {
@@ -70,12 +73,6 @@ const allWriting = [
     slug: 'the-human-bridge',
     title: 'The Human Bridge',
     description: 'Two coordination roles that emerge when companies deploy AI. The gap between installation and adoption.',
-    date: '2026',
-  },
-  {
-    slug: 'the-split',
-    title: 'The Split',
-    description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
     date: '2026',
   },
   {
@@ -108,6 +105,12 @@ const allWriting = [
     description: 'Why people choose transparent bad odds over opaque systems that claim to be fair.',
     date: '2024',
   },
+  {
+    slug: 'hive',
+    title: 'Hive',
+    description: 'An operating system for directing AI labor. Status dots, coordination, and compound learning across sessions.',
+    date: '2026',
+  },
 ];
 
 export default function WritingPage() {
@@ -123,6 +126,29 @@ export default function WritingPage() {
         </header>
 
         <div className="space-y-3">
+          <p className="text-xs uppercase tracking-wider text-[var(--fg-muted)] mb-1">Featured</p>
+          {featured.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/writing/${item.slug}`}
+              className="block group"
+            >
+              <div className="p-4 border border-[var(--border)] rounded-lg transition-all duration-200 hover:border-[var(--fg-muted)] hover:bg-[var(--bg-secondary)]">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-medium text-[var(--fg)] group-hover:opacity-80 transition-opacity">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
+                  </div>
+                  <span className="text-xs font-mono text-[var(--fg-muted)] flex-shrink-0">{item.date}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="space-y-3 mt-8">
           {allWriting.map((item) => (
             <Link
               key={item.slug}
