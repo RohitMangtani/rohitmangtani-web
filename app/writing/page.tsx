@@ -21,7 +21,7 @@ const featured = [
   {
     slug: 'the-split',
     title: 'The Split',
-    description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
+    description: 'How AI is pushing everyone toward the thing they actually care about, and why both directions work.',
     date: '2026',
   },
   {
