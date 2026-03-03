@@ -19,21 +19,39 @@ export const metadata: Metadata = {
 
 const allWriting = [
   {
+    slug: 'the-five-inputs',
+    title: 'The Five Inputs',
+    description: 'Taste, direction, judgment, presence, context-holding. What humans are still for when everything else is automated.',
+    date: '2026',
+  },
+  {
+    slug: 'the-future-of-pm',
+    title: 'The Future of PM',
+    description: 'One person, a terminal, and a swarm of agents. Context is the bottleneck, not intelligence.',
+    date: '2026',
+  },
+  {
+    slug: 'the-positive-loop',
+    title: 'The Positive Loop',
+    description: 'The first productive dopamine cycle in internet history. AI flipped the doom scroll into building.',
+    date: '2026',
+  },
+  {
     slug: 'the-steering-wheel',
     title: 'A Visual Workflow for AI Agents',
     description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
     date: '2026',
   },
   {
-    slug: 'hive',
-    title: 'Hive',
-    description: 'An operating system for directing AI labor.',
+    slug: 'close-your-eyes',
+    title: 'Close Your Eyes',
+    description: 'The gap between thinking and building was never code. It was seeing.',
     date: '2026',
   },
   {
-    slug: 'the-split',
-    title: 'The Split',
-    description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
+    slug: 'hive',
+    title: 'Hive',
+    description: 'An operating system for directing AI labor. Status dots, coordination, and compound learning across sessions.',
     date: '2026',
   },
   {
@@ -49,39 +67,15 @@ const allWriting = [
     date: '2026',
   },
   {
-    slug: 'safe-mode',
-    title: 'Safe Mode',
-    description: 'Regime detection as the skill behind every skill. Knowing when to stop pushing.',
-    date: '2026',
-  },
-  {
-    slug: 'close-your-eyes',
-    title: 'Close Your Eyes',
-    description: 'The visualization loop. Why the gap between thinking and building was never code, it was seeing.',
-    date: '2026',
-  },
-  {
-    slug: 'the-five-inputs',
-    title: 'The Five Inputs',
-    description: 'Taste, direction, judgment, presence, context-holding. What humans are still for.',
-    date: '2026',
-  },
-  {
     slug: 'the-human-bridge',
     title: 'The Human Bridge',
     description: 'Two coordination roles that emerge when companies deploy AI. The gap between installation and adoption.',
     date: '2026',
   },
   {
-    slug: 'the-human-sensor-layer',
-    title: 'The Human Sensor Layer',
-    description: 'Three-tier economy. Sensors, nodes, and a floor. What happens when markets price belief instead of output.',
-    date: '2026',
-  },
-  {
-    slug: 'the-future-of-pm',
-    title: 'The Future of PM',
-    description: 'One person, a terminal, and a swarm of agents. Context is the bottleneck, not intelligence.',
+    slug: 'the-split',
+    title: 'The Split',
+    description: 'Two viable paths. One unstable middle. Why the only losing move is standing still.',
     date: '2026',
   },
   {
@@ -91,9 +85,15 @@ const allWriting = [
     date: '2026',
   },
   {
-    slug: 'the-positive-loop',
-    title: 'The Positive Loop',
-    description: 'The first productive dopamine cycle in internet history. AI flipped the doom scroll into building.',
+    slug: 'the-human-sensor-layer',
+    title: 'The Human Sensor Layer',
+    description: 'What happens when markets price belief instead of output. Sensors, nodes, and a floor.',
+    date: '2026',
+  },
+  {
+    slug: 'safe-mode',
+    title: 'Safe Mode',
+    description: 'Regime detection as the skill behind every skill. Knowing when to stop pushing.',
     date: '2026',
   },
   {
