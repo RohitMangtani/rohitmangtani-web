@@ -8,6 +8,7 @@ import References from '@/components/References';
 import DataAvailability from '@/components/DataAvailability';
 import { ArticleNarrator } from '@/components/ArticleNarrator';
 import CopyLinkButton from '@/components/CopyLinkButton';
+import ExportPDFButton from '@/components/ExportPDFButton';
 
 interface WritingTemplateProps {
   data: {
@@ -70,7 +71,10 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
           >
             ← Writing
           </Link>
-          <CopyLinkButton />
+          <div className="flex items-center gap-2">
+            <CopyLinkButton />
+            <ExportPDFButton />
+          </div>
         </div>
 
         {/* Header */}

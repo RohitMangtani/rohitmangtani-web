@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from '@/components/Nav';
 import Link from 'next/link';
 import CopyLinkButton from '@/components/CopyLinkButton';
+import ExportPDFButton from '@/components/ExportPDFButton';
 import References from '@/components/References';
 import DataAvailability from '@/components/DataAvailability';
 import TableOfContents from '@/components/TableOfContents';
@@ -25,7 +26,10 @@ export function ArticleTemplate({ data }: ArticleTemplateProps) {
           >
             ← Writing
           </Link>
-          <CopyLinkButton />
+          <div className="flex items-center gap-2">
+            <CopyLinkButton />
+            <ExportPDFButton />
+          </div>
         </div>
 
         <header className="mb-8">
