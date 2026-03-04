@@ -144,12 +144,7 @@ export const theSteeringWheelData: ResearchData = {
     { text: 'Foxworth, L. (2017). "Visual images often intrude on verbal thinking." Harvard Gazette.', url: 'https://news.harvard.edu/gazette/story/2017/05/visual-images-often-intrude-on-verbal-thinking-study-says/' },
   ],
 
-  relatedWork: [
-    { title: 'Hive', href: '/projects/hive' },
-    { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
-    { title: 'The Five Inputs', href: '/writing/the-five-inputs' },
-    { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
-  ],
+  relatedWork: [],
 
   footerVersion: 'March 2026 . Rohit Mangtani',
 };
