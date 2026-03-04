@@ -64,7 +64,6 @@ export function ArticleNarrator({ slug }: ArticleNarratorProps) {
     if (audioRef.current) audioRef.current.playbackRate = SPEEDS[newIdx];
   }
 
-  // Media Session API: enables iOS lock screen / background playback + controls
   useEffect(() => {
     if (!('mediaSession' in navigator) || !available) return;
     navigator.mediaSession.metadata = new MediaMetadata({
@@ -95,60 +94,91 @@ export function ArticleNarrator({ slug }: ArticleNarratorProps) {
 
   const speed = SPEEDS[speedIdx];
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
+  const title = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
   if (!available) return null;
 
   return (
-    <div className="mb-8 flex items-center gap-3 px-4 py-3 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)]">
-      <audio
-        ref={audioRef}
-        src={`/audio/${slug}.mp3`}
-        preload="metadata"
-        onLoadedMetadata={handleLoadedMetadata}
-        onTimeUpdate={handleTimeUpdate}
-        onEnded={handleEnded}
-        onError={handleError}
-      />
+    <div className="fixed bottom-0 left-0 right-0 z-50 print:hidden">
+      {/* Progress bar along the very top edge */}
+      <div className="h-[2px] bg-[var(--border)]">
+        <div
+          className="h-full bg-[var(--fg-muted)] transition-[width] duration-200 ease-linear"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
 
-      <button
-        onClick={handlePlayPause}
-        className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-[var(--fg-muted)] hover:text-[var(--fg)]"
-        aria-label={playing ? 'Pause narration' : 'Play narration'}
-      >
-        {playing ? (
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
-            <rect x="2" y="1" width="3.5" height="12" rx="0.75" />
-            <rect x="8.5" y="1" width="3.5" height="12" rx="0.75" />
+      <div className="backdrop-blur-xl bg-[var(--bg)]/90 border-t border-[var(--border)]">
+        <div className="max-w-3xl mx-auto px-4 py-2.5 flex items-center gap-4">
+          <audio
+            ref={audioRef}
+            src={`/audio/${slug}.mp3`}
+            preload="metadata"
+            onLoadedMetadata={handleLoadedMetadata}
+            onTimeUpdate={handleTimeUpdate}
+            onEnded={handleEnded}
+            onError={handleError}
+          />
+
+          {/* Play / Pause */}
+          <button
+            onClick={handlePlayPause}
+            className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-full border border-[var(--border)] text-[var(--fg-muted)] hover:text-[var(--fg)] hover:border-[var(--fg-muted)] transition-colors"
+            aria-label={playing ? 'Pause narration' : 'Play narration'}
+          >
+            {playing ? (
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="6" y="4" width="4" height="16" rx="1" />
+                <rect x="14" y="4" width="4" height="16" rx="1" />
+              </svg>
+            ) : (
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5.14v13.72a1 1 0 001.5.86l11.14-6.86a1 1 0 000-1.72L9.5 4.28A1 1 0 008 5.14z" />
+              </svg>
+            )}
+          </button>
+
+          {/* Title + time */}
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center justify-between gap-3">
+              <span className="text-xs text-[var(--fg)] font-medium truncate">
+                {title}
+              </span>
+              <span className="flex-shrink-0 text-[10px] text-[var(--fg-muted)] tabular-nums">
+                {formatTime(currentTime)} / {formatTime(duration)}
+              </span>
+            </div>
+            <input
+              type="range"
+              className="narrator-slider w-full mt-1"
+              min={0}
+              max={100}
+              step={0.1}
+              value={progress}
+              onChange={handleSeek}
+              aria-label="Narration progress"
+            />
+          </div>
+
+          {/* Speed */}
+          <button
+            onClick={handleSpeedChange}
+            className="flex-shrink-0 text-[10px] font-semibold text-[var(--fg-muted)] hover:text-[var(--fg)] min-w-[2rem] text-center px-1.5 py-0.5 rounded border border-[var(--border)] hover:border-[var(--fg-muted)] transition-colors"
+            aria-label={`Playback speed: ${speed}x`}
+          >
+            {speed}x
+          </button>
+
+          {/* Waveform icon */}
+          <svg className="flex-shrink-0 text-[var(--fg-muted)] opacity-50" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+            <line x1="4" y1="8" x2="4" y2="16" />
+            <line x1="8" y1="5" x2="8" y2="19" />
+            <line x1="12" y1="3" x2="12" y2="21" />
+            <line x1="16" y1="5" x2="16" y2="19" />
+            <line x1="20" y1="8" x2="20" y2="16" />
           </svg>
-        ) : (
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
-            <path d="M3 1.5v11l9.5-5.5L3 1.5z" />
-          </svg>
-        )}
-      </button>
-
-      <input
-        type="range"
-        className="narrator-slider flex-1"
-        min={0}
-        max={100}
-        step={0.1}
-        value={progress}
-        onChange={handleSeek}
-        aria-label="Narration progress"
-      />
-
-      <button
-        onClick={handleSpeedChange}
-        className="flex-shrink-0 text-xs font-medium text-[var(--fg-muted)] hover:text-[var(--fg)] min-w-[2.5rem] text-center"
-        aria-label={`Playback speed: ${speed}x`}
-      >
-        {speed}x
-      </button>
-
-      <span className="flex-shrink-0 text-xs text-[var(--fg-muted)] tabular-nums min-w-[4.5rem] text-right">
-        {formatTime(currentTime)} / {formatTime(duration)}
-      </span>
+        </div>
+      </div>
     </div>
   );
 }
