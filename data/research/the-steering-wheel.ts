@@ -64,9 +64,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>The reason spatial memory works here is that the tiles are not an abstraction. They are a mirror. My laptop screen has four terminals arranged in a 2x2 grid. The dashboard on my phone has four tiles in the same 2x2 grid. Top-left terminal is the authentication refactor. Top-left tile on my phone is the authentication refactor. I see a yellow dot in the bottom-left tile and I already know which agent that is, because I can see the bottom-left terminal on my screen. The position is the label. I never read a name. I never check which project a tile belongs to. I just know where things are because the dashboard is a spatial map of what is already in front of me.</p>
 
-<p>This is how experienced decision-makers actually work. They do not compare options. They recognize the situation as similar to something they have seen before, simulate a response, and act. The quality of that recognition depends entirely on the quality of the cues the environment provides. Rich visual cues enable fast pattern-matching. Dense text forces slow, serial analysis. The interface determines whether you are recognizing or reading.</p>
-
-<p>That is exactly what the dashboard provides. Rich, simple, spatial cues that my brain can pattern-match against without effort. I have been looking at those four tiles long enough that the patterns are internalized. I do not think "Agent 3 has been in a waiting state for an unusually long duration." I feel that the grid looks wrong. And I respond to that feeling faster and more accurately than I ever responded to log output.</p>
+<p>After a few weeks of using it, the patterns are internalized. I do not think "Agent 3 has been in a waiting state for an unusually long duration." I feel that the grid looks wrong. And I respond to that feeling faster and more accurately than I ever responded to log output. The interface determines whether you are recognizing or reading. The dashboard makes it recognition.</p>
 
 <div class="border-l-2 border-[var(--border)] pl-6 my-10">
 <p class="leading-relaxed">There is a visualization loop that runs underneath all of this: think about what you want, describe it to AI, see what it built, feel whether it matches, refine, ship. Each cycle uses the part of your brain that is fastest: your eyes. Hive is that loop applied to directing AI agents. You see the fleet. You feel the state. You intervene where the feeling says to. And the intervention is a message in plain English, not a code change. The loop completes in seconds.</p>
@@ -87,9 +85,9 @@ export const theSteeringWheelData: ResearchData = {
 <p class="text-sm text-[var(--fg-muted)]">The human contribution comes down to five things: taste, direction, judgment, presence, and context-holding. Not code. Not technical implementation. The ability to see a system forming, feel whether it matches the vision, and communicate corrections in plain language. The visual layer is what makes those five inputs possible. Without seeing, you cannot taste. Without tasting, you cannot steer.</p>
 </div>
 
-<p>Here is a concrete example. Two agents were debugging the dashboard's own status detection. Agent 3 was investigating why text-only responses caused a green-to-red flicker. Agent 4 was investigating why hooks from one agent got misrouted when both agents shared the same project directory. Neither knew what the other was finding. I was watching the dashboard. Agent 3 never turned red, even when it should have. That was the anomaly. Not a log entry. Not an error message. A visual signal that something was wrong, caught because the interface made it legible at a glance.</p>
+<p>Here is a concrete example. Two agents were debugging the dashboard's own status detection. Agent 3 was investigating why tiles flickered between green and red. Agent 4 was investigating why activity from one agent was showing up under the wrong tile. Neither knew what the other was finding. I was watching the dashboard. Agent 3 never turned red, even when it should have. That was the anomaly. Not a log entry. Not an error message. A visual signal that something was wrong, caught because the interface made it legible at a glance.</p>
 
-<p>Agent 4 found the root cause: hook routing fell back to matching by file path instead of session ID, so every hook Agent 4 fired got routed to Agent 3. Agent 3, meanwhile, found a separate bug in the scan logic. Two independent investigations. Two bugs that interacted with each other. I directed a third agent to read both findings, synthesize them, and produce a unified fix. The third agent compared the routing logic against the detection logic, identified where they collided, and generated a patch addressing both bugs without breaking the existing flow.</p>
+<p>Agent 4 found the root cause: one agent's activity was being attributed to the wrong tile, so Agent 3's status was being driven by Agent 4's work. Agent 3, meanwhile, found a separate bug in how the system detected whether an agent was done. Two independent investigations. Two bugs that interacted with each other. I directed a third agent to read both findings, synthesize them, and produce a unified fix.</p>
 
 <p>I wrote zero code and held the entire operation together. The visual layer was the only reason I noticed the anomaly that started the investigation.</p>
       `.trim(),
@@ -135,12 +133,7 @@ export const theSteeringWheelData: ResearchData = {
   ],
 
   references: [
-    { text: 'Treisman, A., & Gelade, G. (1980). "A feature-integration theory of attention." Cognitive Psychology, 12(1), 97-136.', url: 'https://en.wikipedia.org/wiki/Feature_integration_theory' },
-    { text: 'Potter, M.C., et al. (2014). "Detecting meaning in RSVP at 13 ms per picture." MIT, Attention, Perception, & Psychophysics.', url: 'https://news.mit.edu/2014/in-the-blink-of-an-eye-0116' },
-    { text: 'Miller, G.A. (1956). "The Magical Number Seven, Plus or Minus Two." Psychological Review, 63(2), 81-97.' },
-    { text: 'Sweller, J. (1988). "Cognitive Load During Problem Solving: Effects on Learning." Cognitive Science, 12(2), 257-285.' },
     { text: 'Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.' },
-    { text: 'Foxworth, L. (2017). "Visual images often intrude on verbal thinking." Harvard Gazette.', url: 'https://news.harvard.edu/gazette/story/2017/05/visual-images-often-intrude-on-verbal-thinking-study-says/' },
   ],
 
   relatedWork: [],
