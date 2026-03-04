@@ -24,11 +24,11 @@ export const hiveData: ResearchData = {
       id: 'the-experience',
       title: 'The Experience',
       content: `
-<p>You are lying on your bed. On your screen there are four tiles. Each one has a dot. Green means that agent is working. Red means it is done. Yellow means it needs you.</p>
+<p>You are lying on your bed. Your laptop has four terminal windows arranged in a 2x2 grid. Top-left is refactoring authentication. Top-right is writing content. Bottom-left is debugging a deploy. Bottom-right is investigating a production bug. You pick up your phone and open the dashboard. Four tiles, same 2x2 grid. Top-left tile maps to top-left terminal. Bottom-right tile maps to bottom-right terminal. Each tile has a dot. Green means that agent is working. Red means it is done. Yellow means it needs you.</p>
 
-<p>You see a red dot. You pick up your phone, tap the tile, and type: "Start the next chapter." The dot turns green. The agent takes the task, reads the project's history, remembers every lesson from the last six months of work, and begins. You glance at the other three tiles. All green. You put the phone down.</p>
+<p>You see a red dot in the top-right tile. You already know what that is without reading the label. It is the content agent, because that is where the content terminal sits on your screen. You tap it and type: "Start the next chapter." The dot turns green. The agent takes the task, reads the project's history, remembers every lesson from the last six months of work, and begins. You glance at the other three tiles. All green. You put the phone down.</p>
 
-<p>Twenty minutes later you check again. Two green, one red, one yellow. The yellow one is stuck on a question. You read it, type a two-sentence answer, and the dot turns green. The red one finished its task. You type a new one. Four agents, all visible, all reachable, from your phone.</p>
+<p>Twenty minutes later you check again. Two green, one red, one yellow. The yellow one is bottom-left. You know it is the deploy debugger because that is where you put it. You read its question, type a two-sentence answer, and the dot turns green. The red one finished its task. You type a new one. Four agents, all visible, all reachable, from your phone. You never read a label to know which agent is which. You just look at where the dot is.</p>
 
 <p>That is what Hive feels like. <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Open the live dashboard</a> and see it running right now.</p>
       `.trim(),
@@ -41,7 +41,7 @@ export const hiveData: ResearchData = {
 
 <p>Four terminal windows open on a single machine. Each one running a Claude Code instance. One is refactoring an authentication layer. Another is writing content for a marketing site. A third is debugging a deployment pipeline. The fourth is investigating a production bug. Each agent works independently, produces real output, and can run for an hour without human input. You cannot watch all of them. You do not know which one finished, which one is stuck on a permission prompt, or which two are about to edit the same file.</p>
 
-<p>Hive is the layer between you and those agents. A local daemon that discovers every running Claude Code instance on your machine, a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">dashboard</a> that shows their status in real time, and a coordination API that lets them share context, claim files, and compound what they learn. It does not make agents smarter. It lets you run more of them without things falling apart.</p>
+<p>Hive is the layer between you and those agents. A local daemon that discovers every running Claude Code instance on your machine, a <a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">dashboard</a> that maps 1:1 to your terminal layout and shows their status in real time, and a coordination API that lets them share context, claim files, and compound what they learn. It does not make agents smarter. It lets you run more of them without things falling apart. The dashboard tiles mirror your physical terminal positions. Top-left terminal, top-left tile. You manage agents by where they sit, not by what they are called.</p>
 
 <p>The entire system was built using the agents it manages. Four Claude Code instances iterating on the daemon, the dashboard, and each other's output, while a human directed the architecture and resolved conflicts. A real product derived from real pain points, solved by iterating back and forth between the tools and the problems they were built to fix.</p>
       `.trim(),
@@ -63,13 +63,23 @@ export const hiveData: ResearchData = {
       id: 'how-it-works',
       title: 'How It Works',
       content: `
-<p>Hive runs as a local daemon on your machine, managed by launchd. It exposes an Express API for telemetry and coordination, a WebSocket server for the live dashboard, and an ngrok tunnel that makes the dashboard accessible from any device. The system has five layers.</p>
+<p>Hive runs as a local daemon on your machine, managed by launchd. It exposes an Express API for telemetry and coordination, a WebSocket server for the live dashboard, and an ngrok tunnel that makes the dashboard accessible from any device. The system has six layers.</p>
       `.trim(),
       subsections: [
         {
           title: 'Auto-Discovery',
           content: `
 <p>Launch a Claude Code instance in any terminal. Within three seconds, Hive finds it. No registration, no configuration, no setup. The daemon scans running processes, resolves each one's working directory and session file, and registers it on the dashboard. Close the terminal, it disappears. Open a new one, it appears. The system tracks what exists, not what you told it to track.</p>
+          `.trim(),
+        },
+        {
+          title: 'Spatial Mapping',
+          content: `
+<p>Arrange four terminal windows in a 2x2 grid on your screen. Top-left, top-right, bottom-left, bottom-right. Open a Claude Code instance in each one. Hive assigns each terminal a quadrant based on the order you opened them: first terminal becomes Q1 (top-left tile on the dashboard), second becomes Q2 (top-right), third Q3 (bottom-left), fourth Q4 (bottom-right). The dashboard mirrors your screen layout.</p>
+
+<p>This is the core of the user experience. Q1 through Q4 are not arbitrary labels. They are positions. When you glance at your phone and see a yellow dot in the bottom-left tile, you do not need to read which project it belongs to. You already know, because you can see the bottom-left terminal on your laptop. The spatial mapping between your physical terminals and the dashboard tiles is what makes the system usable at speed. You think in positions, not in names.</p>
+
+<p>Close a terminal and its tile disappears. Open a new one and it fills the next available slot. The assignment follows opening order, not process IDs or session hashes. If Q2 closes, Q3 and Q4 shift up to fill the gap. The dashboard always reflects what is actually running. The layout stays consistent because the assignment logic is deterministic: sort by start time, assign sequentially.</p>
           `.trim(),
         },
         {
@@ -115,6 +125,8 @@ export const hiveData: ResearchData = {
 <p>Now watch someone run four instances across four projects. One is an hour deep into an authentication refactor, with full context on every file it has touched. Another has been debugging a deployment pipeline for thirty minutes, with a mental model of the infrastructure built step by step. A third is writing content, tuned to the site's voice after reading the style guide and ten existing articles. A fourth is iterating on a video processing pipeline, aware of every edge case from previous runs.</p>
 
 <p>These are not four workers splitting one task. They are four independent contexts, each deeply embedded in a different problem. A subagent spawned fresh starts from zero. An agent that has been working in a codebase for an hour starts from everything it already knows. That distinction is the entire point.</p>
+
+<p>The spatial mapping is what makes moving between them fast. Q1 is not a name you memorize. It is the top-left terminal on your screen and the top-left tile on your phone. You see a yellow dot in the top-right, and you already know it is Q2 because that is where you put the content project an hour ago. The position carries the context. You do not look up which agent is which. You just look at where it sits.</p>
 
 <p>The human moves between them. You check the dashboard, see that Q2 is stuck, read its question, and realize the answer is in Q1's project. You tell Q1: "What is the API schema you designed for the auth endpoint?" Q1 already knows, because it spent the last hour building it. It responds from deep context, not from a cold read of the codebase. You relay that to Q2. Or Q2 messages Q1 directly through Hive's coordination layer, and Q1 answers from the same deep context. Either way, the knowledge transfer happens between two agents that each have genuine understanding of their own domain. Not between a parent and a disposable subagent.</p>
 
