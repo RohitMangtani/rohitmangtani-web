@@ -138,13 +138,13 @@ export default function WritingPage() {
                   </div>
                   <div className="flex items-center gap-3 flex-shrink-0">
                     {item.projectUrl && (
-                      <Link
+                      <a
                         href={item.projectUrl}
-                        className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors"
+                        className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors relative z-10"
                         onClick={(e) => e.stopPropagation()}
                       >
                         Hive &#8599;
-                      </Link>
+                      </a>
                     )}
                     <span className="text-xs font-mono text-[var(--fg-muted)]">{item.date}</span>
                   </div>
