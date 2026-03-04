@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const featured: { slug: string; title: string; description: string; date: string; projectUrl?: string }[] = [
+const featured = [
   {
     slug: 'the-split',
     title: 'The Split',
@@ -29,7 +29,6 @@ const featured: { slug: string; title: string; description: string; date: string
     title: 'A Visual Workflow for AI Agents',
     description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
     date: '2026',
-    projectUrl: '/projects/hive',
   },
   {
     slug: 'the-positive-loop',
@@ -136,18 +135,7 @@ export default function WritingPage() {
                     </h3>
                     <p className="text-xs text-[var(--fg-muted)] mt-1">{item.description}</p>
                   </div>
-                  <div className="flex items-center gap-3 flex-shrink-0">
-                    {item.projectUrl && (
-                      <a
-                        href={item.projectUrl}
-                        className="text-xs text-[var(--fg-muted)] hover:text-[var(--fg)] transition-colors relative z-10"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Hive &#8599;
-                      </a>
-                    )}
-                    <span className="text-xs font-mono text-[var(--fg-muted)]">{item.date}</span>
-                  </div>
+                  <span className="text-xs font-mono text-[var(--fg-muted)] flex-shrink-0">{item.date}</span>
                 </div>
               </div>
             </Link>
