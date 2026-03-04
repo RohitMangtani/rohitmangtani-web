@@ -8,7 +8,7 @@ function formatTime(totalSeconds: number): string {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
-const SPEEDS = [1, 1.25, 1.5, 0.75] as const;
+const SPEEDS = [1, 1.25, 1.5, 2, 2.5, 3, 0.75] as const;
 
 interface ArticleNarratorProps {
   slug: string;
