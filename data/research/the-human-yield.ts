@@ -125,7 +125,7 @@ export const theHumanYieldData: ResearchData = {
         <p>You can already see it with NEET culture. NEET started as a statistical category. It is becoming an identity. A growing number of people are not just unemployed. They are opting out on purpose, loudly, and building community around the decision.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg-muted)]">The instinct is to write this off as laziness or nihilism. It is neither. It is the same pattern from <a href="/writing/honest-gambling" class="underline hover:opacity-60">Honest Gambling</a>: when the official system feels extractive or closed off, people build their own with rules they consider fairer. Even if the alternative looks worse on paper, people prefer it because it is chosen and legible.</p>
+          <p class="text-sm text-[var(--fg-muted)]">The instinct is to write this off as laziness or nihilism. It is neither. It is the same pattern from <a href="/writing/preference-for-legible-risk" class="underline hover:opacity-60">Preference for Legible Risk</a>: when the official system feels extractive or closed off, people build their own with rules they consider fairer. Even if the alternative looks worse on paper, people prefer it because it is chosen and legible.</p>
         </div>
 
         <p>The resistance takes multiple forms:</p>
@@ -174,7 +174,7 @@ export const theHumanYieldData: ResearchData = {
   references: [
     { text: 'Mangtani, R. (2026). <em>The Positive Loop: How AI Broke the Doom Scroll</em>.', url: '/writing/the-positive-loop' },
     { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
-    { text: 'Mangtani, R. (2024). <em>Why People Choose Honest Gambling Over Extractive Games</em>.', url: '/writing/honest-gambling' },
+    { text: 'Mangtani, R. (2024). <em>Why People Choose Preference for Legible Risk Over Extractive Games</em>.', url: '/writing/preference-for-legible-risk' },
     { text: 'Frey, C.B. & Osborne, M.A. (2017). "The Future of Employment." Oxford Martin Programme.' },
     { text: 'Susskind, D. (2020). <em>A World Without Work: Technology, Automation, and How We Should Respond</em>.' },
     { text: 'Brynjolfsson, E. & McAfee, A. (2014). <em>The Second Machine Age</em>.' },
@@ -183,7 +183,7 @@ export const theHumanYieldData: ResearchData = {
   relatedWork: [
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
     { title: 'The Gameable Society', href: '/writing/the-gameable-society' },
-    { title: 'Preference for Legible Risk', href: '/writing/honest-gambling' },
+    { title: 'Preference for Legible Risk', href: '/writing/preference-for-legible-risk' },
   ],
 
   footerVersion: 'February 2026 . Rohit Mangtani',

@@ -20,7 +20,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'tech-is-not-tech-anymore': { data: techIsNotTechAnymoreData },
   'the-positive-loop': { data: thePositiveLoopData },
   'the-human-yield': { data: theHumanYieldData },
-  'honest-gambling': { data: honestGamblingData },
+  'preference-for-legible-risk': { data: honestGamblingData },
   'the-gameable-society': { data: theGameableSocietyData },
   'the-future-of-pm': { data: theFutureOfPmData },
   'the-human-sensor-layer': { data: theHumanSensorLayerData },
@@ -30,7 +30,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'safe-mode': { data: safeModeData },
   'the-compound': { data: theCompoundData },
   'the-split': { data: theSplitData },
-  'the-steering-wheel': { data: theSteeringWheelData },
+  'a-visual-workflow-for-ai-agents': { data: theSteeringWheelData },
 };
 
 export async function generateStaticParams() {

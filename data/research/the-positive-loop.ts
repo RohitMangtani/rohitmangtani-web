@@ -33,7 +33,7 @@ export const thePositiveLoopData: ResearchData = {
           <p class="text-sm text-[var(--fg-muted)] mt-3">Every cycle makes the next one easier to enter and harder to exit. The content gets better. The algorithm gets sharper. The user gets more passive. This was not a side effect. It was the product.</p>
         </div>
 
-        <p>This connects directly to what <a href="/writing/honest-gambling" class="underline hover:opacity-60">Honest Gambling</a> explored: when traditional paths feel closed, people gravitate toward whatever offers the most legible dopamine. Doom scrolling was the cheapest, most accessible version of that. Zero cost, zero effort, immediate reward, zero output.</p>
+        <p>This connects directly to what <a href="/writing/preference-for-legible-risk" class="underline hover:opacity-60">Preference for Legible Risk</a> explored: when traditional paths feel closed, people gravitate toward whatever offers the most legible dopamine. Doom scrolling was the cheapest, most accessible version of that. Zero cost, zero effort, immediate reward, zero output.</p>
 
         <p>We turned ourselves into dopamine-driven animals. Not because we are weak. Because the infrastructure was built to make us that way. Every pixel, every notification, every autoplay was designed by teams of engineers whose KPI was your attention.</p>
 
@@ -320,7 +320,7 @@ export const thePositiveLoopData: ResearchData = {
 
   references: [
     { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
-    { text: 'Mangtani, R. (2024). <em>Preference for Legible Risk</em>.', url: '/writing/honest-gambling' },
+    { text: 'Mangtani, R. (2024). <em>Preference for Legible Risk</em>.', url: '/writing/preference-for-legible-risk' },
     { text: 'Berridge, K.C. (2007). "The debate over dopamine\'s role in reward: the case for incentive salience." <em>Psychopharmacology</em>.', url: 'https://pubmed.ncbi.nlm.nih.gov/17072591/' },
     { text: 'Sharpe, B.T. & Spooner, R.A. (2025). "Dopamine-scrolling: a modern public health challenge requiring urgent attention." <em>SAGE Journals</em>.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12322333/' },
     { text: 'METR (2025). AI tools developer productivity study. Cited in <em>MIT Technology Review</em>.', url: 'https://www.technologyreview.com/2025/12/15/1128352/rise-of-ai-coding-developers-2026/' },
@@ -352,7 +352,7 @@ export const thePositiveLoopData: ResearchData = {
 
   relatedWork: [
     { title: 'The Gameable Society', href: '/writing/the-gameable-society' },
-    { title: 'Preference for Legible Risk', href: '/writing/honest-gambling' },
+    { title: 'Preference for Legible Risk', href: '/writing/preference-for-legible-risk' },
     { title: 'Hive', href: '/projects/hive' },
     { title: 'Tech Is Not Tech Anymore', href: '/writing/tech-is-not-tech-anymore' },
   ],

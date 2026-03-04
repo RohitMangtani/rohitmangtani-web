@@ -1,7 +1,7 @@
 import type { ResearchData } from '@/types/research';
 
 export const theSteeringWheelData: ResearchData = {
-  slug: 'the-steering-wheel',
+  slug: 'a-visual-workflow-for-ai-agents',
   date: '2026',
   title: 'A Visual Workflow for AI Agents',
   subtitle: 'I built a visual layer for managing AI agents. It changed how I build everything.',

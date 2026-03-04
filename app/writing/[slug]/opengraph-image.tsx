@@ -11,7 +11,7 @@ export const contentType = 'image/png';
 
 const articles: Record<string, { title: string; subtitle: string }> = {
   'the-positive-loop': thePositiveLoopData,
-  'honest-gambling': honestGamblingData,
+  'preference-for-legible-risk': honestGamblingData,
   'the-gameable-society': theGameableSocietyData,
   'the-five-inputs': theFiveInputsData,
 };

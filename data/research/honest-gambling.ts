@@ -1,9 +1,9 @@
 import { ResearchData } from '@/types/research';
 
 export const honestGamblingData: ResearchData = {
-  slug: 'honest-gambling',
+  slug: 'preference-for-legible-risk',
   date: '2024',
-  title: 'Why People Choose Honest Gambling Over Extractive Games',
+  title: 'Preference for Legible Risk',
   subtitle: 'On legible rules and hidden extraction',
 
   onRamp: {

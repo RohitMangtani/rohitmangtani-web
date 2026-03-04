@@ -25,7 +25,7 @@ const featured: { slug: string; title: string; description: string; date: string
     date: '2026',
   },
   {
-    slug: 'the-steering-wheel',
+    slug: 'a-visual-workflow-for-ai-agents',
     title: 'A Visual Workflow for AI Agents',
     description: 'I built a visual layer for managing AI agents. It changed how I build everything.',
     date: '2026',
@@ -101,7 +101,7 @@ const allWriting = [
     date: '2025',
   },
   {
-    slug: 'honest-gambling',
+    slug: 'preference-for-legible-risk',
     title: 'Preference for Legible Risk',
     description: 'Why people choose transparent bad odds over opaque systems that claim to be fair.',
     date: '2024',

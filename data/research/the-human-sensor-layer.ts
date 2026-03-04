@@ -102,7 +102,7 @@ export const theHumanSensorLayerData: ResearchData = {
       content: `
         <p>Someone buys a meme coin that could go to zero. They know it could go to zero. They buy it anyway. Ask them why and the answer is almost always the same: at least I chose this. At least the risk is mine. At least nobody is extracting fees for thirty years before telling me my pension underperformed.</p>
 
-        <p><a href="/writing/honest-gambling" class="underline hover:opacity-60">Honest Gambling</a> documented this pattern. People prefer legible risk over hidden extraction. A meme coin that tells you upfront it might be worthless gets chosen over a system that hides its costs in fine print. The risk is not lower. It is chosen. And chosen risk creates loyalty that managed risk never does.</p>
+        <p><a href="/writing/preference-for-legible-risk" class="underline hover:opacity-60">Preference for Legible Risk</a> documented this pattern. People prefer legible risk over hidden extraction. A meme coin that tells you upfront it might be worthless gets chosen over a system that hides its costs in fine print. The risk is not lower. It is chosen. And chosen risk creates loyalty that managed risk never does.</p>
 
         <p>Scale this pattern up and you get a $254 billion creator economy with 245 to 275 million people building their own economic systems. 91% of those creators report using AI tools. That is not a niche hobby. That is a parallel economy, and it is running on the same sensor-layer tools that the previous sections describe.</p>
 
@@ -165,7 +165,7 @@ export const theHumanSensorLayerData: ResearchData = {
     { text: 'Mangtani, R. (2026). <em>The Human Yield: What happens when showing up is the whole job</em>.', url: '/writing/the-human-yield' },
     { text: 'Mangtani, R. (2026). <em>The Positive Loop: How AI Broke the Doom Scroll</em>.', url: '/writing/the-positive-loop' },
     { text: 'Mangtani, R. (2026). <em>The Future of PM</em>.', url: '/writing/the-future-of-pm' },
-    { text: 'Mangtani, R. (2024). <em>Preference for Legible Risk</em>.', url: '/writing/honest-gambling' },
+    { text: 'Mangtani, R. (2024). <em>Preference for Legible Risk</em>.', url: '/writing/preference-for-legible-risk' },
     { text: 'Mangtani, R. (2025). <em>The Gameable Society</em>.', url: '/writing/the-gameable-society' },
   ],
 
@@ -173,7 +173,7 @@ export const theHumanSensorLayerData: ResearchData = {
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
-    { title: 'Preference for Legible Risk', href: '/writing/honest-gambling' },
+    { title: 'Preference for Legible Risk', href: '/writing/preference-for-legible-risk' },
     { title: 'The Gameable Society', href: '/writing/the-gameable-society' },
   ],
 
