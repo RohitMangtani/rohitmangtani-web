@@ -9,7 +9,7 @@ export const theSteeringWheelData: ResearchData = {
 
   onRamp: {
     description:
-      'I am not an engineer. I do not write code. I use AI to build things by describing what I want and watching it get made. The problem was that I could not actually watch it. Everything happened in terminal text I had to read and parse. So I built something that lets me see it instead. Colored dots, like a traffic light. Green means working. Red means done. Yellow means it needs me. That is the whole idea.',
+      'I am not a software engineer. I took a few coding classes and started using ChatGPT when it first came out, but I build things with AI by describing what I want and watching it get made. The problem was that I could not actually watch it. Everything happened in terminal text I had to read and parse. So I built something that lets me see it instead. Colored dots, like a traffic light. Green means working. Red means done. Yellow means it needs me. That is the whole idea.',
     whatItDoes:
       'Walks through why I built Hive, what the visual layer does, and why seeing what AI is doing matters more than reading what AI is doing. Includes a link to the live dashboard.',
     whatItDoesNot:
@@ -24,7 +24,7 @@ export const theSteeringWheelData: ResearchData = {
       id: 'how-this-started',
       title: 'How This Started',
       content: `
-<p>I do not have a coding background. I started using Claude Code a few months ago to build things I had in my head but could not make on my own. I would describe what I wanted, and AI agents would build it. That part worked surprisingly well.</p>
+<p>I am not a software engineer. I took a few basic coding classes and started using ChatGPT when it first came out, but most of what I build now is through AI agents. I describe what I want, and they build it. That part worked surprisingly well.</p>
 
 <p>The part that did not work was keeping track of what was happening. I was running four AI agents at the same time, each one working on a different piece of a system, and I had no idea at a glance what any of them were doing. I had to read terminal output. Scroll through it. Try to hold the state of four different threads in my head. The energy I was spending just knowing where things stood was eating the energy I needed to think about where things should go.</p>
 
