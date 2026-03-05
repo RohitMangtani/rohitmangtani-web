@@ -56,6 +56,8 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>Part of why it works is that the tiles match my actual screen. My laptop has four terminals arranged in a 2x2 grid. The dashboard on my phone has four tiles in the same layout. Top-left terminal is the authentication refactor. Top-left tile on my phone is the same thing. I see a yellow dot bottom-left and I already know which agent that is, because I can see the bottom-left terminal on my screen. I never read a name. I just know where things are because the dashboard mirrors what is already in front of me.</p>
 
+<p>And because it is on my phone, I do not have to be at my desk. The agents keep running on my laptop. I can be on the couch, at a coffee shop, wherever. I glance at the tiles, and if something needs steering I send a message. The work does not stop when I walk away.</p>
+
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong. And I respond to that faster than I ever responded to log output.</p>
       `.trim(),
     },
