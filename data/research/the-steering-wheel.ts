@@ -98,9 +98,7 @@ export const theSteeringWheelData: ResearchData = {
     },
   ],
 
-  references: [
-    { text: 'Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.' },
-  ],
+  references: [],
 
   relatedWork: [],
 
