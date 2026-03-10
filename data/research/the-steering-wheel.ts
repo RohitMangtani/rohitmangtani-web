@@ -58,6 +58,8 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>And because it is on my phone, I do not have to be at my desk. The agents keep running on my Mac mini at home, and I can be on the couch, at a coffee shop, wherever. I glance at the tiles, and if something needs steering I send a message. The work does not stop when I walk away, and most of the time I come back and things are finished. The agents handle routine approvals on their own, so they just keep going. The yellow dot only shows up when something genuinely needs me.</p>
 
+<p>The spatial layout also makes it natural to move work between agents. I do not think in terms of agent IDs or session names, I think in terms of position. That one found something, send it to that one. The grid gives you a visual memory of what is where, and that is enough to direct traffic between them without reading any of the actual output. You are just pointing.</p>
+
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong, and I respond to that faster than I ever responded to log output.</p>
       `.trim(),
     },
@@ -95,7 +97,7 @@ export const theSteeringWheelData: ResearchData = {
       id: 'try-it',
       title: 'Try It',
       content: `
-<p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it. The whole loop is describe, watch, adjust. It made building things with AI a lot less stressful for me.</p>
+<p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it. The whole loop is describe, watch, adjust. You do not need to understand the code to do any of that. You can look at two agents that just finished, point a third one at both, and say "summarize what those two found." The visual layer is what makes that possible, because you are working from what you see, not what you read in a terminal.</p>
 
 <p>Sharing it in case anyone finds the same value in it.</p>
 
