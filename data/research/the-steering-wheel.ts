@@ -86,6 +86,8 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>There is also an autopilot that handles routine interruptions. Permission prompts get approved automatically and simple questions get answered without me. There is a grace period for me to override, and then the system answers and the agent keeps going. The stuff that actually needs my judgment shows up as yellow, and everything else stays green.</p>
 
+<p>It also does not care which AI tool you are running. The system detects any terminal agent automatically, whether it is Claude, Codex, or something else. Each one gets a tile and the same status detection, so you can mix tools in the same grid without changing anything.</p>
+
 <p>This is also not for everyone. You need to be running multiple AI agents to get anything out of it. If you are using AI one conversation at a time, you do not need this. It is for the situation where you have crossed into running parallel work and you are drowning in terminal output.</p>
       `.trim(),
     },
