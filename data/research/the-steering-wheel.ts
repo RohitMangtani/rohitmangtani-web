@@ -73,7 +73,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>I pointed a third agent at both findings and asked it to produce a unified fix. I did not write any code. I just saw something that looked wrong, and it turned out to be wrong. That is the kind of thing the visual layer makes possible.</p>
 
-<p>Later, the agents started doing some of that bridging themselves. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. That works across different AI tools too, so a Claude agent can hand something off to a Codex agent or the other way around. I do not always have to be the middleman.</p>
+<p>Later, the agents started doing some of that bridging themselves. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. I do not always have to be the middleman.</p>
       `.trim(),
     },
     {
@@ -86,7 +86,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>There is also an autopilot that handles routine interruptions. Permission prompts get approved automatically and simple questions get answered without me. There is a grace period for me to override, and then the system answers and the agent keeps going. The stuff that actually needs my judgment shows up as yellow, and everything else stays green.</p>
 
-<p>It also does not care which AI tool you are running. The system detects any terminal agent automatically, whether it is Claude, Codex, or something else. Each one gets a tile and the same status detection, so you can mix tools in the same grid and pass work between them without changing anything.</p>
+<p>It also does not care which AI tool you are running. The system detects any terminal agent automatically and each one gets a tile and the same status detection, so you can mix tools in the same grid without changing anything.</p>
 
 <p>This is also not for everyone. You need to be running multiple AI agents to get anything out of it. If you are using AI one conversation at a time, you do not need this. It is for the situation where you have crossed into running parallel work and you are drowning in terminal output.</p>
       `.trim(),
