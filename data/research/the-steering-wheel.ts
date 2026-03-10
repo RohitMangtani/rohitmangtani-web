@@ -26,7 +26,7 @@ export const theSteeringWheelData: ResearchData = {
       content: `
 <p>I am not a software engineer. I took a few basic coding classes and started using ChatGPT when it first came out, but most of what I build now is through AI agents. I describe what I want, and they build it. That part worked surprisingly well.</p>
 
-<p>The part that did not work was keeping track of what was happening. I was running four AI agents at the same time, each one working on a different piece of a system, and I had no idea at a glance what any of them were doing. I had to read terminal output. Scroll through it. Try to hold the state of four different threads in my head. The energy I was spending just knowing where things stood was eating the energy I needed to think about where things should go.</p>
+<p>The part that did not work was keeping track of what was happening. I was running four AI agents at the same time, each one working on a different piece of a system, sometimes in completely different projects. Four agents means four things getting built at once. But I had no idea at a glance what any of them were doing. I had to read terminal output. Scroll through it. Try to hold the state of four different threads in my head. The energy I was spending just knowing where things stood was eating the energy I needed to think about where things should go.</p>
 
 <p>So I made something to fix that. Not a product, just a way to see what was going on without reading terminal text all day.</p>
       `.trim(),
@@ -56,7 +56,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>Part of why it works is that the tiles match my actual screen. My Mac mini has four terminals arranged in a 2x2 grid. The dashboard on my phone has four tiles in the same layout. Top-left terminal is the authentication refactor. Top-left tile on my phone is the same thing. I see a yellow dot bottom-left and I already know which agent that is, because I can see the bottom-left terminal on my screen. I never read a name. I just know where things are because the dashboard mirrors what is already in front of me.</p>
 
-<p>And because it is on my phone, I do not have to be at my desk. The agents keep running on my Mac mini at home. I can be on the couch, at a coffee shop, wherever. I glance at the tiles, and if something needs steering I send a message. The work does not stop when I walk away.</p>
+<p>And because it is on my phone, I do not have to be at my desk. The agents keep running on my Mac mini at home. I can be on the couch, at a coffee shop, wherever. I glance at the tiles, and if something needs steering I send a message. The work does not stop when I walk away. Most of the time I come back and things are finished. The agents handle routine approvals on their own, so they just keep going. The yellow dot only shows up when something genuinely needs me.</p>
 
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong. And I respond to that faster than I ever responded to log output.</p>
       `.trim(),
@@ -72,6 +72,8 @@ export const theSteeringWheelData: ResearchData = {
 <p>I was just watching the dashboard. Agent 3 never turned red, even when it should have. I noticed that visually, not from a log. Agent 4 found the root cause: one agent's activity was being attributed to the wrong tile, so Agent 3's status was being driven by Agent 4's work. Agent 3, meanwhile, found a separate bug in how the system detected whether an agent was done. Two independent investigations. Two bugs that interacted with each other.</p>
 
 <p>I pointed a third agent at both findings and asked it to produce a unified fix. I did not write any code. I just saw something that looked wrong, and it turned out to be wrong. That is the kind of thing the visual layer makes possible.</p>
+
+<p>Later, the agents started doing some of that bridging themselves. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. I do not always have to be the middleman.</p>
       `.trim(),
     },
     {
