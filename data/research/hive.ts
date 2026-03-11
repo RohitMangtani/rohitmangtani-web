@@ -63,7 +63,7 @@ export const hiveData: ResearchData = {
       id: 'how-it-works',
       title: 'How It Works',
       content: `
-<p>The daemon runs locally, managed by launchd. It has an API for coordination, a WebSocket server for the live dashboard, and a tunnel that makes the dashboard accessible from any device. It snapshots its state every 30 seconds, so if you restart your computer, the routing and queues restore automatically.</p>
+<p>The daemon runs locally on your machine. In the GitHub flow, you start it with npm start, which runs the daemon and opens the tunnel for the hosted dashboard. It has an API for coordination, a WebSocket server for the live dashboard, and it snapshots state every 30 seconds so queues and other coordination state survive restarts while terminal routing re-associates after the first prompt in each Claude terminal.</p>
       `.trim(),
       subsections: [
         {
@@ -99,7 +99,7 @@ export const hiveData: ResearchData = {
           content: `
 <p>Four agents working in shared codebases will eventually collide. Two editing the same file. One designing an API another needs to consume.</p>
 
-<p>Hive handles this with a few primitives. Every agent sees what the others are doing: on each prompt, the daemon injects a one-line peer summary showing which agents are working, idle, or stuck and what they are doing right now. This is passive awareness, not a manual check. File locks let an agent claim a file and get blocked if someone else holds it. Inter-agent messaging lets any agent send a prompt to any other. A shared scratchpad stores working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched a file you are about to edit.</p>
+<p>Hive handles this with a few primitives. Claude agents get a one-line peer summary on each prompt showing which agents are working, idle, or stuck and what they are doing right now, while Codex workers still share the same fleet state through the dashboard, scratchpad, and API. This is passive awareness, not a manual check. File locks let an agent claim a file and get blocked if someone else holds it. Inter-agent messaging lets any agent send a prompt to any other. A shared scratchpad stores working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched a file you are about to edit.</p>
 
 <p>There is also a task queue. Push a task and the daemon dispatches it to the next idle agent. You can tag related tasks with the same workflow ID, and when one step finishes, the next agent automatically gets a summary of what was done and which files changed before starting its task.</p>
           `.trim(),
