@@ -125,15 +125,16 @@
   <!-- Layer 2: Coordination & Detection -->
   <rect x="40" y="342" width="820" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
   <text x="60" y="364" font-size="11" font-weight="600" fill="#1c1917">Coordination Layer</text>
-  <text x="60" y="380" font-size="9" fill="#a8a29e">Local daemon (launchd). Express API + WebSocket server. How agents stay in sync.</text>
+  <text x="60" y="380" font-size="9" fill="#a8a29e">Local daemon (Node.js). Express API + WebSocket server. How agents stay in sync.</text>
 
   <text x="60" y="400" font-size="8.5" fill="#44403c">Auto-discovery</text>
-  <text x="180" y="400" font-size="8.5" fill="#44403c">Status detection</text>
-  <text x="310" y="400" font-size="8.5" fill="#44403c">File locks</text>
-  <text x="400" y="400" font-size="8.5" fill="#44403c">Task queue</text>
-  <text x="500" y="400" font-size="8.5" fill="#44403c">Messaging</text>
-  <text x="600" y="400" font-size="8.5" fill="#44403c">Conflict detection</text>
-  <text x="730" y="400" font-size="8.5" fill="#44403c">Auto-pilot</text>
+  <text x="170" y="400" font-size="8.5" fill="#44403c">Status detection</text>
+  <text x="290" y="400" font-size="8.5" fill="#44403c">File locks</text>
+  <text x="370" y="400" font-size="8.5" fill="#44403c">Task queue</text>
+  <text x="455" y="400" font-size="8.5" fill="#44403c">Messaging</text>
+  <text x="540" y="400" font-size="8.5" fill="#44403c">Workflow handoff</text>
+  <text x="665" y="400" font-size="8.5" fill="#44403c">Auto-pilot</text>
+  <text x="745" y="400" font-size="8.5" fill="#44403c">Watchdog</text>
 
   <!-- Arrow down -->
   <line x1="450" y1="418" x2="450" y2="436" stroke="#d6d3d1" stroke-width="1.2"/>
@@ -148,7 +149,7 @@
   <!-- Layer 3b: Agent Layer -->
   <rect x="460" y="444" width="400" height="56" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
   <text x="480" y="466" font-size="11" font-weight="600" fill="#1c1917">Agent Layer</text>
-  <text x="480" y="482" font-size="9" fill="#a8a29e">Claude Code instances. Any provider, any project.</text>
+  <text x="480" y="482" font-size="9" fill="#a8a29e">Claude Code + Codex today. Any provider, any project.</text>
   <text x="480" y="494" font-size="8.5" fill="#44403c">4 today. 10 when hardware allows. Models improve from below.</text>
 
   <!-- Vertical side labels -->

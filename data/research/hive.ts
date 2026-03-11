@@ -63,7 +63,7 @@ export const hiveData: ResearchData = {
       id: 'how-it-works',
       title: 'How It Works',
       content: `
-<p>The daemon runs locally on your machine. In the standard GitHub flow, you run <code>npm run launch</code>, which starts the daemon, opens a Cloudflare tunnel for the WebSocket server, deploys or updates your own hosted dashboard on Vercel, and opens that URL. The terminals stay on your machine. The dashboard is what becomes remote. If you only want localhost, there is still a local fallback. Underneath that, Hive has an API for coordination, a WebSocket server for the live dashboard, and it snapshots state every 30 seconds so queues and other coordination state survive restarts while terminal routing re-associates after the first prompt in each Claude terminal.</p>
+<p>The daemon runs locally on your machine. In the standard GitHub flow, you run <code>npm start</code> to start the daemon and open a Cloudflare tunnel, then <code>npm run deploy:dashboard</code> to deploy your own hosted dashboard on Vercel. The terminals stay on your machine. The dashboard is what becomes remote. If you only want localhost, there is still a local fallback. Underneath that, Hive has an API for coordination, a WebSocket server for the live dashboard, and it snapshots state every 30 seconds so queues and other coordination state survive restarts while terminal routing re-associates after the first prompt in each Claude terminal.</p>
       `.trim(),
       subsections: [
         {
@@ -230,7 +230,7 @@ export const hiveData: ResearchData = {
       content: `
 <p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it from my phone. The whole loop is describe, watch, adjust.</p>
 
-<p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code and/or Codex, run setup, log into Vercel once, then run <code>npm run launch</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
+<p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code and/or Codex, run setup, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
 
 <p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">github.com/RohitMangtani/hive</a></p>
       `.trim(),
