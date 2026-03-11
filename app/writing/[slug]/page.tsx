@@ -12,7 +12,7 @@ import { safeModeData } from '@/data/research/safe-mode';
 import { techIsNotTechAnymoreData } from '@/data/research/tech-is-not-tech-anymore';
 import { theCompoundData } from '@/data/research/the-compound';
 import { theSplitData } from '@/data/research/the-split';
-import { theSteeringWheelData } from '@/data/research/the-steering-wheel';
+import { aVisualWorkflowForAiAgentsData } from '@/data/research/a-visual-workflow-for-ai-agents';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -30,7 +30,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'safe-mode': { data: safeModeData },
   'the-compound': { data: theCompoundData },
   'the-split': { data: theSplitData },
-  'a-visual-workflow-for-ai-agents': { data: theSteeringWheelData },
+  'a-visual-workflow-for-ai-agents': { data: aVisualWorkflowForAiAgentsData },
 };
 
 export async function generateStaticParams() {
