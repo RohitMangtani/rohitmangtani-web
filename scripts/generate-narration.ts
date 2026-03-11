@@ -17,7 +17,7 @@ import { hiveData } from '../data/research/hive';
 import { safeModeData } from '../data/research/safe-mode';
 import { techIsNotTechAnymoreData } from '../data/research/tech-is-not-tech-anymore';
 import { theReferencePointData } from '../data/research/the-reference-point';
-import { theSteeringWheelData } from '../data/research/the-steering-wheel';
+import { aVisualWorkflowForAiAgentsData } from '../data/research/a-visual-workflow-for-ai-agents';
 
 const articles: Record<string, { slug: string; title: string; subtitle: string; sections: any[] }> = {
   'the-positive-loop': thePositiveLoopData,
@@ -35,7 +35,7 @@ const articles: Record<string, { slug: string; title: string; subtitle: string; 
   'safe-mode': safeModeData,
   'tech-is-not-tech-anymore': techIsNotTechAnymoreData,
   'the-reference-point': theReferencePointData,
-  'the-steering-wheel': theSteeringWheelData,
+  'a-visual-workflow-for-ai-agents': aVisualWorkflowForAiAgentsData,
 };
 
 const VOICE = 'en-US-AriaNeural';
