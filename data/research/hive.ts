@@ -195,7 +195,7 @@ export const hiveData: ResearchData = {
 <p>Now replace devices with AI agents. You are running a Claude instance refactoring your backend. An OpenAI Codex agent writing tests in a different repo. A Gemini agent researching competitors. Each one came from a different provider, uses a different API, runs in a different environment. Today, you alt-tab between three separate interfaces with three separate mental models. No shared view. No coordination. No way to glance at one screen and know what all of them are doing.</p>
 
 <figure class="my-8">
-  <img src="/images/research/hive-endstate.svg" alt="Hive end state: one visual layer connecting Anthropic, OpenAI, and Google agents through a universal coordination layer" class="w-full rounded-lg border border-[var(--border)]" />
+  <img src="/images/research/hive-endstate.svg" alt="Hive today to next: local terminal agents mirrored to a hosted dashboard, with coordination primitives in the middle and a provider-agnostic fleet interface above model vendors on the right" class="w-full rounded-lg border border-[var(--border)]" />
 </figure>
 
 <p>The end state is a universal visual layer. One dashboard. You hit "Add Instance" and pick a provider: Anthropic, OpenAI, Google, whoever ships next quarter. The agent appears as a tile. Green means working. Red means idle. You type into the tile and your message goes to that agent, regardless of which company built it. The coordination layer underneath handles status detection, file locks, conflict prevention, compound learning, all of it, across providers.</p>
