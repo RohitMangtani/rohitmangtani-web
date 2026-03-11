@@ -97,7 +97,7 @@ export const hiveData: ResearchData = {
           content: `
 <p>Four agents working in shared codebases will eventually collide. Two editing the same file. One designing an API another needs to consume.</p>
 
-<p>Hive handles this with a few primitives. Inter-agent messaging lets any agent send a prompt to any other. Advisory file locks let an agent claim a file and get a warning if someone else holds it. A shared scratchpad stores working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched a file you are about to edit.</p>
+<p>Hive handles this with a few primitives. Every agent sees what the others are doing: on each prompt, the daemon injects a one-line peer summary showing which agents are working, idle, or stuck and what they are doing right now. This is passive awareness, not a manual check. File locks let an agent claim a file and get blocked if someone else holds it. Inter-agent messaging lets any agent send a prompt to any other. A shared scratchpad stores working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched a file you are about to edit.</p>
 
 <p>There is also a task queue. Push a task and the daemon dispatches it to the next idle agent. You can tag related tasks with the same workflow ID, and when one step finishes, the next agent automatically gets a summary of what was done and which files changed before starting its task.</p>
           `.trim(),
