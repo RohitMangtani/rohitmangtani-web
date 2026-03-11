@@ -1,166 +1,144 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fafaf9"/>
+    </linearGradient>
+  </defs>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   </style>
 
-  <!-- Background -->
-  <rect width="900" height="600" rx="8" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
+  <rect width="900" height="620" rx="12" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
 
-  <!-- Title -->
-  <text x="450" y="32" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917" letter-spacing="0.06em">BUILDING WITH THE VISUAL LAYER</text>
-  <text x="450" y="48" text-anchor="middle" font-size="10" fill="#a8a29e">What development becomes.</text>
+  <text x="450" y="34" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1917" letter-spacing="0.08em">THE VISUAL WORKFLOW</text>
+  <text x="450" y="52" text-anchor="middle" font-size="10" fill="#78716c">What Hive changes: not the models, the way you see and steer them.</text>
 
-  <!-- ═══════════ HORIZONTAL FLOW ═══════════ -->
+  <rect x="28" y="78" width="250" height="300" rx="14" fill="url(#panelFill)" stroke="#e7e5e4" stroke-width="1" filter="url(#shadow)"/>
+  <text x="48" y="106" font-size="12" font-weight="700" fill="#1c1917">1. Your machine</text>
+  <text x="48" y="124" font-size="9.5" fill="#78716c">Four local terminals doing real work.</text>
 
-  <!-- Step 1: Idea -->
-  <rect x="24" y="70" width="130" height="52" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="89" y="92" text-anchor="middle" font-size="9.5" font-weight="500" fill="#166534">You have an idea</text>
-  <text x="89" y="106" text-anchor="middle" font-size="9.5" fill="#166534">in your head.</text>
+  <rect x="48" y="148" width="96" height="84" rx="10" fill="#111827"/>
+  <rect x="56" y="156" width="80" height="12" rx="6" fill="#1f2937"/>
+  <circle cx="64" cy="162" r="2" fill="#22c55e"/>
+  <text x="74" y="165" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
+  <text x="58" y="184" font-size="8" fill="#d6d3d1">Q1  auth refactor</text>
+  <text x="58" y="198" font-size="7" fill="#9ca3af">$ pnpm test auth</text>
+  <text x="58" y="210" font-size="7" fill="#6b7280">passing 14/14</text>
 
-  <!-- Arrow -->
-  <line x1="158" y1="96" x2="176" y2="96" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="174,91 184,96 174,101" fill="#d6d3d1"/>
+  <rect x="158" y="148" width="96" height="84" rx="10" fill="#111827"/>
+  <rect x="166" y="156" width="80" height="12" rx="6" fill="#1f2937"/>
+  <circle cx="174" cy="162" r="2" fill="#22c55e"/>
+  <text x="184" y="165" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
+  <text x="168" y="184" font-size="8" fill="#d6d3d1">Q2  dashboard bug</text>
+  <text x="168" y="198" font-size="7" fill="#9ca3af">$ tracing websocket</text>
+  <text x="168" y="210" font-size="7" fill="#6b7280">watching events...</text>
 
-  <!-- Step 2: Describe -->
-  <rect x="186" y="70" width="130" height="52" rx="4" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="251" y="92" text-anchor="middle" font-size="9.5" font-weight="500" fill="#44403c">Describe it in</text>
-  <text x="251" y="106" text-anchor="middle" font-size="9.5" fill="#44403c">plain language.</text>
+  <rect x="48" y="244" width="96" height="84" rx="10" fill="#111827"/>
+  <rect x="56" y="252" width="80" height="12" rx="6" fill="#1f2937"/>
+  <circle cx="64" cy="258" r="2" fill="#eab308"/>
+  <text x="74" y="261" font-size="6.5" font-weight="700" fill="#fde68a">Claude</text>
+  <text x="58" y="280" font-size="8" fill="#d6d3d1">Q3  review pending</text>
+  <text x="58" y="294" font-size="7" fill="#9ca3af">$ waiting on input</text>
+  <text x="58" y="306" font-size="7" fill="#6b7280">needs a decision</text>
 
-  <!-- Arrow -->
-  <line x1="320" y1="96" x2="338" y2="96" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="336,91 346,96 336,101" fill="#d6d3d1"/>
+  <rect x="158" y="244" width="96" height="84" rx="10" fill="#111827"/>
+  <rect x="166" y="252" width="80" height="12" rx="6" fill="#1f2937"/>
+  <circle cx="174" cy="258" r="2" fill="#3b82f6"/>
+  <text x="184" y="261" font-size="6.5" font-weight="700" fill="#93c5fd">Codex</text>
+  <text x="168" y="280" font-size="8" fill="#d6d3d1">Q4  system audit</text>
+  <text x="168" y="294" font-size="7" fill="#9ca3af">$ checking drift</text>
+  <text x="168" y="306" font-size="7" fill="#6b7280">cross-model review</text>
 
-  <!-- Step 3: See it forming -->
-  <rect x="348" y="66" width="148" height="60" rx="4" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
-  <text x="422" y="88" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">See it forming.</text>
-  <text x="422" y="104" text-anchor="middle" font-size="8.5" fill="#1e40af">The artifact appears as</text>
-  <text x="422" y="116" text-anchor="middle" font-size="8.5" fill="#1e40af">the AI builds it.</text>
+  <text x="153" y="354" text-anchor="middle" font-size="9.5" font-weight="600" fill="#57534e">The layout on screen matters.</text>
+  <text x="153" y="369" text-anchor="middle" font-size="8.5" fill="#a8a29e">Top-left terminal becomes the top-left tile.</text>
 
-  <!-- Arrow -->
-  <line x1="500" y1="96" x2="518" y2="96" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="516,91 526,96 516,101" fill="#d6d3d1"/>
+  <line x1="292" y1="228" x2="322" y2="228" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="318,223 328,228 318,233" fill="#d6d3d1"/>
+  <text x="309" y="214" text-anchor="middle" font-size="8.5" fill="#78716c">mirrored 1:1</text>
 
-  <!-- Step 4: Feel — THE SENSOR LAYER -->
-  <!-- Main box (expanded) -->
-  <rect x="528" y="62" width="148" height="112" rx="4" fill="#fce7f3" stroke="#fbcfe8" stroke-width="1"/>
-  <text x="602" y="82" text-anchor="middle" font-size="10" font-weight="600" fill="#9d174d">Feel whether</text>
-  <text x="602" y="96" text-anchor="middle" font-size="10" font-weight="600" fill="#9d174d">it is right.</text>
-  <text x="602" y="112" text-anchor="middle" font-size="8.5" fill="#9d174d">Your eyes. 13 milliseconds.</text>
+  <rect x="336" y="78" width="250" height="300" rx="14" fill="url(#panelFill)" stroke="#e7e5e4" stroke-width="1" filter="url(#shadow)"/>
+  <text x="356" y="106" font-size="12" font-weight="700" fill="#1c1917">2. Hosted dashboard</text>
+  <text x="356" y="124" font-size="9.5" fill="#78716c">The same grid, visible from your phone.</text>
 
-  <!-- Divider inside Feel box -->
-  <line x1="540" y1="120" x2="664" y2="120" stroke="#fbcfe8" stroke-width="0.8"/>
+  <rect x="408" y="146" width="104" height="180" rx="22" fill="#18181b" stroke="#44403c" stroke-width="1"/>
+  <rect x="444" y="154" width="32" height="6" rx="3" fill="#44403c"/>
+  <rect x="420" y="170" width="80" height="20" rx="10" fill="#111827"/>
+  <text x="460" y="184" text-anchor="middle" font-size="7.5" font-weight="700" fill="#fafaf9">HIVE</text>
+  <rect x="420" y="198" width="36" height="46" rx="10" fill="#22c55e" fill-opacity="0.16" stroke="#22c55e" stroke-width="1"/>
+  <text x="438" y="216" text-anchor="middle" font-size="7" font-weight="700" fill="#166534">Q1</text>
+  <text x="438" y="228" text-anchor="middle" font-size="6.5" fill="#166534">working</text>
+  <rect x="464" y="198" width="36" height="46" rx="10" fill="#22c55e" fill-opacity="0.16" stroke="#22c55e" stroke-width="1"/>
+  <text x="482" y="216" text-anchor="middle" font-size="7" font-weight="700" fill="#166534">Q2</text>
+  <text x="482" y="228" text-anchor="middle" font-size="6.5" fill="#166534">working</text>
+  <rect x="420" y="252" width="36" height="46" rx="10" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
+  <text x="438" y="270" text-anchor="middle" font-size="7" font-weight="700" fill="#92400e">Q3</text>
+  <text x="438" y="282" text-anchor="middle" font-size="6.5" fill="#92400e">needs you</text>
+  <rect x="464" y="252" width="36" height="46" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="482" y="270" text-anchor="middle" font-size="7" font-weight="700" fill="#1d4ed8">Q4</text>
+  <text x="482" y="282" text-anchor="middle" font-size="6.5" fill="#1d4ed8">auditing</text>
+  <rect x="420" y="304" width="80" height="10" rx="5" fill="#111827"/>
+  <text x="460" y="312" text-anchor="middle" font-size="6.5" fill="#a8a29e">tap a tile to message it</text>
 
-  <!-- Sensor framework icons/labels -->
-  <text x="602" y="134" text-anchor="middle" font-size="7.5" font-weight="500" fill="#9d174d" letter-spacing="0.04em">YOU ARE THE SENSOR</text>
+  <text x="460" y="354" text-anchor="middle" font-size="9.5" font-weight="600" fill="#57534e">You do not read four terminals anymore.</text>
+  <text x="460" y="369" text-anchor="middle" font-size="8.5" fill="#a8a29e">You glance at four positions and know what matters.</text>
 
-  <!-- Sensory modes row -->
-  <text x="551" y="150" text-anchor="middle" font-size="8" fill="#be185d">Look</text>
-  <text x="585" y="150" text-anchor="middle" font-size="8" fill="#be185d">Feel</text>
-  <text x="619" y="150" text-anchor="middle" font-size="8" fill="#be185d">Sense</text>
-  <text x="653" y="150" text-anchor="middle" font-size="8" fill="#be185d">Touch</text>
+  <line x1="600" y1="228" x2="630" y2="228" stroke="#d6d3d1" stroke-width="1.5"/>
+  <polygon points="626,223 636,228 626,233" fill="#d6d3d1"/>
+  <text x="615" y="214" text-anchor="middle" font-size="8.5" fill="#78716c">human steers</text>
 
-  <!-- Small dots between modes -->
-  <circle cx="568" cy="148" r="1" fill="#fbcfe8"/>
-  <circle cx="602" cy="148" r="1" fill="#fbcfe8"/>
-  <circle cx="636" cy="148" r="1" fill="#fbcfe8"/>
+  <rect x="644" y="78" width="228" height="300" rx="14" fill="url(#panelFill)" stroke="#e7e5e4" stroke-width="1" filter="url(#shadow)"/>
+  <text x="664" y="106" font-size="12" font-weight="700" fill="#1c1917">3. Steering loop</text>
+  <text x="664" y="124" font-size="9.5" fill="#78716c">What the visual layer actually unlocks.</text>
 
-  <!-- Bottom note -->
-  <text x="602" y="166" text-anchor="middle" font-size="7" fill="#9d174d">Ask AI to render in any framework.</text>
+  <rect x="664" y="148" width="188" height="46" rx="12" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <circle cx="682" cy="171" r="6" fill="#eab308"/>
+  <text x="698" y="167" font-size="9.5" font-weight="600" fill="#1c1917">Notice a yellow tile.</text>
+  <text x="698" y="181" font-size="8.5" fill="#78716c">Your eye goes there before you read anything.</text>
 
-  <!-- Arrow from Feel to Steer -->
-  <line x1="680" y1="96" x2="698" y2="96" stroke="#d6d3d1" stroke-width="1.5"/>
-  <polygon points="696,91 706,96 696,101" fill="#d6d3d1"/>
+  <rect x="664" y="206" width="188" height="46" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="682" cy="229" r="6" fill="#3b82f6"/>
+  <text x="698" y="225" font-size="9.5" font-weight="600" fill="#1c1917">Tap and send direction.</text>
+  <text x="698" y="239" font-size="8.5" fill="#78716c">"Summarize what Q1 and Q2 found."</text>
 
-  <!-- Step 5: Steer / Ship -->
-  <rect x="708" y="70" width="166" height="52" rx="4" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
-  <text x="791" y="90" text-anchor="middle" font-size="9.5" font-weight="500" fill="#166534">Steer it with a sentence.</text>
-  <text x="791" y="106" text-anchor="middle" font-size="9.5" fill="#166534">Ship when it matches.</text>
+  <rect x="664" y="264" width="188" height="46" rx="12" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="1"/>
+  <circle cx="682" cy="287" r="6" fill="#22c55e"/>
+  <text x="698" y="283" font-size="9.5" font-weight="600" fill="#1c1917">Route a handoff.</text>
+  <text x="698" y="297" font-size="8.5" fill="#78716c">Claude researches. Codex builds from the result.</text>
 
-  <!-- Loop arrow back -->
-  <path d="M 874 86 L 886 86 L 886 56 L 422 56 L 422 64" stroke="#22c55e" stroke-width="1.2" fill="none" stroke-dasharray="4,3"/>
-  <polygon points="416,62 422,72 428,62" fill="#22c55e"/>
-  <text x="654" y="53" text-anchor="middle" font-size="8" fill="#22c55e">Each cycle: minutes. The idea stays intact because you see it at every step.</text>
+  <rect x="664" y="322" width="188" height="46" rx="12" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1"/>
+  <circle cx="682" cy="345" r="6" fill="#a855f7"/>
+  <text x="698" y="341" font-size="9.5" font-weight="600" fill="#1c1917">Audit across models.</text>
+  <text x="698" y="355" font-size="8.5" fill="#78716c">One model catches drift another one missed.</text>
 
-  <!-- ═══════════ SEPARATOR ═══════════ -->
-  <line x1="40" y1="196" x2="860" y2="196" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="450" y="216" text-anchor="middle" font-size="10" fill="#a8a29e">What makes it work.</text>
+  <line x1="40" y1="406" x2="860" y2="406" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="450" y="426" text-anchor="middle" font-size="10" fill="#a8a29e">What the daemon is doing underneath.</text>
 
-  <!-- ═══════════ TECHNICAL LAYERS ═══════════ -->
+  <rect x="40" y="444" width="820" height="92" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="64" y="468" font-size="11" font-weight="700" fill="#1c1917">The coordination layer</text>
+  <text x="64" y="486" font-size="9" fill="#a8a29e">This is why the visual layer works in practice, not just in theory.</text>
 
-  <!-- Layer 1: The Visual Interface -->
-  <rect x="40" y="232" width="820" height="80" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="60" y="254" font-size="11" font-weight="600" fill="#1c1917">The Visual Interface</text>
-  <text x="60" y="270" font-size="9" fill="#a8a29e">What the human sees. Real-time dashboard accessible from any device.</text>
+  <text x="64" y="512" font-size="8.8" fill="#44403c">Window-position mapping</text>
+  <text x="188" y="512" font-size="8.8" fill="#44403c">Status detection</text>
+  <text x="290" y="512" font-size="8.8" fill="#44403c">Messaging</text>
+  <text x="364" y="512" font-size="8.8" fill="#44403c">Workflow handoffs</text>
+  <text x="478" y="512" font-size="8.8" fill="#44403c">Cross-model use</text>
+  <text x="582" y="512" font-size="8.8" fill="#44403c">Autopilot + watchdog</text>
+  <text x="718" y="512" font-size="8.8" fill="#44403c">Learned context</text>
 
-  <!-- Status dots illustration -->
-  <rect x="60" y="282" width="80" height="22" rx="3" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="0.5"/>
-  <circle cx="74" cy="293" r="5" fill="#22c55e"/>
-  <circle cx="90" cy="293" r="5" fill="#22c55e"/>
-  <circle cx="106" cy="293" r="5" fill="#eab308"/>
-  <circle cx="122" cy="293" r="5" fill="#ef4444"/>
+  <text x="64" y="528" font-size="8" fill="#a8a29e">Top-left terminal stays top-left tile</text>
+  <text x="188" y="528" font-size="8" fill="#a8a29e">Hook, JSONL, CPU, and PTY signals</text>
+  <text x="290" y="528" font-size="8" fill="#a8a29e">Direct messages from any device</text>
+  <text x="364" y="528" font-size="8" fill="#a8a29e">Focused summaries, not a shared mind</text>
+  <text x="478" y="528" font-size="8" fill="#a8a29e">Claude and Codex in one grid</text>
+  <text x="582" y="528" font-size="8" fill="#a8a29e">Routine interruptions handled automatically</text>
+  <text x="718" y="528" font-size="8" fill="#a8a29e">Project learnings compound over time</text>
 
-  <!-- Dashboard features -->
-  <text x="160" y="294" font-size="8.5" fill="#44403c">Colored tiles</text>
-  <text x="160" y="305" font-size="8" fill="#a8a29e">Green / Yellow / Red</text>
-
-  <text x="280" y="294" font-size="8.5" fill="#44403c">Spatial grid</text>
-  <text x="280" y="305" font-size="8" fill="#a8a29e">Q1 Q2 Q3 Q4 positions</text>
-
-  <text x="400" y="294" font-size="8.5" fill="#44403c">Tap to talk</text>
-  <text x="400" y="305" font-size="8" fill="#a8a29e">Plain English messages</text>
-
-  <text x="520" y="294" font-size="8.5" fill="#44403c">Live status</text>
-  <text x="520" y="305" font-size="8" fill="#a8a29e">WebSocket real-time updates</text>
-
-  <text x="650" y="294" font-size="8.5" fill="#44403c">Action history</text>
-  <text x="650" y="305" font-size="8" fill="#a8a29e">What each agent just did</text>
-
-  <text x="780" y="294" font-size="8.5" fill="#44403c">Any device</text>
-  <text x="780" y="305" font-size="8" fill="#a8a29e">Deployed dashboard via Vercel</text>
-
-  <!-- Arrow down -->
-  <line x1="450" y1="316" x2="450" y2="334" stroke="#d6d3d1" stroke-width="1.2"/>
-  <polygon points="444,330 450,340 456,330" fill="#d6d3d1"/>
-
-  <!-- Layer 2: Coordination & Detection -->
-  <rect x="40" y="342" width="820" height="72" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="60" y="364" font-size="11" font-weight="600" fill="#1c1917">Coordination Layer</text>
-  <text x="60" y="380" font-size="9" fill="#a8a29e">Local daemon (Node.js). Express API + WebSocket server. How agents stay in sync.</text>
-
-  <text x="60" y="400" font-size="8.5" fill="#44403c">Auto-discovery</text>
-  <text x="170" y="400" font-size="8.5" fill="#44403c">Status detection</text>
-  <text x="290" y="400" font-size="8.5" fill="#44403c">File locks</text>
-  <text x="370" y="400" font-size="8.5" fill="#44403c">Task queue</text>
-  <text x="455" y="400" font-size="8.5" fill="#44403c">Messaging</text>
-  <text x="540" y="400" font-size="8.5" fill="#44403c">Workflow handoff</text>
-  <text x="665" y="400" font-size="8.5" fill="#44403c">Auto-pilot</text>
-  <text x="745" y="400" font-size="8.5" fill="#44403c">Watchdog</text>
-
-  <!-- Arrow down -->
-  <line x1="450" y1="418" x2="450" y2="436" stroke="#d6d3d1" stroke-width="1.2"/>
-  <polygon points="444,432 450,442 456,432" fill="#d6d3d1"/>
-
-  <!-- Layer 3: Compound Learning -->
-  <rect x="40" y="444" width="400" height="56" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="60" y="466" font-size="11" font-weight="600" fill="#1c1917">Compound Learning</text>
-  <text x="60" y="482" font-size="9" fill="#a8a29e">Lessons persist across sessions and agents.</text>
-  <text x="60" y="494" font-size="8.5" fill="#44403c">hive-learnings.md per project. Thicker context every day.</text>
-
-  <!-- Layer 3b: Agent Layer -->
-  <rect x="460" y="444" width="400" height="56" rx="6" fill="white" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="480" y="466" font-size="11" font-weight="600" fill="#1c1917">Agent Layer</text>
-  <text x="480" y="482" font-size="9" fill="#a8a29e">Claude Code + Codex today. Any provider, any project.</text>
-  <text x="480" y="494" font-size="8.5" fill="#44403c">4 today. 10 when hardware allows. Models improve from below.</text>
-
-  <!-- Vertical side labels -->
-  <text x="18" y="292" font-size="7.5" fill="#a8a29e" transform="rotate(-90, 18, 292)">YOU SEE</text>
-  <text x="18" y="416" font-size="7.5" fill="#a8a29e" transform="rotate(-90, 18, 416)">THE SYSTEM RUNS</text>
-
-  <!-- Bottom line -->
-  <line x1="40" y1="520" x2="860" y2="520" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="450" y="548" text-anchor="middle" font-size="10" fill="#44403c">The gap between what you imagine and what you build was never intelligence.</text>
-  <text x="450" y="564" text-anchor="middle" font-size="10" font-weight="500" fill="#1c1917">It was seeing.</text>
-
-  <!-- Annotation: Feel box connects to Visual Interface -->
-  <path d="M 602 174 L 602 186 L 450 186 L 450 196" stroke="#fbcfe8" stroke-width="0.8" fill="none" stroke-dasharray="3,2" opacity="0.6"/>
+  <line x1="40" y1="560" x2="860" y2="560" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="450" y="584" text-anchor="middle" font-size="10" fill="#44403c">The value is not just that four agents run at once.</text>
+  <text x="450" y="600" text-anchor="middle" font-size="10" font-weight="600" fill="#1c1917">It is that you can finally see enough to direct them.</text>
 </svg>

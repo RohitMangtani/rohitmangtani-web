@@ -46,7 +46,7 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 <p>The nice thing about this is that you do not choose to notice a red dot among green dots, your brain just flags it. Reading a log takes effort, but glancing at a color does not. Four terminals streaming text compete for your attention, while four colored dots fit in a single glance.</p>
 
 <figure class="my-8">
-  <img src="/images/research/steering-comparison.svg" alt="The visual development flow: idea, describe, see it forming, feel whether it is right, steer with a sentence, ship" class="w-full rounded-lg border border-[var(--border)]" />
+  <img src="/images/research/steering-comparison.svg" alt="Hive workflow: four local terminal agents mirrored to a hosted dashboard, with the human steering by glance, message, handoff, and audit" class="w-full rounded-lg border border-[var(--border)]" />
 </figure>
 
 <p>In practice, I went from spending mental energy trying to reconstruct what each agent was doing to just spending it on deciding what to build next and whether things were going in the right direction. That was a big shift for me.</p>
@@ -115,7 +115,7 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       content: `
 <p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it. The whole loop is describe, watch, adjust. You do not need to understand the code to do any of that. You can look at two agents that just finished, point a third one at both, and say "summarize what those two found." The visual layer is what makes that possible, because you are working from what you see, not what you read in a terminal.</p>
 
-<p>The GitHub path is straightforward now. Install Claude Code and/or Codex, run the setup script, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. Hive leaves the terminals on your machine and gives you your own hosted dashboard, which is why I can check it from my phone without changing how the agents work.</p>
+<p>The GitHub path is straightforward now. Install Claude Code and/or Codex, run the setup script, log into Vercel once, then run <code>npm run launch</code>. Hive leaves the terminals on your machine, opens the tunnel it needs, and gives you your own hosted dashboard, which is why I can check it from my phone without changing how the agents work.</p>
 
 <p>Sharing it in case anyone finds the same value in it.</p>
 
