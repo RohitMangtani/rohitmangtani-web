@@ -37,7 +37,7 @@ export const hiveData: ResearchData = {
       id: 'what-it-is',
       title: 'What It Is',
       content: `
-<p>Hive is a local daemon that runs on your machine. It discovers every Claude Code instance you have open, shows their status on a dashboard, and gives you a way to message any of them from your phone or a second screen. The dashboard tiles mirror your terminal layout. Top-left terminal, top-left tile. You manage agents by where they sit, not by what they are called.</p>
+<p>Hive is a local daemon that runs on your machine. It discovers supported terminal agents like Claude Code and Codex, shows their status on a dashboard, and gives you a way to message any of them from your phone or a second screen. The dashboard tiles mirror your terminal layout. Top-left terminal, top-left tile. You manage agents by where they sit, not by what they are called.</p>
 
 <p>The thing that makes running four agents useful is that each one builds up its own context over time. One is an hour deep into an authentication refactor and knows every file it has touched. Another has been debugging a deploy for thirty minutes with a mental model of the infrastructure. These are not four workers splitting one task. They are four independent contexts, each deeply embedded in a different problem. A fresh agent starts from zero. An agent that has been working for an hour starts from everything it already knows. The dashboard is how you keep track of all of them without re-reading everything each time you switch your attention.</p>
 
@@ -186,7 +186,7 @@ export const hiveData: ResearchData = {
       id: 'the-end-state',
       title: 'The End State',
       content: `
-<p>Right now Hive runs four Claude Code instances on one machine. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
+<p>Right now Hive runs four terminal agents on one machine. Today that is a mix of Claude Code and Codex. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
 
 <p>Think about Find My iPhone. You open one app and see every Apple device you own on a map. Green dot, it is online. Grey dot, it is offline. You do not open a separate app for your MacBook, a different one for your iPad, a third for your AirPods. One visual layer shows you everything. The value is not in the devices. It is in the map.</p>
 
