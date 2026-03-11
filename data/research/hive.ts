@@ -63,7 +63,7 @@ export const hiveData: ResearchData = {
       id: 'how-it-works',
       title: 'How It Works',
       content: `
-<p>The daemon runs locally on your machine. In the GitHub flow, you start it with npm start, which runs the daemon and opens the tunnel for the hosted dashboard. It has an API for coordination, a WebSocket server for the live dashboard, and it snapshots state every 30 seconds so queues and other coordination state survive restarts while terminal routing re-associates after the first prompt in each Claude terminal.</p>
+<p>The daemon runs locally on your machine. In the simplest GitHub flow, you run npm run launch, which starts the daemon and local dashboard together. If you want a hosted dashboard, the hosted path is still there too. It has an API for coordination, a WebSocket server for the live dashboard, and it snapshots state every 30 seconds so queues and other coordination state survive restarts while terminal routing re-associates after the first prompt in each Claude terminal.</p>
       `.trim(),
       subsections: [
         {
