@@ -67,15 +67,15 @@ export const hiveData: ResearchData = {
         {
           title: 'Auto-Discovery',
           content: `
-<p>Open a terminal and run Claude Code. Within three seconds, it shows up on the dashboard. No registration, no config. The daemon scans running processes, finds each one's working directory and session file, and adds it. Close the terminal, it disappears. Open a new one, it appears.</p>
+<p>Open a terminal and run Claude Code or Codex. Within three seconds, it shows up on the dashboard. No registration, no config. The daemon scans running processes, finds each one's working directory and session file, and adds it. Close the terminal, it disappears. Open a new one, it appears.</p>
           `.trim(),
         },
         {
           title: 'Spatial Mapping',
           content: `
-<p>Arrange four terminal windows in a 2x2 grid. Open Claude Code in each one. Hive assigns each terminal a quadrant based on when you opened it: first becomes Q1 (top-left tile), second Q2 (top-right), third Q3 (bottom-left), fourth Q4 (bottom-right). The dashboard mirrors your screen.</p>
+<p>Arrange four terminal windows in a 2x2 grid. Open Claude Code or Codex in each one. Hive reads the physical position of each Terminal window on your screen and assigns quadrants to match: top-left becomes Q1, top-right Q2, bottom-left Q3, bottom-right Q4. The dashboard mirrors your screen.</p>
 
-<p>When you see a yellow dot in the bottom-left tile on your phone, you already know which terminal that is because you can see the bottom-left terminal on your laptop. The position is the label. Close a terminal and its tile disappears. Open a new one and it fills the next slot.</p>
+<p>When you see a yellow dot in the bottom-left tile on your phone, you already know which terminal that is because you can see the bottom-left terminal on your laptop. The position is the label. Drag a terminal to a different corner and the dashboard updates to match within a few seconds.</p>
           `.trim(),
         },
         {
@@ -89,7 +89,7 @@ export const hiveData: ResearchData = {
           content: `
 <p>Claude Code pauses for permission prompts. "Allow this bash command?" "Approve this file edit?" With one terminal, you click yes and move on. With four agents, these prompts stack up. One agent pauses, you do not notice for ten minutes, and an hour of potential output is lost.</p>
 
-<p>Auto-pilot handles it. Routine prompts auto-approve within a three-second grace window. The dashboard shows the prompt briefly so you can override if needed. If you do nothing, the agent continues. A watchdog also monitors for stuck loops where an agent keeps calling the same tool repeatedly, and flags it on the dashboard so you can step in.</p>
+<p>Auto-pilot handles it. Routine prompts auto-approve within a fifteen-second grace window. The dashboard shows the prompt briefly so you can override if needed. If you do nothing, the agent continues. A watchdog also monitors for stuck loops where an agent keeps calling the same tool repeatedly, and flags it on the dashboard so you can step in.</p>
           `.trim(),
         },
         {
