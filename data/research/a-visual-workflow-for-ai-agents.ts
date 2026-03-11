@@ -85,8 +85,6 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 
 <p>I pointed a third agent at both findings and asked it to produce a unified fix. I did not write any code. I just saw something that looked wrong, and it turned out to be wrong. That is the kind of thing the visual layer makes possible.</p>
 
-<p>Later, the agents started doing some of that bridging themselves. Not by magically sharing one big context, just by passing a focused message or summary through Hive when the link was obvious. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. I do not always have to be the middleman.</p>
-
 <p>Underneath all of this, there is a knowledge layer that compounds over time. Every time an agent solves a non-obvious problem, the lesson gets written to a per-project file. The next agent that works on that project reads those lessons before it starts. After weeks of running, the system has accumulated debugging insights, style corrections, and architectural decisions that no fresh agent would know. The fleet gets smarter because it remembers what it learned.</p>
       `.trim(),
     },
@@ -99,10 +97,6 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 <p>The biggest limitation is context. When an agent's context window fills, it compacts memory and starts losing the thread. You can see this on the dashboard because the agent starts behaving differently with longer yellow states, more frequent stops, and output that drifts. You learn to recognize that pattern, and when something feels off you restart the agent with fresh context and it picks up where it left off.</p>
 
 <p>There is also an autopilot that handles routine interruptions. Permission prompts get approved automatically. There is a grace period for me to override, and then the agent keeps going. The stuff that actually needs my judgment shows up as yellow, and everything else stays green.</p>
-
-<p>The system also survives restarts. If my Mac mini reboots overnight, I reopen the terminals, type one prompt in each, and the daemon picks up the correct mapping within a few seconds. Session state snapshots every thirty seconds, so queued tasks, file locks, and handoffs all restore. I have never lost work to a restart.</p>
-
-<p>There is also a watchdog that monitors for stuck loops. If an agent calls the same tool six times in a row, the system flags it and puts a yellow dot on the dashboard. Before I had this, agents would sometimes spin on a problem for twenty minutes before I noticed. Now I see the yellow dot, send a message telling the agent to try a different approach, and it unsticks within seconds.</p>
 
 <p>It also does not care much which supported AI tool you are running, as long as Hive knows how to detect it. Right now that means terminal agents like Claude and Codex. I run Claude and Codex in the same grid right now. One tile is Codex, three are Claude. The internals are not identical, Claude exposes richer hook data and Codex relies more on session logs and CPU signals, but the dashboard is consistent enough that I can mix them in the same grid without changing how I work. That means you can use the right model for the right task and still coordinate everything from one place. Claude is better at some things, Codex is better at others, and the visual layer lets you bounce work between them without thinking too hard about which runtime is which. You are just looking at four colored dots and deciding where things should go next.</p>
 
