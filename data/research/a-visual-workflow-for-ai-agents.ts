@@ -68,6 +68,8 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 
 <p>One of the more useful things that came out of mixing models was having the Codex agent audit the whole system while the Claude agents kept building. Codex found inconsistencies between what the documentation said and what the code actually did. Things the Claude agents had drifted on over weeks, because they had written both the code and the docs and stopped noticing the gap. A different model with a different perspective caught what three instances of the same model missed. That is not just a nice bonus of running mixed models. It is a reason to do it on purpose.</p>
 
+<p>That is also why I do not think you have to pick one model and commit to it. The better pattern is to let different models do what each is good at, bounce work between them, and use one to audit the corners the other one missed.</p>
+
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong, and I respond to that faster than I ever responded to log output.</p>
       `.trim(),
     },

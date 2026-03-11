@@ -42,6 +42,8 @@ export const hiveData: ResearchData = {
 <p>The thing that makes running four agents useful is that each one builds up its own context over time. One is an hour deep into an authentication refactor and knows every file it has touched. Another has been debugging a deploy for thirty minutes with a mental model of the infrastructure. These are not four workers splitting one task. They are four independent contexts, each deeply embedded in a different problem. A fresh agent starts from zero. An agent that has been working for an hour starts from everything it already knows. The dashboard is how you keep track of all of them without re-reading everything each time you switch your attention.</p>
 
 <p>The whole system was built using the agents it manages. Most of the building was done by Claude Code instances working on the daemon, the dashboard, and each other's output while I directed what to build and resolved conflicts. Codex later joined that loop as an auditor and caught gaps between what the docs said and what the code actually did.</p>
+
+<p>That is part of the point of the system. You do not have to pick one model and live inside its blind spots. You can let one model push something forward, let another audit it or build from it, and use the differences between them to catch corners a single model would miss.</p>
       `.trim(),
     },
     {
