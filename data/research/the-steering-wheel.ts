@@ -60,7 +60,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>The spatial layout also makes it natural to move work between agents. I do not think in terms of agent IDs or session names, I think in terms of position. That one found something, send it to that one. The grid gives you a visual memory of what is where, and that is enough to direct traffic between them without reading any of the actual output. You are just pointing.</p>
 
-<p>Right now, three of my tiles are running Claude and one is running Codex. Different models, different strengths, same grid. I had Claude research something, then pointed the Codex tile at what Claude found and told it to build from that. The models do not know about each other. They do not need to. I am the one who sees both tiles, reads what one produced, and tells the other where to take it. That is cross-model ping-ponging, and it works because the visual layer does not care what is underneath each tile. It just shows you the state, and you move work between them the same way you move work between two Claude agents. The fact that they are different models is invisible at the dashboard level, which is exactly how it should be.</p>
+<p>Right now, three of my tiles are running Claude and one is running Codex. Different models, different strengths, same grid. I had Claude research something, then pointed the Codex tile at what Claude found and told it to build from that. The models do not know about each other. They do not need to. I am the one who sees both tiles, reads what one produced, decides what matters, and tells the other where to take it. Hive can carry that handoff, but it is not one shared hive mind. That is cross-model ping-ponging, and it works because the visual layer does not care what is underneath each tile. It just shows you the state, and you move work between them the same way you move work between two Claude agents. The fact that they are different models is invisible at the dashboard level, which is exactly how it should be.</p>
 
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong, and I respond to that faster than I ever responded to log output.</p>
       `.trim(),
@@ -77,7 +77,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>I pointed a third agent at both findings and asked it to produce a unified fix. I did not write any code. I just saw something that looked wrong, and it turned out to be wrong. That is the kind of thing the visual layer makes possible.</p>
 
-<p>Later, the agents started doing some of that bridging themselves. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. I do not always have to be the middleman.</p>
+<p>Later, the agents started doing some of that bridging themselves. Not by magically sharing one big context, just by passing a focused message or summary through Hive when the link was obvious. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. I do not always have to be the middleman.</p>
       `.trim(),
     },
     {
