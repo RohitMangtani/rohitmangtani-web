@@ -115,8 +115,6 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       content: `
 <p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it. The whole loop is describe, watch, adjust. You do not need to understand the code to do any of that. You can look at two agents that just finished, point a third one at both, and say "summarize what those two found." The visual layer is what makes that possible, because you are working from what you see, not what you read in a terminal.</p>
 
-<p>The GitHub path is straightforward now. Install Claude Code and/or Codex, run the setup script, log into Vercel once, then run <code>npm run launch</code>. Hive leaves the terminals on your machine, opens the tunnel it needs, and gives you your own hosted dashboard, which is why I can check it from my phone without changing how the agents work.</p>
-
 <p>Sharing it in case anyone finds the same value in it.</p>
 
 <p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">github.com/RohitMangtani/hive</a></p>

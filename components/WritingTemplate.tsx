@@ -63,7 +63,7 @@ export function WritingTemplate({ data }: WritingTemplateProps) {
   return (
     <>
       <Nav />
-      <main className="max-w-[680px] mx-auto px-6 py-20">
+      <main className="max-w-[680px] mx-auto px-6 pt-20 pb-32">
         <div className="flex items-center justify-between mb-8">
           <Link
             href="/writing"
