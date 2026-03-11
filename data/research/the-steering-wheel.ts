@@ -60,6 +60,8 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>The spatial layout also makes it natural to move work between agents. I do not think in terms of agent IDs or session names, I think in terms of position. That one found something, send it to that one. The grid gives you a visual memory of what is where, and that is enough to direct traffic between them without reading any of the actual output. You are just pointing.</p>
 
+<p>Right now, three of my tiles are running Claude and one is running Codex. Different models, different strengths, same grid. I had Claude research something, then pointed the Codex tile at what Claude found and told it to build from that. The models do not know about each other. They do not need to. I am the one who sees both tiles, reads what one produced, and tells the other where to take it. That is cross-model ping-ponging, and it works because the visual layer does not care what is underneath each tile. It just shows you the state, and you move work between them the same way you move work between two Claude agents. The fact that they are different models is invisible at the dashboard level, which is exactly how it should be.</p>
+
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong, and I respond to that faster than I ever responded to log output.</p>
       `.trim(),
     },
@@ -88,7 +90,7 @@ export const theSteeringWheelData: ResearchData = {
 
 <p>There is also an autopilot that handles routine interruptions. Permission prompts get approved automatically and simple questions get answered without me. There is a grace period for me to override, and then the system answers and the agent keeps going. The stuff that actually needs my judgment shows up as yellow, and everything else stays green.</p>
 
-<p>It also does not care which AI tool you are running. The system detects any terminal agent automatically and each one gets a tile and the same status detection, so you can mix tools in the same grid without changing anything.</p>
+<p>It also does not care which AI tool you are running. The system detects any terminal agent automatically and each one gets a tile and the same status detection, so you can mix tools in the same grid without changing anything. I run Claude and Codex in the same grid right now. One tile is Codex, three are Claude. The dashboard treats them identically. That means you can use the right model for the right task and still orchestrate everything from one place. Claude is better at some things, Codex is better at others, and the visual layer lets you bounce work between them without thinking about which runtime is which. You are just looking at four colored dots and deciding where things should go next.</p>
 
 <p>This is also not for everyone. You need to be running multiple AI agents to get anything out of it. If you are using AI one conversation at a time, you do not need this. It is for the situation where you have crossed into running parallel work and you are drowning in terminal output.</p>
       `.trim(),
