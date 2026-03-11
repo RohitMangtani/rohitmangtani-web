@@ -29,6 +29,8 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 <p>The part that did not work was keeping track of what was happening. I was running four AI agents at the same time, each one working on a different piece of a system, sometimes in completely different projects. Four agents means four things getting built at once, but I had no idea at a glance what any of them were doing. I had to read terminal output, scroll through it, and try to hold the state of four different threads in my head. The energy I was spending just knowing where things stood was eating the energy I needed to think about where things should go.</p>
 
 <p>So I made something to fix that. Not a product, just a way to see what was going on without reading terminal text all day.</p>
+
+<p>What I ended up with is closer to a coordinated worker pool than four unrelated chat windows. Any agent can see what the others are doing through a central daemon. Any agent can audit the others. Any agent can send work to the others. They are still independent sessions with their own context, but the coordination layer connects them into something where the whole is more than four separate parts.</p>
       `.trim(),
     },
     {
@@ -38,6 +40,8 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 <p>Think about driving. You do not read engine diagnostics to know what is happening, you just glance at the dashboard. Green light means you are good, red means stop, yellow means pay attention.</p>
 
 <p>That is basically what I made. Four tiles on a screen, arranged in a 2x2 grid that mirrors my terminal layout. The top left tile is the top left terminal, and the bottom right tile is the bottom right terminal. Each tile is an agent, and the color tells you the state. Green means working, red means finished or stopped, and yellow means it needs a decision from you. No logs or terminal scrolling, just color and position.</p>
+
+<p>The mapping happens automatically. The daemon reads the physical position of each terminal window on your screen and assigns quadrants to match. Drag a terminal from the top left to the bottom right, and within ten seconds it becomes the bottom right tile on the dashboard. You never configure which agent is which tile. The system figures it out from where your windows actually sit.</p>
 
 <p>The nice thing about this is that you do not choose to notice a red dot among green dots, your brain just flags it. Reading a log takes effort, but glancing at a color does not. Four terminals streaming text compete for your attention, while four colored dots fit in a single glance.</p>
 
@@ -62,6 +66,8 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 
 <p>Right now, three of my tiles are running Claude and one is running Codex. Different models, different strengths, same grid. I had Claude research something, then pointed the Codex tile at what Claude found and told it to build from that. The models do not know about each other. They do not need to. I am the one who sees both tiles, reads what one produced, decides what matters, and tells the other where to take it. Hive can carry that handoff, but it is not one shared hive mind. That is cross-model ping-ponging, and it works because the visual layer does not care what is underneath each tile. It just shows you the state, and you move work between them the same way you move work between two Claude agents. The fact that they are different models is invisible at the dashboard level, which is exactly how it should be.</p>
 
+<p>One of the more useful things that came out of mixing models was having the Codex agent audit the whole system while the Claude agents kept building. Codex found inconsistencies between what the documentation said and what the code actually did. Things the Claude agents had drifted on over weeks, because they had written both the code and the docs and stopped noticing the gap. A different model with a different perspective caught what three instances of the same model missed. That is not just a nice bonus of running mixed models. It is a reason to do it on purpose.</p>
+
 <p>After a few weeks of using it I do not think "Agent 3 has been waiting for a long time." I just feel that the grid looks wrong, and I respond to that faster than I ever responded to log output.</p>
       `.trim(),
     },
@@ -78,6 +84,8 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 <p>I pointed a third agent at both findings and asked it to produce a unified fix. I did not write any code. I just saw something that looked wrong, and it turned out to be wrong. That is the kind of thing the visual layer makes possible.</p>
 
 <p>Later, the agents started doing some of that bridging themselves. Not by magically sharing one big context, just by passing a focused message or summary through Hive when the link was obvious. One agent finishes a task, sees related work that belongs in a different project, and sends it directly to the agent working there. I do not always have to be the middleman.</p>
+
+<p>Underneath all of this, there is a knowledge layer that compounds over time. Every time an agent solves a non-obvious problem, the lesson gets written to a per-project file. The next agent that works on that project reads those lessons before it starts. After weeks of running, the system has accumulated debugging insights, style corrections, and architectural decisions that no fresh agent would know. The fleet gets smarter because it remembers what it learned.</p>
       `.trim(),
     },
     {
@@ -89,6 +97,10 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 <p>The biggest limitation is context. When an agent's context window fills, it compacts memory and starts losing the thread. You can see this on the dashboard because the agent starts behaving differently with longer yellow states, more frequent stops, and output that drifts. You learn to recognize that pattern, and when something feels off you restart the agent with fresh context and it picks up where it left off.</p>
 
 <p>There is also an autopilot that handles routine interruptions. Permission prompts get approved automatically and simple questions get answered without me. There is a grace period for me to override, and then the system answers and the agent keeps going. The stuff that actually needs my judgment shows up as yellow, and everything else stays green.</p>
+
+<p>The system also survives restarts. If my Mac mini reboots overnight, I reopen the terminals, type one prompt in each, and the daemon picks up the correct mapping within a few seconds. Session state snapshots every thirty seconds, so queued tasks, file locks, and handoffs all restore. I have never lost work to a restart.</p>
+
+<p>There is also a watchdog that monitors for stuck loops. If an agent calls the same tool six times in a row, the system flags it and puts a yellow dot on the dashboard. Before I had this, agents would sometimes spin on a problem for twenty minutes before I noticed. Now I see the yellow dot, send a message telling the agent to try a different approach, and it unsticks within seconds.</p>
 
 <p>It also does not care which AI tool you are running. The system detects any terminal agent automatically and each one gets a tile and the same status detection, so you can mix tools in the same grid without changing anything. I run Claude and Codex in the same grid right now. One tile is Codex, three are Claude. The dashboard treats them identically. That means you can use the right model for the right task and still orchestrate everything from one place. Claude is better at some things, Codex is better at others, and the visual layer lets you bounce work between them without thinking about which runtime is which. You are just looking at four colored dots and deciding where things should go next.</p>
 
