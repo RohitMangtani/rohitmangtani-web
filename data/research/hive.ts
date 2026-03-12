@@ -5,7 +5,7 @@ export const hiveData: ResearchData = {
   date: '2026',
   title: 'Hive',
   subtitle: 'A dashboard for running multiple AI agents at the same time.',
-  liveUrl: 'https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0',
+  liveUrl: 'https://github.com/RohitMangtani/hive',
 
   onRamp: {
     description:
@@ -30,7 +30,7 @@ export const hiveData: ResearchData = {
 
 <p>Twenty minutes later you check again. Two green, one red, one yellow. The yellow one is bottom-left. You know it is the deploy debugger because that is where you put it. You read its question, type a two-sentence answer, and the dot turns green. The red one finished its task. You type a new one. Four agents, all visible, all reachable, from your phone.</p>
 
-<p><a href="https://dashboard-flame-two-83.vercel.app?viewer=d6c8f4964e4fb13247a08bb616da88d557b4f34b503f1b9fe96e824822bd2bf0" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">Open the live dashboard</a> to see it running.</p>
+<p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">See it on GitHub</a>.</p>
       `.trim(),
     },
     {
