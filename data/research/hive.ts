@@ -230,6 +230,8 @@ export const hiveData: ResearchData = {
       content: `
 <p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it from my phone. The whole loop is describe, watch, adjust.</p>
 
+<p>Hive runs on macOS only. The daemon relies on AppleScript and Terminal.app for window position detection, and a compiled Swift binary for keystroke injection. There is no Linux or Windows support right now.</p>
+
 <p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code and/or Codex, run setup, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
 
 <p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">github.com/RohitMangtani/hive</a></p>

@@ -109,7 +109,7 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       content: `
 <p>It has helped my workflow a lot. I can see what my agents are doing while they work, tell when something looks off, and send a message to correct it. The whole loop is describe, watch, adjust. You do not need to understand the code to do any of that. You can look at two agents that just finished, point a third one at both, and say "summarize what those two found." The visual layer is what makes that possible, because you are working from what you see, not what you read in a terminal.</p>
 
-<p>Sharing it in case anyone finds the same value in it.</p>
+<p>It runs on macOS. The daemon uses AppleScript and Terminal.app to detect window positions and inject keystrokes, so there is no Linux or Windows path right now. Sharing it in case anyone on a Mac finds the same value in it.</p>
 
 <p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">github.com/RohitMangtani/hive</a></p>
       `.trim(),
