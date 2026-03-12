@@ -6,7 +6,7 @@ import { thePositiveLoopData } from '../data/research/the-positive-loop';
 import { honestGamblingData } from '../data/research/honest-gambling';
 import { theHumanYieldData } from '../data/research/the-human-yield';
 import { theFutureOfPmData } from '../data/research/the-future-of-pm';
-import { theHumanSensorLayerData } from '../data/research/the-human-sensor-layer';
+
 import { theHumanBridgeData } from '../data/research/the-human-bridge';
 import { theFiveInputsData } from '../data/research/the-five-inputs';
 import { theGameableSocietyData } from '../data/theses/the-gameable-society';
@@ -24,7 +24,7 @@ const articles: Record<string, { slug: string; title: string; subtitle: string; 
   'honest-gambling': honestGamblingData,
   'the-human-yield': theHumanYieldData,
   'the-future-of-pm': theFutureOfPmData,
-  'the-human-sensor-layer': theHumanSensorLayerData,
+
   'the-human-bridge': theHumanBridgeData,
   'the-five-inputs': theFiveInputsData,
   'the-gameable-society': theGameableSocietyData,

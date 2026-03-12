@@ -4,7 +4,7 @@ import { honestGamblingData } from '@/data/research/honest-gambling';
 import { theGameableSocietyData } from '@/data/theses/the-gameable-society';
 import { theHumanYieldData } from '@/data/research/the-human-yield';
 import { theFutureOfPmData } from '@/data/research/the-future-of-pm';
-import { theHumanSensorLayerData } from '@/data/research/the-human-sensor-layer';
+
 import { theHumanBridgeData } from '@/data/research/the-human-bridge';
 import { theFiveInputsData } from '@/data/research/the-five-inputs';
 import { closeYourEyesData } from '@/data/research/close-your-eyes';
@@ -23,7 +23,7 @@ const articles: Record<string, { data: Parameters<typeof WritingTemplate>[0]['da
   'preference-for-legible-risk': { data: honestGamblingData },
   'the-gameable-society': { data: theGameableSocietyData },
   'the-future-of-pm': { data: theFutureOfPmData },
-  'the-human-sensor-layer': { data: theHumanSensorLayerData },
+
   'the-human-bridge': { data: theHumanBridgeData },
   'the-five-inputs': { data: theFiveInputsData },
   'close-your-eyes': { data: closeYourEyesData },

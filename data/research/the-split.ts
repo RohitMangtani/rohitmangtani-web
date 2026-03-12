@@ -81,7 +81,7 @@ export const theSplitData: ResearchData = {
 
 <p><strong class="text-[var(--fg)]">Platform natives.</strong> People who build on and for specific ecosystems. Their expertise is not transferable and they do not want it to be. They know one platform deeply enough that they are irreplaceable within it. The platform's growth is their growth. The stickiness is mutual.</p>
 
-<p><strong class="text-[var(--fg)]">Belief holders.</strong> People who denominate their identity into something larger than themselves. A cause, a culture, a movement, a philosophy. <a href="/writing/the-human-sensor-layer" class="underline hover:opacity-60">The Human Sensor Layer</a> described how people in the sensor tier dedicate themselves to assets and communities with near-religious conviction. That same mechanism operates outside any specific domain. When everything feels uncertain, locking into a belief creates a stable reference point that compounds as the community around it grows.</p>
+<p><strong class="text-[var(--fg)]">Belief holders.</strong> People who denominate their identity into something larger than themselves. A cause, a culture, a movement, a philosophy. When everything feels uncertain, locking into a belief creates a stable reference point that compounds as the community around it grows.</p>
 
 <div class="border-l-2 border-[var(--border)] pl-6 my-10">
 <p class="leading-relaxed">The common thread is not what people chose. It is that they chose. Each bucket has an internal compounding loop. Commitment attracts others who committed to the same thing. The group reinforces the identity. The identity deepens the commitment. The loop sustains itself. The specific direction matters less than the structural fact of having one.</p>
@@ -185,7 +185,6 @@ export const theSplitData: ResearchData = {
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Compound', href: '/writing/the-compound' },
-    { title: 'The Human Sensor Layer', href: '/writing/the-human-sensor-layer' },
     { title: 'The Five Inputs', href: '/writing/the-five-inputs' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
   ],

@@ -115,7 +115,7 @@ export const theFiveInputsData: ResearchData = {
 
         <p>This is not a prediction about the future. It is a description of now. The 56% salary premium for workers with AI skills that the data shows is not paying for technical knowledge. It is paying for the capacity to provide more inputs. The person who can direct agents, judge their output, and hold context across sessions commands a premium because they are providing three inputs that the person who only supervises is not. The premium will widen because the supply of people who can provide all five is small, and the demand for them scales with every agent deployed.</p>
 
-        <p>Every article in this series described one piece of this. <a href="/writing/the-human-yield" class="underline hover:opacity-60">The Human Yield</a> mapped the economy forming around presence. <a href="/writing/the-human-sensor-layer" class="underline hover:opacity-60">The Human Sensor Layer</a> described judgment as the capacity to detect what matters in systems too fast for traditional analysis. <a href="/writing/the-human-bridge" class="underline hover:opacity-60">The Human Bridge</a> identified the coordination roles that require all five inputs simultaneously. <a href="/writing/the-positive-loop" class="underline hover:opacity-60">The Positive Loop</a> showed what happens when taste and direction plug into the production cycle that AI enables. <a href="/writing/preference-for-legible-risk" class="underline hover:opacity-60">Preference for Legible Risk</a> explained why people gravitate toward systems where they can exercise judgment instead of trusting opaque ones. <a href="/writing/the-future-of-pm" class="underline hover:opacity-60">The Future of PM</a> operationalized context-holding as the management layer for agent swarms.</p>
+        <p>Every article in this series described one piece of this. <a href="/writing/the-human-yield" class="underline hover:opacity-60">The Human Yield</a> mapped the economy forming around presence. <a href="/writing/the-human-bridge" class="underline hover:opacity-60">The Human Bridge</a> identified the coordination roles that require all five inputs simultaneously. <a href="/writing/the-positive-loop" class="underline hover:opacity-60">The Positive Loop</a> showed what happens when taste and direction plug into the production cycle that AI enables. <a href="/writing/preference-for-legible-risk" class="underline hover:opacity-60">Preference for Legible Risk</a> explained why people gravitate toward systems where they can exercise judgment instead of trusting opaque ones. <a href="/writing/the-future-of-pm" class="underline hover:opacity-60">The Future of PM</a> operationalized context-holding as the management layer for agent swarms.</p>
 
         <p>The five inputs are the thread connecting all of them. The economy is not dividing into people who use AI and people who do not. It is dividing into people who provide one input and people who provide five. The distance between them compounds every day the system runs.</p>
       `,
@@ -124,7 +124,7 @@ export const theFiveInputsData: ResearchData = {
 
   relatedWork: [
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
-    { title: 'The Human Sensor Layer', href: '/writing/the-human-sensor-layer' },
+
     { title: 'The Human Bridge', href: '/writing/the-human-bridge' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },

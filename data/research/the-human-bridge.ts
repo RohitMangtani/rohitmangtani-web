@@ -92,7 +92,7 @@ export const theHumanBridgeData: ResearchData = {
           <li><strong class="text-[var(--fg)]">Verify:</strong> check that the updated output passes the same human instinct test.</li>
         </ul>
 
-        <p>This role does not sell AI. It does not train people on AI. It preserves human signal in a system that would otherwise optimize it away. <a href="/writing/the-human-sensor-layer" class="underline hover:opacity-60">The Human Sensor Layer</a> documented how human perception operates as an irreplaceable input in automated systems, how people detect things that data cannot capture, patterns that only emerge through lived experience and instinct. The Extraction Layer is the operational mechanism that captures that perception and makes it actionable. It is the difference between knowing that humans sense things AI misses and actually routing that signal back into the system.</p>
+        <p>This role does not sell AI. It does not train people on AI. It preserves human signal in a system that would otherwise optimize it away. Human perception operates as an irreplaceable input in automated systems. People detect things that data cannot capture, patterns that only emerge through lived experience and instinct. The Extraction Layer is the operational mechanism that captures that perception and makes it actionable. It is the difference between knowing that humans sense things AI misses and actually routing that signal back into the system.</p>
       `,
     },
     {
@@ -207,7 +207,6 @@ export const theHumanBridgeData: ResearchData = {
 
   references: [
     { text: 'Mangtani, R. (2026). <em>The Future of PM</em>.', url: '/writing/the-future-of-pm' },
-    { text: 'Mangtani, R. (2026). <em>The Human Sensor Layer</em>.', url: '/writing/the-human-sensor-layer' },
     { text: 'Mangtani, R. (2026). <em>The Human Yield</em>.', url: '/writing/the-human-yield' },
     { text: 'Eightfold AI. (2026). "The Most Important Job of 2026 Is the AI Agent Orchestration Specialist."', url: 'https://eightfold.ai/blog/most-important-job-2026/' },
     { text: 'McKinsey & Company. (2025). "The State of AI: How Organizations Are Rewiring to Capture Value."' },
@@ -220,7 +219,6 @@ export const theHumanBridgeData: ResearchData = {
 
   relatedWork: [
     { title: 'The Future of PM', href: '/writing/the-future-of-pm' },
-    { title: 'The Human Sensor Layer', href: '/writing/the-human-sensor-layer' },
     { title: 'The Human Yield', href: '/writing/the-human-yield' },
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
   ],

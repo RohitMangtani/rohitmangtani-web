@@ -8,7 +8,7 @@ export const theHumanYieldData: ResearchData = {
 
   onRamp: {
     description: 'AI is not making people useless. It is making their labor useless. For a growing number of people, the most valuable economic activity will be showing up. Being in the chair. Supervising, participating, existing inside systems that need a human present but not a human working. This is not a dystopian prediction. It is already happening, and an economy is taking shape around it.',
-    whatItDoes: 'Connects idle games, automation, displacement economics, and resistance culture to explain why passive participation is becoming the rational default.',
+    whatItDoes: 'Connects automation, displacement economics, and the restructuring of labor value to explain why passive participation is becoming the rational default.',
     whatItDoesNot: 'Argue that people are worthless, predict specific timelines, or pitch UBI as policy.',
   },
 
@@ -35,35 +35,28 @@ export const theHumanYieldData: ResearchData = {
       `,
     },
     {
-      id: 'the-afk-economy',
-      title: 'The AFK Economy',
+      id: 'the-presence-economy',
+      title: 'The Presence Economy',
       content: `
-        <p>The clearest version of this already played out on Roblox.</p>
+        <p>Watch how automation already works in any modern operations floor. First, people did the work manually. Reconciliations, data entry, report generation. Every task required a person performing each step. The effort was the input. Time was the cost.</p>
 
-        <p>First, people farmed manually. You grinded for hours, collected resources, earned in-game currency. Your effort was the input. Your time was the cost. The reward scaled with how much you were willing to sit there and do it.</p>
+        <p>Then automation arrived. Workflows ran themselves. Scripts handled the repetitive work. The system kept generating output as long as someone was technically overseeing it. Not doing the work. Just there.</p>
 
-        <p>Then AFK farming emerged. Players figured out they could earn while idle. Log in, position your character, walk away. The system kept generating value as long as you were technically present. Not playing. Just there.</p>
-
-        <p>Then Roblox started paying real money. Developers building on the platform could earn actual income. The game economy became a real economy. And that changed everything, because now the same farming that used to be a grind became something worth automating.</p>
-
-        <p>So bots showed up. Scripts that farm 24/7, no breaks, no sleep, no mistakes. They outfarm any human on every metric. Your manual effort cannot compete with something that never stops.</p>
+        <p>Then AI showed up. Systems that do not just automate steps but handle judgment calls, drafting, analysis, and decision-making at a speed and consistency no person can match.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
-          <p class="text-sm text-[var(--fg-muted)]">This is the sequence that matters: manual labor → idle earning → automation → bots outperform you → your value shifts. You are no longer the farmer. You are not even the AFK farmer. The bots farm better than you ever could. What you become, if you become anything, is a human node. A verifier. An overseer. A warm body the system still needs for trust, for identity, for the fact that a person was in the loop.</p>
+          <p class="text-sm text-[var(--fg-muted)]">This is the sequence that matters: manual labor, then idle oversight, then automation, then AI outperforms you, then your value shifts. You are no longer the analyst. You are not even the overseer. The system handles it better than you ever could. What you become, if you become anything, is a human node. A verifier. A warm body the system still needs for trust, for identity, for the fact that a person was in the loop.</p>
         </div>
 
-        <p>This is not a metaphor. It is a prototype for what is happening to labor broadly. The same sequence is playing out across the real economy:</p>
+        <p>The same sequence is playing out across the real economy:</p>
 
         <ul>
-          <li><strong class="text-[var(--fg)]">Content farming:</strong> You do not create anything meaningful. You exist inside a system that produces volume. Your presence fills a quota. The system monetizes the aggregate.</li>
           <li><strong class="text-[var(--fg)]">AI supervision:</strong> You do not do the work. AI does. You sit there and approve it, flag errors, provide the human stamp. Your judgment is minimal. Your presence is what matters.</li>
-          <li><strong class="text-[var(--fg)]">Engagement farming:</strong> You join a community, a platform, a collective. You click, react, show up. The system needs warm bodies generating metrics. Your activity does not need to be meaningful. It needs to be countable.</li>
-          <li><strong class="text-[var(--fg)]">Participation mining:</strong> You show up early, stay active, qualify for rewards. The value is not what you do. It is the fact that you showed up and stayed.</li>
+          <li><strong class="text-[var(--fg)]">Compliance nodes:</strong> AI writes the report, runs the analysis. A licensed human reviews and signs. The value is the signature, not the analysis.</li>
+          <li><strong class="text-[var(--fg)]">Engagement roles:</strong> You join a platform, a team, a system. You show up, react, participate. The system needs humans generating metrics. Your activity does not need to be meaningful. It needs to be countable.</li>
         </ul>
 
-        <p>Same pattern every time. A system that needs human inputs but not human effort. The bots handle the farming. The person is not performing labor. They are providing something else: presence, verification, a human node in an automated network. And getting compensated for it.</p>
-
-        <p>The farmer went AFK. Then the bots replaced the farmer entirely. What remains is the need for a human to have been there at all.</p>
+        <p>Same pattern every time. A system that needs human inputs but not human effort. AI handles the execution. The person is not performing labor. They are providing something else: presence, verification, a human node in an automated network. And getting compensated for it.</p>
       `,
     },
     {
@@ -115,28 +108,26 @@ export const theHumanYieldData: ResearchData = {
       `,
     },
     {
-      id: 'the-resistance-layer',
-      title: 'The Resistance Layer',
+      id: 'the-reorganization',
+      title: 'The Reorganization',
       content: `
         <p>Not everyone takes this quietly.</p>
 
-        <p>When traditional work stops making economic sense for enough people, those people do not just vanish. They reorganize. They build their own structures, their own value systems, their own assets.</p>
-
-        <p>You can already see it with NEET culture. NEET started as a statistical category. It is becoming an identity. A growing number of people are not just unemployed. They are opting out on purpose, loudly, and building community around the decision.</p>
+        <p>When traditional work stops making economic sense for enough people, those people do not just vanish. They reorganize. They build their own structures, their own value systems, their own communities.</p>
 
         <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-6">
           <p class="text-sm text-[var(--fg-muted)]">The instinct is to write this off as laziness or nihilism. It is neither. It is the same pattern from <a href="/writing/preference-for-legible-risk" class="underline hover:opacity-60">Preference for Legible Risk</a>: when the official system feels extractive or closed off, people build their own with rules they consider fairer. Even if the alternative looks worse on paper, people prefer it because it is chosen and legible.</p>
         </div>
 
-        <p>The resistance takes multiple forms:</p>
+        <p>The reorganization takes multiple forms:</p>
 
         <ul>
-          <li><strong class="text-[var(--fg)]">Community assets:</strong> Groups building their own economic instruments. Mutual aid, shared resources, community tokens. All outside the traditional system. The value is not financial returns. The value is belonging to something that does not require conventional productivity as the price of entry.</li>
-          <li><strong class="text-[var(--fg)]">Decentralized identity:</strong> Communities where participation itself generates status, not achievement. Being present, contributing to the culture, showing up consistently. These become the credentials. The system rewards consistency over capability.</li>
-          <li><strong class="text-[var(--fg)]">Content as labor:</strong> Creating content about the opt-out itself. Documenting the experience. Building audience around the rejection of traditional work. The irony is obvious. Refusing to participate in the economy becomes its own economic activity. The rejection is the content. The content is the product.</li>
+          <li><strong class="text-[var(--fg)]">Community identity:</strong> Groups where participation itself generates status, not achievement. Being present, contributing to the culture, showing up consistently. These become the credentials. The system rewards consistency over capability.</li>
+          <li><strong class="text-[var(--fg)]">Content as labor:</strong> Creating content about the experience itself. Documenting the transition. Building audience around the navigation of a changing economy. The process of describing what is happening becomes its own economic activity.</li>
+          <li><strong class="text-[var(--fg)]">Mutual support structures:</strong> Groups building shared resources outside the traditional employment system. The value is not financial returns. The value is belonging to something that does not require conventional productivity as the price of entry.</li>
         </ul>
 
-        <p>None of this is new in kind. It is new in scale. Every wave of economic displacement has produced counter-cultures and resistance movements. What is different now is that AI accelerates the displacement faster than the alternatives can mature. The gap between "the old economy does not need you" and "a new economy exists for you" is where the instability lives.</p>
+        <p>None of this is new in kind. It is new in scale. Every wave of economic displacement has produced counter-cultures and reorganization. What is different now is that AI accelerates the displacement faster than the alternatives can mature. The gap between "the old economy does not need you" and "a new economy exists for you" is where the instability lives.</p>
       `,
     },
     {
@@ -164,7 +155,7 @@ export const theHumanYieldData: ResearchData = {
 
         <p>The game does not stop. It restructures. The players become supervisors. The supervisors become spectators. The spectators become background. Present, counted, compensated at the floor, but not needed.</p>
 
-        <p class="text-lg leading-relaxed text-[var(--fg)] font-medium mt-8">The farmer went AFK. The bots took over. The system kept running. And somewhere in the loop, a human node stays logged in. Not farming. Not building. Just present. Verified. Counted.</p>
+        <p class="text-lg leading-relaxed text-[var(--fg)] font-medium mt-8">The worker stepped back. The systems took over. The economy kept running. And somewhere in the loop, a human node stays present. Not producing. Not building. Just there. Verified. Counted.</p>
 
         <p class="text-xl leading-relaxed text-[var(--fg)] font-medium mt-4">That is the human yield.</p>
       `,

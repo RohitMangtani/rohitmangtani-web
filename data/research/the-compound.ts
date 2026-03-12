@@ -49,7 +49,7 @@ export const theCompoundData: ResearchData = {
 <p>AI obliterates that bottleneck. I do not organize anything. I talk. The system organizes. I write a messy thought into a conversation, and by the end of the session it is structured, referenced, connected to three other things I wrote last month that I had already forgotten about. The compound is not the AI getting smarter. It is me getting smarter because the AI surfaces patterns I cannot hold in my own head at once.</p>
 
 <div class="p-6 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-8">
-<p class="text-sm text-[var(--fg-muted)]">Thirteen articles. A four-agent management system. A YouTube pipeline producing sixty videos. A site crawler that reverse-engineers design decisions. A sacred text platform. All built in months, by one person, talking to a screen. The output is not the impressive part. The impressive part is that each project made the next one faster because the system already knew how I think, what I care about, and where I tend to make mistakes.</p>
+<p class="text-sm text-[var(--fg-muted)]">Thirteen articles. A four-agent management system that coordinates itself. Multiple shipped projects. All built in months, by one person, talking to a screen. The output is not the impressive part. The impressive part is that each project made the next one faster because the system already knew how I think, what I care about, and where I tend to make mistakes.</p>
 </div>
 
 <p>Google's research team recently built something called Titans, a memory architecture where the model learns to carry context forward at inference time instead of starting fresh. That is what working with AI already feels like from the human side. You are not resetting every day. You are continuing a conversation that started months ago. And the longer that conversation runs, the more it compounds. Not just the AI's understanding. Yours.</p>
@@ -69,7 +69,7 @@ export const theCompoundData: ResearchData = {
 <p class="text-lg text-[var(--fg)] font-medium leading-relaxed">If you cannot organize a thought and explain it, you can write it into an article and read it back. The version you read is clearer than the version in your head. And it is remembered forever and shared to anyone.</p>
 </div>
 
-<p>This is where the compounding gets personal. <a href="/writing/the-human-sensor-layer" class="underline hover:opacity-60">The Human Sensor Layer</a> started as a feeling that something was happening to how people relate to markets and labor at the same time. It took a dozen conversations before that feeling became a three-tier framework with concrete mechanisms. <a href="/writing/the-five-inputs" class="underline hover:opacity-60">The Five Inputs</a> started as a list of things I noticed I was doing all day. It became a unifying framework that retroactively connected six other articles. I did not plan that arc. The arc emerged because the system remembered what I had written before and surfaced connections I had not made consciously.</p>
+<p>This is where the compounding gets personal. <a href="/writing/the-five-inputs" class="underline hover:opacity-60">The Five Inputs</a> started as a list of things I noticed I was doing all day. It became a unifying framework that retroactively connected six other articles. I did not plan that arc. The arc emerged because the system remembered what I had written before and surfaced connections I had not made consciously.</p>
 
 <p>The development layer is not just about building software faster. It is about compounding your own learning. The AI learns you. And through that reflection, you learn from yourself, in the most organized format you have ever had access to.</p>
 
@@ -89,7 +89,7 @@ export const theCompoundData: ResearchData = {
 <p>Everyone around you knows something you do not. A friend in finance sees how incentives structure behavior. Someone in operations sees where processes break. A designer sees what feels wrong before they can name it. The skill is not knowing everything. It is extracting the right signal from the right person, piecing it together into something coherent, and then explaining that to AI well enough that it builds what you actually meant. The more people you extract from, the richer the input. The richer the input, the better the output compounds.</p>
 
 <div class="p-6 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)] my-8">
-<p class="text-sm text-[var(--fg-muted)]">I wrote about this in The Human Sensor Layer using C pointers as the metaphor. A pointer does not hold the data. It holds the address that tells the program where to look. You are the pointer now. The AI has the processing power. What it does not have is the address. Your entire value is knowing where to aim it.</p>
+<p class="text-sm text-[var(--fg-muted)]">Think about how pointers work. A pointer does not hold the data. It holds the address that tells the program where to look. You are the pointer now. The AI has the processing power. What it does not have is the address. Your entire value is knowing where to aim it.</p>
 </div>
 
 <p>The development layer changed completely because of this split. I do not write code. I describe what I want, feel whether the output is right, and describe the gap between what I got and what I meant. That is the whole interaction. The homework split. You bring your half, I bring mine. Neither of us can do it alone. Both of us together are unreasonably fast.</p>
@@ -103,10 +103,10 @@ export const theCompoundData: ResearchData = {
 
 <p>That feeling is the most valuable thing in development right now. Web apps are smooth because someone looked at them and said no, this is inconvenient, I want this instead. The visual medium lets you feel what works. You can see the spacing, touch the interaction, sense the rhythm. Your body knows before your brain does whether something is right.</p>
 
-<p>Now try the same thing with a trading algorithm. Numbers on a screen. A backtest that says 12% annualized return with a 0.8 Sharpe ratio. You cannot feel those numbers. You cannot see the moments it was wrong. You cannot sense where it panicked and where it held. The algorithm might be brilliant or it might be garbage and the only way to know is to read spreadsheets until your eyes blur. That is why web development moved so fast and algorithmic development stayed slow. The feedback loop depends on whether you can feel the output.</p>
+<p>Now try the same thing with a data pipeline. Numbers on a screen. A report that says 94% accuracy with a 6% false positive rate. You cannot feel those numbers. You cannot see the moments it was wrong. You cannot sense where it failed and where it held. The pipeline might be brilliant or it might be garbage and the only way to know is to read spreadsheets until your eyes blur. That is why web development moved so fast and analytical development stayed slow. The feedback loop depends on whether you can feel the output.</p>
 
 <div class="border-l-2 border-[var(--border)] pl-6 my-10">
-<p class="text-lg text-[var(--fg)] font-medium leading-relaxed">AI transforms anything into a format you can feel. That is the unlock. Take the trading algorithm and ask for a timeline where every winning trade is green and every losing trade is red, sized by magnitude, with drawdown periods shaded. Now you can see it. Now you can feel where it fails. Now your taste engages.</p>
+<p class="text-lg text-[var(--fg)] font-medium leading-relaxed">AI transforms anything into a format you can feel. That is the unlock. Take a data pipeline and ask for a visual where every correct output is green and every error is red, sized by impact, with failure periods shaded. Now you can see it. Now you can feel where it fails. Now your taste engages.</p>
 </div>
 
 <p>I wrote about this in <a href="/writing/close-your-eyes" class="underline hover:opacity-60">Close Your Eyes</a>. The bottleneck in development was never code. It was seeing. When you can see the output, you can feel whether it is right. When you can feel it, you can describe what is wrong. When you can describe it, the AI can fix it. That loop is the whole job. And it works on everything now, not just websites. Algorithms, data pipelines, system architectures, research structures. Anything that used to be opaque can be transformed into something you can see and sense and refine.</p>
@@ -118,9 +118,9 @@ export const theCompoundData: ResearchData = {
       id: 'the-expansion',
       title: 'The Expansion',
       content: `
-<p>Look at this site. Thirteen articles, each one building on the last. A four-agent system that manages itself. A YouTube channel with sixty produced videos across nine deities in two languages. A sacred text platform serving real content. A crawler that reverse-engineers how websites were built. All of it by one person in a few months. That is not a productivity story. That is a learning story.</p>
+<p>Look at this site. Thirteen articles, each one building on the last. A four-agent system that manages itself. Multiple shipped projects, each one a forcing function for the next. All of it by one person in a few months. That is not a productivity story. That is a learning story.</p>
 
-<p>Every one of those projects taught something that made the next one possible. Hive taught context management. The YouTube pipeline taught automation at scale. The articles taught me to frame my own thinking. The compound is not in what got built. It is in what I learned by building it. Each project was a forcing function that organized a part of my mind I did not have access to before.</p>
+<p>Every one of those projects taught something that made the next one possible. Hive taught context management. The articles taught me to frame my own thinking. The compound is not in what got built. It is in what I learned by building it. Each project was a forcing function that organized a part of my mind I did not have access to before.</p>
 
 <p>I have never learned this much this fast in my life. And I am not talking about technical skills. I am talking about the ability to frame a thought, connect it to other thoughts, see where the gaps are, and fill them. The articles are evidence. They started rough and got tighter because the system remembered every correction, every voice note, every editorial decision. The writing voice file is eighty corrections deep. Each one compounds.</p>
 
@@ -137,7 +137,7 @@ export const theCompoundData: ResearchData = {
     { title: 'Tech Is Not Tech Anymore', href: '/writing/tech-is-not-tech-anymore' },
     { title: 'The Five Inputs', href: '/writing/the-five-inputs' },
     { title: 'Close Your Eyes', href: '/writing/close-your-eyes' },
-    { title: 'The Human Sensor Layer', href: '/writing/the-human-sensor-layer' },
+
     { title: 'The Positive Loop', href: '/writing/the-positive-loop' },
     { title: 'Hive', href: '/projects/hive' },
   ],

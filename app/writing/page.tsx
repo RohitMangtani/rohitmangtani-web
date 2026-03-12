@@ -82,12 +82,6 @@ const allWriting = [
     date: '2026',
   },
   {
-    slug: 'the-human-sensor-layer',
-    title: 'The Human Sensor Layer',
-    description: 'What happens when markets price belief instead of output. Sensors, nodes, and a floor.',
-    date: '2026',
-  },
-  {
     slug: 'safe-mode',
     title: 'Safe Mode',
     description: 'Regime detection as the skill behind every skill. Knowing when to stop pushing.',

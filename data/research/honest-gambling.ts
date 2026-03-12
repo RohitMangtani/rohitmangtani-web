@@ -21,7 +21,7 @@ export const honestGamblingData: ResearchData = {
   <p class="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-2">The Paradox</p>
   <p class="text-sm text-[var(--fg-muted)]">Millions of people voluntarily enter games they know are negative-sum. Where most participants lose. Where the odds are not hidden. They do this repeatedly, in full knowledge of the likely outcome.</p>
 </div>
-<p>The standard explanation is irrationality: addiction, FOMO, ignorance. Those factors are real. But they do not explain why participants often <em>prefer</em> transparent coordination games over opaque systems that claim to offer better odds.</p>
+<p>The standard explanation is irrationality: addiction, FOMO, ignorance. Those factors are real. But they do not explain why participants often <em>prefer</em> transparent negative-sum games over opaque systems that claim to offer better odds.</p>
 <p>There is a simpler explanation. Under conditions of perceived unfairness, people rationally prefer games with visible rules over games with hidden extraction, even when the visible game has worse expected outcomes. The preference makes sense once you see what they are actually optimizing for.</p>`,
     },
     {
@@ -56,7 +56,7 @@ export const honestGamblingData: ResearchData = {
         },
         {
           title: '4. Trust Calibration',
-          content: `<p>Transparent coordination games require trusting no one. No founder to deliver a roadmap, no team to execute a vision, no institution to stay solvent. The only variable is whether other participants will coordinate.</p>
+          content: `<p>Transparent negative-sum games require trusting no one. No founder to deliver a roadmap, no team to execute a vision, no institution to stay solvent. The only variable is whether other participants will coordinate.</p>
 <p>Opaque systems require trust: in founders, in investors, in auditors, in regulators. When trust in institutions is low, whether from experience or environment, trustless games become attractive. Not because they are better. Because they match the participant's available trust budget.</p>
 <p>A person who trusts nothing may rationally prefer a game that requires trusting nothing.</p>`,
         },
@@ -75,7 +75,7 @@ export const honestGamblingData: ResearchData = {
       content: `<p>The real distinction is not between risky and safe. It is between two structures:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
   <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)]">
-    <p class="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-2">Honest Coordination Games</p>
+    <p class="text-xs text-[var(--fg-muted)] uppercase tracking-wider mb-2">Transparent Negative-Sum Games</p>
     <p class="text-sm text-[var(--fg-muted)]">Rules are visible, participation is open, no one claims fundamental value, outcomes depend on timing and collective behavior. Most participants lose, and everyone knows it going in.</p>
   </div>
   <div class="p-5 border border-[var(--border)] rounded-lg bg-[var(--bg-secondary)]">
@@ -88,9 +88,9 @@ export const honestGamblingData: ResearchData = {
     {
       id: 'what-this-reveals',
       title: 'What This Reveals',
-      content: `<p>If any of this is right, the popularity of transparent coordination games is not primarily about greed or stupidity. It is a symptom of something deeper: a widespread perception that traditional systems are extractive, opaque, or closed.</p>
+      content: `<p>If any of this is right, the popularity of transparent negative-sum games is not primarily about greed or stupidity. It is a symptom of something deeper: a widespread perception that traditional systems are extractive, opaque, or closed.</p>
 <p>People are not choosing transparent games because they think the games are good. They are choosing them because the alternatives feel worse, and worse in ways that are more degrading.</p>
-<p>The real question is not whether honest gambling is wise. It is what it says about the perceived legitimacy of traditional systems when millions of people prefer an honest negative-sum game to an opaque one that claims to be positive-sum.</p>`,
+<p>The real question is not whether legible risk-taking is wise. It is what it says about the perceived legitimacy of traditional systems when millions of people prefer an honest negative-sum game to an opaque one that claims to be positive-sum.</p>`,
     },
   ],
 
