@@ -1,21 +1,19 @@
 import { ImageResponse } from 'next/og';
-import { medicaidFraudData } from '@/data/lab/medicaid-fraud-analysis';
-import { medicaidFraudPhase2Data } from '@/data/lab/medicaid-fraud-phase2';
+import { hiveData } from '@/data/research/hive';
 
 export const runtime = 'edge';
-export const alt = 'Lab Article - Rohit Mangtani';
+export const alt = 'Project - Rohit Mangtani';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 const articles: Record<string, { title: string; subtitle: string }> = {
-  'medicaid-fraud-analysis': medicaidFraudData,
-  'medicaid-fraud-phase2': medicaidFraudPhase2Data,
+  hive: hiveData,
 };
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = articles[slug];
-  const title = article?.title ?? 'Lab';
+  const title = article?.title ?? 'Projects';
   const subtitle = article?.subtitle ?? '';
 
   return new ImageResponse(
@@ -36,7 +34,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             ROHIT MANGTANI
           </div>
           <div style={{ fontSize: 14, color: '#78716c', padding: '2px 10px', border: '1px solid #e7e5e4', borderRadius: 6 }}>
-            Lab
+            Projects
           </div>
         </div>
         <div
