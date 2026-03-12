@@ -26,7 +26,7 @@ export default function AboutPage() {
 
         <div className="space-y-6 text-[var(--fg-muted)] animate-fade-in-delay-1">
           <p className="text-lg leading-relaxed">
-            I like finance, game theory, internet culture, crypto, psychology, and marketing. Not as separate interests. As one thing. How people behave online. How attention concentrates. How communities form around shared conviction. It is all the same system viewed from different angles.
+            I like finance, game theory, internet culture, AI systems, psychology, and marketing. Not as separate interests. As one thing. How people behave online. How attention concentrates. How communities form around shared conviction. It is all the same system viewed from different angles.
           </p>
           <p className="leading-relaxed">
             Still figuring out what to build and whether it is any good.
