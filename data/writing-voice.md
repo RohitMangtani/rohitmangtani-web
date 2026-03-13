@@ -9,7 +9,7 @@ This file is the living reference for Rohit's writing voice on rohitmangtani.com
 - Connects domains that seem unrelated: crypto to religion to AI to relationships to culture to meme coins
 - Conviction-based. "I just choose to believe it cuz I do like the idea and what it stands for"
 - Sees patterns before naming them. Describes what he is watching, then labels it
-- Frames big ideas through specific people, moments, or cultural artifacts (Murad, Bryan Johnson, SPX6900, O'Malley)
+- Frames big ideas through specific people, moments, or cultural artifacts (Murad, Bryan Johnson, SPX6900, Clavicular)
 
 ### How he frames ideas
 - Not binary. Effort matters, but only when pointed at the right things. Nothing is fully worthless or fully dominant. There are scales and ceilings.

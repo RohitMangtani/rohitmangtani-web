@@ -26,7 +26,7 @@ export const theGameableSocietyData: ThesisArticleData = {
         </p>
 
         <p class="leading-relaxed mb-6">
-          The evidence is everywhere. Teenagers follow O'Malley's looksmaxxing journey like a serialized drama, tracking his mewing progress and canthal tilt. Bryan Johnson spends $2 million a year on "don't die" protocols and livestreams his biomarkers to millions who will never afford his blood boy treatments. Gambling streamers become cultural icons not despite being unhinged but because of it. Their million-dollar wins and losses transformed into spectator sport, their degeneracy into content.
+          The evidence is everywhere. Teenagers follow Clavicular's looksmaxxing streams like a serialized drama, tracking his jaw progress and canthal tilt while he pulls over $100,000 a month on Kick just letting people watch him optimize his face. Bryan Johnson spends $2 million a year on "don't die" protocols and livestreams his biomarkers to millions who will never afford his blood boy treatments. Two different games, same loop. One is optimizing his appearance, the other is optimizing his biology, and both have turned the process itself into content that millions watch without doing anything. Gambling streamers become cultural icons not despite being unhinged but because of it. Their million-dollar wins and losses transformed into spectator sport, their degeneracy into content.
         </p>
 
         <p class="leading-relaxed mb-6">
