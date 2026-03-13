@@ -37,7 +37,7 @@ export const hiveData: ResearchData = {
       id: 'what-it-is',
       title: 'What It Is',
       content: `
-<p>Hive is a local daemon that runs on your machine. It discovers supported terminal agents like Claude Code, Codex, and OpenClaw, shows their status on a dashboard, and gives you a way to message any of them from your phone or a second screen. You can run one agent or up to eight. The dashboard grid adapts to match: a 2x2 grid for four agents, 3x2 for five or six, 4x2 for seven or eight. The tiles mirror your terminal layout. Top-left terminal, top-left tile. You manage agents by where they sit, not by what they are called.</p>
+<p>Hive is a local daemon that runs on your machine. It discovers supported terminal agents like Claude Code, Codex, and OpenClaw, shows their status on a dashboard, and gives you a way to message any of them from your phone or a second screen. You can run one agent or up to eight. The dashboard stacks them vertically, top to bottom, matching your terminal layout on screen. Agent 1 is at the top, agent 8 is at the bottom. Each one is a full-width strip with its status dot, project name, and current action. You manage agents by where they sit in the stack, not by what they are called.</p>
 
 <p>The thing that makes running multiple agents useful is that each one builds up its own context over time. One is an hour deep into an authentication refactor and knows every file it has touched. Another has been debugging a deploy for thirty minutes with a mental model of the infrastructure. These are not workers splitting one task. They are independent contexts, each deeply embedded in a different problem. A fresh agent starts from zero. An agent that has been working for an hour starts from everything it already knows. The dashboard is how you keep track of all of them without re-reading everything each time you switch your attention.</p>
 
@@ -75,7 +75,7 @@ export const hiveData: ResearchData = {
         {
           title: 'Spatial Mapping',
           content: `
-<p>Arrange your terminal windows in a grid. Two, four, six, or eight. Open Claude Code, Codex, or OpenClaw in each one. Hive reads the physical position of each Terminal window on your screen and assigns slots to match. The dashboard mirrors your screen. With four agents you get a 2x2 grid. With five or six, it widens to 3x2. With seven or eight, 4x2. The layout adapts to however many agents you are running.</p>
+<p>Open Terminal windows and stack them top to bottom. Two, four, six, or eight. Open Claude Code, Codex, or OpenClaw in each one. Hive reads the vertical position of each Terminal window on your screen and assigns slots to match. The dashboard mirrors your screen. The top terminal becomes the top tile. The bottom terminal becomes the bottom tile. Each agent is a full-width horizontal strip, stacked in order. The layout adapts to however many agents you are running.</p>
 
 <p>When you see a yellow dot in the bottom-left tile on your phone, you already know which terminal that is because you can see the bottom-left terminal on your laptop. The position is the label. Drag a terminal to a different corner and the dashboard updates to match within a few seconds.</p>
           `.trim(),
@@ -139,7 +139,7 @@ export const hiveData: ResearchData = {
 
 <p>These are not eight workers splitting one task. They are eight independent contexts, each deeply embedded in a different problem. A subagent spawned fresh starts from zero. An agent that has been working in a codebase for an hour starts from everything it already knows. That distinction is the entire point.</p>
 
-<p>The spatial mapping is what makes moving between them fast. Q1 is not a name you memorize. It is the top-left terminal on your screen and the top-left tile on your phone. You see a yellow dot in the top-right, and you already know it is Q2 because that is where you put the content project an hour ago. The position carries the context. You do not look up which agent is which. You just look at where it sits. The grid adapts as you add agents. Four agents, 2x2. Six agents, 3x2. Eight agents, 4x2. The layout scales but the spatial memory stays the same.</p>
+<p>The vertical stack is what makes moving between them fast. The top agent on your screen is the top tile on your phone. You see a yellow dot third from the top, and you already know it is the deploy debugger because that is where you stacked the deploy terminal. The position carries the context. You do not look up which agent is which. You just look at where it sits in the stack. Add more agents and they slot in below. The layout scales but the spatial memory stays the same.</p>
 
 <p>The human moves between them. You check the dashboard, see that Q2 is stuck, read its question, and realize the answer is in Q1's project. You tell Q1: "What is the API schema you designed for the auth endpoint?" Q1 already knows, because it spent the last hour building it. It responds from deep context, not from a cold read of the codebase. You relay that to Q2. Or Q2 messages Q1 directly through Hive's coordination layer, and Q1 answers from the same deep context. Either way, the knowledge transfer happens between two agents that each have genuine understanding of their own domain. Not between a parent and a disposable subagent.</p>
 
