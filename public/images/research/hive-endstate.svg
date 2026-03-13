@@ -20,46 +20,64 @@
 
   <rect x="26" y="86" width="188" height="510" rx="14" fill="url(#soft)" stroke="#e7e5e4" stroke-width="1" filter="url(#shadow)"/>
   <text x="46" y="114" font-size="12" font-weight="700" fill="#1c1917">Today</text>
-  <text x="46" y="132" font-size="9.5" fill="#78716c">What already exists and works now.</text>
+  <text x="46" y="132" font-size="9.5" fill="#78716c">What already exists and scales on one machine.</text>
 
-  <rect x="46" y="154" width="148" height="116" rx="12" fill="#111827"/>
-  <rect x="58" y="166" width="56" height="42" rx="8" fill="#1f2937"/>
-  <circle cx="68" cy="176" r="2.5" fill="#22c55e"/>
-  <text x="78" y="180" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
-  <text x="60" y="196" font-size="7" fill="#d6d3d1">Q1 auth refactor</text>
-  <rect x="126" y="166" width="56" height="42" rx="8" fill="#1f2937"/>
-  <circle cx="136" cy="176" r="2.5" fill="#3b82f6"/>
-  <text x="146" y="180" font-size="6.5" font-weight="700" fill="#93c5fd">Codex</text>
-  <text x="128" y="196" font-size="7" fill="#d6d3d1">Q2 dashboard</text>
-  <rect x="58" y="218" width="56" height="42" rx="8" fill="#1f2937"/>
-  <circle cx="68" cy="228" r="2.5" fill="#f97316"/>
-  <text x="78" y="232" font-size="6.5" font-weight="700" fill="#fdba74">OpenClaw</text>
-  <text x="60" y="248" font-size="7" fill="#d6d3d1">Q3 automation</text>
-  <rect x="126" y="218" width="56" height="42" rx="8" fill="#1f2937"/>
-  <circle cx="136" cy="228" r="2.5" fill="#22c55e"/>
-  <text x="146" y="232" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
-  <text x="128" y="248" font-size="7" fill="#d6d3d1">Q4 audit</text>
-  <text x="120" y="286" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Local terminals</text>
-  <text x="120" y="300" text-anchor="middle" font-size="8" fill="#a8a29e">Claude, Codex, and OpenClaw mixed in one grid.</text>
+  <rect x="46" y="154" width="148" height="126" rx="12" fill="#111827"/>
+  <rect x="58" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="66" cy="176" r="2.5" fill="#22c55e"/>
+  <text x="71" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q1</text>
+  <rect x="88" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="96" cy="176" r="2.5" fill="#3b82f6"/>
+  <text x="101" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q2</text>
+  <rect x="118" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="126" cy="176" r="2.5" fill="#f97316"/>
+  <text x="131" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q3</text>
+  <rect x="148" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="156" cy="176" r="2.5" fill="#22c55e"/>
+  <text x="161" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q4</text>
+  <rect x="58" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="66" cy="220" r="2.5" fill="#22c55e"/>
+  <text x="71" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q5</text>
+  <rect x="88" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="96" cy="220" r="2.5" fill="#3b82f6"/>
+  <text x="101" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q6</text>
+  <rect x="118" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="126" cy="220" r="2.5" fill="#f97316"/>
+  <text x="131" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q7</text>
+  <rect x="148" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
+  <circle cx="156" cy="220" r="2.5" fill="#22c55e"/>
+  <text x="161" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q8</text>
+  <text x="120" y="296" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">1-8 local terminals</text>
+  <text x="120" y="310" text-anchor="middle" font-size="8" fill="#a8a29e">Claude, Codex, and OpenClaw in one adaptive grid.</text>
 
-  <line x1="120" y1="316" x2="120" y2="336" stroke="#d6d3d1" stroke-width="1.2"/>
-  <polygon points="115,332 120,340 125,332" fill="#d6d3d1"/>
-  <text x="120" y="354" text-anchor="middle" font-size="8" fill="#78716c">mirrored 1:1</text>
+  <line x1="120" y1="324" x2="120" y2="344" stroke="#d6d3d1" stroke-width="1.2"/>
+  <polygon points="115,340 120,348 125,340" fill="#d6d3d1"/>
+  <text x="120" y="362" text-anchor="middle" font-size="8" fill="#78716c">mirrored 1:1</text>
 
-  <rect x="78" y="372" width="84" height="154" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
-  <rect x="106" y="380" width="28" height="5" rx="2.5" fill="#44403c"/>
-  <rect x="90" y="396" width="60" height="18" rx="9" fill="#111827"/>
-  <text x="120" y="408" text-anchor="middle" font-size="7" font-weight="700" fill="#fafaf9">HIVE</text>
-  <rect x="90" y="422" width="26" height="34" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="103" y="436" text-anchor="middle" font-size="6.5" font-weight="700" fill="#166534">Q1</text>
-  <rect x="124" y="422" width="26" height="34" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="137" y="436" text-anchor="middle" font-size="6.5" font-weight="700" fill="#166534">Q2</text>
-  <rect x="90" y="464" width="26" height="34" rx="8" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
-  <text x="103" y="478" text-anchor="middle" font-size="6.5" font-weight="700" fill="#92400e">Q3</text>
-  <rect x="124" y="464" width="26" height="34" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
-  <text x="137" y="478" text-anchor="middle" font-size="6.5" font-weight="700" fill="#1d4ed8">Q4</text>
-  <text x="120" y="546" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Hosted dashboard</text>
-  <text x="120" y="560" text-anchor="middle" font-size="8" fill="#a8a29e">Stoplight status and messaging from anywhere.</text>
+  <rect x="74" y="374" width="92" height="154" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
+  <rect x="106" y="382" width="28" height="5" rx="2.5" fill="#44403c"/>
+  <rect x="86" y="398" width="68" height="16" rx="8" fill="#111827"/>
+  <text x="120" y="409" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fafaf9">HIVE</text>
+  <rect x="86" y="422" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="94" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q1</text>
+  <rect x="106" y="422" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="114" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q2</text>
+  <rect x="126" y="422" width="16" height="24" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
+  <text x="134" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#92400e">Q3</text>
+  <rect x="146" y="422" width="12" height="24" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="152" y="438" text-anchor="middle" font-size="5.4" font-weight="700" fill="#991b1b">Q4</text>
+  <rect x="86" y="450" width="16" height="24" rx="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1"/>
+  <text x="94" y="466" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">Q5</text>
+  <rect x="106" y="450" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="114" y="466" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q6</text>
+  <rect x="126" y="450" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="134" y="466" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q7</text>
+  <rect x="146" y="450" width="12" height="24" rx="6" fill="none" stroke="#78716c" stroke-width="1" stroke-dasharray="3 2"/>
+  <text x="152" y="466" text-anchor="middle" font-size="5.4" font-weight="700" fill="#a8a29e">Q8</text>
+  <rect x="92" y="484" width="56" height="12" rx="6" fill="#111827"/>
+  <text x="120" y="492" text-anchor="middle" font-size="5.8" fill="#a8a29e">2x2 to 4x2</text>
+  <text x="120" y="548" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Adaptive dashboard</text>
+  <text x="120" y="562" text-anchor="middle" font-size="8" fill="#a8a29e">Same positions. More capacity.</text>
 
   <line x1="228" y1="342" x2="250" y2="342" stroke="#d6d3d1" stroke-width="1.5"/>
   <polygon points="246,337 256,342 246,347" fill="#d6d3d1"/>
@@ -69,11 +87,11 @@
   <text x="340" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#fafaf9">Management Layer</text>
   <text x="340" y="132" text-anchor="middle" font-size="9.5" fill="#a8a29e">The real product edge today.</text>
 
-  <rect x="292" y="146" width="96" height="18" rx="9" fill="#fafaf9" fill-opacity="0.12" stroke="#57534e" stroke-width="1"/>
-  <text x="340" y="158" text-anchor="middle" font-size="7.2" font-weight="700" fill="#fafaf9">not a new model</text>
+  <rect x="286" y="146" width="108" height="18" rx="9" fill="#fafaf9" fill-opacity="0.12" stroke="#57534e" stroke-width="1"/>
+  <text x="340" y="158" text-anchor="middle" font-size="7.2" font-weight="700" fill="#fafaf9">1-8 agents, one view</text>
 
   <rect x="282" y="172" width="116" height="34" rx="12" fill="#292524"/>
-  <text x="340" y="193" text-anchor="middle" font-size="9" font-weight="600" fill="#fafaf9">Spatial mapping</text>
+  <text x="340" y="193" text-anchor="middle" font-size="9" font-weight="600" fill="#fafaf9">Adaptive grid map</text>
   <rect x="282" y="216" width="116" height="34" rx="12" fill="#292524"/>
   <text x="340" y="237" text-anchor="middle" font-size="9" font-weight="600" fill="#fafaf9">Stoplight status</text>
   <rect x="282" y="260" width="116" height="34" rx="12" fill="#292524"/>
@@ -91,8 +109,8 @@
 
   <rect x="282" y="524" width="116" height="50" rx="14" fill="#fafaf9"/>
   <text x="340" y="545" text-anchor="middle" font-size="9" font-weight="700" fill="#1c1917">What Hive proves</text>
-  <text x="340" y="560" text-anchor="middle" font-size="8" fill="#57534e">A human can run a small mixed fleet</text>
-  <text x="340" y="571" text-anchor="middle" font-size="8" fill="#57534e">without Hive replacing the tools underneath.</text>
+  <text x="340" y="560" text-anchor="middle" font-size="8" fill="#57534e">A human can run a mixed fleet</text>
+  <text x="340" y="571" text-anchor="middle" font-size="8" fill="#57534e">and keep the map stable as it grows.</text>
 
   <line x1="434" y1="342" x2="456" y2="342" stroke="#d6d3d1" stroke-width="1.5" stroke-dasharray="4 4"/>
   <polygon points="452,337 462,342 452,347" fill="#d6d3d1"/>
@@ -102,39 +120,51 @@
   <text x="486" y="114" font-size="12" font-weight="700" fill="#1c1917">Next</text>
   <text x="486" y="132" font-size="9.5" fill="#78716c">The broader provider-agnostic interface.</text>
 
-  <rect x="486" y="156" width="148" height="146" rx="12" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <rect x="486" y="156" width="148" height="158" rx="12" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
   <text x="560" y="178" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1c1917">Runtimes and providers</text>
   <rect x="500" y="194" width="120" height="24" rx="8" fill="#ffffff" stroke="#e7e5e4" stroke-width="1"/>
   <text x="560" y="210" text-anchor="middle" font-size="8.5" fill="#44403c">Anthropic  Claude Code</text>
   <rect x="500" y="226" width="120" height="24" rx="8" fill="#ffffff" stroke="#e7e5e4" stroke-width="1"/>
   <text x="560" y="242" text-anchor="middle" font-size="8.5" fill="#44403c">OpenAI  Codex and GPT</text>
   <rect x="500" y="258" width="120" height="24" rx="8" fill="#ffffff" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="560" y="274" text-anchor="middle" font-size="8.5" fill="#44403c">OpenClaw  terminal agent</text>
+  <text x="560" y="274" text-anchor="middle" font-size="8.5" fill="#44403c">Google  Gemini and CLI</text>
+  <rect x="500" y="290" width="120" height="24" rx="8" fill="#ffffff" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="560" y="306" text-anchor="middle" font-size="8.5" fill="#44403c">Custom  local runtimes</text>
 
-  <line x1="560" y1="302" x2="560" y2="326" stroke="#d6d3d1" stroke-width="1.2"/>
-  <polygon points="555,322 560,330 565,322" fill="#d6d3d1"/>
+  <line x1="560" y1="314" x2="560" y2="338" stroke="#d6d3d1" stroke-width="1.2"/>
+  <polygon points="555,334 560,342 565,334" fill="#d6d3d1"/>
 
-  <rect x="516" y="338" width="88" height="152" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
-  <rect x="546" y="346" width="28" height="5" rx="2.5" fill="#44403c"/>
-  <rect x="528" y="362" width="64" height="16" rx="8" fill="#111827"/>
-  <text x="560" y="373" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fafaf9">UNIVERSAL VIEW</text>
-  <rect x="528" y="386" width="28" height="34" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="542" y="399" text-anchor="middle" font-size="6.5" font-weight="700" fill="#166534">A</text>
-  <rect x="564" y="386" width="28" height="34" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
-  <text x="578" y="399" text-anchor="middle" font-size="6.5" font-weight="700" fill="#1d4ed8">O</text>
-  <rect x="528" y="428" width="28" height="34" rx="8" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
-  <text x="542" y="441" text-anchor="middle" font-size="6.5" font-weight="700" fill="#92400e">G</text>
-  <rect x="564" y="428" width="28" height="34" rx="8" fill="#f3f4f6" stroke="#a8a29e" stroke-width="1"/>
-  <text x="578" y="441" text-anchor="middle" font-size="6.5" font-weight="700" fill="#57534e">+</text>
-  <text x="560" y="512" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">One visual layer</text>
-  <text x="560" y="526" text-anchor="middle" font-size="8" fill="#a8a29e">Any provider or runtime. Same stoplights.</text>
+  <rect x="512" y="350" width="96" height="164" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
+  <rect x="546" y="358" width="28" height="5" rx="2.5" fill="#44403c"/>
+  <rect x="524" y="374" width="72" height="16" rx="8" fill="#111827"/>
+  <text x="560" y="385" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fafaf9">UNIVERSAL VIEW</text>
+  <rect x="524" y="398" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="532" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">A</text>
+  <rect x="544" y="398" width="16" height="24" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="552" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#1d4ed8">O</text>
+  <rect x="564" y="398" width="16" height="24" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
+  <text x="572" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#92400e">G</text>
+  <rect x="584" y="398" width="12" height="24" rx="6" fill="#f3f4f6" stroke="#a8a29e" stroke-width="1"/>
+  <text x="590" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">+</text>
+  <rect x="524" y="426" width="16" height="24" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="532" y="442" text-anchor="middle" font-size="5.8" font-weight="700" fill="#1d4ed8">O</text>
+  <rect x="544" y="426" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="552" y="442" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">A</text>
+  <rect x="564" y="426" width="16" height="24" rx="6" fill="#f3f4f6" stroke="#a8a29e" stroke-width="1"/>
+  <text x="572" y="442" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">+</text>
+  <rect x="584" y="426" width="12" height="24" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
+  <text x="590" y="442" text-anchor="middle" font-size="5.6" font-weight="700" fill="#92400e">G</text>
+  <rect x="530" y="460" width="60" height="12" rx="6" fill="#111827"/>
+  <text x="560" y="468" text-anchor="middle" font-size="5.8" fill="#a8a29e">same adaptive grid</text>
+  <text x="560" y="534" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">One visual layer</text>
+  <text x="560" y="548" text-anchor="middle" font-size="8" fill="#a8a29e">Any provider or runtime. Same adaptive stoplights.</text>
 
   <rect x="486" y="538" width="148" height="36" rx="12" fill="none" stroke="#a8a29e" stroke-width="1" stroke-dasharray="5 4"/>
-  <text x="560" y="560" text-anchor="middle" font-size="8.5" fill="#57534e">Natural-language fleet operations</text>
+  <text x="560" y="560" text-anchor="middle" font-size="8.5" fill="#57534e">Fleet operations above providers</text>
 
   <rect x="26" y="620" width="628" height="112" rx="14" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
   <text x="340" y="646" text-anchor="middle" font-size="11" font-weight="700" fill="#1c1917">What the diagram is really saying</text>
-  <text x="340" y="668" text-anchor="middle" font-size="9" fill="#57534e">Hive is already the management layer for local multi-agent work.</text>
-  <text x="340" y="684" text-anchor="middle" font-size="9" fill="#57534e">The end state is not a replacement for Claude, Codex, or OpenClaw. It is the same layer widened across more of them.</text>
+  <text x="340" y="668" text-anchor="middle" font-size="9" fill="#57534e">Hive is already the management layer for local fleets up to eight agents.</text>
+  <text x="340" y="684" text-anchor="middle" font-size="9" fill="#57534e">The end state is not a replacement for Claude, Codex, or Gemini. It is the same layer widened across more of them.</text>
   <text x="340" y="700" text-anchor="middle" font-size="9" fill="#57534e">Local terminals on the left. Management in the middle. Provider-agnostic fleet interface on the right.</text>
 </svg>
