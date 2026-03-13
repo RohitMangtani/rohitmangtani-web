@@ -32,15 +32,15 @@
   <text x="146" y="180" font-size="6.5" font-weight="700" fill="#93c5fd">Codex</text>
   <text x="128" y="196" font-size="7" fill="#d6d3d1">Q2 dashboard</text>
   <rect x="58" y="218" width="56" height="42" rx="8" fill="#1f2937"/>
-  <circle cx="68" cy="228" r="2.5" fill="#22c55e"/>
-  <text x="78" y="232" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
-  <text x="60" y="248" font-size="7" fill="#d6d3d1">Q3 content sync</text>
+  <circle cx="68" cy="228" r="2.5" fill="#f97316"/>
+  <text x="78" y="232" font-size="6.5" font-weight="700" fill="#fdba74">OpenClaw</text>
+  <text x="60" y="248" font-size="7" fill="#d6d3d1">Q3 automation</text>
   <rect x="126" y="218" width="56" height="42" rx="8" fill="#1f2937"/>
   <circle cx="136" cy="228" r="2.5" fill="#22c55e"/>
   <text x="146" y="232" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
   <text x="128" y="248" font-size="7" fill="#d6d3d1">Q4 audit</text>
   <text x="120" y="286" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Local terminals</text>
-  <text x="120" y="300" text-anchor="middle" font-size="8" fill="#a8a29e">Claude and Codex mixed. OpenClaw available too.</text>
+  <text x="120" y="300" text-anchor="middle" font-size="8" fill="#a8a29e">Claude, Codex, and OpenClaw mixed in one grid.</text>
 
   <line x1="120" y1="316" x2="120" y2="336" stroke="#d6d3d1" stroke-width="1.2"/>
   <polygon points="115,332 120,340 125,332" fill="#d6d3d1"/>

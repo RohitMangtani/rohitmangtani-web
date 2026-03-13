@@ -40,11 +40,11 @@
 
   <rect x="48" y="244" width="96" height="84" rx="10" fill="#111827"/>
   <rect x="56" y="252" width="80" height="12" rx="6" fill="#1f2937"/>
-  <circle cx="64" cy="258" r="2" fill="#22c55e"/>
-  <text x="74" y="261" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
-  <text x="58" y="280" font-size="8" fill="#d6d3d1">Q3  content sync</text>
-  <text x="58" y="294" font-size="7" fill="#9ca3af">$ syncing articles</text>
-  <text x="58" y="306" font-size="7" fill="#6b7280">cross-site deploy</text>
+  <circle cx="64" cy="258" r="2" fill="#f97316"/>
+  <text x="74" y="261" font-size="6.5" font-weight="700" fill="#fdba74">OpenClaw</text>
+  <text x="58" y="280" font-size="8" fill="#d6d3d1">Q3  broad automation</text>
+  <text x="58" y="294" font-size="7" fill="#9ca3af">$ collecting outputs</text>
+  <text x="58" y="306" font-size="7" fill="#6b7280">bridging across tools</text>
 
   <rect x="158" y="244" width="96" height="84" rx="10" fill="#111827"/>
   <rect x="166" y="252" width="80" height="12" rx="6" fill="#1f2937"/>
@@ -108,7 +108,7 @@
   <rect x="664" y="264" width="188" height="46" rx="12" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="1"/>
   <circle cx="682" cy="287" r="6" fill="#22c55e"/>
   <text x="698" y="283" font-size="9.5" font-weight="600" fill="#1c1917">Route a handoff.</text>
-  <text x="698" y="297" font-size="8.5" fill="#78716c">Claude researches. Codex builds. Mix models however you want.</text>
+  <text x="698" y="297" font-size="8.5" fill="#78716c">Claude researches. Codex builds. OpenClaw widens the run.</text>
 
   <rect x="664" y="322" width="188" height="46" rx="12" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1"/>
   <circle cx="682" cy="345" r="6" fill="#a855f7"/>
@@ -134,7 +134,7 @@
   <text x="188" y="528" font-size="8" fill="#a8a29e">Hook, JSONL, CPU, and PTY signals</text>
   <text x="290" y="528" font-size="8" fill="#a8a29e">Direct messages from any device</text>
   <text x="364" y="528" font-size="8" fill="#a8a29e">Focused summaries, not a shared mind</text>
-  <text x="478" y="528" font-size="8" fill="#a8a29e">Claude, Codex, OpenClaw, and more in one grid</text>
+  <text x="478" y="528" font-size="8" fill="#a8a29e">Claude, Codex, and OpenClaw in one grid</text>
   <text x="582" y="528" font-size="8" fill="#a8a29e">Routine interruptions handled automatically</text>
   <text x="718" y="528" font-size="8" fill="#a8a29e">Project learnings compound over time</text>
 
