@@ -16,7 +16,7 @@
   <rect width="900" height="620" rx="12" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1"/>
 
   <text x="450" y="34" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1917" letter-spacing="0.08em">THE VISUAL WORKFLOW</text>
-  <text x="450" y="52" text-anchor="middle" font-size="10" fill="#78716c">What Hive changes: not the models, the way you see and steer them.</text>
+  <text x="450" y="52" text-anchor="middle" font-size="10" fill="#78716c">What Hive changes: not the models themselves, but the way you see, steer, and combine them.</text>
 
   <rect x="28" y="78" width="250" height="300" rx="14" fill="url(#panelFill)" stroke="#e7e5e4" stroke-width="1" filter="url(#shadow)"/>
   <text x="48" y="106" font-size="12" font-weight="700" fill="#1c1917">1. Your machine</text>
@@ -32,19 +32,19 @@
 
   <rect x="158" y="148" width="96" height="84" rx="10" fill="#111827"/>
   <rect x="166" y="156" width="80" height="12" rx="6" fill="#1f2937"/>
-  <circle cx="174" cy="162" r="2" fill="#22c55e"/>
-  <text x="184" y="165" font-size="6.5" font-weight="700" fill="#86efac">Claude</text>
+  <circle cx="174" cy="162" r="2" fill="#3b82f6"/>
+  <text x="184" y="165" font-size="6.5" font-weight="700" fill="#93c5fd">Codex</text>
   <text x="168" y="184" font-size="8" fill="#d6d3d1">Q2  dashboard bug</text>
   <text x="168" y="198" font-size="7" fill="#9ca3af">$ tracing websocket</text>
   <text x="168" y="210" font-size="7" fill="#6b7280">watching events...</text>
 
   <rect x="48" y="244" width="96" height="84" rx="10" fill="#111827"/>
   <rect x="56" y="252" width="80" height="12" rx="6" fill="#1f2937"/>
-  <circle cx="64" cy="258" r="2" fill="#eab308"/>
-  <text x="74" y="261" font-size="6.5" font-weight="700" fill="#fde68a">Claude</text>
-  <text x="58" y="280" font-size="8" fill="#d6d3d1">Q3  review pending</text>
-  <text x="58" y="294" font-size="7" fill="#9ca3af">$ waiting on input</text>
-  <text x="58" y="306" font-size="7" fill="#6b7280">needs a decision</text>
+  <circle cx="64" cy="258" r="2" fill="#f97316"/>
+  <text x="74" y="261" font-size="6.5" font-weight="700" fill="#fdba74">OpenClaw</text>
+  <text x="58" y="280" font-size="8" fill="#d6d3d1">Q3  broad automation</text>
+  <text x="58" y="294" font-size="7" fill="#9ca3af">$ collecting outputs</text>
+  <text x="58" y="306" font-size="7" fill="#6b7280">bridging the tools</text>
 
   <rect x="158" y="244" width="96" height="84" rx="10" fill="#111827"/>
   <rect x="166" y="252" width="80" height="12" rx="6" fill="#1f2937"/>
@@ -82,7 +82,7 @@
   <text x="482" y="270" text-anchor="middle" font-size="7" font-weight="700" fill="#1d4ed8">Q4</text>
   <text x="482" y="282" text-anchor="middle" font-size="6.5" fill="#1d4ed8">auditing</text>
   <rect x="420" y="304" width="80" height="10" rx="5" fill="#111827"/>
-  <text x="460" y="312" text-anchor="middle" font-size="6.5" fill="#a8a29e">tap a tile to message it</text>
+  <text x="460" y="312" text-anchor="middle" font-size="6.5" fill="#a8a29e">one grid, three runtimes</text>
 
   <text x="460" y="354" text-anchor="middle" font-size="9.5" font-weight="600" fill="#57534e">You do not read four terminals anymore.</text>
   <text x="460" y="369" text-anchor="middle" font-size="8.5" fill="#a8a29e">You glance at four positions and know what matters.</text>
@@ -108,7 +108,7 @@
   <rect x="664" y="264" width="188" height="46" rx="12" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="1"/>
   <circle cx="682" cy="287" r="6" fill="#22c55e"/>
   <text x="698" y="283" font-size="9.5" font-weight="600" fill="#1c1917">Route a handoff.</text>
-  <text x="698" y="297" font-size="8.5" fill="#78716c">Claude researches. Codex builds from the result.</text>
+  <text x="698" y="297" font-size="8.5" fill="#78716c">Claude researches. Codex builds. OpenClaw widens the run.</text>
 
   <rect x="664" y="322" width="188" height="46" rx="12" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1"/>
   <circle cx="682" cy="345" r="6" fill="#a855f7"/>
@@ -126,7 +126,7 @@
   <text x="188" y="512" font-size="8.8" fill="#44403c">Status detection</text>
   <text x="290" y="512" font-size="8.8" fill="#44403c">Messaging</text>
   <text x="364" y="512" font-size="8.8" fill="#44403c">Workflow handoffs</text>
-  <text x="478" y="512" font-size="8.8" fill="#44403c">Cross-model use</text>
+  <text x="478" y="512" font-size="8.8" fill="#44403c">Cross-runtime use</text>
   <text x="582" y="512" font-size="8.8" fill="#44403c">Autopilot + watchdog</text>
   <text x="718" y="512" font-size="8.8" fill="#44403c">Learned context</text>
 
@@ -134,11 +134,11 @@
   <text x="188" y="528" font-size="8" fill="#a8a29e">Hook, JSONL, CPU, and PTY signals</text>
   <text x="290" y="528" font-size="8" fill="#a8a29e">Direct messages from any device</text>
   <text x="364" y="528" font-size="8" fill="#a8a29e">Focused summaries, not a shared mind</text>
-  <text x="478" y="528" font-size="8" fill="#a8a29e">Claude and Codex in one grid</text>
+  <text x="478" y="528" font-size="8" fill="#a8a29e">Claude, Codex, and OpenClaw in one grid</text>
   <text x="582" y="528" font-size="8" fill="#a8a29e">Routine interruptions handled automatically</text>
   <text x="718" y="528" font-size="8" fill="#a8a29e">Project learnings compound over time</text>
 
   <line x1="40" y1="560" x2="860" y2="560" stroke="#e7e5e4" stroke-width="1"/>
-  <text x="450" y="584" text-anchor="middle" font-size="10" fill="#44403c">The value is not just that four agents run at once.</text>
-  <text x="450" y="600" text-anchor="middle" font-size="10" font-weight="600" fill="#1c1917">It is that you can finally see enough to direct them.</text>
+  <text x="450" y="584" text-anchor="middle" font-size="10" fill="#44403c">Hive is not another model or a replacement for the tools underneath.</text>
+  <text x="450" y="600" text-anchor="middle" font-size="10" font-weight="600" fill="#1c1917">It is the management layer that lets you finally see enough to direct all of them.</text>
 </svg>
