@@ -22,62 +22,47 @@
   <text x="46" y="114" font-size="12" font-weight="700" fill="#1c1917">Today</text>
   <text x="46" y="132" font-size="9.5" fill="#78716c">What already exists and scales on one machine.</text>
 
-  <rect x="46" y="154" width="148" height="126" rx="12" fill="#111827"/>
-  <rect x="58" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="66" cy="176" r="2.5" fill="#22c55e"/>
-  <text x="71" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q1</text>
-  <rect x="88" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="96" cy="176" r="2.5" fill="#3b82f6"/>
-  <text x="101" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q2</text>
-  <rect x="118" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="126" cy="176" r="2.5" fill="#f97316"/>
-  <text x="131" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q3</text>
-  <rect x="148" y="166" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="156" cy="176" r="2.5" fill="#22c55e"/>
-  <text x="161" y="189" font-size="7" font-weight="700" fill="#d6d3d1">Q4</text>
-  <rect x="58" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="66" cy="220" r="2.5" fill="#22c55e"/>
-  <text x="71" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q5</text>
-  <rect x="88" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="96" cy="220" r="2.5" fill="#3b82f6"/>
-  <text x="101" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q6</text>
-  <rect x="118" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="126" cy="220" r="2.5" fill="#f97316"/>
-  <text x="131" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q7</text>
-  <rect x="148" y="210" width="26" height="34" rx="7" fill="#1f2937"/>
-  <circle cx="156" cy="220" r="2.5" fill="#22c55e"/>
-  <text x="161" y="233" font-size="7" font-weight="700" fill="#d6d3d1">Q8</text>
-  <text x="120" y="296" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">1-8 local terminals</text>
-  <text x="120" y="310" text-anchor="middle" font-size="8" fill="#a8a29e">Claude, Codex, and OpenClaw in one adaptive grid.</text>
+  <rect x="46" y="154" width="148" height="138" rx="12" fill="#111827"/>
+  <rect x="58" y="168" width="124" height="14" rx="5" fill="#1f2937"/>
+  <circle cx="68" cy="175" r="2.5" fill="#22c55e"/>
+  <text x="78" y="179" font-size="7" font-weight="700" fill="#d6d3d1">Q1  auth refactor</text>
+  <rect x="58" y="188" width="124" height="14" rx="5" fill="#1f2937"/>
+  <circle cx="68" cy="195" r="2.5" fill="#3b82f6"/>
+  <text x="78" y="199" font-size="7" font-weight="700" fill="#d6d3d1">Q2  dashboard</text>
+  <rect x="58" y="208" width="124" height="14" rx="5" fill="#1f2937"/>
+  <circle cx="68" cy="215" r="2.5" fill="#f97316"/>
+  <text x="78" y="219" font-size="7" font-weight="700" fill="#d6d3d1">Q3  automation</text>
+  <rect x="58" y="228" width="124" height="14" rx="5" fill="#1f2937"/>
+  <circle cx="68" cy="235" r="2.5" fill="#22c55e"/>
+  <text x="78" y="239" font-size="7" font-weight="700" fill="#d6d3d1">Q4  audit</text>
+  <rect x="58" y="248" width="124" height="14" rx="5" fill="#1f2937"/>
+  <circle cx="68" cy="255" r="2.5" fill="#22c55e"/>
+  <text x="78" y="259" font-size="7" font-weight="700" fill="#d6d3d1">Q5  tests</text>
+  <rect x="58" y="268" width="124" height="10" rx="5" fill="#1f2937"/>
+  <text x="120" y="275" text-anchor="middle" font-size="6.5" fill="#9ca3af">...through Q8</text>
+  <text x="120" y="310" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Local terminal stack</text>
+  <text x="120" y="324" text-anchor="middle" font-size="8" fill="#a8a29e">Full-width strips stacked top to bottom.</text>
 
-  <line x1="120" y1="324" x2="120" y2="344" stroke="#d6d3d1" stroke-width="1.2"/>
-  <polygon points="115,340 120,348 125,340" fill="#d6d3d1"/>
-  <text x="120" y="362" text-anchor="middle" font-size="8" fill="#78716c">mirrored 1:1</text>
+  <line x1="120" y1="338" x2="120" y2="358" stroke="#d6d3d1" stroke-width="1.2"/>
+  <polygon points="115,354 120,362 125,354" fill="#d6d3d1"/>
+  <text x="120" y="376" text-anchor="middle" font-size="8" fill="#78716c">mirrored 1:1</text>
 
-  <rect x="74" y="374" width="92" height="154" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
-  <rect x="106" y="382" width="28" height="5" rx="2.5" fill="#44403c"/>
-  <rect x="86" y="398" width="68" height="16" rx="8" fill="#111827"/>
-  <text x="120" y="409" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fafaf9">HIVE</text>
-  <rect x="86" y="422" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="94" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q1</text>
-  <rect x="106" y="422" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="114" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q2</text>
-  <rect x="126" y="422" width="16" height="24" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
-  <text x="134" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#92400e">Q3</text>
-  <rect x="146" y="422" width="12" height="24" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
-  <text x="152" y="438" text-anchor="middle" font-size="5.4" font-weight="700" fill="#991b1b">Q4</text>
-  <rect x="86" y="450" width="16" height="24" rx="6" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1"/>
-  <text x="94" y="466" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">Q5</text>
-  <rect x="106" y="450" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="114" y="466" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q6</text>
-  <rect x="126" y="450" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="134" y="466" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q7</text>
-  <rect x="146" y="450" width="12" height="24" rx="6" fill="none" stroke="#78716c" stroke-width="1" stroke-dasharray="3 2"/>
-  <text x="152" y="466" text-anchor="middle" font-size="5.4" font-weight="700" fill="#a8a29e">Q8</text>
-  <rect x="92" y="484" width="56" height="12" rx="6" fill="#111827"/>
-  <text x="120" y="492" text-anchor="middle" font-size="5.8" fill="#a8a29e">2x2 to 4x2</text>
-  <text x="120" y="548" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Adaptive dashboard</text>
-  <text x="120" y="562" text-anchor="middle" font-size="8" fill="#a8a29e">Same positions. More capacity.</text>
+  <rect x="76" y="390" width="88" height="146" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
+  <rect x="106" y="398" width="28" height="5" rx="2.5" fill="#44403c"/>
+  <rect x="88" y="414" width="64" height="16" rx="8" fill="#111827"/>
+  <text x="120" y="425" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fafaf9">HIVE</text>
+  <rect x="88" y="438" width="64" height="12" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="120" y="446" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q1  working</text>
+  <rect x="88" y="454" width="64" height="12" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="120" y="462" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">Q2  working</text>
+  <rect x="88" y="470" width="64" height="12" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
+  <text x="120" y="478" text-anchor="middle" font-size="5.8" font-weight="700" fill="#92400e">Q3  needs you</text>
+  <rect x="88" y="486" width="64" height="12" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="120" y="494" text-anchor="middle" font-size="5.8" font-weight="700" fill="#991b1b">Q4  done</text>
+  <rect x="88" y="502" width="64" height="12" rx="6" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
+  <text x="120" y="510" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">Q5-Q8 below</text>
+  <text x="120" y="556" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">Vertical dashboard</text>
+  <text x="120" y="570" text-anchor="middle" font-size="8" fill="#a8a29e">Same order. Same stack.</text>
 
   <line x1="228" y1="342" x2="250" y2="342" stroke="#d6d3d1" stroke-width="1.5"/>
   <polygon points="246,337 256,342 246,347" fill="#d6d3d1"/>
@@ -88,10 +73,10 @@
   <text x="340" y="132" text-anchor="middle" font-size="9.5" fill="#a8a29e">The real product edge today.</text>
 
   <rect x="286" y="146" width="108" height="18" rx="9" fill="#fafaf9" fill-opacity="0.12" stroke="#57534e" stroke-width="1"/>
-  <text x="340" y="158" text-anchor="middle" font-size="7.2" font-weight="700" fill="#fafaf9">1-8 agents, one view</text>
+  <text x="340" y="158" text-anchor="middle" font-size="7.2" font-weight="700" fill="#fafaf9">1-8 agents, one stack</text>
 
   <rect x="282" y="172" width="116" height="34" rx="12" fill="#292524"/>
-  <text x="340" y="193" text-anchor="middle" font-size="9" font-weight="600" fill="#fafaf9">Adaptive grid map</text>
+  <text x="340" y="193" text-anchor="middle" font-size="9" font-weight="600" fill="#fafaf9">Vertical stack map</text>
   <rect x="282" y="216" width="116" height="34" rx="12" fill="#292524"/>
   <text x="340" y="237" text-anchor="middle" font-size="9" font-weight="600" fill="#fafaf9">Stoplight status</text>
   <rect x="282" y="260" width="116" height="34" rx="12" fill="#292524"/>
@@ -110,7 +95,7 @@
   <rect x="282" y="524" width="116" height="50" rx="14" fill="#fafaf9"/>
   <text x="340" y="545" text-anchor="middle" font-size="9" font-weight="700" fill="#1c1917">What Hive proves</text>
   <text x="340" y="560" text-anchor="middle" font-size="8" fill="#57534e">A human can run a mixed fleet</text>
-  <text x="340" y="571" text-anchor="middle" font-size="8" fill="#57534e">and keep the map stable as it grows.</text>
+  <text x="340" y="571" text-anchor="middle" font-size="8" fill="#57534e">and keep one stable top-to-bottom order.</text>
 
   <line x1="434" y1="342" x2="456" y2="342" stroke="#d6d3d1" stroke-width="1.5" stroke-dasharray="4 4"/>
   <polygon points="452,337 462,342 452,347" fill="#d6d3d1"/>
@@ -136,28 +121,20 @@
 
   <rect x="512" y="350" width="96" height="164" rx="18" fill="#18181b" stroke="#44403c" stroke-width="1"/>
   <rect x="546" y="358" width="28" height="5" rx="2.5" fill="#44403c"/>
-  <rect x="524" y="374" width="72" height="16" rx="8" fill="#111827"/>
+  <rect x="522" y="374" width="76" height="16" rx="8" fill="#111827"/>
   <text x="560" y="385" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fafaf9">UNIVERSAL VIEW</text>
-  <rect x="524" y="398" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="532" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">A</text>
-  <rect x="544" y="398" width="16" height="24" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
-  <text x="552" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#1d4ed8">O</text>
-  <rect x="564" y="398" width="16" height="24" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
-  <text x="572" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#92400e">G</text>
-  <rect x="584" y="398" width="12" height="24" rx="6" fill="#f3f4f6" stroke="#a8a29e" stroke-width="1"/>
-  <text x="590" y="414" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">+</text>
-  <rect x="524" y="426" width="16" height="24" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
-  <text x="532" y="442" text-anchor="middle" font-size="5.8" font-weight="700" fill="#1d4ed8">O</text>
-  <rect x="544" y="426" width="16" height="24" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
-  <text x="552" y="442" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">A</text>
-  <rect x="564" y="426" width="16" height="24" rx="6" fill="#f3f4f6" stroke="#a8a29e" stroke-width="1"/>
-  <text x="572" y="442" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">+</text>
-  <rect x="584" y="426" width="12" height="24" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
-  <text x="590" y="442" text-anchor="middle" font-size="5.6" font-weight="700" fill="#92400e">G</text>
-  <rect x="530" y="460" width="60" height="12" rx="6" fill="#111827"/>
-  <text x="560" y="468" text-anchor="middle" font-size="5.8" fill="#a8a29e">same adaptive grid</text>
+  <rect x="522" y="398" width="76" height="12" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="560" y="406" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">A  Anthropic runtime</text>
+  <rect x="522" y="414" width="76" height="12" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="560" y="422" text-anchor="middle" font-size="5.8" font-weight="700" fill="#1d4ed8">O  OpenAI runtime</text>
+  <rect x="522" y="430" width="76" height="12" rx="6" fill="#fef3c7" stroke="#eab308" stroke-width="1"/>
+  <text x="560" y="438" text-anchor="middle" font-size="5.8" font-weight="700" fill="#92400e">G  Google runtime</text>
+  <rect x="522" y="446" width="76" height="12" rx="6" fill="#f3f4f6" stroke="#a8a29e" stroke-width="1"/>
+  <text x="560" y="454" text-anchor="middle" font-size="5.8" font-weight="700" fill="#57534e">+  Custom runtime</text>
+  <rect x="522" y="462" width="76" height="12" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="560" y="470" text-anchor="middle" font-size="5.8" font-weight="700" fill="#166534">...stack continues below</text>
   <text x="560" y="534" text-anchor="middle" font-size="9" font-weight="600" fill="#57534e">One visual layer</text>
-  <text x="560" y="548" text-anchor="middle" font-size="8" fill="#a8a29e">Any provider or runtime. Same adaptive stoplights.</text>
+  <text x="560" y="548" text-anchor="middle" font-size="8" fill="#a8a29e">Any provider or runtime. Same vertical stoplights.</text>
 
   <rect x="486" y="538" width="148" height="36" rx="12" fill="none" stroke="#a8a29e" stroke-width="1" stroke-dasharray="5 4"/>
   <text x="560" y="560" text-anchor="middle" font-size="8.5" fill="#57534e">Fleet operations above providers</text>
@@ -165,6 +142,6 @@
   <rect x="26" y="620" width="628" height="112" rx="14" fill="#f5f5f4" stroke="#e7e5e4" stroke-width="1"/>
   <text x="340" y="646" text-anchor="middle" font-size="11" font-weight="700" fill="#1c1917">What the diagram is really saying</text>
   <text x="340" y="668" text-anchor="middle" font-size="9" fill="#57534e">Hive is already the management layer for local fleets up to eight agents.</text>
-  <text x="340" y="684" text-anchor="middle" font-size="9" fill="#57534e">The end state is not a replacement for Claude, Codex, or Gemini. It is the same layer widened across more of them.</text>
-  <text x="340" y="700" text-anchor="middle" font-size="9" fill="#57534e">Local terminals on the left. Management in the middle. Provider-agnostic fleet interface on the right.</text>
+  <text x="340" y="684" text-anchor="middle" font-size="9" fill="#57534e">The end state is not a replacement for Claude, Codex, or Gemini. It is the same vertical layer widened across more of them.</text>
+  <text x="340" y="700" text-anchor="middle" font-size="9" fill="#57534e">Local stacks on the left. Management in the middle. Provider-agnostic fleet interface on the right.</text>
 </svg>
