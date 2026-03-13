@@ -9,7 +9,7 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
 
   onRamp: {
     description:
-      'I am not a software engineer. I took a few coding classes and started using ChatGPT when it first came out, but I build things with AI by describing what I want and watching it get made. The problem was that I could not actually watch it. Everything happened in terminal text I had to read and parse. So I built something that lets me see it instead. Colored dots, like a traffic light, where green means working, red means done, and yellow means it needs me.',
+      'I am not a software engineer. I took a few coding classes and started using ChatGPT when it first came out, but I build things with AI by describing what I want and watching it get made. The problem was that I could not actually watch it. Everything happened in terminal text I had to read and parse. So I built something that lets me see it instead. Up to eight agents on one screen, colored dots like a traffic light, where green means working, red means done, and yellow means it needs me.',
     whatItDoes:
       'Walks through why I built Hive, what the visual layer does, and why seeing what AI is doing matters more than reading what AI is doing. Includes a link to GitHub.',
     whatItDoesNot:
@@ -26,11 +26,11 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       content: `
 <p>I am not a software engineer. I took a few basic coding classes and started using ChatGPT when it first came out, but most of what I build now is through AI agents. I describe what I want, and they build it. That part worked surprisingly well.</p>
 
-<p>The part that did not work was keeping track of what was happening. I was running four AI agents at the same time, each one working on a different piece of a system, sometimes in completely different projects. Four agents means four things getting built at once, but I had no idea at a glance what any of them were doing. I had to read terminal output, scroll through it, and try to hold the state of four different threads in my head. The energy I was spending just knowing where things stood was eating the energy I needed to think about where things should go.</p>
+<p>The part that did not work was keeping track of what was happening. I started with four AI agents running at the same time, each one working on a different piece of a system, sometimes in completely different projects. Then four became six, then eight. More agents means more things getting built at once, but I had no idea at a glance what any of them were doing. I had to read terminal output, scroll through it, and try to hold the state of all those threads in my head. The energy I was spending just knowing where things stood was eating the energy I needed to think about where things should go.</p>
 
 <p>So I made something to fix that. Not a product, just a way to see what was going on without reading terminal text all day.</p>
 
-<p>What I ended up with is closer to a coordinated worker pool than four unrelated chat windows. Any agent can see what the others are doing through a central daemon. Any agent can audit the others. Any agent can send work to the others. They are still independent sessions with their own context, but the coordination layer connects them into something where the whole is more than four separate parts.</p>
+<p>What I ended up with is closer to a coordinated worker pool than a set of unrelated chat windows. Any agent can see what the others are doing through a central daemon. Any agent can audit the others. Any agent can send work to the others. They are still independent sessions with their own context, but the coordination layer connects them into something where the whole is more than the sum of its parts. You can run one agent or up to eight. The dashboard grid adapts to match.</p>
       `.trim(),
     },
     {
@@ -39,9 +39,9 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       content: `
 <p>Think about driving. You do not read engine diagnostics to know what is happening, you just glance at the dashboard. Green light means you are good, red means stop, yellow means pay attention.</p>
 
-<p>That is basically what I made. Four tiles on a screen, arranged in a 2x2 grid that mirrors my terminal layout. The top left tile is the top left terminal, and the bottom right tile is the bottom right terminal. Each tile is an agent, and the color tells you the state. Green means working, red means finished or stopped, and yellow means it needs a decision from you. No logs or terminal scrolling, just color and position.</p>
+<p>That is basically what I made. Tiles on a screen, arranged in a grid that mirrors my terminal layout. The top left tile is the top left terminal, and the bottom right tile is the bottom right terminal. Four agents gives you a 2x2 grid. Five or six gives you 3x2. Seven or eight gives you 4x2. Each tile is an agent, and the color tells you the state. Green means working, red means finished or stopped, and yellow means it needs a decision from you. No logs or terminal scrolling, just color and position.</p>
 
-<p>The mapping happens automatically. The daemon reads the physical position of each terminal window on your screen and assigns quadrants to match. Drag a terminal from the top left to the bottom right, and within ten seconds it becomes the bottom right tile on the dashboard. You never configure which agent is which tile. The system figures it out from where your windows actually sit.</p>
+<p>The mapping happens automatically. The daemon reads the physical position of each terminal window on your screen and assigns slots to match. Drag a terminal from the top left to the bottom right, and within ten seconds it becomes the bottom right tile on the dashboard. You never configure which agent is which tile. The system figures it out from where your windows actually sit.</p>
 
 <p>The nice thing about this is that you do not choose to notice a red dot among green dots, your brain just flags it. Reading a log takes effort, but glancing at a color does not. Four terminals streaming text compete for your attention, while four colored dots fit in a single glance.</p>
 
@@ -58,7 +58,7 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       content: `
 <p>Once I could see the agents working, I stopped reading logs and started just noticing when something looked off. An agent has been yellow too long, or the pattern of three green tiles and one yellow tile looks different from four green tiles in a way that text never communicated. I was not analyzing anymore, I was just recognizing, and it was usually right.</p>
 
-<p>Part of why it works is that the tiles match my actual screen. My Mac mini has four terminals arranged in a 2x2 grid, and the dashboard on my phone has four tiles in the same layout. The top left terminal is the authentication refactor, and the top left tile on my phone is the same thing. I see a yellow dot in the bottom left and I already know which agent that is, because I can see the bottom left terminal on my screen. I never have to read a name because the dashboard mirrors what is already in front of me.</p>
+<p>Part of why it works is that the tiles match my actual screen. My Mac mini has terminals arranged in a grid, and the dashboard on my phone has tiles in the same layout. The top left terminal is the authentication refactor, and the top left tile on my phone is the same thing. I see a yellow dot in the bottom left and I already know which agent that is, because I can see the bottom left terminal on my screen. I never have to read a name because the dashboard mirrors what is already in front of me. Whether I am running four agents or eight, the spatial memory works the same way.</p>
 
 <p>And because it is on my phone, I do not have to be at my desk. The agents keep running on my Mac mini at home, and I can be on the couch, at a coffee shop, wherever. I glance at the tiles, and if something needs steering I send a message. The work does not stop when I walk away, and most of the time I come back and things are finished. The agents handle routine approvals on their own, so they just keep going. The yellow dot only shows up when something genuinely needs me.</p>
 
@@ -77,7 +77,7 @@ export const aVisualWorkflowForAiAgentsData: ResearchData = {
       id: 'what-it-unlocked',
       title: 'An Example',
       content: `
-<p>Hive itself was built this way. Four AI agents running at the same time, each working on a different part of the system, while I directed them through the dashboard they were building. I told them what to build, resolved conflicts when two agents touched the same thing, and bridged context between them when one found something another needed to know. They wrote all the code.</p>
+<p>Hive itself was built this way. Multiple AI agents running at the same time, each working on a different part of the system, while I directed them through the dashboard they were building. I told them what to build, resolved conflicts when two agents touched the same thing, and bridged context between them when one found something another needed to know. They wrote all the code.</p>
 
 <p>Here is a specific thing that happened. Two agents were debugging the dashboard's own status detection. Agent 3 was investigating why tiles flickered between green and red, and Agent 4 was investigating why activity from one agent was showing up under the wrong tile. Neither knew what the other was finding.</p>
 
