@@ -43,7 +43,7 @@ export const hiveData: ResearchData = {
 
 <p>The whole system was built using the agents it manages. Most of the building was done by Claude Code instances working on the daemon, the dashboard, and each other's output while I directed what to build and resolved conflicts. Codex later joined that loop as an auditor and caught gaps between what the docs said and what the code actually did.</p>
 
-<p>That is part of the point of the system. You do not have to pick one model and live inside its blind spots. You can let one model push something forward, let another audit it or build from it, and use the differences between them to catch corners a single model would miss.</p>
+<p>That is part of the point of the system. You do not have to pick one model and live inside its blind spots. You can let one model push something forward, let another audit it or build from it, and use the differences between them to catch corners a single model would miss. And if your preferred agent is not one of the three that ship built-in, you add it with a config file. Or you ask one of your running agents to add it for you. The dashboard is the layer above the models, not tied to any of them.</p>
       `.trim(),
     },
     {
