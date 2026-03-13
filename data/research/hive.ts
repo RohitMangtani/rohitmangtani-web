@@ -188,7 +188,7 @@ export const hiveData: ResearchData = {
       id: 'the-end-state',
       title: 'The End State',
       content: `
-<p>Right now Hive runs four terminal agents on one machine. Today that is a mix of Claude Code, Codex, and OpenClaw. Three different providers, three different agent architectures, same grid. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
+<p>Right now Hive runs four terminal agents on one machine. I run Claude Code and Codex. You can also run OpenClaw if you want. Different providers, different agent architectures, same grid. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
 
 <p>Think about Find My iPhone. You open one app and see every Apple device you own on a map. Green dot, it is online. Grey dot, it is offline. You do not open a separate app for your MacBook, a different one for your iPad, a third for your AirPods. One visual layer shows you everything. The value is not in the devices. It is in the map.</p>
 
@@ -210,7 +210,7 @@ export const hiveData: ResearchData = {
 
 <p>Agent coordination is in that exact moment right now. The primitives exist: file locks, task queues, status detection, conflict prevention, message routing. Engineers access them through Python frameworks and CLI tools. Everyone else opens four terminal windows and hopes nothing breaks. The dashboard is the Robinhood layer for this kind of multi-agent coordination. It does not invent the primitives. It wraps them in a visual surface that determines who can use them.</p>
 
-<p>That is where this goes. The proof of concept is four terminal agents on a MacBook with a stoplight dashboard on your phone, today a mix of Claude, Codex, and OpenClaw. The product is the first car for AI labor. Provider-agnostic. A steering wheel for fleet operations. A speedometer that shows status as color, not text. Mirrors that give you spatial memory across every running agent. And eventually, a layer that turns natural language into fleet operations. The interface that lets any person, not just engineers, direct any combination of agents from any company through one screen. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
+<p>That is where this goes. The proof of concept is four terminal agents on a MacBook with a stoplight dashboard on your phone, today Claude and Codex, with OpenClaw available if you want it. The product is the first car for AI labor. Provider-agnostic. A steering wheel for fleet operations. A speedometer that shows status as color, not text. Mirrors that give you spatial memory across every running agent. And eventually, a layer that turns natural language into fleet operations. The interface that lets any person, not just engineers, direct any combination of agents from any company through one screen. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
       `.trim(),
     },
     {
@@ -232,7 +232,7 @@ export const hiveData: ResearchData = {
 
 <p>Hive runs on macOS only. The daemon relies on AppleScript and Terminal.app for window position detection, and a compiled Swift binary for keystroke injection. There is no Linux or Windows support right now.</p>
 
-<p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code, Codex, and/or OpenClaw, run setup, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
+<p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code and/or Codex (OpenClaw also works if you prefer), run setup, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
 
 <p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">github.com/RohitMangtani/hive</a></p>
       `.trim(),
