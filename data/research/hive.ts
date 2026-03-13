@@ -37,7 +37,7 @@ export const hiveData: ResearchData = {
       id: 'what-it-is',
       title: 'What It Is',
       content: `
-<p>Hive is a local daemon that runs on your machine. It discovers supported terminal agents like Claude Code and Codex, shows their status on a dashboard, and gives you a way to message any of them from your phone or a second screen. The dashboard tiles mirror your terminal layout. Top-left terminal, top-left tile. You manage agents by where they sit, not by what they are called.</p>
+<p>Hive is a local daemon that runs on your machine. It discovers supported terminal agents like Claude Code, Codex, and OpenClaw, shows their status on a dashboard, and gives you a way to message any of them from your phone or a second screen. The dashboard tiles mirror your terminal layout. Top-left terminal, top-left tile. You manage agents by where they sit, not by what they are called.</p>
 
 <p>The thing that makes running four agents useful is that each one builds up its own context over time. One is an hour deep into an authentication refactor and knows every file it has touched. Another has been debugging a deploy for thirty minutes with a mental model of the infrastructure. These are not four workers splitting one task. They are four independent contexts, each deeply embedded in a different problem. A fresh agent starts from zero. An agent that has been working for an hour starts from everything it already knows. The dashboard is how you keep track of all of them without re-reading everything each time you switch your attention.</p>
 
@@ -69,13 +69,13 @@ export const hiveData: ResearchData = {
         {
           title: 'Auto-Discovery',
           content: `
-<p>Open a terminal and run Claude Code or Codex. Within three seconds, it shows up on the dashboard. No registration, no config. The daemon scans running processes, finds each one's working directory and session file, and adds it. Close the terminal, it disappears. Open a new one, it appears.</p>
+<p>Open a terminal and run Claude Code, Codex, or OpenClaw. Within three seconds, it shows up on the dashboard. No registration, no config. The daemon scans running processes, finds each one's working directory and session file, and adds it. Close the terminal, it disappears. Open a new one, it appears.</p>
           `.trim(),
         },
         {
           title: 'Spatial Mapping',
           content: `
-<p>Arrange four terminal windows in a 2x2 grid. Open Claude Code or Codex in each one. Hive reads the physical position of each Terminal window on your screen and assigns quadrants to match: top-left becomes Q1, top-right Q2, bottom-left Q3, bottom-right Q4. The dashboard mirrors your screen.</p>
+<p>Arrange four terminal windows in a 2x2 grid. Open Claude Code, Codex, or OpenClaw in each one. Hive reads the physical position of each Terminal window on your screen and assigns quadrants to match: top-left becomes Q1, top-right Q2, bottom-left Q3, bottom-right Q4. The dashboard mirrors your screen.</p>
 
 <p>When you see a yellow dot in the bottom-left tile on your phone, you already know which terminal that is because you can see the bottom-left terminal on your laptop. The position is the label. Drag a terminal to a different corner and the dashboard updates to match within a few seconds.</p>
           `.trim(),
@@ -99,7 +99,7 @@ export const hiveData: ResearchData = {
           content: `
 <p>Four agents working in shared codebases will eventually collide. Two editing the same file. One designing an API another needs to consume.</p>
 
-<p>Hive handles this with a few primitives. Claude agents get a one-line peer summary on each prompt showing which agents are working, idle, or stuck and what they are doing right now, while Codex workers still share the same fleet state through the dashboard, scratchpad, and API. This is passive awareness, not a manual check. File locks let an agent claim a file and get blocked if someone else holds it. Inter-agent messaging lets any agent send a prompt to any other. A shared scratchpad stores working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched a file you are about to edit.</p>
+<p>Hive handles this with a few primitives. Claude agents get a one-line peer summary on each prompt showing which agents are working, idle, or stuck and what they are doing right now, while Codex and OpenClaw workers share the same fleet state through the dashboard, scratchpad, and API. This is passive awareness, not a manual check. File locks let an agent claim a file and get blocked if someone else holds it. Inter-agent messaging lets any agent send a prompt to any other. A shared scratchpad stores working context that auto-expires. An artifact tracker records which agent modified which files. And a conflict detection API checks whether another agent recently touched a file you are about to edit.</p>
 
 <p>There is also a task queue. Push a task and the daemon dispatches it to the next idle agent. You can tag related tasks with the same workflow ID, and when one step finishes, the next agent automatically gets a summary of what was done and which files changed before starting its task.</p>
           `.trim(),
@@ -188,7 +188,7 @@ export const hiveData: ResearchData = {
       id: 'the-end-state',
       title: 'The End State',
       content: `
-<p>Right now Hive runs four terminal agents on one machine. Today that is a mix of Claude Code and Codex. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
+<p>Right now Hive runs four terminal agents on one machine. Today that is a mix of Claude Code, Codex, and OpenClaw. Three different providers, three different agent architectures, same grid. That is the proof of concept. The end state is bigger than Claude, bigger than Anthropic, bigger than any single model provider.</p>
 
 <p>Think about Find My iPhone. You open one app and see every Apple device you own on a map. Green dot, it is online. Grey dot, it is offline. You do not open a separate app for your MacBook, a different one for your iPad, a third for your AirPods. One visual layer shows you everything. The value is not in the devices. It is in the map.</p>
 
@@ -210,7 +210,7 @@ export const hiveData: ResearchData = {
 
 <p>Agent coordination is in that exact moment right now. The primitives exist: file locks, task queues, status detection, conflict prevention, message routing. Engineers access them through Python frameworks and CLI tools. Everyone else opens four terminal windows and hopes nothing breaks. The dashboard is the Robinhood layer for this kind of multi-agent coordination. It does not invent the primitives. It wraps them in a visual surface that determines who can use them.</p>
 
-<p>That is where this goes. The proof of concept is four terminal agents on a MacBook with a stoplight dashboard on your phone, today usually a mix of Claude and Codex. The product is the first car for AI labor. Provider-agnostic. A steering wheel for fleet operations. A speedometer that shows status as color, not text. Mirrors that give you spatial memory across every running agent. And eventually, a layer that turns natural language into fleet operations. The interface that lets any person, not just engineers, direct any combination of agents from any company through one screen. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
+<p>That is where this goes. The proof of concept is four terminal agents on a MacBook with a stoplight dashboard on your phone, today a mix of Claude, Codex, and OpenClaw. The product is the first car for AI labor. Provider-agnostic. A steering wheel for fleet operations. A speedometer that shows status as color, not text. Mirrors that give you spatial memory across every running agent. And eventually, a layer that turns natural language into fleet operations. The interface that lets any person, not just engineers, direct any combination of agents from any company through one screen. Green means driving. Red means stopped. Type into the tile. The agent moves.</p>
       `.trim(),
     },
     {
@@ -232,7 +232,7 @@ export const hiveData: ResearchData = {
 
 <p>Hive runs on macOS only. The daemon relies on AppleScript and Terminal.app for window position detection, and a compiled Swift binary for keystroke injection. There is no Linux or Windows support right now.</p>
 
-<p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code and/or Codex, run setup, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
+<p>If you want to try it the same way I use it, the default GitHub path is: install Claude Code, Codex, and/or OpenClaw, run setup, then run <code>npm start</code> and <code>npm run deploy:dashboard</code>. That gives you your own hosted Hive dashboard in a few minutes while the agent terminals still run locally on your machine.</p>
 
 <p><a href="https://github.com/RohitMangtani/hive" class="underline hover:opacity-60" target="_blank" rel="noopener">github.com/RohitMangtani/hive</a></p>
       `.trim(),
